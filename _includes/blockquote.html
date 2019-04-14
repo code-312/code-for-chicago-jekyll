@@ -1,0 +1,17 @@
+{%- if page.quote -%}
+<blockquote class="blockquote">
+  <p class="mb-0">{{ page.quote }}</p>
+  {%- if page.quote-author and page.quote-source -%}
+  <footer class="blockquote-footer">{{ page.quote-author }}, 
+    <cite title="Source Title">{{ page.quote-source }}</cite>
+  </footer>
+  {%- elsif page.quote-author and !page.quote-source -%}
+  <footer class="blockquote-footer">{{ page.quote-author }}
+  </footer>
+  {%- endif -%}
+</blockquote>
+{%- else -%}
+<blockquote class="blockquote">
+  <p class="mb-0">Check your front matter for quote variables!</p>
+</blockquote>
+{%- endif -%}
