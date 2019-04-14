@@ -1,0 +1,28 @@
+@import "./custom/_variables";
+@import "./bootstrap/bootstrap";
+@import "./instantsearch/instantsearch";
+@import "./instantsearch/instantsearch-theme-algolia";
+@import "./custom/includes/buttons";
+@import "./custom/includes/card";
+@import "./custom/includes/copy_to_clipboard";
+@import "./custom/includes/navbar";
+@import "./custom/includes/images";
+@import "./custom/includes/jumbotron";
+@import "./custom/includes/pagination";
+@import "./custom/includes/social_links";
+@import "./custom/includes/syntax_highlighting";
+@import "./custom/includes/tables";
+@import "./custom/includes/type";
+
+.text-left {
+    text-align: left;
+}
+
+.projects {
+    background-color: $light-grey;
+}
+
+.activity {
+    background-color: $light-grey;
+    margin: 4.16%;
+}

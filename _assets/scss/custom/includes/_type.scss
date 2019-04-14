@@ -1,0 +1,101 @@
+// Headings
+// $h1-font-size:                $font-size-base * 2.5 !default;
+// $h2-font-size:                $font-size-base * 2 !default;
+// $h3-font-size:                $font-size-base * 1.75 !default;
+// $h4-font-size:                $font-size-base * 1.5 !default;
+// $h5-font-size:                $font-size-base * 1.25 !default;
+// $h6-font-size:                $font-size-base !default;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary;
+  padding-top: 10px;
+}
+
+h1,
+.h1 {
+  @include media-breakpoint-only(xs) {
+    font-size: $font-size-base * 2 !important;
+  }
+}
+h2,
+.h2 {
+  @include media-breakpoint-only(xs) {
+    font-size: $font-size-base * 1.75 !important;
+  }
+}
+h3,
+.h3 {
+  @include media-breakpoint-only(xs) {
+    font-size: $font-size-base * 1.5 !important;
+  }
+}
+h4,
+.h4 {
+  @include media-breakpoint-only(xs) {
+    font-size: $font-size-base * 1.25 !important;
+  }
+}
+h5,
+.h5 {
+  @include media-breakpoint-only(xs) {
+    font-size: $font-size-base !important;
+  }
+}
+
+header .display-1 {
+  @include media-breakpoint-up(xs) {
+    font-size: 3rem;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 4.5rem;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 5.5rem;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 6rem;
+  }
+}
+
+header .lead {
+  @include media-breakpoint-only(xs) {
+    font-size: $font-size-base !important;
+  }
+}
+
+// Blockquotes
+// Extending the blockquote class lets us avoide using "{: }" to manually apply Bootstrap classes in markdown.
+blockquote {
+  @extend .blockquote;
+}
+.blockquote {
+  background-color: $gray-100;
+  border-left: 4px solid $gray-400;
+  font-size: 1rem;
+  font-weight: $font-weight-light;
+  padding: 1rem;
+}
+.blockquote p {
+  margin-bottom: 0;
+}
+
+// Algolia Search
+.ais-Highlight {
+  background-color: #ffd2e8;
+}
+.ais-search-box input {
+  font-size: 1rem; // 16px prevents zooming when input field focued on iOS
+}
+
+.modal-dialog {
+  @include media-breakpoint-up(md) {
+    max-width: 80%;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 60%;
+  }
+}

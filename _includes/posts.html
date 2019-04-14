@@ -1,0 +1,19 @@
+<section id="posts" class="container py-3 hide-on-search">
+  <div class="row">
+    <div class="col">
+      <h1 class="pl-3 mb-3">Recent Posts</h1>
+      <ul class="list-group list-group-flush px-xs-1 px-md-5 mb-3">
+        {% for post in paginator.posts %}
+        <li class="list-group-item">
+          <p class="mb-0 text-muted">{{ post.date | date: "%b %-d, %Y" }}</p>
+          <a class="lead" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <p class="mb-0">
+            {% if post.description %} {{ post.description }} {% else %} {{ post.excerpt | strip_html | strip_newlines | escape }} {% endif %}
+          </p>
+        </li>
+        {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+</section>

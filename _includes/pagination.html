@@ -1,0 +1,44 @@
+<nav id="pagination" aria-label="Posts Navigation">
+  <div id="pager" class="container mb-3">
+    <div class="row">
+      <div class="col">
+        {%- if paginator.total_pages > 1 -%}
+        <ul class="pagination justify-content-center">
+          {%- if paginator.previous_page -%}
+          <li class="page-item">
+            {%- else -%}
+            <li class="page-item disabled">
+              {%- endif -%}
+              <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Newer">
+                <span aria-hidden="true">&laquo</i>
+                </span>
+                <span class="sr-only">Newer</span>
+              </a>
+            </li>
+            {%- if paginator.page_trail -%} 
+              {%- for trail in paginator.page_trail -%} 
+                {%- if page.url == trail.path -%}
+                  <li class="page-item active">
+                {%- else -%}
+                  <li class="page-item">
+                {%- endif -%}
+                  <a class="page-link" href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}" title="{{trail.title}}">{{ trail.num }}</a>
+                  </li>
+              {%- endfor -%} 
+            {%- endif -%} 
+              {%- if paginator.next_page -%}
+                <li class="page-item">
+                {%- else -%}
+                  <li class="page-item disabled">
+                {%- endif -%}
+                  <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Older">
+                    <span aria-hidden="true">&raquo</span>
+                    <span class="sr-only">Older</span>
+                  </a>
+              </li>
+        </ul>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</nav>
