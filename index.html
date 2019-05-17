@@ -7,7 +7,7 @@ home: true
 <div class="container">
 
   <div class="text-center">
-      <h1>Activities we do</h1>
+      <h1>Missions and Activities</h1>
   </div>
 
   <div class="row activities text-center">
@@ -39,46 +39,75 @@ home: true
   </div>
 
   <div class="text-center">
-      <h1>Next Meetup</h1>
+      <h1>Next Meetups</h1>
   </div>
 
+{%for event in site.data.events%}
   <div class="row next-meetup text-center">
     <div class="col-md-10 event-title-description">
       <h3 class="text-left">
-        Civic Project Night
+        <a href='{{event.link}}' target="blank">{{event.name}}</a>
       </h3>
-      <p class="text-left">
-        Project Night! We'll gather together to collaborate, learn, and work to improve our community. There's a need for a wide
-        variety of skill sets, so no matter where your experience lies or how much of it you've got, join us! We have some things
-        in the works, but you can also bring your own...
-      </p>
+      <div class="text-left">
+        {% assign description-paragraphs = event.description | split: "</p>" %}
+        {{description-paragraphs[0]}}
+      </div>
     </div>
     <div class="col-md-2 event-time-location">
       <h4>
-        Thu Apr 4, 6:30 PM
+        {% assign date = event.local_date | date: "%A, %B %-d, %Y") %}
+            {{event.local_time}}, {{date}}
       </h4>
-      <p class="text-left">Human Citizen</p>
-      <p class="text-left">4101 N. Broadway</p>
+      <p class="text-left">{{event.venue.name}}</p>
+      <p class="text-left">{{event.venue.address_1}}</p>
+    </div>
+  </div>
+{%endfor%}
+
+
+  <h1 class="text-center">Sponsors</h1>
+  <div class="sponsors">
+    <p>
+      There are lots of ways to get involved with Code for Chicago, whether you would like to 
+      volunteer your skillet and other resources or you have a project that needs our assistance.
+    </p>
+    <div class="row">
+      <div class="col-md-3">
+        <h3>Sponsor 1</h3>
+      </div>
+      <div class="col-md-3">
+        <h3>Sponsor 2</h3>
+      </div>
+      <div class="col-md-3">
+        <h3>Sponsor 3</h3>
+      </div>
+      <div class="col-md-3">
+        <h3>Sponsor 4</h3>
+      </div>
     </div>
   </div>
 
-  <div class="row projects text-center">
-    <div class="col-md-6">
-      <h2>
-        Project One
-      </h2>
-      <p class="text-left">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit, arcu taciti cubilia mus vestibulum placerat erat purus, penatibus netus rutrum urna venenatis montes. Viverra conubia purus tellus enim hac sollicitudin tincidunt pulvinar dictumst, nascetur inceptos fermentum habitant quam imperdiet vehicula rutrum risus, curae blandit libero est sagittis scelerisque phasellus habitasse. Morbi phasellus placerat quisque ad proin maecenas aenean mi rhoncus, iaculis risus ultrices rutrum magnis lobortis fusce ante egestas tellus, gravida nunc ornare eros purus litora curae orci.
-      </p>
-    </div>
-    <div class="col-md-6">
-      <h2>
-          Project Two
-      </h2>
-      <p class="text-left">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit, arcu taciti cubilia mus vestibulum placerat erat purus, penatibus netus rutrum urna venenatis montes. Viverra conubia purus tellus enim hac sollicitudin tincidunt pulvinar dictumst, nascetur inceptos fermentum habitant quam imperdiet vehicula rutrum risus, curae blandit libero est sagittis scelerisque phasellus habitasse. Morbi phasellus placerat quisque ad proin maecenas aenean mi rhoncus, iaculis risus ultrices rutrum magnis lobortis fusce ante egestas tellus, gravida nunc ornare eros purus litora curae orci.
-      </p>
-    </div>
+  <h1 class="text-center">About Code for America</h1>
+  <div class="text-left">
+    <p>
+      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
+      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
+
+      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
+      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
+      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
+
+      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
+      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
+      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
+      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
+      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
+
+      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
+      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
+
+      
+    </p>
   </div>
 
 </div>

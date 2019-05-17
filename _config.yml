@@ -97,3 +97,8 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
+
+# Getting meetup data
+jekyll_get:
+  - data: events
+    json: 'https://api.meetup.com/openuptown/events?&sign=true&photo-host=public&page=2&fields=featured_photo'
