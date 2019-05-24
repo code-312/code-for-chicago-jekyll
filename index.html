@@ -38,10 +38,11 @@ home: true
 
   </div>
 
+
+<div class="meetups">
   <div class="text-center">
       <h1>Next Meetups</h1>
   </div>
-
 {%for event in site.data.events%}
   <div class="row next-meetup text-center">
     <div class="col-md-10 event-title-description">
@@ -63,10 +64,50 @@ home: true
     </div>
   </div>
 {%endfor%}
+</div>
 
+<div class="keep-in-touch">
+  <h1>Keep in Touch</h1>
+  <div class="row comm-medium">
+    <div class="col-md-10 comm-medium-desc">
+      Hey, join our meetup group to keep up to date on
+      events and project opportunities.
+    </div>
+    <div class="col-md-2 comm-medium-icon">
+        <a target="_blank" href="https://www.meetup.com/openuptown/" title="Meetup">
+          <i class="fab fa-meetup"></i>
+        </a>
+    </div>
 
-  <h1 class="text-center">Sponsors</h1>
+  </div>
+
+  <div class="row comm-medium">
+      <div class="col-md-10 comm-medium-desc">
+        Hang out with us on Slack 
+      </div>
+      <div class="col-md-2 comm-medium-icon">
+          <a target="_blank" href="https://uptown-codes.herokuapp.com/" title="Slack">
+            <i class="fab fa-slack"></i>
+          </a>
+      </div>
+    </div>
+
+    <div class="row comm-medium">
+        <div class="col-md-10 comm-medium-desc">
+          Or shoot us an email
+        </div>
+        <div class="col-md-2 comm-medium-icon">
+            <a href="mailto:{{ site.email }}" title="email">
+                <i class="fas fa-envelope-square"></i>
+              </a>
+        </div>
+      </div>
+
+</div>
+
   <div class="sponsors">
+    <h1 class="text-center">Sponsors</h1>
+
     <p>
       There are lots of ways to get involved with Code for Chicago, whether you would like to 
       volunteer your skillet and other resources or you have a project that needs our assistance.

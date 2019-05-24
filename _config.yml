@@ -5,8 +5,8 @@ brand: Sakura
 copyright: abts.io
 description: A clean Jekyll theme with baked in Bootstrap 4, responsive images, and more...
 email: leadership@openuptown.us 
-title: Sakura Jekyll Theme 
-url: "https://sakura.abts.io"
+title: Code for Chicago 
+url: "https://codeforchicago.org"
 
 # Not using because Gulp is now processing SCSS
 # sass:

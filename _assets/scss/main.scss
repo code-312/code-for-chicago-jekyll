@@ -27,6 +27,35 @@
     margin: 4.16%;
 }
 
+.keep-in-touch {
+    padding: 1%;
+    svg {
+        font-size: 400%;
+    }
+}
+
 .sponsors {
-    background-color: $light-grey;
+    background-color: $cfa-red;
+    color: white;
+    padding-left: 1%;
+    padding-right: 1%;
+    h1, h3, h4 {
+        color: white;
+    }
+    a {
+        color: white;
+    }
+}
+
+.meetups {
+    background-color: $cfa-red;
+    color: white;
+    padding-left: 1%;
+    padding-right: 1%;
+    h1, h3, h4 {
+        color: white;
+    }
+    a {
+        color: white;
+    }
 }
