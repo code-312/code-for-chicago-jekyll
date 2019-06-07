@@ -12,6 +12,27 @@ $random-img-sm: "https://picsum.photos/576/397/?random";
   text-shadow: 1px 1px $gray-800;
 }
 
+#header {
+  width: 75%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+
+  h2 {
+    color: $cfa-blue;
+  }
+
+}
+
+.header-p {
+  width: 66%;
+}
+
+.action-phrase {
+  color: $cfa-red;
+  font-weight: bold;
+}
+
 .jumbotron-bg {
   color: white;
   background-size: cover;

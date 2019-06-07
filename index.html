@@ -4,110 +4,107 @@ description: We are technologists, researchers, community advocates, and social 
 layout: default
 home: true
 ---
-<div class="container">
+<div class="main" role="main">
 
-  <div class="text-center">
-      <h1>Missions and Activities</h1>
-  </div>
+  <div class="row about">
+   <div class="padded-content">
 
-  <div class="row activities text-center">
-    <div class="col-md-3 activity">
-      <h2>
-        Activity 1
-      </h2>
-      <p class="text-left">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit, arcu taciti cubilia mus vestibulum placerat erat purus, penatibus netus rutrum urna venenatis montes. Viverra conubia purus tellus enim hac sollicitudin tincidunt pulvinar dictumst, nascetur inceptos fermentum habitant quam imperdiet vehicula rutrum risus, curae blandit libero est sagittis scelerisque phasellus habitasse. Morbi phasellus placerat quisque ad proin maecenas aenean mi rhoncus, iaculis risus ultrices rutrum magnis lobortis fusce ante egestas tellus, gravida nunc ornare eros purus litora curae orci.
+    <div class="col-md-8 text-left">
+      <h1> We're on a mission to make community services work in a digital age
+        </h1>
+        <p>
+            We are Chicago's <a href="https://codeforamerica.org" target="blank">Code for America</a> Brigade. We are a volunteer organization that connects local 
+            nonprofits and government agencies to technologists, designers, data scientists, and activists. Join us for co-working and civic project nights.
+        </p>
+      <p>
+        We forge partnerships between neighbors who use technology to improve interactions with, and access to, public services. Whether you're a technologist, designer, journalist, public servant, or curious community member- there is a place for you here! Joins us for our co-working, project, service, and social events.
       </p>
     </div>
-    <div class="col-md-3 activity">
-      <h2>
-        Activity 2
-      </h2>
-      <p class="text-left">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit, arcu taciti cubilia mus vestibulum placerat erat purus, penatibus netus rutrum urna venenatis montes. Viverra conubia purus tellus enim hac sollicitudin tincidunt pulvinar dictumst, nascetur inceptos fermentum habitant quam imperdiet vehicula rutrum risus, curae blandit libero est sagittis scelerisque phasellus habitasse. Morbi phasellus placerat quisque ad proin maecenas aenean mi rhoncus, iaculis risus ultrices rutrum magnis lobortis fusce ante egestas tellus, gravida nunc ornare eros purus litora curae orci.
-      </p>
-    </div>
-    <div class="col-md-3 activity">
-      <h2>
-        Activity 3
-      </h2>
-      <p class="text-left">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit, arcu taciti cubilia mus vestibulum placerat erat purus, penatibus netus rutrum urna venenatis montes. Viverra conubia purus tellus enim hac sollicitudin tincidunt pulvinar dictumst, nascetur inceptos fermentum habitant quam imperdiet vehicula rutrum risus, curae blandit libero est sagittis scelerisque phasellus habitasse. Morbi phasellus placerat quisque ad proin maecenas aenean mi rhoncus, iaculis risus ultrices rutrum magnis lobortis fusce ante egestas tellus, gravida nunc ornare eros purus litora curae orci.
-      </p>
-    </div>
+    <div class="col-md-4">
 
+    </div>
+   </div>
   </div>
 
-  <div class="text-center">
-      <h1>Next Meetups</h1>
-  </div>
+<div class="row meetups">
+  <div class="padded-content">
+  
+  {%for event in site.data.events%}
 
-{%for event in site.data.events%}
-  <div class="row next-meetup text-center">
-    <div class="col-md-10 event-title-description">
+  <div class="col-md-12 meetup">
+      <div class="row">
+          <div class="col-md-8">
+
+      <h4>{% assign date = event.local_date | date: "%A, %B %-d, %Y") %}
+          {{event.local_time}}, {{date}}</h4>
       <h3 class="text-left">
-        <a href='{{event.link}}' target="blank">{{event.name}}</a>
+          <a href='{{event.link}}' target="blank">{{event.name}}</a>
       </h3>
-      <div class="text-left">
-        {% assign description-paragraphs = event.description | split: "</p>" %}
-        {{description-paragraphs[0]}}
+      <p><i class="fas fa-map-marker-alt"></i> {{event.venue.name}} {{event.venue.address_1}}</p>
+          {% assign description-paragraphs = event.description | split: "</p>" %}
+          {{description-paragraphs[0]}}
+        </div>
+        <div class="col-md-4">
+            <img class="event-photo" src="{{event.featured_photo.photo_link}}"/>
+        </div>
       </div>
+      <div class="row">
+        <div class="col-md-9">{{event.yes_rsvp_count}} attendees </div>
+        <div class="col-md-3"><a href="{{event.link}}" class="button">Attend</a></div>
+      </div>
+  </div>
+
+  {%endfor%}
+  </div>
+</div>
+
+<div class="text-center events-link">
+  <h4><a href="https://meetup.com/open-uptown/" target="blank">See all of our upcoming events</a></h4>
+</div>
+
+  <div class="row contact-form-container">
+    <div class="padded-content">
+
+  <div class="text-center">
+     <h1>Contact Us</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-6 contact-form">
+      <form method="POST" action="https://formspree.io/leadership@openuptown.us">
+      <input type="email" name="email" placeholder="Your email">
+      <textarea name="message" placeholder="Your message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
     </div>
-    <div class="col-md-2 event-time-location">
-      <h4>
-        {% assign date = event.local_date | date: "%A, %B %-d, %Y") %}
-            {{event.local_time}}, {{date}}
-      </h4>
-      <p class="text-left">{{event.venue.name}}</p>
-      <p class="text-left">{{event.venue.address_1}}</p>
+  <div class="col-md-4">
+    <p>
+        Do you have questions or would you like to know more? Send us an email...
+    </p>
+    <p>
+        Do you know a nonprofit that could use some tech help? Send us an email or come to one of our meetups to get the conversation started
+    </p>
+  </div>
+  <div class="col-md-2 keep-in-touch">
+      <a target="_blank" href="https://www.meetup.com/openuptown/" title="Meetup">
+        <i class="fab fa-meetup"></i>
+      </a>
+      <a target="_blank" href="https://uptown-codes.herokuapp.com/" title="Slack">
+        <i class="fab fa-slack"></i>
+      </a>
+  </div>
     </div>
   </div>
-{%endfor%}
-
-
-  <h1 class="text-center">Sponsors</h1>
-  <div class="sponsors">
-    <p>
-      There are lots of ways to get involved with Code for Chicago, whether you would like to 
-      volunteer your skillet and other resources or you have a project that needs our assistance.
-    </p>
-    <div class="row">
-      <div class="col-md-3">
-        <h3>Sponsor 1</h3>
-      </div>
-      <div class="col-md-3">
-        <h3>Sponsor 2</h3>
-      </div>
-      <div class="col-md-3">
-        <h3>Sponsor 3</h3>
-      </div>
-      <div class="col-md-3">
-        <h3>Sponsor 4</h3>
-      </div>
-    </div>
   </div>
 
   <h1 class="text-center">About Code for America</h1>
   <div class="text-left">
+   <div class="padded-content">
+
     <p>
-      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
-      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
-
-      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
-      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
-      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
-
-      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
-      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
-      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
-      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
-      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
-
-      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
-      lorem ipsum ipsum lorem stuff things words. Less words. More words but really less.
-
-      
+        Code for America is a network of people who work with community organizations and local governments to deliver better services. 
+        We also develop services to <a href="https://www.codeforamerica.org/work#show-whats-possible">show what’s possible</a> in three high-impact focus areas:Criminal Justice, Social Safety Net, and Workforce Development.   
     </p>
-  </div>
 
+  </div>
+</div>
 </div>

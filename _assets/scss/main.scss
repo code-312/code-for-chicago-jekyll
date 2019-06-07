@@ -18,6 +18,19 @@
     text-align: left;
 }
 
+.about {
+    background-color: $cfa-red;
+    color: $white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    h1,h2,h3 {
+        color: $white;
+    }
+    a {
+        color: $white;
+    }
+}
+
 .projects {
     background-color: $light-blue;
 }
@@ -27,6 +40,133 @@
     margin: 4.16%;
 }
 
-.sponsors {
-    background-color: $light-grey;
+.keep-in-touch {
+    .fa-slack {
+        color: $white;
+    }
+    svg {
+        font-size: 400%;
+    }
 }
+
+.sponsors {
+    background-color: $cfa-red;
+    color: white;
+    padding-left: 1%;
+    padding-right: 1%;
+    h1, h3, h4 {
+        color: white;
+    }
+    a {
+        color: white;
+    }
+}
+
+.meetups {
+    background-color: $white;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-top: 2rem;
+    justify-content: center;
+    h4 {
+        color: $cfa-blue;
+    }
+    h3 {
+        a {
+            color: $black;
+        }
+    }
+}
+
+.meetup {
+    border: 1px solid;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button {
+    background-color: $cfa-red;
+    border: none;
+    color: white;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1rem;
+    a {
+        color: white;
+    }
+
+}
+
+.button:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.contact-form-container {
+    color: $white;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+    background-color: $cfa-red;
+    h1 {
+        color: $white;
+        margin-bottom: 2rem;
+    }
+    .text-center {
+        display: block;
+        margin: auto;
+    }
+    a {
+        color: $white;
+    }
+
+}
+
+.contact-form {
+    input {
+        width:100%;
+        margin-bottom: 1rem;
+        display: block;
+    }
+    textarea {
+        width: 100%;
+        margin-bottom: 1rem;
+        display: block;
+    }
+    button {
+        display: block;
+        background-color: $white;
+        border: none;
+        color: $dark-grey;
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 1rem;
+    }
+}
+
+.events-link {
+    margin-bottom: 2rem;
+}
+
+.event-photo {
+    max-height: 12.5rem;
+    display: block;
+    margin: auto;
+}
+
+.padded-content {
+    width: 75%;
+    display: block;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
