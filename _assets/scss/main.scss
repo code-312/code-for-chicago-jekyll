@@ -18,6 +18,41 @@
     text-align: left;
 }
 
+.brigade-logo {
+    display: block;
+    width: 15%;
+    margin: auto;
+}
+
+.logo-container {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.header-line-container {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.nav-links-container {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    a {
+        color: $cfa-blue;
+    }
+}
+
 .about {
     background-color: $cfa-red;
     color: $white;
@@ -41,6 +76,8 @@
 }
 
 .keep-in-touch {
+    display: block;
+    margin: auto;
     .fa-slack {
         color: $white;
     }
@@ -80,9 +117,14 @@
 
 .meetup {
     border: 1px solid;
+    border-radius: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+}
+
+.rsvp-stuff {
+    margin-top: 1rem;
 }
 
 .button {
@@ -127,6 +169,7 @@
 }
 
 .contact-form {
+    margin-bottom: 2rem;
     input {
         width:100%;
         margin-bottom: 1rem;
@@ -149,6 +192,7 @@
         text-align: center;
         text-decoration: none;
         border-radius: 1rem;
+        margin: auto;
     }
 }
 
@@ -163,7 +207,7 @@
 }
 
 .padded-content {
-    width: 75%;
+    width: 66%;
     display: block;
     margin: auto;
     padding-left: 1rem;
