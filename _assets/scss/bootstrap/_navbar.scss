@@ -20,7 +20,7 @@
   display: flex;
   flex-wrap: wrap; // allow us to do the line break for collapsing content
   align-items: center;
-  justify-content: space-between; // space out brand from logo
+  justify-content: space-evenly; // space out brand from logo
   padding: $navbar-padding-y $navbar-padding-x;
 
   // Because flex properties aren't inherited, we need to redeclare these first
@@ -60,7 +60,7 @@
 
 .navbar-nav {
   display: flex;
-  flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
+  flex-direction: row; // cannot use `inherit` to get the `.navbar`s value
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
