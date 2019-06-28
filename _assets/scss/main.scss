@@ -131,8 +131,8 @@
     background-color: $cfa-red;
     border: none;
     color: white;
-    padding-top: .25rem;
-    padding-bottom: .25rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
@@ -212,5 +212,17 @@
     margin: auto;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.footer {
+    background-color: $cfa-red;
+    color: $white;
+    a {
+        color: $white;
+    }
+}
+
+.about-cfa {
+    padding-top: 2rem;
 }
 
