@@ -22,6 +22,14 @@
     display: block;
     width: 15%;
     margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .brigade-logo {
+        width: 75% !important;
+    }
 }
 
 .logo-container {
@@ -34,6 +42,8 @@
     display: block;
     width: 100%;
     margin: auto;
+    margin-bottom: 2rem !important;
+    padding-bottom: 2rem;
 }
 
 .nav-links-container {
@@ -58,6 +68,7 @@
     color: $white;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    margin-bottom: 2rem;
     h1,h2,h3 {
         color: $white;
     }
@@ -78,6 +89,7 @@
 .keep-in-touch {
     display: block;
     margin: auto;
+    margin-top: 1rem;
     .fa-slack {
         color: $white;
     }
@@ -104,6 +116,7 @@
     padding-left: 1%;
     padding-right: 1%;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     justify-content: center;
     h4 {
         color: $cfa-blue;
@@ -116,7 +129,7 @@
 }
 
 .meetup {
-    border: 1px solid;
+    border: 1px solid $light-grey;
     border-radius: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -138,6 +151,7 @@
     text-align: center;
     text-decoration: none;
     border-radius: 1rem;
+    margin-top: 2rem !important;
     a {
         color: white;
     }
@@ -153,6 +167,7 @@
     color: $white;
     padding-bottom: 5rem;
     padding-top: 1rem;
+    margin-bottom: 2rem;
     background-color: $cfa-red;
     h1 {
         color: $white;
@@ -206,8 +221,18 @@
     margin: auto;
 }
 
+@media (min-width: 1025px) {
+    .padded-content {
+        width: 50%;
+        display: block;
+        margin: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 .padded-content {
-    width: 66%;
+    width: 50%;
     display: block;
     margin: auto;
     padding-left: 1rem;
@@ -224,10 +249,22 @@
 
 .about-cfa {
     padding-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .workwithus {
+    padding-bottom: 2rem;
     h4 {
         color: $black;
+    }
+}
+
+@media (max-width: 1024px) {
+    .padded-content {
+        width: 100%;
+        display: block;
+        margin: auto;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 }

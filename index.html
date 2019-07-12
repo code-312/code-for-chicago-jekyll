@@ -11,7 +11,7 @@ home: true
 
     <div class="col-md-8 text-left">
       <p>
-        We forge partnerships between neighbors who use technology to improve interactions with, and access to, public services. Whether you're a technologist, designer, journalist, public servant, or curious community member- there is a place for you here! Joins us for our co-working, project, service, and social events.
+        We forge partnerships between neighbors who use technology to improve interactions with, and access to, public services. Whether you're a technologist, designer, journalist, public servant, or curious community member- there is a place for you here! Join us for our co-working, project, service, and social events.
       </p>
     </div>
     <div class="col-md-4">
@@ -46,7 +46,7 @@ home: true
       <div class="row">
           <div class="col-md-8">
 
-      <h4>{% assign date = event.local_date | date: "%A, %B %-d, %Y") %}
+      <h4>{% assign date = event.local_date | date: "%a, %B %-d, %Y") %}
           {{event.local_time}}, {{date}}</h4>
       <h3 class="text-left">
           <a href='{{event.link}}' target="blank">{{event.name}}</a>
@@ -60,8 +60,8 @@ home: true
         </div>
       </div>
       <div class="row rsvp-stuff">
-        <div class="col-md-11">{{event.yes_rsvp_count}} attendees </div>
-        <div class="col-md-1"><a href="{{event.link}}" class="button">Attend</a></div>
+        <div class="col-md-9">{{event.yes_rsvp_count}} attendees </div>
+        <div class="col-md-3"><a href="{{event.link}}" class="button">Attend</a></div>
       </div>
   </div>
 
