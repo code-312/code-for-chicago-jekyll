@@ -75,11 +75,10 @@
     a {
         color: $white;
     }
-    @media (max-width: 1024px) {
-        p {
-            font-size: calc(1rem + 27.333%);
-        }
+    p {
+        font-size: calc(1rem + 27.333%);
     }
+    
 }
 
 .projects {
@@ -277,6 +276,9 @@
     padding-bottom: 2rem;
     h4 {
         color: $black;
+    }
+    p {
+        font-size: calc(1rem + 27.333%);
     }
 }
 
