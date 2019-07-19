@@ -75,8 +75,10 @@
     a {
         color: $white;
     }
-    p {
-        font-size: calc(1rem + 27.333%);
+    @media (max-width: 1024px) {
+        p {
+            font-size: calc(1rem + 27.333%);
+        }
     }
 }
 
@@ -230,10 +232,14 @@
 }
 
 .event-photo {
-    max-height: 12.5rem;
+    max-height: 10rem;
     display: block;
     margin: auto;
     border-radius: 1rem;
+}
+
+.event-description {
+    margin-top: 1rem;
 }
 
 @media (min-width: 1025px) {
