@@ -43,8 +43,10 @@ home: true
       <div class="row">
       <div class="col-md-8">
 
-      <h4>{% assign date = event.local_date | date: "%a, %B %-d, %Y") %}
-          {{event.local_time}}, {{date}}</h4>
+      <h4>{% assign date = event.local_date | date: "%a. %B %-d, %Y" %}
+          {% assign time = event.local_time | date: "%l:%M %p" %}
+
+          {{date}} at {{time}}</h4>
       <h3 class="text-left">
           <a href='{{event.link}}' target="blank">{{event.name}}</a>
       </h3>
@@ -53,7 +55,7 @@ home: true
         <div class="col-md-4">
             <img class="event-photo" src="{{event.featured_photo.photo_link}}"/>
         </div>
-      <div class="col-md-12">
+      <div class="col-md-12 event-description">
         {% assign description-paragraphs = event.description | split: "</p>" %}
         {{description-paragraphs[0]}}
       </div>
