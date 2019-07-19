@@ -23,7 +23,6 @@
     width: 15%;
     margin: auto;
     margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 
 @media (max-width: 1024px) {
@@ -43,7 +42,8 @@
     width: 100%;
     margin: auto;
     margin-bottom: 2rem !important;
-    padding-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .nav-links-container {
@@ -67,13 +67,16 @@
     background-color: $cfa-red;
     color: $white;
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     margin-bottom: 2rem;
     h1,h2,h3 {
         color: $white;
     }
     a {
         color: $white;
+    }
+    p {
+        font-size: calc(1rem + 27.333%);
     }
 }
 
@@ -131,13 +134,24 @@
 .meetup {
     border: 1px solid $light-grey;
     border-radius: 1rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .rsvp-stuff {
     margin-top: 1rem;
+}
+
+.attendees {
+    border-bottom: 2rem solid transparent;
+}
+
+.attend-button {
+    border-bottom: 1rem solid transparent;
+    padding-left: 5%;
 }
 
 .button {
@@ -219,6 +233,7 @@
     max-height: 12.5rem;
     display: block;
     margin: auto;
+    border-radius: 1rem;
 }
 
 @media (min-width: 1025px) {
