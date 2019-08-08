@@ -224,6 +224,9 @@
         border-radius: 1rem;
         margin: auto;
     }
+    button:hover {
+        text-decoration: underline;
+    }
 }
 
 .events-link {
