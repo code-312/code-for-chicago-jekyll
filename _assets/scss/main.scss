@@ -41,9 +41,14 @@
     display: block;
     width: 100%;
     margin: auto;
-    margin-bottom: 2rem !important;
     padding-top: 4rem;
-    padding-bottom: 4rem;
+
+}
+
+@media (min-width: 1024px) {
+    .hero-header-text {
+        padding-top: 6rem;
+    }
 }
 
 .nav-links-container {
@@ -99,6 +104,9 @@
     }
     svg {
         font-size: 400%;
+    }
+    .fa-github {
+        color: $white;
     }
 }
 
