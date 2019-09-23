@@ -17,11 +17,13 @@ Code for America and Cook County [recently announced a partnership](https://abc7
 The City of Chicago makes [this data available to you](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2/data) to analyze on your own.
 
 ## Methods 
-Volunteer members of the Code for Chicago Brigade built a heatmap of cannabis arrests in Chicago covering 2001 to present. The map below was built with Tableau and filters all arrest data for indicators relating to cannabis to come up with over 300,000 arrest records. This filter is quite unrestricted, returning any arrests with "cannabis" in the description. (Not all of these necessarily eligible for expungement). Future work towards transparent and repeatable data processing will be performed in this [Github repo](https://github.com/monadnoc/IL_cannabis_expungement)  
+Volunteer members of the Code for Chicago Brigade built a heatmap of cannabis arrests in Chicago covering 2001 to present. The map below was built with Tableau [densit marks](https://www.tableau.com/about/blog/2018/11/density-mark-type-brings-new-kind-heatmap-tableau-98488) after filtering all arrest data for indicators relating to cannabis. The data filter is for all arrests described as being for possession of cannabis, 30g or less. This level of posession will be legal in IL on Jan. 1, 2020. 
+
+The data workup used as input for the Tableau visualization is currently in a [Jupyter notebook](https://github.com/monadnoc/IL_cannabis_expungement/blob/master/Chi_cannabis_expungement/notebooks/chicago_arrest_data.ipynb), and future work towards transparent and repeatable data processing will be performed in this [Github repo](https://github.com/monadnoc/IL_cannabis_expungement)  
 
 ## A Map of Arrest Activity
 
-[Explore the map here](https://public.tableau.com/profile/jordan.nelson6050#!/vizhome/chicago_arrests_description_contains_cannabis_since2001/Back-of-the-Yards)
+[Explore the map here](https://public.tableau.com/views/ChicagoMapofArrestssince2001forPossessionofCannabis30gorLess/Sheet1?:embed=y&:display_count=yes&publish=yes&:origin=viz_share_link)
 
 {% include cannabis_arrests/tableau_snippet.html %}
 
