@@ -7,6 +7,7 @@ To run locally, you will need `npm`, `gem` amd ruby's `bundle` installed and ava
   1. Clone this repository
   1. `cd` into the root directory of this project.
   1. Install npm dependencies with `npm install`
+  1. Install gem dependencies with `bundle install`
   1. Run the server locally, recompiling files as needed, with `gulp serve`
   1. Open [http://localhost:3000/](http://localhost:3000/) in your browser to view the site.
 
@@ -23,7 +24,7 @@ To verify you have npm installed:
 v10.15.2
 ```
 
-If they or not installed, or your version looks much older than this, proceed to instructions for installing npm](https://www.npmjs.com/get-npm)
+If they or not installed, or your version looks much older than this, proceed to [instructions for installing npm](https://www.npmjs.com/get-npm)
 
 ### ruby
 To verify you have ruby installed:
