@@ -1,0 +1,33 @@
+---
+title: Blog Posts
+description: Blog Posts
+layout: default
+permalink: /posts/
+---
+<div class="text-left about-cfa">
+        <div class="padded-content">
+<h1>Blog Posts</h1>
+{% for post in site.posts %}
+<h3>
+    <a href="{{site.url}}{{post.url}}">
+        {{post.title}}
+        <span class="close">{{post.date | date: "%b %-d, %Y"}}</span>
+    </a>
+</h3>
+{% endfor %}
+</div>
+</div>
+
+<div class="text-left about-cfa">
+    <div class="padded-content">
+
+        <p>
+            <a href="https://codeforamerica.org">Code for America</a> is a network of people who work with community
+            organizations and local governments to deliver better services.
+            We also develop services to <a href="https://www.codeforamerica.org/work#show-whats-possible">show what’s
+                possible</a> in three high-impact focus areas: Criminal Justice, Social Safety Net, and Workforce
+            Development.
+        </p>
+
+    </div>
+</div>
