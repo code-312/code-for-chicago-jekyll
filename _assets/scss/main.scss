@@ -246,13 +246,19 @@
     margin-top: 1rem;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     .padded-content {
         width: 50%;
         display: block;
         margin: auto;
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .padded-content {
+        width: 75% !important;
     }
 }
 
