@@ -91,6 +91,8 @@ const uglify = require("gulp-uglify");
 // -------------------------------------
 
 const paths = require("./_assets/gulp_config/paths");
+const { doesNotMatch } = require("assert");
+const { dodgerblue } = require("color-name");
 
 // -------------------------------------
 //   Global variables
@@ -113,7 +115,7 @@ gulp.task("copy:bootstrap-scss", () => {
     .src(paths.nodeSrcDir + "bootstrap/scss/**/*")
     .pipe(newer(paths.scssFiles + "/bootstrap"))
     .pipe(gulp.dest(paths.scssFiles + "/bootstrap"));
-});
+})
 
 // -------------------------------------
 //   Task: Copy Node JS  Source
@@ -134,17 +136,6 @@ gulp.task("copy:node-js-src", () => {
     .pipe(gulp.dest(paths.jsFiles + "/vendor/node"));
 });
 
-// ------------------------------------------------
-//   Task: Clean
-//   combines all clean tasks, running in parallel
-// ------------------------------------------------
-
-gulp.task("clean", [
-  "clean:jekyll",
-  "clean:images",
-  "clean:scripts",
-  "clean:styles"
-]);
 
 // ---------------------------------------------
 //   Task: Clean : Images
@@ -152,20 +143,18 @@ gulp.task("clean", [
 //   from Jekyll and _site assets folder
 // ---------------------------------------------
 
-gulp.task("clean:images", cb => {
-  del([paths.jekyllImageFiles + "/*", paths.siteImageFiles + "/*"]);
-  cb();
-});
+function cleanImages(cb) {
+  return del([paths.jekyllImageFiles + "/*", paths.siteImageFiles + "/*"]);
+}
 
 // -------------------------------------
 //   Task: Clean : Jekyll
 //   wipes the entire _site folder
 // -------------------------------------
 
-gulp.task("clean:jekyll", function(cb) {
-  del(["_site"]);
-  cb();
-});
+function cleanJekyll(cb) {
+  return del(["_site"]);
+}
 
 // --------------------------------------------
 //   Task: Clean : Scripts
@@ -173,10 +162,9 @@ gulp.task("clean:jekyll", function(cb) {
 //   from Jekyll and _site folders
 // --------------------------------------------
 
-gulp.task("clean:scripts", cb => {
-  del([paths.jekyllJsFiles + "/*", paths.siteJsFiles + "/*"]);
-  cb();
-});
+function cleanScripts(cb) {
+  return del([paths.jekyllJsFiles + "/*", paths.siteJsFiles + "/*"]);
+}
 
 // -----------------------------------------------
 //   Task: Clean : Styles
@@ -185,49 +173,38 @@ gulp.task("clean:scripts", cb => {
 // -----------------------------------------------
 
 gulp.task("clean:styles", cb => {
-  del([paths.jekyllCssFiles + "/*", paths.siteCssFiles + "/*"]);
-  cb();
+  return del([paths.jekyllCssFiles + "/*", paths.siteCssFiles + "/*"]);
 });
 
-// -----------------------------------------
-//   Task: Build
-//   runs main Clean task first
-//   then runs all Build tasks in Parallel
-//   then runs Jekyll build
-// -----------------------------------------
+function cleanStyles(cb) {
+  return del([paths.jekyllCssFiles + "/*", paths.siteCssFiles + "/*"]);
+}
 
-gulp.task("build", cb => {
-  runSequence(
-    "clean",
-    ["build:scripts", "build:images", "build:styles:main"],
-    "build:jekyll",
-    cb
-  );
-});
 
 // -----------------------------------------
 //   Task: Build Images
 //   builds normal and responsive images
 // -----------------------------------------
 
-gulp.task("build:images", cb => {
-  runSequence(["build:normal-images", "build:responsive-images"], cb);
-});
+function buildImages(cb) {
+  gulp.series(buildNormalImages, buildResponsiveImages);
+  cb();
+}
 
 // -----------------------------------------
 //   Task: Build Normal Images
 //   performs all normal image tasks
 // -----------------------------------------
 
-gulp.task("build:normal-images", cb => {
-  runSequence(
-    "copy:normal-temp-images-pre",
-    "build:optimize-normal-images",
-    "copy:normal-temp-images-post",
-    "clean:normal-temp-images",
-    cb
+function buildNormalImages(cb) {
+  gulp.series(
+    copyNormalTempImagesPre,
+    buildOptimizeNormalImages,
+    copyNormalTempImagesPost,
+    cleanNormalTempImages,
   );
-});
+  cb();
+}
 
 // -------------------------------------------------------
 //   Task: Copy : Normal Temp Images Pre
@@ -237,12 +214,12 @@ gulp.task("build:normal-images", cb => {
 //   _assets/images/normal/temp gets deleted on end
 // -------------------------------------------------------
 
-gulp.task("copy:normal-temp-images-pre", cb => {
-  return gulp
+function copyNormalTempImagesPre(cb) {
+  gulp
     .src(paths.normalImageFilesGlob)
     .pipe(gulp.dest(paths.tempImageFiles));
-  cb();
-});
+    cb();
+}
 
 // -------------------------------------------------------
 //   Task: Copy : Normal Temp Images Post
@@ -250,13 +227,20 @@ gulp.task("copy:normal-temp-images-pre", cb => {
 //   to Jekyll and _site directories
 // -------------------------------------------------------
 
-gulp.task("copy:normal-temp-images-post", cb => {
-  return gulp
-    .src(paths.tempImageFilesGlob)
-    .pipe(gulp.dest(paths.jekyllImageFiles + "/normal"))
-    .pipe(gulp.dest(paths.siteImageFiles + "/normal"));
+function copyNormalTempImagesPost(cb) {
+  gulp
+  .src(paths.tempImageFilesGlob)
+  .pipe(gulp.dest(paths.jekyllImageFiles + "/normal"))
+  .pipe(gulp.dest(paths.siteImageFiles + "/normal"));
   cb();
-});
+}
+
+gulp.task("copyimages", cb => {
+  gulp.src(paths.tempImageFilesGlob)
+  .pipe(gulp.dest(paths.jekyllImageFiles + "/normal"))
+  .pipe(gulp.dest(paths.siteImageFiles + "/normal"));
+  cb();
+})
 
 // ------------------------------------------------
 //   Task: Build : Optimize Normal Images
@@ -265,32 +249,31 @@ gulp.task("copy:normal-temp-images-post", cb => {
 //   processes files in place
 // ------------------------------------------------
 
-gulp.task("build:optimize-normal-images", cb => {
-  return gulp
-    .src(paths.tempImageFilesGlob)
-    .pipe(
-      imagemin([
-        imagemin.gifsicle({ interlaced: true }),
-        imagemin.jpegtran({ responsive: true }),
-        imagemin.optipng({ optimizationLevel: 5 }),
-        imagemin.svgo({
-          plugins: [{ removeViewBox: true }, { cleanupIDs: false }]
-        })
-      ])
-    )
-    .pipe(gulp.dest(paths.tempImageFiles));
+function buildOptimizeNormalImages(cb) {
+  gulp
+  .src(paths.tempImageFilesGlob)
+  .pipe(
+    imagemin([
+      imagemin.gifsicle({ interlaced: true }),
+      imagemin.jpegtran({ responsive: true }),
+      imagemin.optipng({ optimizationLevel: 5 }),
+      imagemin.svgo({
+        plugins: [{ removeViewBox: true }, { cleanupIDs: false }]
+      })
+    ])
+  )
+  .pipe(gulp.dest(paths.tempImageFiles));
   cb();
-});
+}
 
 // -----------------------------------------------
 //   Task: Clean : Temp Normal Images
 //   removes _assets/images/normal/temp directory
 // -----------------------------------------------
 
-gulp.task("clean:normal-temp-images", cb => {
-  del(paths.tempImageFiles);
-  cb();
-});
+function cleanNormalTempImages(cb) {
+  returndel(paths.tempImageFiles);
+}
 
 // ----------------------------------------------
 //   Task: Build : Responsive Images
@@ -299,98 +282,97 @@ gulp.task("clean:normal-temp-images", cb => {
 //   outputs to Jekyll and _site assets folder
 // ----------------------------------------------
 
-gulp.task("build:responsive-images", cb => {
+function buildResponsiveImages(){
   return gulp
-    .src(paths.responsiveImageFilesGlob)
-    .pipe(
-      responsive(
-        {
-          "*.jpg": [
-            {
-              width: 1140,
-              rename: { suffix: "-xl-1x" }
-            },
-            {
-              width: 1140,
-              rename: {
-                suffix: "-xl-1x",
-                extname: ".webp"
-              }
-            },
-            {
-              width: 1140 * 2,
-              rename: { suffix: "-xl-2x" }
-            },
-            {
-              width: 1140 * 2,
-              rename: {
-                suffix: "-xl-2x",
-                extname: ".webp"
-              }
-            },
-            {
-              width: 768,
-              rename: { suffix: "-md-1x" }
-            },
-            {
-              width: 768,
-              rename: {
-                suffix: "-md-1x",
-                extname: ".webp"
-              }
-            },
-            {
-              width: 768 * 2,
-              rename: { suffix: "-md-2x" }
-            },
-            {
-              width: 768 * 2,
-              rename: {
-                suffix: "-md-2x",
-                extname: ".webp"
-              }
-            },
-            {
-              width: 540,
-              height: 405,
-              rename: { suffix: "-sm-1x" }
-            },
-            {
-              width: 540,
-              height: 405,
-              rename: {
-                suffix: "-sm-1x",
-                extname: ".webp"
-              }
-            },
-            {
-              width: 540 * 2,
-              height: 405 * 2,
-              rename: { suffix: "-sm-2x" }
-            },
-            {
-              width: 540 * 2,
-              height: 405 * 2,
-              rename: {
-                suffix: "-sm-2x",
-                extname: ".webp"
-              }
+  .src(paths.responsiveImageFilesGlob)
+  .pipe(
+    responsive(
+      {
+        "*.jpg": [
+          {
+            width: 1140,
+            rename: { suffix: "-xl-1x" }
+          },
+          {
+            width: 1140,
+            rename: {
+              suffix: "-xl-1x",
+              extname: ".webp"
             }
-          ]
-        },
-        {
-          crop: "centre",
-          quality: 60,
-          responsive: true,
-          withMetadata: false,
-          withoutEnlargement: true
-        }
-      )
+          },
+          {
+            width: 1140 * 2,
+            rename: { suffix: "-xl-2x" }
+          },
+          {
+            width: 1140 * 2,
+            rename: {
+              suffix: "-xl-2x",
+              extname: ".webp"
+            }
+          },
+          {
+            width: 768,
+            rename: { suffix: "-md-1x" }
+          },
+          {
+            width: 768,
+            rename: {
+              suffix: "-md-1x",
+              extname: ".webp"
+            }
+          },
+          {
+            width: 768 * 2,
+            rename: { suffix: "-md-2x" }
+          },
+          {
+            width: 768 * 2,
+            rename: {
+              suffix: "-md-2x",
+              extname: ".webp"
+            }
+          },
+          {
+            width: 540,
+            height: 405,
+            rename: { suffix: "-sm-1x" }
+          },
+          {
+            width: 540,
+            height: 405,
+            rename: {
+              suffix: "-sm-1x",
+              extname: ".webp"
+            }
+          },
+          {
+            width: 540 * 2,
+            height: 405 * 2,
+            rename: { suffix: "-sm-2x" }
+          },
+          {
+            width: 540 * 2,
+            height: 405 * 2,
+            rename: {
+              suffix: "-sm-2x",
+              extname: ".webp"
+            }
+          }
+        ]
+      },
+      {
+        crop: "centre",
+        quality: 60,
+        responsive: true,
+        withMetadata: false,
+        withoutEnlargement: true
+      }
     )
-    .pipe(gulp.dest(paths.jekyllImageFiles + "/responsive"))
-    .pipe(gulp.dest(paths.siteImageFiles + "/responsive"));
-  cb();
-});
+  )
+  .pipe(gulp.dest(paths.jekyllImageFiles + "/responsive"))
+  .pipe(gulp.dest(paths.siteImageFiles + "/responsive"));
+}
 
 // --------------------------------------------------
 //   Task: Build : Index Algolia
@@ -402,11 +384,22 @@ gulp.task("build:index-algolia", cb => {
   var shellCommand = "ALGOLIA_API_KEY=" + algolia + " jekyll algolia";
 
   return gulp
-    .src("")
-    .pipe(run(shellCommand))
+  .src('.', {allowEmpty: true})
+  .pipe(run(shellCommand))
     .on("error", gutil.log);
   cb();
 });
+
+function buildIndexAlgolia(cb) {
+  var algolia = process.env.ALGOLIA_API_KEY;
+  var shellCommand = "ALGOLIA_API_KEY=" + algolia + " jekyll algolia";
+
+  return gulp
+  .src('.', {allowEmpty: true})
+  .pipe(run(shellCommand))
+    .on("error", gutil.log);
+  cb();  
+}
 
 // -------------------------------------------
 //   Task: Build : Jekyll
@@ -415,14 +408,15 @@ gulp.task("build:index-algolia", cb => {
 //   to the _site folder
 // -------------------------------------------
 
-gulp.task("build:jekyll", () => {
+function buildJekyll(cb) {
   var shellCommand = "bundle exec jekyll build --config _config.yml";
 
-  return gulp
-    .src("")
+  gulp
+    .src('.', {allowEmpty: true})
     .pipe(run(shellCommand))
     .on("error", gutil.log);
-});
+  cb();
+}
 
 // -------------------------------------
 //   Task: Build : Scripts
@@ -431,9 +425,10 @@ gulp.task("build:jekyll", () => {
 //   for greater control
 // -------------------------------------
 
-gulp.task("build:scripts", cb => {
-  runSequence("build:babel-uglify", "build:concat", cb);
-});
+function buildScripts(cb) {
+  gulp.series(buildBabelUglify, buildConcat, cb);
+  cb();
+}
 
 // -------------------------------------
 //   Task: Build : Babel-Uglify
@@ -460,6 +455,26 @@ gulp.task("build:babel-uglify", cb => {
   );
 });
 
+function buildBabelUglify(cb) {
+  const options = {
+    output: {
+      comments: true
+    }
+  };
+  pump(
+    [
+      gulp.src(paths.jsFiles + "/pretty/**/*.js"),
+      babel({
+        presets: ["env"]
+      }),
+      uglify(options),
+      rename({ extname: ".min.js" }),
+      gulp.dest(paths.jsFiles + "/ugly")
+    ],
+    cb
+  );
+}
+
 // ---------------------------------------------
 //   Task: Build : Concat
 //   concatenates JS files in a specific order
@@ -467,7 +482,7 @@ gulp.task("build:babel-uglify", cb => {
 //   outputs to both Jekyll and _site assets
 // ---------------------------------------------
 
-gulp.task("build:concat", () => {
+function buildConcat() {
   const src_files = [
     paths.jsFiles + "/vendor/node/jquery.slim.min.js",
     paths.jsFiles + "/vendor/node/popper.min.js",
@@ -491,7 +506,7 @@ gulp.task("build:concat", () => {
     .pipe(gulp.dest(paths.jekyllJsFiles))
     .pipe(gulp.dest(paths.siteJsFiles))
     .on("error", gutil.log);
-});
+}
 
 // -------------------------------------
 //   Task: Build : Styles : Critical
@@ -501,30 +516,30 @@ gulp.task("build:concat", () => {
 //   I'll probably remove this task
 // -------------------------------------
 
-gulp.task("build:styles:critical", () => {
+function buildStylesCritical() {
   return gulp
-    .src(paths.siteDir + "/index.html")
-    .pipe(
-      critical({
-        base: paths.siteDir,
-        css: [paths.jekyllCssFiles + "/main.css"],
-        minify: true,
-        dimensions: [
-          {
-            width: 1200,
-            width: 1024,
-            width: 768,
-            width: 576,
-            width: 320
-          }
-        ]
-      })
-    )
-    .on("error", gutil.log)
-    .pipe(rename("main.critical.css"))
-    .pipe(gulp.dest(paths.jekyllCssFiles))
-    .pipe(gulp.dest(paths.siteCssFiles));
-});
+  .src(paths.siteDir + "/index.html")
+  .pipe(
+    critical({
+      base: paths.siteDir,
+      css: [paths.jekyllCssFiles + "/main.css"],
+      minify: true,
+      dimensions: [
+        {
+          width: 1200,
+          width: 1024,
+          width: 768,
+          width: 576,
+          width: 320
+        }
+      ]
+    })
+  )
+  .on("error", gutil.log)
+  .pipe(rename("main.critical.css"))
+  .pipe(gulp.dest(paths.jekyllCssFiles))
+  .pipe(gulp.dest(paths.siteCssFiles));
+}
 
 // -------------------------------------
 //   Task: Build : Styles : Main
@@ -533,7 +548,7 @@ gulp.task("build:styles:critical", () => {
 //   in Jekyll and _site assests folders
 // -------------------------------------
 
-gulp.task("build:styles:main", () => {
+function buildStylesMain() {
   return sass(paths.scssFiles + "/main.scss", {
     style: "compressed",
     trace: true
@@ -546,24 +561,24 @@ gulp.task("build:styles:main", () => {
     .pipe(gulp.dest(paths.siteCssFiles))
     .pipe(browserSync.stream())
     .on("error", gutil.log);
-});
+}
 
 // -------------------------------------
 //   Task: Build : Jekyll : Watch
 //   reloads BrowserSync on Jekyll build
-// -------------------------------------
+// -------------------------------------'
 
-gulp.task("build:jekyll:watch", ["build:jekyll"], cb => {
+gulp.task("build:jekyll:watch", gulp.series(buildJekyll), cb => {
   browserSync.reload();
-  cb();
 });
+
 
 // -------------------------------------
 //   Task: Build : Scripts : Watch
 //   reloads BrowserSync on Scripts build
 // -------------------------------------
 
-gulp.task("build:scripts:watch", ["build:scripts"], cb => {
+gulp.task("build:scripts:watch", gulp.series(buildScripts), cb => {
   browserSync.reload();
   cb();
 });
@@ -581,6 +596,7 @@ gulp.task("build:travis", cb => {
     "test:html-proofer",
     cb
   );
+  cb;
 });
 
 // ------------------------------------------------------
@@ -597,6 +613,51 @@ gulp.task("test:html-proofer", () => {
     .pipe(run(shellCommand))
     .on("error", gutil.log);
 });
+
+// ------------------------------------------------
+//   Task: Clean
+//   combines all clean tasks, running in parallel
+// ------------------------------------------------
+
+let clean = gulp.series(
+  cleanJekyll,
+  cleanImages,
+  cleanScripts,
+  cleanStyles);
+
+gulp.task('clean', 
+  gulp.series(
+    cleanJekyll,
+    cleanImages,
+    cleanScripts,
+    cleanStyles)
+  );
+
+// -----------------------------------------
+//   Task: Build
+//   runs main Clean task first
+//   then runs all Build tasks in Parallel
+//   then runs Jekyll build
+// -----------------------------------------
+
+gulp.task('build', 
+    gulp.series('clean',
+    buildScripts,
+    copyNormalTempImagesPost,
+    buildStylesMain,
+    buildJekyll)
+);
+
+function build(cb) {
+  return gulp.series(
+    'clean',
+    buildScripts,
+    copyNormalTempImagesPost,
+    buildStylesMain,
+    buildJekyll
+  );
+  cb();
+}
 
 // -------------------------------------------------
 //   Task: Install
@@ -615,25 +676,32 @@ gulp.task("install", () => {
 //   runs development server, watching for changes
 // -------------------------------------------------
 
-gulp.task("serve", ["build"], () => {
+gulp.task("serve", gulp.series("build"), () => {
   browserSync.init({
     server: paths.siteDir,
     ghostMode: true,
     logFileChanges: true
   });
 
-  gulp.watch(["_config.yml"], ["build:jekyll:watch"]);
-  gulp.watch("_assets/scss/**/*.scss", ["build:styles:main"]);
-  gulp.watch("_assets/js/**/*.js", ["build:scripts"]);
-  gulp.watch("_assets/images/normal/**/*", ["build:normal-images"]);
-  gulp.watch("_assets/images/responsive/**/*", ["build:responsive-images"]);
-  gulp.watch("search.json", ["build:jekyll:watch"]);
-  gulp.watch("_posts/**/*.+(md|markdown|MD)", ["build:jekyll:watch"]);
+  // gulp.watch(["_config.yml",
+  // "_assets/scss/**/*.scss",
+  // "_assets/js/**/*.js",
+  // "_assets/images/normal/**/*",
+  // "search.json",
+  // "_posts/**/*.+(md|markdown|MD)"], gulp.series(build))
+ 
+  gulp.watch("_config.yml", gulp.series("build:jekyll:watch"));
+  gulp.watch("_assets/scss/**/*.scss", gulp.series(buildStylesMain));
+  gulp.watch("_assets/js/**/*.js", gulp.series(buildScripts));
+  gulp.watch("_assets/images/normal/**/*", gulp.series(copyNormalTempImagesPost));
+  gulp.watch("search.json", gulp.series("build:jekyll:watch"));
+  gulp.watch("_posts/**/*.+(md|markdown|MD)", gulp.series("build:jekyll:watch"));
   gulp.watch(
     ["**/*.+(html|md|markdown|MD)", "!_site/**/*.*"],
-    ["build:jekyll:watch"]
+    gulp.series("build:jekyll:watch")
   );
   if (module.exports.drafts) {
-    gulp.watch("_drafts/**/*.(md|markdown|MD)", ["build:jekyll:watch"]);
+    gulp.watch("_drafts/**/*.(md|markdown|MD)", gulp.series("build:jekyll:watch"));
   }
+  return
 });
