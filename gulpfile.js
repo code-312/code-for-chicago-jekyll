@@ -187,7 +187,7 @@ function cleanStyles(cb) {
 // -----------------------------------------
 
 function buildImages(cb) {
-  gulp.series(buildNormalImages, buildResponsiveImages);
+  gulp.series(buildNormalImages, buildResponsiveImages, cb);
   cb();
 }
 
@@ -218,7 +218,6 @@ function copyNormalTempImagesPre(cb) {
   gulp
     .src(paths.normalImageFilesGlob)
     .pipe(gulp.dest(paths.tempImageFiles));
-    cb();
 }
 
 // -------------------------------------------------------
@@ -643,7 +642,7 @@ gulp.task('clean',
 gulp.task('build', 
     gulp.series('clean',
     buildScripts,
-    copyNormalTempImagesPost,
+    "copyimages",
     buildStylesMain,
     buildJekyll)
 );
@@ -652,7 +651,7 @@ function build(cb) {
   return gulp.series(
     'clean',
     buildScripts,
-    copyNormalTempImagesPost,
+    buildImages,
     buildStylesMain,
     buildJekyll
   );
