@@ -8,10 +8,13 @@ email: leadership@openuptown.us
 title: Code for Chicago 
 url: "https://codeforchicago.org"
 
+destination: ./_site
+source: .
+
 # Not using because Gulp is now processing SCSS
-# sass:
-#   sass_dir: css
-#   style: compressed
+sass:
+  sass_dir: ./scss
+  style: compressed
 
 # Algolia Search
 algolia:
@@ -49,7 +52,6 @@ defaults:
 
 # Exclude from Jekyll processing
 exclude: [
-  "_assets",
   "Gemfile",
   "Gemfile.lock",
   "gulpfile.js",
