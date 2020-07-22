@@ -8,8 +8,8 @@ To run locally, you will need `npm`, `gem` amd ruby's `bundle` installed and ava
   1. `cd` into the root directory of this project.
   1. Install npm dependencies with `npm install`
   1. Install gem dependencies with `bundle install`
-  1. Run the server locally, recompiling files as needed, with `gulp serve`
-  1. Open [http://localhost:3000/](http://localhost:3000/) in your browser to view the site.
+  1. Run the server locally, recompiling files as needed, with `bundle exec jekyll serve`
+  1. Open [http://localhost:4000/](http://localhost:4000/) in your browser to view the site.
 
 ## Prerequisites
 
