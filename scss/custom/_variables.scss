@@ -1,0 +1,43 @@
+// Color
+// Branding colors
+// Primary
+$cfa-red: #CD1F42;
+$cfa-blue: #399ED2;
+$brigade-grey: #6D6E71;
+// Secondary
+$light-red: #FF586D;
+$dark-red: #95001C;
+$light-blue: #75CFFF;
+$dark-blue: #0080A1;
+$light-grey: #9B9C9F;
+$dark-grey: #424346;
+
+$primary: $cfa-red;
+$highlight: lighten($primary, 0%);
+
+// Grid
+$grid-breakpoints: (
+  xs: 0,
+  /* custom: between xs and sm used in footer */ xssm: 425px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+
+
+// Links
+$link-color: $cfa-red;
+$link-hover-color: $cfa-red;
+$link-hover-decoration: underline;
+$link-decoration: none;
+
+
+// Tooltips
+$tooltip-bg: #3194c3;
+$tooltip-color: white;
+$tooltip-opacity: 0.9;
+
+// Fonts! (TODO)
+
