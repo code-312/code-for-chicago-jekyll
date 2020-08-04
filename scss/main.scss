@@ -283,7 +283,89 @@
     margin-bottom: 2rem;
 }
 
+#code-for-america-brigade-text {
+    /* A Code for america brigade */
+
+    // position: absolute;
+    // width: 315px;
+    // height: 23px;
+    left: 485px;
+    top: 221px;
+
+    /* D_H2 */
+
+    // font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+
+    
+    /* or 144% */
+    text-transform: uppercase;
+
+    color: #CF1B41;
+
+}
+
+#hero-header-text {
+    /* We're on a mission to make community services work in a digital age. */
+
+
+    // position: absolute;
+    // width: 500px;
+    // height: 164px;
+    left: 482px;
+    top: 261px;
+
+    /* D_H1 */
+
+    // font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    
+    /* or 125% */
+    color: #282828;
+}
+
+.we-forge-partnerships {
+    /* We forge partnerships between neighbors who use technology to improve interactions with, and access to, public services. */
+ 
+    //  position: absolute;
+    //  width: 500px;
+    //  height: 92px;
+     left: 485px;
+     top: 431px;
+ 
+     // font-family: Source Sans Pro;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 20px;
+     line-height: 30px;
+     /* or 150% */
+ 
+ 
+     color: #282828;    
+ }
+
+ .skyline {
+    /* skyline_wide_red */
+
+    z-index: 1;
+    // position: absolute;
+    // width: 120%;
+    // width: 1433.66px;
+    // height: 733px;
+    left: 6.17px;
+    top: 394px;
+
+}
+
 .workwithus {
+    // position: absolute;
+    z-index: 0;
     padding-bottom: 2rem;
     h4 {
         color: $black;
