@@ -1,5 +1,5 @@
-@import './custom/_variables';
-@import './bootstrap/bootstrap';
+@import "./custom/_variables";
+@import "./bootstrap/bootstrap";
 @import "./instantsearch/instantsearch";
 @import "./instantsearch/instantsearch-theme-algolia";
 @import "./custom/includes/buttons";
@@ -15,259 +15,372 @@
 @import "./custom/includes/type";
 
 .text-left {
-    text-align: left;
+  text-align: left;
 }
 
-.brigade-logo {
-    display: block;
-    width: 15%;
-    margin: auto;
-    margin-top: 2rem;
-}
-
-@media (max-width: 1024px) {
-    .brigade-logo {
-        width: 75% !important;
-    }
+.navbar {
+  border-bottom: 1px solid rgba(186, 186, 186, 0.6);
+  display: flex;
+  height: 75px;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+  width: 100%;
 }
 
 .logo-container {
-    display: block;
+  display: block;
+  left: 24px;
+  position: relative;
+}
+
+.brigade-logo {
+  height: 35px;
+  width: auto;
+}
+
+// .nav-links-container {
+//   display: block;
+//   width: 100%;
+//   margin: auto;
+//   position: relative;
+// }
+
+.social-container {
+  align-items: center;
+  display: flex;
+  position: relative;
+  right: 24px;
+}
+
+.logo-container {
+  display: relative;
+  margin: auto 2.5px;
+}
+
+.social-logo {
+  margin: auto 5px;
+}
+
+.social-img {
+  height: 25px;
+  width: 25px;
+  z-index: 1;
+}
+
+.meetup-img {
+  height: 30px;
+  left: 0.1em;
+  position: relative;
+  width: 30px;
+}
+
+.slack-nav {
+  background-color: #282828;
+  border-radius: 50%;
+  position: relative;
+  height: 25px;
+  margin-top: 0.2em;
+  width: 25px;
+  z-index: 0;
+
+  a {
+    display: inline-block;
+    height: 100%;
     width: 100%;
+  }
+}
+
+.slack-logo {
+  bottom: 0;
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+
+// .nav-links {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .nav-link {
+//   a {
+//     color: $cfa-blue;
+//   }
+// }
+
+@media (min-width: 750px) {
+  .navbar {
+    height: 100px;
+  }
+
+  .logo-container {
+    left: 100px;
+  }
+
+  .brigade-logo {
+    height: 55px;
+  }
+
+  .social-container {
+    right: 100px;
+  }
+
+  .social-logo {
+    margin: auto 10px;
+  }
+
+  .social-img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .meetup-img {
+    height: 40px;
+    bottom: 0.1em;
+    left: 0.5em;
+    width: 40px;
+  }
+
+  .slack-nav {
+    height: 35px;
     margin: auto;
+    width: 35px;
+  }
 }
 
 .header-line-container {
-    display: block;
-    width: 100%;
-    margin: auto;
-    padding-top: 4rem;
-
+  display: block;
+  width: 100%;
+  margin: auto;
+  padding-top: 4rem;
 }
 
 .nav-links-container {
-    display: block;
-    width: 100%;
-    margin: auto;
+  display: block;
+  width: 100%;
+  margin: auto;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-link {
-    a {
-        color: $cfa-blue;
-    }
+  a {
+    color: $cfa-blue;
+  }
 }
 
 .about {
-    background-color: $cfa-red;
+  background-color: $cfa-red;
+  color: $white;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
+  h1,
+  h2,
+  h3 {
     color: $white;
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-    margin-bottom: 2rem;
-    h1,h2,h3 {
-        color: $white;
-    }
-    a {
-        color: $white;
-    }
-    p {
-        font-size: calc(1rem + 27.333%);
-    }
-    
+  }
+  a {
+    color: $white;
+  }
+  p {
+    font-size: calc(1rem + 27.333%);
+  }
 }
 
 .projects {
-    background-color: $light-blue;
+  background-color: $light-blue;
 }
 
 .activity {
-    background-color: $light-grey;
-    margin: 4.16%;
+  background-color: $light-grey;
+  margin: 4.16%;
 }
 
 .keep-in-touch {
-    display: block;
-    margin: auto;
-    margin-top: 1rem;
-    .fa-slack {
-        color: $white;
-    }
-    svg {
-        font-size: 400%;
-    }
-    .fa-github {
-        color: $white;
-    }
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  .fa-slack {
+    color: $white;
+  }
+  svg {
+    font-size: 400%;
+  }
+  .fa-github {
+    color: $white;
+  }
 }
 
 .sponsors {
-    background-color: $cfa-red;
+  background-color: $cfa-red;
+  color: white;
+  padding-left: 1%;
+  padding-right: 1%;
+  h1,
+  h3,
+  h4 {
     color: white;
-    padding-left: 1%;
-    padding-right: 1%;
-    h1, h3, h4 {
-        color: white;
-    }
-    a {
-        color: white;
-    }
+  }
+  a {
+    color: white;
+  }
 }
 
 .meetups {
-    background-color: $white;
-    padding-left: 1%;
-    padding-right: 1%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    justify-content: center;
-    h4 {
-        color: $cfa-blue;
+  background-color: $white;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  h4 {
+    color: $cfa-blue;
+  }
+  h3 {
+    a {
+      color: $black;
     }
-    h3 {
-        a {
-            color: $black;
-        }
-    }
+  }
 }
 
 .meetup {
-    border: 1px solid $light-grey;
-    border-radius: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  border: 1px solid $light-grey;
+  border-radius: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .rsvp-stuff {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .attendees {
-    border-bottom: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
 }
 
 .attend-button {
-    border-bottom: 1rem solid transparent;
-    padding-left: 5%;
+  border-bottom: 1rem solid transparent;
+  padding-left: 5%;
 }
 
 .button {
-    background-color: $cfa-red;
-    border: none;
+  background-color: $cfa-red;
+  border: none;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+  margin-top: 2rem !important;
+  a {
     color: white;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+  }
+}
+
+.button:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.contact-form-container {
+  color: $white;
+  padding-bottom: 5rem;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  background-color: $cfa-blue;
+  h1 {
+    color: $white;
+    margin-bottom: 2rem;
+  }
+  .text-center {
+    display: block;
+    margin: auto;
+  }
+  a {
+    color: $white;
+  }
+}
+
+.contact-form {
+  margin-bottom: 2rem;
+  input {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  button {
+    display: block;
+    background-color: $white;
+    border: none;
+    color: $dark-grey;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
     text-decoration: none;
     border-radius: 1rem;
-    margin-top: 2rem !important;
-    a {
-        color: white;
-    }
-
-}
-
-.button:hover {
-    color: white;
+    margin: auto;
+  }
+  button:hover {
     text-decoration: underline;
-}
-
-.contact-form-container {
-    color: $white;
-    padding-bottom: 5rem;
-    padding-top: 1rem;
-    margin-bottom: 2rem;
-    background-color: $cfa-blue;
-    h1 {
-        color: $white;
-        margin-bottom: 2rem;
-    }
-    .text-center {
-        display: block;
-        margin: auto;
-    }
-    a {
-        color: $white;
-    }
-
-}
-
-.contact-form {
-    margin-bottom: 2rem;
-    input {
-        width:100%;
-        margin-bottom: 1rem;
-        display: block;
-    }
-    textarea {
-        width: 100%;
-        margin-bottom: 1rem;
-        display: block;
-    }
-    button {
-        display: block;
-        background-color: $white;
-        border: none;
-        color: $dark-grey;
-        padding-top: .25rem;
-        padding-bottom: .25rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 1rem;
-        margin: auto;
-    }
-    button:hover {
-        text-decoration: underline;
-    }
+  }
 }
 
 .events-link {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .event-photo {
-    max-height: 10rem;
-    display: block;
-    margin: auto;
-    border-radius: 1rem;
+  max-height: 10rem;
+  display: block;
+  margin: auto;
+  border-radius: 1rem;
 }
 
 .event-description {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 1024px) {
-    .padded-content {
-        width: 50%;
-        display: block;
-        margin: auto;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-}
-
-@media (min-width: 1025px) and (max-width: 1440px) {
-    .padded-content {
-        width: 75% !important;
-    }
-}
-
-.padded-content {
+  .padded-content {
     width: 50%;
     display: block;
     margin: auto;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .padded-content {
+    width: 75% !important;
+  }
+}
+
+.padded-content {
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .footer {
@@ -279,26 +392,26 @@
 }
 
 .about-cfa {
-    padding-top: 2rem;
-    margin-bottom: 2rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .workwithus {
-    padding-bottom: 2rem;
-    h4 {
-        color: $black;
-    }
-    p {
-        font-size: calc(1rem + 27.333%);
-    }
+  padding-bottom: 2rem;
+  h4 {
+    color: $black;
+  }
+  p {
+    font-size: calc(1rem + 27.333%);
+  }
 }
 
 @media (max-width: 1024px) {
-    .padded-content {
-        width: 100%;
-        display: block;
-        margin: auto;
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
+  .padded-content {
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
