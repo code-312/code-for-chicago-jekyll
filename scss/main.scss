@@ -14,6 +14,18 @@
 @import "./custom/includes/tables";
 @import "./custom/includes/type";
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Work+Sans:wght@600&display=swap');
+
+h4, h5 {
+    font-family: $font-family-alt;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
 .text-left {
   text-align: left;
 }
@@ -386,8 +398,29 @@
 .footer {
     background-color: $white;
     color: $black;
+    text-align: center;
     a {
-        color: $white;
+        color: $cfa-blue;
+    }
+    p {
+	font-size: 0.875rem;
+	margin-top: 0;
+	margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-icon {
+	margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer p {
+	text-align: right;
+    }
+    .footer {
+	text-align: left;
     }
 }
 
