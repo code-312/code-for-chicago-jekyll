@@ -38,13 +38,6 @@
   width: auto;
 }
 
-// .nav-links-container {
-//   display: block;
-//   width: 100%;
-//   margin: auto;
-//   position: relative;
-// }
-
 .social-container {
   align-items: center;
   display: flex;
@@ -99,17 +92,6 @@
   top: 0;
 }
 
-// .nav-links {
-//   display: flex;
-//   justify-content: center;
-// }
-
-// .nav-link {
-//   a {
-//     color: $cfa-blue;
-//   }
-// }
-
 @media (min-width: 750px) {
   .navbar {
     height: 100px;
@@ -158,23 +140,6 @@
   padding-top: 4rem;
 }
 
-.nav-links-container {
-  display: block;
-  width: 100%;
-  margin: auto;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: center;
-}
-
-.nav-link {
-  a {
-    color: $cfa-blue;
-  }
-}
-
 .about {
   background-color: $cfa-red;
   color: $white;
@@ -194,15 +159,6 @@
   }
 }
 
-.projects {
-  background-color: $light-blue;
-}
-
-.activity {
-  background-color: $light-grey;
-  margin: 4.16%;
-}
-
 .keep-in-touch {
   display: block;
   margin: auto;
@@ -215,21 +171,6 @@
   }
   .fa-github {
     color: $white;
-  }
-}
-
-.sponsors {
-  background-color: $cfa-red;
-  color: white;
-  padding-left: 1%;
-  padding-right: 1%;
-  h1,
-  h3,
-  h4 {
-    color: white;
-  }
-  a {
-    color: white;
   }
 }
 
@@ -343,10 +284,6 @@
   button:hover {
     text-decoration: underline;
   }
-}
-
-.events-link {
-  margin-bottom: 2rem;
 }
 
 .event-photo {
