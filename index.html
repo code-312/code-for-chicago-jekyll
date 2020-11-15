@@ -5,124 +5,125 @@ layout: default
 home: true
 ---
 <div class="main" role="main">
+<div class="container-fluid">
+    <div class="row about">
+    <div class="padded-content">
 
-  <div class="row about">
-   <div class="padded-content">
-
-    <div class="col-md-12 text-left">
-      <p>
-        We forge partnerships between neighbors who use technology to improve interactions with, and access to, public services. Whether you're a technologist, designer, journalist, public servant, or curious community member- there is a place for you here! Join us for our co-working, project, service, and social events.
+      <div class="col-md-12 text-left">
+        <p>
+          We forge partnerships between neighbors who use technology to improve interactions with, and access to, public services. Whether you're a technologist, designer, journalist, public servant, or curious community member- there is a place for you here! Join us for our co-working, project, service, and social events.
+        </p>
+        <div class="col-md-12 keep-in-touch text-center">
+          <a target="_blank" href="https://www.meetup.com/code-for-chicago/" title="Meetup">
+            <i class="fab fa-meetup"></i>
+          </a>
+          <a target="_blank" href="https://code-for-chicago-slack-invite.herokuapp.com/" title="Slack">
+            <i class="fab fa-slack"></i>
+          </a>
+          <a target="_blank" href="https://github.com/code-for-chicago/" title="Github">
+            <i class="fab fa-github"></i>
+          </a>
+      </div>
+      </div>
+    </div>
+    </div>
+    <div class="padded-content">
+    <h1 class="text-left" id="workwithus">Work with us</h1>
+    </div>
+    <div class="text-left">
+    <div class="padded-content workwithus">
+  <p>Code for Chicago runs on two things: projects and volunteers.</p>
+  <h4>Organizations</h4>
+  <p>Are you a Chicagoland nonprofit that needs some tech help? Have an idea how to make your community better? You've come to the right place. Fill out our Contact Us form or come to one of our meetups to get the conversation started.</p>
+  <h4>Volunteers</h4>
+  <p>Are you a Chicagoland dev, designer, data person, etc. looking to use your skills for the greater good and build your resume? Maybe you’re looking to pick up a new tech skill. You, too, have come to the right place. Sign up for our meetups or join us on <a href="https://code-for-chicago-slack-invite.herokuapp.com/" target="blank">Slack</a>.</P>
+  <p>We forge partnerships between neighbors who use technology to improve interactions with, and access to, public services. Whether you're a technologist, designer, journalist, public servant, or curious community member- there is a place for you here!</p>
       </p>
-      <div class="col-md-12 keep-in-touch text-center">
+    <p class="text-center">
+      <a class="button" href="#contactus">Get in touch</a>
+    </p>
+    </div>
+  </div>
+
+  <div class="row meetups">
+    <div class="padded-content">
+
+    {%for event in site.data.events%}
+
+    <div class="col-md-12 meetup">
+        <div class="row">
+        <div class="col-md-8">
+
+        <h4>{% assign date = event.local_date | date: "%a. %B %-d, %Y" %}
+            {% assign time = event.local_time | date: "%l:%M %p" %}
+
+            {{date}} at {{time}}</h4>
+        <h3 class="text-left">
+            <a href='{{event.link}}' target="blank">{{event.name}}</a>
+        </h3>
+        <p><i class="fas fa-map-marker-alt"></i> {{event.venue.name}} {{event.venue.address_1}}</p>
+          </div>
+          <div class="col-md-4">
+              <img class="event-photo" src="{{event.featured_photo.photo_link}}"/>
+          </div>
+        <div class="col-md-12 event-description">
+          {% assign description-paragraphs = event.description | split: "</p>" %}
+          {{description-paragraphs[0]}}
+        </div>
+        </div>
+        <div class="row rsvp-stuff">
+          <div class="col-md-10 attendees">{{event.yes_rsvp_count}} attendees </div>
+          <div class="col-md-2 attend-button"><a href="{{event.link}}" target="blank" class="button">Attend</a></div>
+        </div>
+    </div>
+
+    {%endfor%}
+    </div>
+  </div>
+
+
+
+    <div class="row contact-form-container">
+      <div class="padded-content">
+
+    <div class="text-center">
+      <h1 id="contactus">Contact Us</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-12 contact-form">
+        <form method="POST" action="https://formspree.io/leadership@openuptown.us">
+        <input type="email" name="email" placeholder="Your email">
+        <textarea name="message" placeholder="Your message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      </div>
+    </div>
+      <div class="row">
+    <div class="col-md-12 keep-in-touch text-center">
         <a target="_blank" href="https://www.meetup.com/code-for-chicago/" title="Meetup">
           <i class="fab fa-meetup"></i>
         </a>
         <a target="_blank" href="https://code-for-chicago-slack-invite.herokuapp.com/" title="Slack">
           <i class="fab fa-slack"></i>
         </a>
-        <a target="_blank" href="https://github.com/code-for-chicago/" title="Github">
+        <a target="_blank" href="https://github.com/code-for-chicago" title="Github">
           <i class="fab fa-github"></i>
         </a>
     </div>
+  </div>
+
     </div>
-   </div>
-  </div>
-  <div class="padded-content">
-  <h1 class="text-left" id="workwithus">Work with us</h1>
-  </div>
-  <div class="text-left">
-   <div class="padded-content workwithus">
-<p>Code for Chicago runs on two things: projects and volunteers.</p>
-<h4>Organizations</h4>
-<p>Are you a Chicagoland nonprofit that needs some tech help? Have an idea how to make your community better? You've come to the right place. Fill out our Contact Us form or come to one of our meetups to get the conversation started.</p>
-<h4>Volunteers</h4>
-<p>Are you a Chicagoland dev, designer, data person, etc. looking to use your skills for the greater good and build your resume? Maybe you’re looking to pick up a new tech skill. You, too, have come to the right place. Sign up for our meetups or join us on <a href="https://code-for-chicago-slack-invite.herokuapp.com/" target="blank">Slack</a>.</P>
-<p>We forge partnerships between neighbors who use technology to improve interactions with, and access to, public services. Whether you're a technologist, designer, journalist, public servant, or curious community member- there is a place for you here!</p>
-    </p>
-  <p class="text-center">
-    <a class="button" href="#contactus">Get in touch</a>
-  </p>
-  </div>
-</div>
-
-<div class="row meetups">
-  <div class="padded-content">
-  
-  {%for event in site.data.events%}
-
-  <div class="col-md-12 meetup">
-      <div class="row">
-      <div class="col-md-8">
-
-      <h4>{% assign date = event.local_date | date: "%a. %B %-d, %Y" %}
-          {% assign time = event.local_time | date: "%l:%M %p" %}
-
-          {{date}} at {{time}}</h4>
-      <h3 class="text-left">
-          <a href='{{event.link}}' target="blank">{{event.name}}</a>
-      </h3>
-      <p><i class="fas fa-map-marker-alt"></i> {{event.venue.name}} {{event.venue.address_1}}</p>
-        </div>
-        <div class="col-md-4">
-            <img class="event-photo" src="{{event.featured_photo.photo_link}}"/>
-        </div>
-      <div class="col-md-12 event-description">
-        {% assign description-paragraphs = event.description | split: "</p>" %}
-        {{description-paragraphs[0]}}
-      </div>
-      </div>
-      <div class="row rsvp-stuff">
-        <div class="col-md-10 attendees">{{event.yes_rsvp_count}} attendees </div>
-        <div class="col-md-2 attend-button"><a href="{{event.link}}" target="blank" class="button">Attend</a></div>
-      </div>
-  </div>
-
-  {%endfor%}
-  </div>
-</div>
-
-
-
-  <div class="row contact-form-container">
-    <div class="padded-content">
-
-  <div class="text-center">
-     <h1 id="contactus">Contact Us</h1>
-  </div>
-  <div class="row">
-    <div class="col-md-12 contact-form">
-      <form method="POST" action="https://formspree.io/leadership@openuptown.us">
-      <input type="email" name="email" placeholder="Your email">
-      <textarea name="message" placeholder="Your message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
     </div>
-  </div>
-    <div class="row">
-  <div class="col-md-12 keep-in-touch text-center">
-      <a target="_blank" href="https://www.meetup.com/code-for-chicago/" title="Meetup">
-        <i class="fab fa-meetup"></i>
-      </a>
-      <a target="_blank" href="https://code-for-chicago-slack-invite.herokuapp.com/" title="Slack">
-        <i class="fab fa-slack"></i>
-      </a>
-      <a target="_blank" href="https://github.com/code-for-chicago" title="Github">
-        <i class="fab fa-github"></i>
-      </a>
-  </div>
-</div>
- 
-  </div>
-  </div>
 
-    <div class="text-left about-cfa">
-    <div class="padded-content">
+      <div class="text-left about-cfa">
+      <div class="padded-content">
 
-      <p>
-          <a href="https://codeforamerica.org">Code for America</a> is a network of people who work with community organizations and local governments to deliver better services. 
-          We also develop services to <a href="https://www.codeforamerica.org/work#show-whats-possible">show what’s possible</a> in three high-impact focus areas: Criminal Justice, Social Safety Net, and Workforce Development.   
-      </p>
+        <p>
+            <a href="https://codeforamerica.org">Code for America</a> is a network of people who work with community organizations and local governments to deliver better services. 
+            We also develop services to <a href="https://www.codeforamerica.org/work#show-whats-possible">show what’s possible</a> in three high-impact focus areas: Criminal Justice, Social Safety Net, and Workforce Development.   
+        </p>
 
+      </div>
     </div>
   </div>
 </div>
