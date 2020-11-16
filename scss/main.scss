@@ -78,7 +78,15 @@ h4 {
   }
 }
 
-@media (min-width: 768px) {
+.slack-logo {
+  bottom: 0;
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+
+@media (min-width: 750px) {
   .navbar {
     margin: 24px 0;
     padding: 0 48px;
@@ -112,23 +120,6 @@ h4 {
   padding-top: 4rem;
 }
 
-.nav-links-container {
-  display: block;
-  width: 100%;
-  margin: auto;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: center;
-}
-
-.nav-link {
-  a {
-    color: $cfa-blue;
-  }
-}
-
 .about {
   background-color: $cfa-red;
   color: $white;
@@ -148,15 +139,6 @@ h4 {
   }
 }
 
-.projects {
-  background-color: $light-blue;
-}
-
-.activity {
-  background-color: $light-grey;
-  margin: 4.16%;
-}
-
 .keep-in-touch {
   display: block;
   margin: auto;
@@ -169,21 +151,6 @@ h4 {
   }
   .fa-github {
     color: $white;
-  }
-}
-
-.sponsors {
-  background-color: $cfa-red;
-  color: white;
-  padding-left: 1%;
-  padding-right: 1%;
-  h1,
-  h3,
-  h4 {
-    color: white;
-  }
-  a {
-    color: white;
   }
 }
 
@@ -313,10 +280,6 @@ h4 {
   button:hover {
     text-decoration: underline;
   }
-}
-
-.events-link {
-  margin-bottom: 2rem;
 }
 
 .event-photo {
