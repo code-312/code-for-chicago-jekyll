@@ -32,134 +32,76 @@ h4 {
 
 .navbar {
   display: flex;
-  height: 75px;
   justify-content: space-between;
-  padding: 0;
   position: relative;
   width: 100%;
+  margin: 16px 0;
+  height: 32px;
+  padding: 0 24px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.social-container {
+  display: block;
+  align-items: center;
 }
 
 .logo-container {
-  display: block;
-  left: 24px;
-  position: relative;
+  display: inline;
+  overflow: hidden;
+  height: inherit;
 }
 
 .brigade-logo {
-  height: 35px;
-  width: auto;
-}
-
-// .nav-links-container {
-//   display: block;
-//   width: 100%;
-//   margin: auto;
-//   position: relative;
-// }
-
-.social-container {
-  align-items: center;
-  display: flex;
-  position: relative;
-  right: 24px;
-}
-
-.logo-container {
-  display: relative;
-  margin: auto 2.5px;
+  height: 100%;
 }
 
 .social-logo {
-  margin: auto 5px;
+  display: inline;
+  margin-left: 16px;
 }
 
 .social-img {
-  height: 25px;
-  width: 25px;
+  height: 16px;
+  width: 16px;
   z-index: 1;
 }
 
-.meetup-img {
-  height: 30px;
-  left: 0.1em;
-  margin-right: 0;
-  position: relative;
-  width: 30px;
-}
-
-.slack-nav {
-  background-color: #282828;
-  border-radius: 50%;
-  position: relative;
-  height: 25px;
-  margin-top: 0.2em;
-  width: 25px;
-  z-index: 0;
-
-  a {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-  }
-}
-
-.slack-logo {
-  bottom: 0;
-  display: inline-block;
-  margin: auto;
-  position: absolute;
-  top: 0;
-}
-
-// .nav-links {
-//   display: flex;
-//   justify-content: center;
-// }
-
-// .nav-link {
-//   a {
-//     color: $cfa-blue;
-//   }
-// }
-
-@media (min-width: 750px) {
+@media (min-width: 651px) {
   .navbar {
-    height: 100px;
+    margin: 16px 0;
+    padding: 0 48px;
+    height: 32px;
   }
+}
 
+@media (min-width: 768px) {
+  .navbar {
+    margin: 24px 0;
+    padding: 0 48px;
+    height: 42px;
+  }
   .logo-container {
-    left: 100px;
+    width: 120px;
   }
-
-  .brigade-logo {
-    height: 55px;
-  }
-
   .social-container {
-    right: 70px;
+    margin-left: 16px;
   }
-
-  .social-logo {
-    margin: auto 10px;
-  }
-
   .social-img {
-    height: 35px;
-    width: 35px;
+    height: 24px;
+    width: 24px;
   }
+}
 
-  .meetup-img {
-    height: 40px;
-    bottom: 0.1em;
-    margin-right: 0.5em;
-    left: 0.5em;
-    width: 40px;
-  }
-
-  .slack-nav {
-    height: 35px;
-    margin: auto;
-    width: 35px;
+@media (min-width: 1440px) {
+  .navbar {
+    margin: 24px auto;
+    padding: 0 96px;
+    height: 42px;
+    max-width: 1440px;
   }
 }
 
