@@ -254,7 +254,7 @@ h4 {
   padding-bottom: 5rem;
   padding-top: 1rem;
   margin-bottom: 2rem;
-  background-color: $cfa-blue;
+  background-color: $dark-red;
   h1 {
     color: $white;
     margin-bottom: 2rem;
@@ -268,23 +268,38 @@ h4 {
   }
 }
 
+#contactus {
+    margin-bottom: 3rem;
+}
+
 .contact-form {
   margin-bottom: 2rem;
+  width: 65%;
+  @media(max-width: 650px) {
+    width: 86%;
+  }
+  margin-left: auto;
+  margin-right: auto;
   input {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     display: block;
   }
   textarea {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     display: block;
-  }
+    text-indent: .5rem;
+   }
+  
   button {
     display: block;
-    background-color: $white;
-    border: none;
-    color: $dark-grey;
+    width: 100%;
+    background-color: $dark-red;
+    border: $white;
+    border-style: solid;
+    border-width: 1px;
+    color: $white;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
     padding-left: 1rem;
@@ -292,7 +307,8 @@ h4 {
     text-align: center;
     text-decoration: none;
     border-radius: 1rem;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   button:hover {
     text-decoration: underline;
