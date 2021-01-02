@@ -37,7 +37,6 @@ h4 {
   width: 100%;
   margin: 16px 0;
   height: 32px;
-  padding: 0 24px;
 }
 
 .navbar a {
@@ -73,7 +72,6 @@ h4 {
 @media (min-width: 651px) {
   .navbar {
     margin: 16px 0;
-    padding: 0 48px;
     height: 32px;
   }
 }
@@ -89,7 +87,6 @@ h4 {
 @media (min-width: 750px) {
   .navbar {
     margin: 24px 0;
-    padding: 0 48px;
     height: 42px;
   }
   .logo-container {
@@ -107,7 +104,6 @@ h4 {
 @media (min-width: 1440px) {
   .navbar {
     margin: 24px auto;
-    padding: 0 96px;
     height: 42px;
     max-width: 1440px;
   }
@@ -162,23 +158,29 @@ h4 {
   margin-bottom: 2rem;
   justify-content: center;
   h4 {
-    color: $cfa-blue;
+    color: $black;
   }
   h3 {
     a {
       color: $black;
     }
   }
+  h1 {
+    color: $black;
+  }
 }
 
 .meetup {
-  border: 1px solid $light-grey;
   border-radius: 1rem;
   padding-top: 2rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+#meetupLink {
+  color: $cfa-blue;
 }
 
 .rsvp-stuff {
@@ -194,7 +196,12 @@ h4 {
   padding-left: 5%;
 }
 
-.button {
+.fa-map-marker-alt {
+  color: $cfa-red;
+  margin-right: 0.5rem;
+}
+
+.redbutton {
   background-color: $cfa-red;
   border: none;
   color: white;
@@ -211,9 +218,22 @@ h4 {
   }
 }
 
-.button:hover {
+.redbutton:hover {
   color: white;
   text-decoration: underline;
+}
+
+.whitebutton {
+  background-color: $white;
+  border: 1px solid $cfa-red;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  a {
+    color: $cfa-red !important;
+  }
 }
 
 .contact-form-container {
@@ -221,7 +241,7 @@ h4 {
   padding-bottom: 5rem;
   padding-top: 1rem;
   margin-bottom: 2rem;
-  background-color: $dark-red;
+  background-color: $cfa-red;
   h1 {
     color: $white;
     margin-bottom: 2rem;
@@ -262,7 +282,7 @@ h4 {
   button {
     display: block;
     width: 100%;
-    background-color: $dark-red;
+    background-color: $cfa-red;
     border: $white;
     border-style: solid;
     border-width: 1px;
@@ -283,10 +303,8 @@ h4 {
 }
 
 .event-photo {
-  max-height: 10rem;
   display: block;
   margin: auto;
-  border-radius: 1rem;
 }
 
 .event-description {
@@ -310,7 +328,8 @@ h4 {
 }
 
 .padded-content {
-  width: 50%;
+  width: 100%;
+  max-width: 1440px;
   display: block;
   margin: auto;
   padding-left: 1rem;
