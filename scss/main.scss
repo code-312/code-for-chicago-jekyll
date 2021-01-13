@@ -365,4 +365,69 @@ h4 {
   }
 }
 
+.workwithusIconsRow {
+  justify-content: space-between;
+  text-align: center;
+
+}
+
+.workwithusIcon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#workWithUs {
+  color: $black;
+}
+
+#workWithUsText {
+  max-width: 510px;
+  margin: auto;
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-top: 82px;
+}
+
+.cards {
+  margin-top: 80px;
+}
+
+.volunteersRow {
+  margin-top: 64px;
+}
+
+.cardText {
+  max-width: 100%;
+}
+
+.cardsContainer {
+  background-color: $off-white;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  h2 {
+    color: $black;
+  }
+  a {
+    color: $cfa-blue;
+  }
+  .row {
+    justify-content: space-between;
+  }
+}
+
+.volunteersText {
+  padding-left: 10%;
+  padding-right: 0;
+}
+
+.organizationsText {
+  padding-right: 10%;
+}
+
 
