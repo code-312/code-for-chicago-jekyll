@@ -428,4 +428,30 @@ h4 {
   padding-right: 10%;
 }
 
+.donateButton {
+  background-color: $cfa-red;
+  font-weight: $font-weight-bold;
+  max-width: 85px;
+  border: none;
+  color: white;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 1rem;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 2rem !important;
+  a {
+    color: white;
+  }
+  &:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  &:visited {
+    color: white;
+  }
+
+}
 
