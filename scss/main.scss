@@ -123,9 +123,80 @@ h1,h2,h3 {
 
 .header-line-container {
   display: block;
-  width: 100%;
-  margin: auto;
-  padding-top: 4rem;
+  background-color: $cfa-red;
+  
+}
+
+.header-contents {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  h1, h4, p {
+    color: $white;
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  @media (max-width: 1058px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.hero-header-heading {
+  &--mobile {
+    display: none;
+  }
+
+  @media (max-width: 1058px) {
+    &--mobile {
+      display: block;
+    }
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+.header-text {
+  max-width: 492px;
+  margin-top: 9.1875rem;
+  margin-right: 3rem;
+  padding-left: 6rem;
+
+  @media (max-width: 1058px) {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 3rem 2.125rem;
+  }
+}
+
+.hero-image {
+  position: relative;
+  bottom: -10px;
+  height: 504px;
+  margin-top: 4rem;
+
+  @media (max-width: 1353px) {
+    height: 408px;
+    bottom: -20px;
+  }
+
+  @media (max-width: 1195px) {
+    height: 320px;
+    bottom: -100px;
+  }
+
+  @media (max-width: 1058px) {
+    margin-top: 0;
+    height: 312px;
+    bottom: 0px;
+  }
 }
 
 .about {
@@ -368,7 +439,8 @@ h1,h2,h3 {
 }
 
 .workwithus {
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   h4 {
     color: $black;
   }
