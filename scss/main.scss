@@ -36,7 +36,7 @@ h4 {
   position: relative;
   width: 100%;
   margin: 16px 0;
-  height: 32px;
+  height: 47px;
 }
 
 .navbar a {
@@ -55,7 +55,13 @@ h4 {
 }
 
 .brigade-logo {
-  height: 100%;
+  max-width: 120px;
+}
+
+@media (max-width: 812px) {
+  .brigade-logo {
+    height: 100%;
+  }
 }
 
 .social-logo {
@@ -87,10 +93,11 @@ h4 {
 @media (min-width: 750px) {
   .navbar {
     margin: 24px 0;
-    height: 42px;
+    height: 47px;
   }
   .logo-container {
     width: 120px;
+    min-height: 60px;
   }
   .social-container {
     margin-left: 16px;
@@ -104,7 +111,7 @@ h4 {
 @media (min-width: 1440px) {
   .navbar {
     margin: 24px auto;
-    height: 42px;
+    height: 47px;
     max-width: 1440px;
   }
 }
