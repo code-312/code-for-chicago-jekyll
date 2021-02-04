@@ -142,6 +142,7 @@ h1,h2,h3 {
   height: 100%;
   display: flex;
   align-items: center;
+  padding-top: 3rem;
 
   h1, h4, p {
     color: $white;
@@ -220,7 +221,6 @@ h1,h2,h3 {
   @media (max-width: 1058px) {
     height: 195px;
     width: 322px;
-    margin-bottom: -15px;
     margin-top: 3rem;
   }
 }
