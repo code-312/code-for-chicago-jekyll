@@ -122,28 +122,61 @@ h1,h2,h3 {
 }
 
 .header-line-container {
-  display: block;
+  display: flex;
   background-color: $cfa-red;
-  
+  margin-right: -15px;
+  height: 564px;
+  align-items: flex-end;
+  justify-content: center;
+
+  @media (max-width: 1058px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 531px;
+  }
 }
 
 .header-contents {
   max-width: 1440px;
-  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
 
   h1, h4, p {
     color: $white;
+  }
+
+  h4 {
+    @media (max-width: 1058px) {
+      font-size: 0.875rem !important;
+      line-height: 0.875rem;
+    }
+  }
+
+  h1 {
+    @media (max-width: 1058px) {
+      font-size: 2rem;
+      line-height: 2.625rem;
+    }
   }
 
   p {
     margin-top: 1rem;
     font-size: 1.25rem;
     line-height: 1.875rem;
+
+    @media (max-width: 1058px) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 0;
+    }
   }
 
   @media (max-width: 1058px) {
     display: flex;
     justify-content: center;
+    height: auto;
   }
 }
 
@@ -163,8 +196,7 @@ h1,h2,h3 {
 }
 
 .header-text {
-  max-width: 492px;
-  margin-top: 9.1875rem;
+  max-width: 30.75rem;
   margin-right: 3rem;
   padding-left: 6rem;
 
@@ -172,30 +204,24 @@ h1,h2,h3 {
     width: 100%;
     text-align: center;
     padding: 0;
-    margin: 3rem 2.125rem;
+    margin: auto 2.125rem;
   }
 }
 
-.hero-image {
-  position: relative;
-  bottom: -10px;
+.hero-header-image {
+  display: flex;
+  background-image: url(/images/skyline.svg);
   height: 504px;
-  margin-top: 4rem;
-
-  @media (max-width: 1353px) {
-    height: 408px;
-    bottom: -20px;
-  }
-
-  @media (max-width: 1195px) {
-    height: 320px;
-    bottom: -100px;
-  }
+  width: 840px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -2px;
 
   @media (max-width: 1058px) {
-    margin-top: 0;
-    height: 312px;
-    bottom: 0px;
+    height: 195px;
+    width: 322px;
+    margin-bottom: -15px;
+    margin-top: 3rem;
   }
 }
 
@@ -323,6 +349,7 @@ h1,h2,h3 {
   color: $white;
   padding-bottom: 5rem;
   padding-top: 1rem;
+  margin-bottom: 2rem;
   background-color: $cfa-red;
   h1 {
     color: $white;
