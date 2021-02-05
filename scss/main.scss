@@ -507,7 +507,7 @@ h1,h2,h3 {
 }
 
 .volunteersRow {
-  margin-top: 64px;
+  margin-top: 80px;
   flex-wrap: wrap-reverse;
 }
 
@@ -516,9 +516,8 @@ h1,h2,h3 {
 }
 
 .cardsContainer {
-  background-color: $off-white;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   h2 {
     color: $black;
   }
