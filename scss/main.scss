@@ -122,10 +122,108 @@ h1,h2,h3 {
 }
 
 .header-line-container {
-  display: block;
-  width: 100%;
-  margin: auto;
-  padding-top: 4rem;
+  display: flex;
+  background-color: $cfa-red;
+  margin-right: -15px;
+  height: 564px;
+  align-items: flex-end;
+  justify-content: center;
+
+  @media (max-width: 1058px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 581px;
+  }
+}
+
+.header-contents {
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+
+  h1, h4, p {
+    color: $white;
+  }
+
+  h4 {
+    @media (max-width: 1058px) {
+      font-size: 0.875rem !important;
+      line-height: 0.875rem;
+    }
+  }
+
+  h1 {
+    @media (max-width: 1058px) {
+      font-size: 2rem;
+      line-height: 2.625rem;
+    }
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+
+    @media (max-width: 1058px) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 1058px) {
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+}
+
+.hero-header-heading {
+  &--mobile {
+    display: none;
+  }
+
+  @media (max-width: 1058px) {
+    &--mobile {
+      display: block;
+    }
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+.header-text {
+  max-width: 30.75rem;
+  margin-right: 3rem;
+  padding-left: 6rem;
+
+  @media (max-width: 1058px) {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+  }
+}
+
+.hero-header-image {
+  display: flex;
+  background-image: url(/images/skyline.svg);
+  height: 504px;
+  width: 840px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -2px;
+
+  @media (max-width: 1058px) {
+    max-width: 30.75rem;
+    max-height: 18.7rem;
+    margin-top: 3rem;
+    background-position: bottom center;
+  }
 }
 
 .about {
@@ -252,6 +350,7 @@ h1,h2,h3 {
   color: $white;
   padding-bottom: 5rem;
   padding-top: 1rem;
+  margin-bottom: 2rem;
   background-color: $cfa-red;
   h1 {
     color: $white;
