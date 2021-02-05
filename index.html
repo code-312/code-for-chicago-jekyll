@@ -104,76 +104,75 @@ home: true
     </div>
   </div>
 </div>
-
-  <div class="row meetups">
-    <div class="padded-content">
-
-    {%for event in site.data.events%}
-
-    <div class="col-md-12 meetup">
-      <h1 class="text-center">Upcoming Events</h1>
-      <p class="text-center"><a id="meetupLink" href="https://www.meetup.com/code-for-chicago" target="blank">See our events on Meetup <i class="fas fa-external-link-alt"></i></a></p>
-        <div class="row">
-          <div class="col-md-6">
-
-          <h4>{% assign date = event.local_date | date: "%a. %B %-d, %Y" %}
-              {% assign time = event.local_time | date: "%l:%M %p" %}
-              {{date}} at {{time}}</h4>
-          <h3 class="text-left">
-              <a href='{{event.link}}' target="blank">{{event.name}}</a>
-          </h3>
-          <p>{{event.description}}</p>
-        </div>
-          <div class="col-md-6">
-              <img class="event-photo" src="{{event.featured_photo.photo_link}}"/>
-          </div>
-        </div>
-        <div class="row rsvp-stuff">
-          <div class="col-md-4"><p><i class="fas fa-map-marker-alt"></i> {{event.venue.name}} {{event.venue.address_1}}</p></div>
-          <div class="col-md-3 attend-button"><a href="{{event.link}}" target="blank" class="whitebutton">Attend <i class="fas fa-external-link-alt"></i></a></div>
-        </div>
-    </div> 
-
-    {%endfor%}
-    </div>
-  </div>
-
-
-
-    <div class="row contact-form-container">
+  <div class="container-fluid">
+    <div class="row meetups">
       <div class="padded-content">
 
-  <div class="text-center">
-     <h1 id="contactus">Contact Us</h1>
-  </div>
-  <div class="row">
-    <div class="contact-form">
-      <form method="POST" action="https://formspree.io/leadership@openuptown.us">
-        <label>Email</label>
-        <input type="email" name="email" placeholder="Your email">
-        <label>Message</label>
-        <textarea name="message" placeholder="Your message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </div>
-  
-      <div class="row">
-    <div class="col-md-12 keep-in-touch text-center">
-        <a target="_blank" href="https://www.meetup.com/code-for-chicago/" title="Meetup">
-          <i class="fab fa-meetup"></i>
-        </a>
-        <a target="_blank" href="https://code-for-chicago-slack-invite.herokuapp.com/" title="Slack">
-          <i class="fab fa-slack"></i>
-        </a>
-        <a target="_blank" href="https://github.com/code-for-chicago" title="Github">
-          <i class="fab fa-github"></i>
-        </a>
-    </div>
-  </div>
+      {%for event in site.data.events%}
 
+      <div class="col-md-12 meetup">
+        <h1 class="text-center">Upcoming Events</h1>
+        <p class="text-center"><a id="meetupLink" href="https://www.meetup.com/code-for-chicago" target="blank">See our events on Meetup <i class="fas fa-external-link-alt"></i></a></p>
+          <div class="row">
+            <div class="col-md-6">
+
+            <h4>{% assign date = event.local_date | date: "%a. %B %-d, %Y" %}
+                {% assign time = event.local_time | date: "%l:%M %p" %}
+                {{date}} at {{time}}</h4>
+            <h3 class="text-left">
+                <a href='{{event.link}}' target="blank">{{event.name}}</a>
+            </h3>
+            <p>{{event.description}}</p>
+          </div>
+            <div class="col-md-6">
+                <img class="event-photo" src="{{event.featured_photo.photo_link}}"/>
+            </div>
+          </div>
+          <div class="row rsvp-stuff">
+            <div class="col-md-4"><p><i class="fas fa-map-marker-alt"></i> {{event.venue.name}} {{event.venue.address_1}}</p></div>
+            <div class="col-md-3 attend-button"><a href="{{event.link}}" target="blank" class="whitebutton">Attend <i class="fas fa-external-link-alt"></i></a></div>
+          </div>
+      </div> 
+
+      {%endfor%}
+      </div>
     </div>
     </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row contact-form-container">
+      <div class="padded-content">
+        <div class="text-center">
+          <h1 id="contactus">Contact Us</h1>
+        </div>
+        <div class="row">
+          <div class="contact-form">
+            <form method="POST" action="https://formspree.io/leadership@openuptown.us">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="Your email">
+              <label>Message</label>
+              <textarea name="message" placeholder="Your message"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 keep-in-touch text-center">
+            <a target="_blank" href="https://www.meetup.com/code-for-chicago/" title="Meetup">
+              <i class="fab fa-meetup"></i>
+            </a>
+            <a target="_blank" href="https://code-for-chicago-slack-invite.herokuapp.com/" title="Slack">
+              <i class="fab fa-slack"></i>
+            </a>
+            <a target="_blank" href="https://github.com/code-for-chicago" title="Github">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  </div>
   </div>
 </div>
