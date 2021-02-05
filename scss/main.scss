@@ -351,7 +351,7 @@ h1,h2,h3 {
   padding-bottom: 5rem;
   padding-top: 1rem;
   margin-bottom: 2rem;
-  background-color: $cfa-red;
+  background-color: #CF2045;
   h1 {
     color: $white;
     margin-bottom: 2rem;
@@ -366,12 +366,16 @@ h1,h2,h3 {
 }
 
 #contactus {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .contact-form {
   margin-bottom: 2rem;
-  width: 65%;
+  width: 600px;
+  label {
+    font-family: 'Work Sans';
+    font-weight: 600;
+  }
   @media(max-width: 650px) {
     width: 86%;
   }
@@ -379,11 +383,13 @@ h1,h2,h3 {
   margin-right: auto;
   input {
     width: 100%;
+    padding: 16px 13px;
     margin-bottom: 1.5rem;
     display: block;
   }
   textarea {
     width: 100%;
+    height: 196px;
     margin-bottom: 1.5rem;
     display: block;
     text-indent: .5rem;
@@ -393,9 +399,12 @@ h1,h2,h3 {
     display: block;
     width: 100%;
     background-color: $cfa-red;
+    font-family: "Work Sans";
+    font-weight: 600;
     border: $white;
     border-style: solid;
     border-width: 1px;
+    border-radius: 2px;
     color: $white;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
@@ -403,7 +412,6 @@ h1,h2,h3 {
     padding-right: 1rem;
     text-align: center;
     text-decoration: none;
-    border-radius: 1rem;
     margin-left: auto;
     margin-right: auto;
   }
