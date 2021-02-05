@@ -8997,7 +8997,7 @@ h1, h2, h3 {
   margin-left: auto;
   margin-right: auto; }
   .contact-form label {
-    font-family: 'Work Sans';
+    font-family: "Work Sans", sans-serif;
     font-weight: 600; }
   @media (max-width: 650px) {
     .contact-form {
@@ -9011,13 +9011,14 @@ h1, h2, h3 {
     width: 100%;
     height: 196px;
     margin-bottom: 1.5rem;
+    padding: 16px 13px;
     display: block;
     text-indent: .5rem; }
   .contact-form button {
     display: block;
     width: 100%;
     background-color: #CF2045;
-    font-family: "Work Sans";
+    font-family: "Work Sans", sans-serif;
     font-weight: 600;
     border: #fff;
     border-style: solid;
