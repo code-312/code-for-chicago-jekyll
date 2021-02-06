@@ -9107,6 +9107,7 @@ h1, h2, h3 {
   max-width: 100%; }
 
 .cardsContainer {
+  background-color: #F5F5F5;
   padding-top: 80px;
   padding-bottom: 80px; }
   .cardsContainer h2 {
