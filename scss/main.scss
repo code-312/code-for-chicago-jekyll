@@ -287,7 +287,7 @@ h1,h2,h3 {
   margin-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  p {
+  p.text-center {
     margin-bottom: 48px;
   }
 }
@@ -299,9 +299,9 @@ h1,h2,h3 {
 .rsvp-stuff {
   margin-top: 1rem;
   p {
-    font-family: 'Work sans', sans-serif;
+    font-family: $font-family-alt;
     font-weight: 500;
-    color: #333;
+    color: $darker-grey;
     font-size: 14px; 
   }
 }
@@ -311,14 +311,14 @@ h1,h2,h3 {
 }
 
 .attend-button {
-  font-family: 'Work Sans', sans-serif;
+  font-family: $font-family-alt;
   font-weight: 500;
-  color: #333333; 
+  color: $darker-grey; 
   font-size: 14px;
   border-bottom: 1rem solid transparent;
   padding-left: 5%;
   a:link, a:hover {
-    color: #0D77AC;
+    color: $cfa-blue;
   }
 }
 
@@ -351,7 +351,7 @@ h1,h2,h3 {
 
 .whitebutton {
   background-color: $white;
-  border: 1px solid $cfa-red;
+  border: 1px solid $cfa-blue;
   text-align: center;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
