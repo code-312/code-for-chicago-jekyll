@@ -8976,12 +8976,12 @@ h1, h2, h3 {
 .contact-form-container {
   color: #fff;
   padding-bottom: 5rem;
-  padding-top: 1rem;
   margin-bottom: 2rem;
   background-color: #CF2045; }
   .contact-form-container h1 {
     color: #fff;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    font-weight: 600; }
   .contact-form-container .text-center {
     display: block;
     margin: auto; }
@@ -8989,48 +8989,55 @@ h1, h2, h3 {
     color: #fff; }
 
 #contactus {
+  margin-top: 80px;
   margin-bottom: 3rem; }
 
 .contact-form {
-  margin-bottom: 2rem;
   width: 600px;
+  font-size: 1.125em;
+  margin-top: -10px;
   margin-left: auto;
   margin-right: auto; }
   .contact-form label {
     font-family: "Work Sans", sans-serif;
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 0.75em; }
   @media (max-width: 650px) {
     .contact-form {
       width: 86%; } }
   .contact-form input {
     width: 100%;
-    padding: 16px 13px;
+    padding: 10px 13px 7px 13px;
     margin-bottom: 1.5rem;
     display: block; }
+  .contact-form input::placeholder {
+    color: #BABABA; }
   .contact-form textarea {
     width: 100%;
     height: 196px;
-    margin-bottom: 1.5rem;
-    padding: 16px 13px;
-    display: block;
-    text-indent: .5rem; }
+    padding: 10px 13px;
+    display: block; }
+  .contact-form textarea::placeholder {
+    color: #BABABA; }
   .contact-form button {
     display: block;
     width: 100%;
     background-color: #CF2045;
     font-family: "Work Sans", sans-serif;
+    font-size: 0.875rem;
     font-weight: 600;
     border: #fff;
     border-style: solid;
     border-width: 1px;
     border-radius: 2px;
     color: #fff;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
     text-decoration: none;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto; }
   .contact-form button:hover {
