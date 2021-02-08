@@ -1,13 +1,16 @@
 // Color
 // Branding colors
 // Primary
-$cfa-red: #D02144;
+$cfa-red: #CF2045;
+$cfa-red-dark: #AA1A37;
 $cfa-blue: #359ED3;
+$cfa-blue-dark: #0D77AC;
 $brigade-grey: #6D6E71;
 // Secondary
 $light-grey: #BABABA;
 $dark-grey: #606060;
-$off-white: #f6efe8;
+$darker-grey: #333333;
+$off-white: #F5F5F5;
 
 $primary: $cfa-red;
 $highlight: lighten($primary, 0%);
