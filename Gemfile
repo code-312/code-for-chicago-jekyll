@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 gem "jekyll", "~> 3.8.2"
 # gem 'html-proofer', '~> 3.9.1'
-gem "cocoapods", '1.9.1'
 gem 'hash-joiner'
 gem "rexml"
 gem 'webrick'
