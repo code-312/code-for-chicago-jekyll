@@ -498,14 +498,32 @@ h1,h2,h3 {
   margin-bottom: 2rem;
 }
 
-.workwithus {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.workwithusHeader {
+  color: $black;
+  margin: 0 auto 3.22rem;
+  max-width: 510px;
+  margin-top: 5rem;
+
+  h1 {
+    color: $black;
+    padding-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 3rem;
+  }
+
+}
+.workwithusContent {
+  padding-bottom: 2rem;
+
   h4 {
     color: $black;
   }
   p {
     font-size: calc(1rem + 27.333%);
+    color: $black;
   }
 }
 
@@ -513,23 +531,26 @@ h1,h2,h3 {
   justify-content: space-between;
   text-align: center;
   font-weight: bold;
+  margin: 0 auto 4.39rem;
+  width: 100%;
 
+  p {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 0;
+
+    p {
+      margin-bottom: 4.18rem;
+    }
+  }
 }
 
 .workwithusIcon {
   width: 42px;
   height: 42px;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-#workWithUs {
-  color: $black;
-}
-
-#workWithUsText {
-  max-width: 510px;
-  margin: auto;
+  margin-bottom: 1.42rem;
 }
 
 .cardTitle {
@@ -586,6 +607,7 @@ h1,h2,h3 {
   text-align: center;
   text-decoration: none;
   margin-top: 2rem !important;
+  border-radius: 2px;
   a {
     color: white;
   }
