@@ -9072,28 +9072,46 @@ h1, h2, h3 {
   padding-bottom: 3rem;
   padding-right: 0;
   padding-left: 0; }
-  .workwithus h4 {
+
+.workwithusHeader {
+  color: #333333;
+  margin: 0 auto 3.22rem;
+  max-width: 510px;
+  margin-top: 5rem; }
+  .workwithusHeader h1 {
+    color: #333333;
+    padding-top: 0;
+    margin-bottom: 1rem; }
+  @media (max-width: 767px) {
+    .workwithusHeader {
+      margin-top: 3rem; } }
+
+.workwithusContent {
+  padding-bottom: 2rem; }
+  .workwithusContent h4 {
     color: #333333; }
-  .workwithus p {
-    font-size: calc(1rem + 27.333%); }
+  .workwithusContent p {
+    font-size: calc(1rem + 27.333%);
+    color: #333333; }
 
 .workwithusIconsRow {
   justify-content: space-between;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 0 auto 4.39rem;
+  width: 100%; }
+  .workwithusIconsRow p {
+    margin-bottom: 0; }
+  @media (max-width: 767px) {
+    .workwithusIconsRow {
+      margin-bottom: 0; }
+      .workwithusIconsRow p {
+        margin-bottom: 4.18rem; } }
 
 .workwithusIcon {
   width: 42px;
   height: 42px;
-  margin-bottom: 1rem;
-  margin-top: 1rem; }
-
-#workWithUs {
-  color: #333333; }
-
-#workWithUsText {
-  max-width: 510px;
-  margin: auto; }
+  margin-bottom: 1.42rem; }
 
 .cardTitle {
   font-size: 14px;
@@ -9110,8 +9128,9 @@ h1, h2, h3 {
 
 .cardsContainer {
   background-color: #F5F5F5;
-  padding-top: 80px;
-  padding-bottom: 80px; }
+  padding: 80px 50px;
+  margin-left: -15px;
+  margin-right: -15px; }
   .cardsContainer h2 {
     color: #333333; }
   .cardsContainer a {
@@ -9139,7 +9158,8 @@ h1, h2, h3 {
   margin-left: 1rem;
   text-align: center;
   text-decoration: none;
-  margin-top: 2rem !important; }
+  margin-top: 2rem !important;
+  border-radius: 2px; }
   .donateButton a {
     color: white; }
   .donateButton:hover {

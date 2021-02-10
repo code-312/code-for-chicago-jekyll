@@ -545,8 +545,10 @@ h1,h2,h3 {
 
 .cardsContainer {
   background-color:$off-white;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 50px;
+  margin-left: -15px;
+  margin-right: -15px;
+
   h2 {
     color: $black;
   }
