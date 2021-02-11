@@ -5,57 +5,53 @@ layout: default
 home: true
 ---
 <div class="main" role="main">
-<div class="container-fluid workwithus">
-    <h1 class="text-center" id="workWithUs">Work with us</h1>
-    <p class="text-center" id="workWithUsText">Whoever you are, there is a place for you here! Join us for co-working, project, service, and social events.</p>
-    <div class="padded-content workwithus">
-      <div class="row workwithusIconsRow">
+<div class="container-fluid">
+  <div class="workwithus">
+    <div class="workwithusHeader">
+      <h1 class="text-center" id="workWithUs">Work with us</h1>
+      <p class="text-center" id="workWithUsText">Whoever you are, there is a place for you here! Join us for co-working, project, service, and social events.</p>
+    </div>
+    <div class="padded-content workwithusContent">
+      <div class="row workwithusIconsRow col-md-10">
         <div class="col-md-3">
-          <img class="workwithusIcon" src="/images/Developers.svg">
-          <br/>
-          <span>Developers</span>
+          <img class="workwithusIcon" src="/images/Developers.svg" alt="Code brackets">
+          <p>Developers</p>
         </div>
         <div class="col-md-3">
-          <img class="workwithusIcon" src="/images/Designers.svg"/>
-          <br/>
-          <span>Designers</span>
+          <img class="workwithusIcon" src="/images/Designers.svg" alt="Pen and pencil"/>
+          <p>Designers</p>
         </div>
         <div class="col-md-3">
-          <img class="workwithusIcon" src="/images/Data-Scientists.svg"/>
-          <br/>
-          <span>Data Scientists</span>
+          <img class="workwithusIcon" src="/images/Data-Scientists.svg" alt="Database"/>
+          <p>Data Scientists</p>
         </div>
         <div class="col-md-3">
-          <img class="workwithusIcon" src="/images/Project-Managers.svg"/>
-          <br/>
-          <span>Project Managers</span>
+          <img class="workwithusIcon" src="/images/Project-Managers.svg" alt="Calendar"/>
+          <p>Project Managers</p>
         </div>
       </div>
 
-      <div class="row workwithusIconsRow">
+      <div class="row workwithusIconsRow col-md-10">
         <div class="col-md-3">
-          <img class="workwithusIcon" src="/images/Product-Managers.svg"/>
-          <br/>
-          <span>Product Managers</span>
+          <img class="workwithusIcon" src="/images/Product-Managers.svg" alt="Light bulb"/>
+          <p>Product Managers</p>
         </div>
         <div class="col-md-3">
-          <img class="workwithusIcon" src="/images/Community-Organizers.svg"/>
-          <br/>
-          <span>Community Organizers</span>
+          <img class="workwithusIcon" src="/images/Community-Organizers.svg" alt="Megaphone"/>
+          <p>Community Organizers</p>
         </div>
         <div class="col-md-3">
-          <img class="workwithusIcon" src="/images/Social-Workers.svg"/>
-          <br/>
-          <span>Social Workers</span>
+          <img class="workwithusIcon" src="/images/Social-Workers.svg" alt="Hands"/>
+          <p>Social Workers</p>
         </div>
         <div class="col-md-3">
-          <img class="workwithusIcon" src="/images/Anyone.svg"/>
-          <br/>
-          <span>Anyone</span>
+          <img class="workwithusIcon" src="/images/Anyone.svg" alt="Person"/>
+          <p>Anyone!</p>
         </div>
       </div>
 
     </div>
+  </div>
 <div class="cardsContainer">
       <div class="padded-content cards">
         <div class="row">
@@ -83,76 +79,75 @@ home: true
     </div>
   </div>
 </div>
-
-  <div class="row meetups">
-    <div class="padded-content">
-
-    {%for event in site.data.events%}
-
-    <div class="col-md-12 meetup">
-      <h1 class="text-center">Upcoming Events</h1>
-      <p class="text-center"><a id="meetupLink" href="https://www.meetup.com/code-for-chicago" target="blank">See our events on Meetup <i class="fas fa-external-link-alt"></i></a></p>
-        <div class="row">
-          <div class="col-md-6 meetup-content">
-
-          <h4>{% assign date = event.local_date | date: "%a. %B %-d, %Y" %}
-              {% assign time = event.local_time | date: "%l:%M %p" %}
-              {{date}} at {{time}}</h4>
-          <h3 class="text-left">
-              <a href='{{event.link}}' target="blank">{{event.name}}</a>
-          </h3>
-          <p>{{event.description}}</p>
-        </div>
-          <div class="col-md-6">
-              <img class="event-photo" src="{{event.featured_photo.photo_link}}"/>
-          </div>
-        </div>
-        <div class="row rsvp-stuff">
-          <div class="col-md-4"><p><i class="fas fa-map-marker-alt"></i> {{event.venue.name}} {{event.venue.address_1}}</p></div>
-          <div class="col-md-3 attend-button"><a href="{{event.link}}" target="blank" class="whitebutton">Attend <i class="fas fa-external-link-alt"></i></a></div>
-        </div>
-    </div> 
-
-    {%endfor%}
-    </div>
-  </div>
-
-
-
-    <div class="row contact-form-container">
+  <div class="container-fluid">
+    <div class="row meetups">
       <div class="padded-content">
 
-  <div class="text-center">
-     <h1 id="contactus">Contact Us</h1>
-  </div>
-  <div class="row">
-    <div class="contact-form">
-      <form method="POST" action="https://formspree.io/leadership@openuptown.us">
-        <label>Email</label>
-        <input type="email" name="email" placeholder="Your email">
-        <label>Message</label>
-        <textarea name="message" placeholder="Your message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </div>
-  
-      <div class="row">
-    <div class="col-md-12 keep-in-touch text-center">
-        <a target="_blank" href="https://www.meetup.com/code-for-chicago/" title="Meetup">
-          <i class="fab fa-meetup"></i>
-        </a>
-        <a target="_blank" href="https://code-for-chicago-slack-invite.herokuapp.com/" title="Slack">
-          <i class="fab fa-slack"></i>
-        </a>
-        <a target="_blank" href="https://github.com/code-for-chicago" title="Github">
-          <i class="fab fa-github"></i>
-        </a>
-    </div>
-  </div>
+      {%for event in site.data.events%}
 
+      <div class="col-md-12 meetup">
+        <h1 class="text-center">Upcoming Events</h1>
+        <p class="text-center"><a id="meetupLink" href="https://www.meetup.com/code-for-chicago" target="blank">See our events on Meetup <i class="fas fa-external-link-alt"></i></a></p>
+          <div class="row">
+            <div class="col-md-6">
+
+            <h4>{% assign date = event.local_date | date: "%a. %B %-d, %Y" %}
+                {% assign time = event.local_time | date: "%l:%M %p" %}
+                {{date}} at {{time}}</h4>
+            <h3 class="text-left">
+                <a href='{{event.link}}' target="blank">{{event.name}}</a>
+            </h3>
+            <p>{{event.description}}</p>
+          </div>
+            <div class="col-md-6">
+                <img class="event-photo" src="{{event.featured_photo.photo_link}}"/>
+            </div>
+          </div>
+          <div class="row rsvp-stuff">
+            <div class="col-md-4"><p><i class="fas fa-map-marker-alt"></i> {{event.venue.name}} {{event.venue.address_1}}</p></div>
+            <div class="col-md-3 attend-button"><a href="{{event.link}}" target="blank" class="whitebutton">Attend <i class="fas fa-external-link-alt"></i></a></div>
+          </div>
+      </div> 
+
+      {%endfor%}
+      </div>
     </div>
     </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row contact-form-container">
+      <div class="padded-content">
+        <div class="text-center">
+          <h1 id="contactus">Contact Us</h1>
+        </div>
+        <div class="row">
+          <div class="contact-form">
+            <form method="POST" action="https://formspree.io/leadership@openuptown.us">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="Your email">
+              <label>Message</label>
+              <textarea name="message" placeholder="Your message"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 keep-in-touch text-center">
+            <a target="_blank" href="https://www.meetup.com/code-for-chicago/" title="Meetup">
+              <i class="fab fa-meetup"></i>
+            </a>
+            <a target="_blank" href="https://code-for-chicago-slack-invite.herokuapp.com/" title="Slack">
+              <i class="fab fa-slack"></i>
+            </a>
+            <a target="_blank" href="https://github.com/code-for-chicago" title="Github">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  </div>
   </div>
 </div>
