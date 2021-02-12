@@ -470,7 +470,6 @@ h1,h2,h3 {
   margin: 0 auto;
   max-width: 510px;
   margin-top: 5rem;
-  margin-bottom: 1.5rem;
 
   h1 {
     color: $black;
@@ -494,6 +493,11 @@ h1,h2,h3 {
     font-size: calc(1rem + 27.333%);
     color: $black;
   }
+
+}
+
+#workWithUsText{
+  margin: 0;
 }
 
 .workwithusIconsRow {
