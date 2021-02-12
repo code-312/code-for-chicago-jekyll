@@ -443,11 +443,17 @@ h1,h2,h3 {
 	margin-top: 0;
 	margin-bottom: 0;
     }
+    img{
+      width: 4.75rem;
+      height: 2.9rem;
+    }
 }
 
 @media (max-width: 768px) {
     .footer-icon {
-	margin-bottom: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 6rem;
     }
 }
 
@@ -504,13 +510,16 @@ h1,h2,h3 {
   justify-content: space-between;
   text-align: center;
   font-weight: bold;
-  margin: auto;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin: auto 4.39rem;
   width: 100%;
 
   p {
     margin-bottom: 0;
+  }
+
+  .col-md-3{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   @media (max-width: 767px) {
