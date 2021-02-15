@@ -124,16 +124,13 @@ h1,h2,h3 {
 .header-line-container {
   display: flex;
   background-color: $cfa-red;
-  margin-right: -15px;
-  height: 564px;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
 
   @media (max-width: 1058px) {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    height: 581px;
   }
 }
 
@@ -142,7 +139,7 @@ h1,h2,h3 {
   height: 100%;
   display: flex;
   align-items: center;
-  padding-top: 3rem;
+  justify-content: center;
 
   h1, h4, p {
     color: $white;
@@ -152,6 +149,7 @@ h1,h2,h3 {
     @media (max-width: 1058px) {
       font-size: 0.875rem !important;
       line-height: 0.875rem;
+      margin-top: 3rem;
     }
   }
 
@@ -178,6 +176,8 @@ h1,h2,h3 {
     display: flex;
     justify-content: center;
     height: auto;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 }
 
@@ -217,12 +217,15 @@ h1,h2,h3 {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: -2px;
+  margin-top: 3rem;
+  align-self: flex-end;
 
   @media (max-width: 1058px) {
     max-width: 30.75rem;
     max-height: 18.7rem;
     margin-top: 3rem;
     background-position: bottom center;
+    align-self: auto;
   }
 }
 
