@@ -322,7 +322,7 @@ h1,h2,h3 {
 .attend-button {
   font-family: $font-family-alt;
   font-weight: 600;
-  color: $darker-grey; 
+  color: white; 
   font-size: .875rem;
   border-bottom: 1rem solid transparent;
   padding-left: 5%;
@@ -335,7 +335,11 @@ h1,h2,h3 {
   }
   
   a:link, a:hover {
-    color: $cfa-blue;
+    color: $white;
+  }
+
+  i {
+    margin-left: .25rem;
   }
 }
 
@@ -367,8 +371,7 @@ h1,h2,h3 {
 }
 
 .whitebutton {
-  background-color: $white;
-  border: 1px solid $cfa-blue;
+  background-color: $cfa-red;
   border-radius: 2px;
   text-align: center;
   padding-top: 0.5rem;
@@ -376,7 +379,7 @@ h1,h2,h3 {
   padding-left: .75rem;
   padding-right: .75rem;
   a {
-    color: $cfa-red !important;
+    color: $white !important;
   }
 }
 
@@ -619,6 +622,4 @@ h1,h2,h3 {
   &:visited {
     color: white;
   }
-
 }
-
