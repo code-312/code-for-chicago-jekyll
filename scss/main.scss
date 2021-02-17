@@ -40,8 +40,12 @@ h1,h2,h3 {
   justify-content: space-between;
   position: relative;
   width: 100%;
-  margin: 16px 0;
+  padding: 0 6rem;
+  margin: 1.5rem 0;
   height: 47px;
+  @media (max-width: 768px) {
+    padding: 0 3rem;
+  }
 }
 
 .navbar a {
@@ -50,28 +54,25 @@ h1,h2,h3 {
 
 .social-container {
   display: block;
-  align-items: center;
+  align-self: center;
 }
 
 .logo-container {
   display: inline;
   overflow: hidden;
-  height: inherit;
-}
+  height: 100%;
+} 
 
 .brigade-logo {
   max-width: 120px;
+  height: auto;
 }
 
-@media (max-width: 812px) {
-  .brigade-logo {
-    height: 100%;
-  }
-}
 
 .social-logo {
   display: inline;
   margin-left: 16px;
+  vertical-align: center; 
 }
 
 .social-img {
@@ -80,10 +81,12 @@ h1,h2,h3 {
   z-index: 1;
 }
 
-@media (min-width: 651px) {
+@media (max-width: 651px) {
   .navbar {
     margin: 16px 0;
-    height: 32px;
+  }
+  .social-container {
+    display: none;
   }
 }
 
@@ -595,7 +598,6 @@ h1,h2,h3 {
   margin-left: 1rem;
   text-align: center;
   text-decoration: none;
-  margin-top: 2rem !important;
   border-radius: 2px;
   a {
     color: white;
