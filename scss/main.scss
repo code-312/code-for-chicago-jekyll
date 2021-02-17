@@ -489,14 +489,17 @@ h1,h2,h3 {
 
 .workwithusHeader {
   color: $black;
-  margin: 0 auto 3.22rem;
-  max-width: 510px;
-  margin-top: 5rem;
+  margin: 80px auto 24px;
+  max-width: 600px;
 
   h1 {
     color: $black;
     padding-top: 0;
     margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 0;
   }
 
   @media (max-width: 767px) {
@@ -520,7 +523,7 @@ h1,h2,h3 {
   justify-content: space-between;
   text-align: center;
   font-weight: bold;
-  margin: 0 auto 4.39rem;
+  margin: 48px auto;
   width: 100%;
 
   p {
