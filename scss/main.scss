@@ -337,7 +337,7 @@ h1,h2,h3 {
     }
   }
   
-  a:link, a:hover {
+  a:link, a:hover, a:visited {
     color: $white;
   }
 
@@ -594,7 +594,7 @@ h1,h2,h3 {
 
 .cardText {
   max-width: 100%;
-}
+} 
 
 .cardsContainer {
   background-color: $off-white;
