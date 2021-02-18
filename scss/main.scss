@@ -503,12 +503,12 @@ h1,h2,h3 {
   }
 
   @media (max-width: 767px) {
-    margin-top: 3rem;
+    margin-top: 64px;
   }
 
 }
 .workwithusContent {
-  padding-bottom: 2rem;
+  padding-bottom: 80px;
 
   h4 {
     color: $black;
@@ -517,24 +517,32 @@ h1,h2,h3 {
     font-size: calc(1rem + 27.333%);
     color: $black;
   }
+  @media (max-width: 767px) {
+    width: 100%;
+    padding-bottom: 40px;
+  }
 }
 
 .workwithusIconsRow {
   justify-content: space-between;
   text-align: center;
   font-weight: bold;
-  margin: 48px auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: auto;
   width: 100%;
+
+  max-width: 1032px;
 
   p {
     margin-bottom: 0;
   }
 
   @media (max-width: 767px) {
+    padding: 0;
     margin-bottom: 0;
-
     p {
-      margin-bottom: 4.18rem;
+      padding-bottom: 24px;
     }
   }
 }
@@ -542,7 +550,11 @@ h1,h2,h3 {
 .workwithusIcon {
   width: 42px;
   height: 42px;
-  margin-bottom: 1.42rem;
+  margin-bottom: 16px;
+
+  @media (max-width: 767px) {
+    margin-top: 24px;
+  }
 }
 
 .cardTitle {
