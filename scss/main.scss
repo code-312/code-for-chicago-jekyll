@@ -549,6 +549,10 @@ h1,h2,h3 {
   margin-left: -15px;
   margin-right: -15px;
 
+  @media (max-width: 767px) {
+    padding-top: 0;
+  }
+
   h2 {
     color: $black;
   }
