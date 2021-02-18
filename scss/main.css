@@ -4089,6 +4089,7 @@ button.close {
       content: "";
       border-color: transparent;
       border-style: solid; }
+<<<<<<< HEAD
 
 .bs-tooltip-top, .bs-tooltip-auto[x-placement^="top"] {
   padding: 0.4rem 0; }
@@ -4110,6 +4111,29 @@ button.close {
       border-width: 0.4rem 0.4rem 0.4rem 0;
       border-right-color: #3194c3; }
 
+=======
+
+.bs-tooltip-top, .bs-tooltip-auto[x-placement^="top"] {
+  padding: 0.4rem 0; }
+  .bs-tooltip-top .arrow, .bs-tooltip-auto[x-placement^="top"] .arrow {
+    bottom: 0; }
+    .bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+      top: 0;
+      border-width: 0.4rem 0.4rem 0;
+      border-top-color: #3194c3; }
+
+.bs-tooltip-right, .bs-tooltip-auto[x-placement^="right"] {
+  padding: 0 0.4rem; }
+  .bs-tooltip-right .arrow, .bs-tooltip-auto[x-placement^="right"] .arrow {
+    left: 0;
+    width: 0.4rem;
+    height: 0.8rem; }
+    .bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="right"] .arrow::before {
+      right: 0;
+      border-width: 0.4rem 0.4rem 0.4rem 0;
+      border-right-color: #3194c3; }
+
+>>>>>>> master
 .bs-tooltip-bottom, .bs-tooltip-auto[x-placement^="bottom"] {
   padding: 0.4rem 0; }
   .bs-tooltip-bottom .arrow, .bs-tooltip-auto[x-placement^="bottom"] .arrow {
@@ -8976,12 +9000,20 @@ h1, h2, h3 {
 .contact-form-container {
   color: #fff;
   padding-bottom: 5rem;
+<<<<<<< HEAD
   padding-top: 1rem;
+=======
+>>>>>>> master
   margin-bottom: 2rem;
   background-color: #CF2045; }
   .contact-form-container h1 {
     color: #fff;
+<<<<<<< HEAD
     margin-bottom: 2rem; }
+=======
+    margin-bottom: 2rem;
+    font-weight: 600; }
+>>>>>>> master
   .contact-form-container .text-center {
     display: block;
     margin: auto; }
@@ -8989,6 +9021,7 @@ h1, h2, h3 {
     color: #fff; }
 
 #contactus {
+<<<<<<< HEAD
   margin-bottom: 3rem; }
 
 .contact-form {
@@ -8996,11 +9029,27 @@ h1, h2, h3 {
   width: 65%;
   margin-left: auto;
   margin-right: auto; }
+=======
+  margin-top: 80px;
+  margin-bottom: 3rem; }
+
+.contact-form {
+  width: 600px;
+  font-size: 1.125em;
+  margin-top: -10px;
+  margin-left: auto;
+  margin-right: auto; }
+  .contact-form label {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 0.75em; }
+>>>>>>> master
   @media (max-width: 650px) {
     .contact-form {
       width: 86%; } }
   .contact-form input {
     width: 100%;
+<<<<<<< HEAD
     margin-bottom: 1.5rem;
     display: block; }
   .contact-form textarea {
@@ -9008,21 +9057,52 @@ h1, h2, h3 {
     margin-bottom: 1.5rem;
     display: block;
     text-indent: .5rem; }
+=======
+    padding: 10px 13px 7px 13px;
+    margin-bottom: 1.5rem;
+    display: block; }
+  .contact-form input::placeholder {
+    color: #BABABA; }
+  .contact-form textarea {
+    width: 100%;
+    height: 196px;
+    padding: 10px 13px;
+    display: block; }
+  .contact-form textarea::placeholder {
+    color: #BABABA; }
+>>>>>>> master
   .contact-form button {
     display: block;
     width: 100%;
     background-color: #CF2045;
+<<<<<<< HEAD
     border: #fff;
     border-style: solid;
     border-width: 1px;
     color: #fff;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
+=======
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    color: #fff;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+>>>>>>> master
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
     text-decoration: none;
+<<<<<<< HEAD
     border-radius: 1rem;
+=======
+    margin-top: 30px;
+>>>>>>> master
     margin-left: auto;
     margin-right: auto; }
   .contact-form button:hover {
@@ -9069,6 +9149,7 @@ h1, h2, h3 {
 
 .workwithus {
   padding-top: 3rem;
+<<<<<<< HEAD
   padding-bottom: 3rem;
   padding-right: 0;
   padding-left: 0; }
@@ -9093,10 +9174,18 @@ h1, h2, h3 {
   .workwithusContent p {
     font-size: calc(1rem + 27.333%);
     color: #333333; }
+=======
+  padding-bottom: 3rem; }
+  .workwithus h4 {
+    color: #333333; }
+  .workwithus p {
+    font-size: calc(1rem + 27.333%); }
+>>>>>>> master
 
 .workwithusIconsRow {
   justify-content: space-between;
   text-align: center;
+<<<<<<< HEAD
   font-weight: bold;
   margin: 0 auto 4.39rem;
   width: 100%; }
@@ -9131,6 +9220,40 @@ h1, h2, h3 {
   padding: 80px 50px;
   margin-left: -15px;
   margin-right: -15px; }
+=======
+  font-weight: bold; }
+
+.workwithusIcon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
+
+#workWithUs {
+  color: #333333; }
+
+#workWithUsText {
+  max-width: 510px;
+  margin: auto; }
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-top: 82px; }
+
+.volunteersRow {
+  margin-top: 64px;
+  flex-wrap: wrap-reverse; }
+
+.cardText {
+  max-width: 100%; }
+
+.cardsContainer {
+  background-color: #F5F5F5;
+  padding-top: 64px;
+  padding-bottom: 64px; }
+>>>>>>> master
   .cardsContainer h2 {
     color: #333333; }
   .cardsContainer a {
@@ -9158,8 +9281,12 @@ h1, h2, h3 {
   margin-left: 1rem;
   text-align: center;
   text-decoration: none;
+<<<<<<< HEAD
   margin-top: 2rem !important;
   border-radius: 2px; }
+=======
+  margin-top: 2rem !important; }
+>>>>>>> master
   .donateButton a {
     color: white; }
   .donateButton:hover {
