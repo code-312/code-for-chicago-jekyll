@@ -490,7 +490,7 @@ h1,h2,h3 {
 .workwithusHeader {
   color: $black;
   margin: 80px auto 24px;
-  max-width: 600px;
+  width: 600px;
 
   h1 {
     color: $black;
@@ -505,7 +505,18 @@ h1,h2,h3 {
   @media (max-width: 767px) {
     margin-top: 64px;
   }
-
+  @media (max-width: 651px) {
+    width: 555px;
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 360px) {
+    margin-top: 48px;
+  }
 }
 .workwithusContent {
   padding-bottom: 80px;
@@ -517,9 +528,18 @@ h1,h2,h3 {
     font-size: calc(1rem + 27.333%);
     color: $black;
   }
-  @media (max-width: 767px) {
-    width: 100%;
+  @media (max-width: 768px) {
     padding-bottom: 40px;
+  }
+  @media (max-width: 651px) {
+    align-content: center;
+    width: 397px;
+    p {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 360){
+    padding-bottom: 24px;
   }
 }
 
