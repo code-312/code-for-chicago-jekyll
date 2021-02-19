@@ -519,8 +519,6 @@ h1,h2,h3 {
     padding: 24px;
   }
   @media (max-width: 360px) {
-    width: 100%;
-    padding: 24px;
     margin-top: 48px;
   }
 }
@@ -543,6 +541,9 @@ h1,h2,h3 {
     p {
       font-size: 1rem;
     }
+  }
+  @media (max-width: 445px) {
+    width: 100%;
   }
   @media (max-width: 360){
     padding-bottom: 24px;
