@@ -510,7 +510,7 @@ h1,h2,h3 {
   justify-content: space-between;
   text-align: center;
   font-weight: bold;
-  margin: auto 4.39rem;
+  margin: auto;
   width: 100%;
 
   p {
@@ -520,7 +520,6 @@ h1,h2,h3 {
   .col-md-3{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-  }
 
   @media (max-width: 767px) {
     margin-bottom: 0;
@@ -528,6 +527,7 @@ h1,h2,h3 {
     p {
       margin-bottom: 4.18rem;
     }
+  }
   }
 }
 .workwithusIcon {
