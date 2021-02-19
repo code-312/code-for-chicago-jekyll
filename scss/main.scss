@@ -514,7 +514,13 @@ h1,h2,h3 {
       font-size: 1rem;
     }
   }
+  @media (max-width: 604px) {
+    width: 100%;
+    padding: 24px;
+  }
   @media (max-width: 360px) {
+    width: 100%;
+    padding: 24px;
     margin-top: 48px;
   }
 }
