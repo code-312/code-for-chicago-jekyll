@@ -27,14 +27,16 @@ v10.15.2
 If they or not installed, or your version looks much older than this, proceed to [instructions for installing npm](https://www.npmjs.com/get-npm)
 
 ### ruby
-To verify you have ruby installed:
+It is advisable to avoid using the OS install of Ruby that comes bundled with MacOS, Ubuntu, and others. Instead we'd suggest using a Ruby virtual environment like [rbenv](https://github.com/rbenv/rbenv). Installation instructions can be found [here](https://github.com/rbenv/rbenv#installation).
+
+To verify your ruby version:
 
 ```
 > ruby -v
 ruby 2.5.5p157 (2019-03-15 revision 67260) [x86_64-linux-gnu]
 ```
 
-You should have at least ruby 2.1.0. [Proceed here for installation instructions if not](https://www.ruby-lang.org/en/downloads/).
+You should have at least ruby 2.1.0.
 
 ### bundler
 To install bundler, use:
