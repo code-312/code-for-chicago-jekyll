@@ -16,6 +16,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Work+Sans:wght@600&display=swap');
 
+
+body {
+  color: $black;
+}
+
 h4, h5 {
     font-family: $font-family-alt;
     font-size: 0.875rem;
@@ -543,8 +548,10 @@ h1,h2,h3 {
 }
 
 .cardTitle {
-  font-size: 14px;
-  font-weight: bold;
+  font-family: $font-family-alt;
+  color: $black;
+  font-size: 0.875rem;
+  font-weight: 600;
   margin-bottom: 0;
   padding-top: 82px;
 }
