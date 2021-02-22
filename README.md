@@ -27,7 +27,7 @@ v10.15.2
 If they or not installed, or your version looks much older than this, proceed to [instructions for installing npm](https://www.npmjs.com/get-npm)
 
 ### ruby
-It is advisable to avoid using the OS install of Ruby that comes bundles with MacOS, Ubuntu, and others. Instead we'd suggest using a Ruby virtual environment like [rbenv](https://github.com/rbenv/rbenv). Installation instructions can be found [here](https://github.com/rbenv/rbenv#installation).
+It is advisable to avoid using the OS install of Ruby that comes bundled with MacOS, Ubuntu, and others. Instead we'd suggest using a Ruby virtual environment like [rbenv](https://github.com/rbenv/rbenv). Installation instructions can be found [here](https://github.com/rbenv/rbenv#installation).
 
 To verify your ruby version:
 
