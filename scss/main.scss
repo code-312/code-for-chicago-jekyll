@@ -612,6 +612,7 @@ h1,h2,h3 {
     color: $cfa-blue-dark;
   }
   .row {
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
   p {
@@ -620,6 +621,7 @@ h1,h2,h3 {
   img {
     max-width: none;
     width: 600px;
+    margin-right: 0;
   }
 }
 
@@ -628,12 +630,16 @@ h1,h2,h3 {
   max-width: 1440px;
 }
 
-.cardInfo {
+.card-info {
   width: 492px;
+  @media (max-width: 1340px) {
+    width: 100%;
+  }
 }
 
 .organizationsText {
   display: flex;
+  flex-shrink: 4;
   flex-direction: column;
   justify-content: center;
 }
@@ -642,6 +648,14 @@ h1,h2,h3 {
   padding-left: 10%;
   padding-right: 0;
   margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-img-container {
+  flex-shrink: 1;
+  width: 630px;
   display: flex;
   flex-direction: column;
   justify-content: center;
