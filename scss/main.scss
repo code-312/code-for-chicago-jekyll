@@ -131,6 +131,14 @@ h1,h2,h3 {
     justify-content: flex-end;
     padding-left: 0;
   }
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.header-background-container {
+  background: $cfa-red;
 }
 
 .header-contents {
