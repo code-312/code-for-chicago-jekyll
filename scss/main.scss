@@ -498,6 +498,13 @@ h1,h2,h3 {
   margin-bottom: 2rem;
 }
 
+.workwithus {
+  padding-top: 0;
+  padding-bottom: 3rem;
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .workwithusHeader {
   color: $black;
   margin: 0 auto;
@@ -573,7 +580,7 @@ h1,h2,h3 {
 }
 
 .volunteersRow {
-  margin-top: 64px;
+  margin-top: 80px;
   flex-wrap: wrap-reverse;
 }
 
@@ -582,9 +589,15 @@ h1,h2,h3 {
 }
 
 .cardsContainer {
-  background-color: $off-white;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  background-color:$off-white;
+  padding: 80px 50px;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  @media (max-width: 767px) {
+    padding-top: 0;
+  }
+
   h2 {
     color: $black;
   }
