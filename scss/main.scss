@@ -574,10 +574,10 @@ h1,h2,h3 {
 .cardTitle {
   font-family: $font-family-alt;
   color: $black;
+  text-transform: uppercase;
   font-size: 0.875rem;
   font-weight: 600;
   margin-bottom: 0;
-  padding-top: 82px;
 }
 
 .volunteersRow {
@@ -586,6 +586,7 @@ h1,h2,h3 {
 }
 
 .cardText {
+  font-size: 1.25rem;
   max-width: 100%;
 }
 
@@ -601,6 +602,8 @@ h1,h2,h3 {
   h2 {
     color: $black;
     font-size: 2rem;
+    padding-top: 16px;
+    padding-bottom: 7px;
   }
   a {
     font-family: $font-family-alt; 
@@ -610,6 +613,12 @@ h1,h2,h3 {
   }
   .row {
     justify-content: space-between;
+  }
+  p {
+    margin-bottom: 18px;
+  }
+  img {
+    width: 600px;
   }
 }
 
@@ -622,13 +631,19 @@ h1,h2,h3 {
   width: 492px;
 }
 
+.organizationsText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .volunteersText {
   padding-left: 10%;
   padding-right: 0;
-}
-
-.organizationsText {
-  padding-right: 10%;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .donateButton {
