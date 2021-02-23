@@ -337,7 +337,7 @@ h1,h2,h3 {
     }
   }
   
-  a:link, a:hover, a:visited {
+  a {
     color: $white;
   }
 
@@ -381,9 +381,7 @@ h1,h2,h3 {
   padding-bottom: 0.5rem;
   padding-left: .75rem;
   padding-right: .75rem;
-  a {
-    color: $white !important;
-  }
+  color: $white !important;
 }
 
 .contact-form-container {
