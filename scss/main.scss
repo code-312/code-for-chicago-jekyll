@@ -16,6 +16,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Work+Sans:wght@600&display=swap');
 
+
+body {
+  color: $black;
+}
+
 h4, h5 {
     font-family: $font-family-alt;
     font-size: 0.875rem;
@@ -465,11 +470,17 @@ h1,h2,h3 {
 	margin-top: 0;
 	margin-bottom: 0;
     }
+    img{
+      width: 4.75rem;
+      height: 2.9rem;
+    }
 }
 
 @media (max-width: 768px) {
     .footer-icon {
-	margin-bottom: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 6rem;
     }
 }
 
@@ -487,6 +498,13 @@ h1,h2,h3 {
   margin-bottom: 2rem;
 }
 
+.workwithus {
+  padding-top: 0;
+  padding-bottom: 3rem;
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .workwithusHeader {
   color: $black;
   margin: 80px auto 24px;
@@ -500,6 +518,9 @@ h1,h2,h3 {
 
   p {
     margin-bottom: 0;
+    @media (max-width: 767px) {
+      margin-top: 5rem;
+    }
   }
 
   @media (max-width: 767px) {
@@ -524,6 +545,7 @@ h1,h2,h3 {
 }
 .workwithusContent {
   padding-bottom: 80px;
+  padding-top: 1.5rem;
 
   h4 {
     color: $black;
@@ -548,6 +570,11 @@ h1,h2,h3 {
   @media (max-width: 360){
     padding-bottom: 24px;
   }
+
+}
+
+#workWithUsText{
+  margin: 0;
 }
 
 .workwithusIconsRow {
@@ -567,13 +594,19 @@ h1,h2,h3 {
 
   @media (max-width: 767px) {
     padding: 0;
-    margin-bottom: 0;
-    p {
-      padding-bottom: 24px;
+    .col-md-3{
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 767px) {    
+      margin-bottom: 0;
+      p {
+        padding-bottom: 24px;
+      }
     }
   }
 }
-
 .workwithusIcon {
   width: 42px;
   height: 42px;
@@ -585,14 +618,16 @@ h1,h2,h3 {
 }
 
 .cardTitle {
-  font-size: 14px;
-  font-weight: bold;
+  font-family: $font-family-alt;
+  color: $black;
+  font-size: 0.875rem;
+  font-weight: 600;
   margin-bottom: 0;
   padding-top: 82px;
 }
 
 .volunteersRow {
-  margin-top: 64px;
+  margin-top: 80px;
   flex-wrap: wrap-reverse;
 }
 
@@ -601,14 +636,23 @@ h1,h2,h3 {
 }
 
 .cardsContainer {
-  background-color: $off-white;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  background-color:$off-white;
+  padding: 80px 50px;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  @media (max-width: 767px) {
+    padding-top: 0;
+  }
+
   h2 {
     color: $black;
   }
   a {
-    color: $cfa-blue;
+    font-family: $font-family-alt; 
+    font-weight: 600; 
+    font-size: 1rem; 
+    color: $cfa-blue-dark;
   }
   .row {
     justify-content: space-between;
