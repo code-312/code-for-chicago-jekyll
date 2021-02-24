@@ -632,6 +632,9 @@ h1,h2,h3 {
 .cardText {
   font-size: 1.25rem;
   max-width: 100%;
+  p {
+    margin-bottom: 24px;
+  }
   @media (max-width: 651px) {
     font-size: 1rem;
   }
@@ -674,9 +677,7 @@ h1,h2,h3 {
       width: 100%;
     }
   }
-  p {
-    margin-bottom: 18px;
-  }
+
   img {
     max-width: none;
     width: 600px;
@@ -711,6 +712,7 @@ h1,h2,h3 {
   flex-shrink: 4;
   flex-direction: column;
   justify-content: center;
+  padding: 0;
 }
 
 .volunteersText {
@@ -718,6 +720,7 @@ h1,h2,h3 {
   flex-shrink: 4;
   flex-direction: column;
   justify-content: center;
+  padding: 0;
   @media(max-width: 1058px) {
     margin-top: 64px;
   }
@@ -728,10 +731,11 @@ h1,h2,h3 {
 
 .card-img-container {
   flex-shrink: 1;
-  width: 630px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0;
   @media(max-width: 1058px) {
     width: 100%;
   }
