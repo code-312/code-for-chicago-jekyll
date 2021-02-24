@@ -597,13 +597,13 @@ h1,h2,h3 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 
-  @media (max-width: 767px) {    
-    margin-bottom: 0;
+    @media (max-width: 767px) {    
+      margin-bottom: 0;
 
-    p {
-      margin-bottom: 2.5rem;
+      p {
+        margin-bottom: 2.5rem;
+      }
     }
-  }
   }
 }
 .workwithusIcon {
@@ -611,7 +611,6 @@ h1,h2,h3 {
   height: 42px;
   margin-bottom: 1rem;
 }
-
 
 .cardTitle {
   font-family: $font-family-alt;
@@ -625,6 +624,9 @@ h1,h2,h3 {
 .volunteersRow {
   margin-top: 80px;
   flex-wrap: wrap-reverse;
+  @media(max-width: 1058px) {
+    flex-direction: column-reverse !important;
+  }
 }
 
 .cardText {
@@ -656,6 +658,12 @@ h1,h2,h3 {
   .row {
     flex-wrap: nowrap;
     justify-content: space-between;
+    @media(max-width: 1058px) {
+      display: flex;
+      flex-direction: column;
+      width: 671px;
+      margin: 0 auto;
+    }
   }
   p {
     margin-bottom: 18px;
@@ -670,12 +678,16 @@ h1,h2,h3 {
 .cards {
   padding: 80px 96px;
   max-width: 1440px;
+  @media(max-width: 1058px) {
+    padding: 64px 48px;
+  }
 }
 
 .card-info {
   width: 492px;
   @media (max-width: 1340px) {
     width: 100%;
+    margin-bottom: 14px;
   }
 }
 
@@ -687,12 +699,13 @@ h1,h2,h3 {
 }
 
 .volunteersText {
-  padding-left: 10%;
-  padding-right: 0;
-  margin-right: 0;
   display: flex;
+  flex-shrink: 4;
   flex-direction: column;
   justify-content: center;
+  @media(max-width: 1058px) {
+    margin-top: 64px;
+  }
 }
 
 .card-img-container {
