@@ -356,11 +356,23 @@ h1,h2,h3 {
 
 .contact-form-container {
   color: $white;
-  padding: 80px 0;
+  padding: 80px 96px;
   background-color: $cfa-red;
+
+  @media(max-width: 768px){
+    padding: 64px 48px;
+  }
+
+  @media(max-width: 360px){
+    padding: 48px 24px;
+  }
+
   h1 {
     color: $white;
     font-weight: 700;
+    @media(max-width: 651px){
+      font-size: 32px;
+    }
   }
   .text-center {
     display: block;
@@ -385,9 +397,7 @@ h1,h2,h3 {
     font-size: 0.75em;
     margin-bottom: 12px;
   }
-  @media(max-width: 650px) {
-    width: 86%;
-  }
+
   font-size: 1.125em;
   margin-top: -10px;
   margin-left: auto;
