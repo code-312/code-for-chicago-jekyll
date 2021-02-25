@@ -665,7 +665,7 @@ p.cardText {
     padding-top: 16px;
     padding-bottom: 7px;
     @media (max-width: 651px) {
-      font-size: 1.5rem;
+      font-size: 1.5rem !important;
     }
   }
   a {
