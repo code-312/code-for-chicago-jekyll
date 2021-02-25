@@ -429,7 +429,7 @@ h1,h2,h3 {
   padding-left: 6rem;
   padding-right: 6rem;
   
-  @media(min-width: 768px) {
+  @media(max-width: 768px) {
     padding-left: 3rem;
     padding-right: 3rem;
   }
@@ -450,28 +450,17 @@ h1,h2,h3 {
         font-weight: 400;
     }
     p {
-    font-size: 1rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 400;
+	font-size: 1rem;
+	margin-top: 0;
+	margin-bottom: 0;
+  font-weight: 400;
     }
 }
 
 @media (max-width: 768px) {
     .footer-icon {
       margin-bottom: 1rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      margin-left: 6rem;
     }
-}
-
-@media (min-width: 768px) {
-    .footer p {
-	text-align: right;
-    }
-    .footer {
-	text-align: left;
 }
 
 .about-cfa {
