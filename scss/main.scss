@@ -45,8 +45,12 @@ h1,h2,h3 {
   justify-content: space-between;
   position: relative;
   width: 100%;
-  margin: 16px 0;
+  padding: 0 6rem;
+  margin: 1.5rem 0;
   height: 47px;
+  @media (max-width: 768px) {
+    padding: 0 3rem;
+  }
 }
 
 .navbar a {
@@ -55,40 +59,50 @@ h1,h2,h3 {
 
 .social-container {
   display: block;
-  align-items: center;
+  align-self: center;
+  margin-right: 24px; 
 }
 
 .logo-container {
   display: inline;
   overflow: hidden;
-  height: inherit;
-}
+  height: 100%;
+} 
 
 .brigade-logo {
-  max-width: 120px;
-}
-
-@media (max-width: 812px) {
-  .brigade-logo {
-    height: 100%;
-  }
+  width: 120px;
+  height: auto;
 }
 
 .social-logo {
   display: inline;
-  margin-left: 16px;
+  margin-left: 1rem;
+  justify-self: center; 
 }
 
 .social-img {
-  height: 16px;
-  width: 16px;
+  height: 1.5rem;
+  width: 1.5rem;
   z-index: 1;
 }
 
-@media (min-width: 651px) {
+.donate-container {
+  align-self: center; 
+  vertical-align: center;
+}
+
+@media (max-width: 360px) {
+  .navbar {
+    padding: 0 24px; 
+  }
+}
+
+@media (max-width: 651px) {
   .navbar {
     margin: 16px 0;
-    height: 32px;
+  }
+  .social-container {
+    display: none;
   }
 }
 
@@ -102,26 +116,17 @@ h1,h2,h3 {
 
 @media (min-width: 750px) {
   .navbar {
-    margin: 24px 0;
-    height: 47px;
+    margin: 1.5rem 0;
   }
   .logo-container {
     width: 120px;
-    min-height: 60px;
-  }
-  .social-container {
-    margin-left: 16px;
-  }
-  .social-img {
-    height: 24px;
-    width: 24px;
+    min-height: 47px;
   }
 }
 
 @media (min-width: 1440px) {
   .navbar {
     margin: 24px auto;
-    height: 47px;
     max-width: 1440px;
   }
 }
@@ -130,13 +135,21 @@ h1,h2,h3 {
   display: flex;
   background-color: $cfa-red;
   align-items: center;
-  justify-content: center;
-
+  padding-left: 6rem;
   @media (max-width: 1058px) {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    padding-left: 0;
   }
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.header-background-container {
+  background: $cfa-red;
 }
 
 .header-contents {
@@ -204,7 +217,6 @@ h1,h2,h3 {
 .header-text {
   max-width: 30.75rem;
   margin-right: 3rem;
-  padding-left: 6rem;
 
   @media (max-width: 1058px) {
     width: 100%;
@@ -295,14 +307,32 @@ h1,h2,h3 {
   margin-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  p.text-center {
+    margin-bottom: 48px;
+  }
 }
 
 #meetupLink {
   color: $cfa-blue;
 }
 
+.meetup-content {
+  margin-bottom: 1.5rem;
+  > * {
+  margin-bottom: 1rem;
+  }
+}
+
+
+
 .rsvp-stuff {
   margin-top: 1rem;
+  p {
+    font-family: $font-family-alt;
+    font-weight: 500;
+    color: $darker-grey;
+    font-size: .875rem; 
+  }
 }
 
 .attendees {
@@ -310,8 +340,27 @@ h1,h2,h3 {
 }
 
 .attend-button {
+  font-family: $font-family-alt;
+  font-weight: 600;
+  color: white; 
+  font-size: .875rem;
   border-bottom: 1rem solid transparent;
   padding-left: 5%;
+  @media (max-width: 768px) {
+    padding: 0 .9375rem; 
+    a {
+      display: inline-block; 
+      width: 100%; 
+    }
+  }
+  
+  a {
+    color: $white;
+  }
+
+  i {
+    margin-left: .25rem;
+  }
 }
 
 .fa-map-marker-alt {
@@ -342,16 +391,14 @@ h1,h2,h3 {
 }
 
 .whitebutton {
-  background-color: $white;
-  border: 1px solid $cfa-red;
+  background-color: $cfa-red;
+  border-radius: 2px;
   text-align: center;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: .75rem;
   padding-right: .75rem;
-  a {
-    color: $cfa-red !important;
-  }
+  color: $white !important;
 }
 
 .contact-form-container {
@@ -595,7 +642,7 @@ h1,h2,h3 {
 
 .cardText {
   max-width: 100%;
-}
+} 
 
 .cardsContainer {
   background-color:$off-white;
@@ -640,10 +687,8 @@ h1,h2,h3 {
   padding-bottom: 0.75rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-left: 1rem;
   text-align: center;
   text-decoration: none;
-  margin-top: 2rem !important;
   border-radius: 2px;
   a {
     color: white;
@@ -655,6 +700,4 @@ h1,h2,h3 {
   &:visited {
     color: white;
   }
-
 }
-
