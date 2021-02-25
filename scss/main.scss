@@ -450,10 +450,14 @@ h1,h2,h3 {
         font-weight: 400;
     }
     p {
-	font-size: 1rem;
-	margin-top: 0;
-	margin-bottom: 0;
-  font-weight: 400;
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+    .footer-icon img{
+      width: 76px;
+      height: auto;
     }
 }
 
