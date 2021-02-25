@@ -70,7 +70,7 @@ h1,h2,h3 {
 } 
 
 .brigade-logo {
-  max-width: 120px;
+  width: 120px;
   height: auto;
 }
 
@@ -89,6 +89,12 @@ h1,h2,h3 {
 .donate-container {
   align-self: center; 
   vertical-align: center;
+}
+
+@media (max-width: 360px) {
+  .navbar {
+    padding: 0 24px; 
+  }
 }
 
 @media (max-width: 651px) {
