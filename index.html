@@ -89,10 +89,8 @@ home: true
         <h1 class="text-center">Upcoming Events</h1>
         <p class="text-center"><a id="meetupLink" href="https://www.meetup.com/code-for-chicago" target="blank">See our events on Meetup <i class="fas fa-external-link-alt"></i></a></p>
         <div class="row">
-          <div class="col-md order-md-2">
-            <div class="event-photo-div">
-              <img class="event-photo" src="{{event.featured_photo.photo_link}}"/>
-            </div>
+          <div class="col-md order-md-2 event-photo-div">
+            <img class="event-photo" src="{{event.featured_photo.photo_link}}"/>
           </div>
           <div class="col-md event-description order-md-1">
             <h4>{% assign date = event.local_date | date: "%a. %B %-d, %Y" %}
