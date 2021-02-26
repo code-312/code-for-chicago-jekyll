@@ -622,7 +622,7 @@ h1,h2,h3 {
   font-family: $font-family-alt;
   color: $black;
   text-transform: uppercase;
-  font-size: 0.875rem;
+  font-size: 0.875rem !important;
   font-weight: 600;
   margin-bottom: 0;
 }
