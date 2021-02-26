@@ -289,10 +289,10 @@ h1,h2,h3 {
     padding-top: 0;
   }
   h2 {
+    padding-top: .5rem;
     a {
       color: $black;
       font-size: 2rem;
-      padding-top: .5rem;
       @media (max-width: 651px) {
         font-size: 1.5rem;
       }
@@ -312,6 +312,7 @@ h1,h2,h3 {
   }
   .event-description {
     padding-right: 1.5rem;
+    padding-left: 1.5rem;
     @media(min-width: 1059px){
       width: 488px;
       flex: 0 1 auto;
@@ -350,6 +351,12 @@ h1,h2,h3 {
   p.text-center {
     margin-bottom: 3rem;
   }
+  @media (max-width: 1058px) {
+    max-width: 671px;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 #meetupLink {
@@ -370,7 +377,7 @@ h1,h2,h3 {
   font-weight: 600;
   font-size: .875rem;
   padding: 14px 16px;
-  @media (max-width: 768px) {
+  @media (max-width: 1058px) {
     padding: 0 .9375rem; 
     display: inline-block;
     width: 100%;
@@ -391,7 +398,11 @@ h1,h2,h3 {
 }
 
 .event-photo-div {
+  padding-right: 1.5rem;
   padding-left: 1.5rem;
+  @media(max-width: 1058px) {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .event-photo {
