@@ -284,8 +284,7 @@ h1,h2,h3 {
   background-color: $white;
   padding-left: 1%;
   padding-right: 1%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem auto;
   justify-content: center;
   h4 {
     color: $black;
@@ -323,6 +322,18 @@ h1,h2,h3 {
         font-size: 1rem;
       }
     }
+    .event-location {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-family: $font-family-alt;
+      font-weight: 600;
+      color: $darker-grey;
+      font-size: .875rem; 
+      line-height: 1.2rem;
+      i {
+        font-size: 1rem;
+      }
+    }
   }
   @media (min-width: 1440px) {
     width: 1440px;
@@ -348,18 +359,10 @@ h1,h2,h3 {
   color: $cfa-blue-dark;
 }
 
-.rsvp-stuff {
-  margin-top: 1rem;
-  p {
-    font-family: $font-family-alt;
-    font-weight: 600;
-    color: $darker-grey;
-    font-size: .875rem; 
-    line-height: 1.2rem;
-  }
-  i {
-    font-size: 1rem;
-  }
+.attend-button-container {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: right;
 }
 
 .attend-button {
