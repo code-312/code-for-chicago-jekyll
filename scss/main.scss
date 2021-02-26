@@ -310,8 +310,11 @@ h1,h2,h3 {
     font-size: .675rem;
   }
   .event-description {
-    width: 488px;
-    align-content: flex-start;
+    @media(min-width: 1059px){
+      width: 488px;
+      flex: 0 1 auto;
+      align-content: flex-start;
+    }
     p {
       margin-bottom: 1rem;
       font-size: 1.25rem;
@@ -320,6 +323,9 @@ h1,h2,h3 {
         font-size: 1rem;
       }
     }
+  }
+  @media (min-width: 1440px) {
+    width: 1440px;
   }
 }
 
