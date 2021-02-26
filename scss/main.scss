@@ -348,7 +348,7 @@ h1,h2,h3 {
   padding-left: 2rem;
   padding-right: 2rem;
   p.text-center {
-    margin-bottom: 48px;
+    margin-bottom: 1rem;
   }
 }
 
@@ -388,6 +388,17 @@ h1,h2,h3 {
 .fa-map-marker-alt {
   color: $cfa-red;
   margin-right: 0.5rem;
+}
+
+.event-photo-div {
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+
+.event-photo {
+  display: block;
+  width: 100%;
+  object-fit: contain;
 }
 
 .redbutton {
@@ -507,15 +518,6 @@ h1,h2,h3 {
   button:hover {
     text-decoration: underline;
   }
-}
-
-.event-photo {
-  display: block;
-  margin: auto;
-}
-
-.event-description {
-  margin-top: 1rem;
 }
 
 
