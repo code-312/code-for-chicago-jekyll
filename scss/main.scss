@@ -290,13 +290,25 @@ h1,h2,h3 {
   h4 {
     color: $black;
   }
-  h3 {
+  h2 {
     a {
       color: $black;
+      font-size: 2rem;
     }
   }
   h1 {
     color: $black;
+    font-size: 3rem;
+  }
+  .fa-external-link-alt {
+    font-size: .675rem;
+  }
+  .event-description {
+    width: 488px;
+    align-content: flex-start;
+    p {
+      margin-bottom: 1rem;
+    }
   }
 }
 
@@ -313,45 +325,36 @@ h1,h2,h3 {
 }
 
 #meetupLink {
-  color: $cfa-blue;
+  font-family: $font-family-alt;
+  font-size: .875rem;
+  font-weight: 600;
+  color: $cfa-blue-dark;
 }
-
-.meetup-content {
-  margin-bottom: 1.5rem;
-  > * {
-  margin-bottom: 1rem;
-  }
-}
-
-
 
 .rsvp-stuff {
   margin-top: 1rem;
   p {
     font-family: $font-family-alt;
-    font-weight: 500;
+    font-weight: 600;
     color: $darker-grey;
     font-size: .875rem; 
+    line-height: 1.2rem;
   }
-}
-
-.attendees {
-  border-bottom: 2rem solid transparent;
+  i {
+    font-size: 1rem;
+  }
 }
 
 .attend-button {
   font-family: $font-family-alt;
   font-weight: 600;
-  color: white; 
   font-size: .875rem;
-  border-bottom: 1rem solid transparent;
-  padding-left: 5%;
+  // border-bottom: 1rem solid transparent;
+  padding: 14px 16px;
   @media (max-width: 768px) {
     padding: 0 .9375rem; 
-    a {
-      display: inline-block; 
-      width: 100%; 
-    }
+    display: inline-block;
+    width: 100%;
   }
   
   a {
