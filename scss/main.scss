@@ -404,7 +404,6 @@ h1,h2,h3 {
 .contact-form-container {
   color: $white;
   padding-bottom: 5rem;
-  margin-bottom: 2rem;
   background-color: $cfa-red;
   h1 {
     color: $white;
@@ -505,7 +504,7 @@ h1,h2,h3 {
   padding-left: 6rem;
   padding-right: 6rem;
   
-  @media(min-width: 768px) {
+  @media(max-width: 768px) {
     padding-left: 3rem;
     padding-right: 3rem;
   }
@@ -533,15 +532,13 @@ h1,h2,h3 {
     }
     img{
       width: 4.75rem;
-      height: 2.9rem;
+      height: auto;
     }
 }
 
 @media (max-width: 768px) {
     .footer-icon {
-      margin-top: 1rem;
       margin-bottom: 1rem;
-      margin-left: 6rem;
     }
 }
 
@@ -552,8 +549,6 @@ h1,h2,h3 {
     .footer {
 	text-align: left;
     }
-    .footer {
-	text-align: left;
 }
 
 .about-cfa {
@@ -707,5 +702,4 @@ h1,h2,h3 {
   &:visited {
     color: white;
   }
-}
 }
