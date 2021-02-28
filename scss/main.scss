@@ -555,10 +555,6 @@ h1,h2,h3 {
   margin: 80px auto 24px;
   width: 600px;
 
-  .wwu-sm {
-    display: none;
-  }
-
   h1 {
     color: $black;
     padding-top: 0;
@@ -574,12 +570,6 @@ h1,h2,h3 {
 
   @media (max-width: 767px) {
     margin-top: 64px;
-    .wwu-sm {
-      display: inline-block;
-    }
-    .wwu-lg {
-      display: none;
-    }
   }
   @media (max-width: 651px) {
     width: 555px;
@@ -593,6 +583,7 @@ h1,h2,h3 {
   }
   @media (max-width: 604px) {
     width: 100%;
+    padding: 9px;
   }
   @media (max-width: 360px) {
     margin-top: 48px;
@@ -601,6 +592,7 @@ h1,h2,h3 {
 .workwithusContent {
   padding-bottom: 80px;
   padding-top: 1.5rem;
+  
 
   h4 {
     color: $black;
