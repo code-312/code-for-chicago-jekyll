@@ -342,6 +342,9 @@ h1,h2,h3 {
       @media (max-width: 651px) {
         font-size: 1rem;
       }
+      a {
+        color: $cfa-blue-dark;
+      }
     }
     .event-location {
       margin-top: 1.5rem;
