@@ -473,7 +473,7 @@ h1,h2,h3 {
   button {
     display: block;
     width: 100%;
-    background-color: $cfa-red;
+    background-color: transparent;
     font-family: $font-family-alt;
     font-size: 0.875rem;
     font-weight: 600;
@@ -482,10 +482,7 @@ h1,h2,h3 {
     border-width: 1px;
     border-radius: 2px;
     color: $white;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 14px 16px;
     text-align: center;
     text-decoration: none;
     margin-left: auto;
