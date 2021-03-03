@@ -404,7 +404,6 @@ h1,h2,h3 {
 .contact-form-container {
   color: $white;
   padding-bottom: 5rem;
-  margin-bottom: 2rem;
   background-color: $cfa-red;
   h1 {
     color: $white;
@@ -502,8 +501,19 @@ h1,h2,h3 {
   max-width: 1440px;
   display: block;
   margin: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  
+  @media(max-width: 768px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @media(max-width: 360px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
 }
 
 .footer {
@@ -511,24 +521,24 @@ h1,h2,h3 {
     color: $black;
     text-align: center;
     a {
-        color: $cfa-blue;
+        color: $cfa-blue-dark;
+        font-weight: 400;
     }
     p {
-	font-size: 0.875rem;
-	margin-top: 0;
-	margin-bottom: 0;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
     }
     img{
       width: 4.75rem;
-      height: 2.9rem;
+      height: auto;
     }
 }
 
 @media (max-width: 768px) {
     .footer-icon {
-      margin-top: 1rem;
       margin-bottom: 1rem;
-      margin-left: 6rem;
     }
 }
 
@@ -668,24 +678,37 @@ h1,h2,h3 {
 .cardTitle {
   font-family: $font-family-alt;
   color: $black;
-  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-size: 0.875rem !important;
   font-weight: 600;
   margin-bottom: 0;
-  padding-top: 82px;
 }
 
 .volunteersRow {
   margin-top: 80px;
   flex-wrap: wrap-reverse;
+  @media(max-width: 1058px) {
+    flex-direction: column-reverse !important;
+  }
 }
 
 .cardText {
+  font-size: 1.25rem;
   max-width: 100%;
+  p {
+    margin-bottom: 24px;
+  }
+  @media (max-width: 651px) {
+    font-size: 1rem;
+  }
 } 
+
+p.cardText {
+  margin-bottom: 24px;
+}
 
 .cardsContainer {
   background-color:$off-white;
-  padding: 80px 50px;
   margin-left: -15px;
   margin-right: -15px;
 
@@ -695,6 +718,12 @@ h1,h2,h3 {
 
   h2 {
     color: $black;
+    font-size: 2rem;
+    padding-top: 16px;
+    padding-bottom: 7px;
+    @media (max-width: 651px) {
+      font-size: 1.5rem !important;
+    }
   }
   a {
     font-family: $font-family-alt; 
@@ -703,17 +732,86 @@ h1,h2,h3 {
     color: $cfa-blue-dark;
   }
   .row {
+    flex-wrap: nowrap;
     justify-content: space-between;
+    @media(max-width: 1058px) {
+      display: flex;
+      flex-direction: column;
+      width: 671px;
+      margin: 0 auto;
+    }
+    @media(max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  img {
+    max-width: none;
+    width: 600px;
+    margin-right: 0;
+    @media(max-width: 1058px) {
+      width: 100%;
+    }
+  }
+}
+
+.cards {
+  padding: 80px 96px;
+  max-width: 1440px;
+  @media(max-width: 1058px) {
+    padding: 64px 48px;
+  }
+  @media(max-width: 360px) {
+    padding: 48px 24px;
+  }
+}
+
+.card-info {
+  width: 492px;
+  @media (max-width: 1340px) {
+    width: 100%;
+    margin-bottom: 14px;
+  }
+}
+
+.organizationsText {
+  display: flex;
+  flex-shrink: 4;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 15px;
+  @media(max-width: 1058) {
+    padding: 0;
   }
 }
 
 .volunteersText {
-  padding-left: 10%;
+  display: flex;
+  flex-shrink: 4;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
   padding-right: 0;
+  @media(max-width: 1058px) {
+    padding: 0;
+    margin-top: 64px;
+  }
+  @media(max-width: 360px) {
+    margin-top: 48px;
+  }
 }
 
-.organizationsText {
-  padding-right: 10%;
+.card-img-container {
+  flex-shrink: 1;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  @media(max-width: 1058px) {
+    width: 100%;
+  }
 }
 
 .donateButton {
