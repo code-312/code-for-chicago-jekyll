@@ -282,29 +282,31 @@ h1,h2,h3 {
 
 .meetups {
   background-color: $white;
-  margin: 2rem auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
   @media(max-width: 768px) {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
   @media(max-width: 360px) {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
-  justify-content: center;
+
   h4 {
     color: $black;
     padding-top: 0;
     font-size: 0.875rem !important;
   }
   h2 {
-    padding-top: .5rem;
+    padding-top: .25rem;
+    font-size: 2rem;
+    @media (max-width: 651px) {
+      font-size: 1.5rem;
+    }
     a {
       color: $black;
-      font-size: 2rem;
-      @media (max-width: 651px) {
-        font-size: 1.5rem;
-      }
     }
   }
   h1 {
@@ -320,21 +322,14 @@ h1,h2,h3 {
     font-size: .675rem;
   }
   .event-description {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: 0;
+    padding-left: 0;
     @media(min-width: 1059px){
-      width: 488px;
+      max-width: 488px;
       flex: 0 1 auto;
       align-content: flex-start;
     }
-    @media (max-width: 768px) {
-      padding-right: 1rem;
-      padding-left: 1rem;
-    }
-    @media (max-width: 360px) {
-      padding-right: 0;
-      padding-left: 0;
-    }
+
     p {
       margin-top: .5rem;
       margin-bottom: .5rem;
@@ -346,6 +341,9 @@ h1,h2,h3 {
       a {
         color: $cfa-blue-dark;
       }
+    }
+    .event-location-col{
+      padding: 0;
     }
     .event-location {
       margin-top: 1.5rem;
@@ -360,14 +358,12 @@ h1,h2,h3 {
       }
     }
   }
-  @media (min-width: 1440px) {
-    width: 1440px;
-  }
 }
 
 .meetup {
   border-radius: 1rem;
-  padding: 3rem 5rem;
+  padding-left: 0;
+  padding-right: 0;
   p.text-center {
     line-height: 1;
     margin-bottom: 3rem;
@@ -378,8 +374,9 @@ h1,h2,h3 {
   @media (max-width: 1058px) {
     max-width: 671px;
     margin: auto;
-    padding-left: 0;
-    padding-right: 0;
+  }
+  .row {
+    margin: 0;
   }
 }
 
@@ -422,17 +419,10 @@ h1,h2,h3 {
 }
 
 .event-photo-div {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: 0;
+  padding-left: 3rem;
   @media(max-width: 1058px) {
     margin-bottom: 1.5rem;
-  }
-  @media (max-width: 768px) {
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-  @media (max-width: 360px) {
-    padding-right: 0;
     padding-left: 0;
   }
 }
