@@ -772,6 +772,9 @@ p.cardText {
     width: 100%;
     margin-bottom: 14px;
   }
+  @media (max-width: 1058px) {
+    margin-bottom: 0;
+  }
 }
 
 .organizationsText {
