@@ -613,17 +613,13 @@ h1,h2,h3 {
 }
 
 .workwithus {
-  padding-top: 0;
-  padding-bottom: 3rem;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 .workwithusHeader {
   color: $black;
-  margin: 0 auto;
-  max-width: 510px;
-  margin-top: 5rem;
+  margin: 80px auto 24px;
+  width: 600px;
 
   h1 {
     color: $black;
@@ -631,14 +627,38 @@ h1,h2,h3 {
     margin-bottom: 1rem;
   }
 
-  @media (max-width: 767px) {
-    margin-top: 5rem;
+  p {
+    margin-bottom: 0;
+    @media (max-width: 767px) {
+      margin-top: 5rem;
+    }
   }
 
+  @media (max-width: 767px) {
+    margin-top: 64px;
+  }
+  @media (max-width: 651px) {
+    width: 555px;
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+
+  }
+  @media (max-width: 604px) {
+    width: 100%;
+    padding: 9px;
+  }
+  @media (max-width: 360px) {
+    margin-top: 48px;
+  }
 }
 .workwithusContent {
+  padding-bottom: 80px;
   padding-top: 1.5rem;
-  padding-bottom: 5rem;
+  
 
   h4 {
     color: $black;
@@ -646,6 +666,23 @@ h1,h2,h3 {
   p {
     font-size: calc(1rem + 27.333%);
     color: $black;
+  }
+  @media (max-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 64px;
+  }
+  @media (max-width: 651px) {
+    align-content: center;
+    width: 397px;
+    p {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 445px) {
+    width: 100%;
+  }
+  @media (max-width: 360){
+    padding-bottom: 24px;
   }
 
 }
@@ -658,22 +695,28 @@ h1,h2,h3 {
   justify-content: space-between;
   text-align: center;
   font-weight: bold;
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin: auto;
   width: 100%;
+
+  max-width: 1032px;
 
   p {
     margin-bottom: 0;
   }
 
-  .col-md-3{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+  @media (max-width: 767px) {
+    padding: 0;
+    .col-md-3{
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
 
     @media (max-width: 767px) {    
       margin-bottom: 0;
-
       p {
-        margin-bottom: 2.5rem;
+        padding-bottom: 24px;
       }
     }
   }
@@ -681,7 +724,11 @@ h1,h2,h3 {
 .workwithusIcon {
   width: 42px;
   height: 42px;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
+
+  @media (max-width: 767px) {
+    margin-top: 24px;
+  }
 }
 
 .cardTitle {
@@ -780,6 +827,9 @@ p.cardText {
   @media (max-width: 1340px) {
     width: 100%;
     margin-bottom: 14px;
+  }
+  @media (max-width: 1058px) {
+    margin-bottom: 0;
   }
 }
 
