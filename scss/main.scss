@@ -468,12 +468,24 @@ h1,h2,h3 {
 
 .contact-form-container {
   color: $white;
-  padding-bottom: 5rem;
+  padding: 80px 96px;
   background-color: $cfa-red;
+
+  @media(max-width: 768px){
+    padding: 64px 48px;
+  }
+
+  @media(max-width: 360px){
+    padding: 48px 24px;
+  }
+
   h1 {
     color: $white;
-    margin-bottom: 2rem;
     font-weight: 700;
+    line-height: 1.2;
+    @media(max-width: 651px){
+      font-size: 2rem;
+    }
   }
   .text-center {
     display: block;
@@ -485,8 +497,9 @@ h1,h2,h3 {
 }
 
 #contactus {
-  margin-top: 80px;
-  margin-bottom: 3rem;
+  margin-top: 0px;
+  margin-bottom: 24px;
+  padding-top: 0px;
 }
 
 .contact-form {
@@ -494,20 +507,21 @@ h1,h2,h3 {
   label {
     font-family: $font-family-alt;
     font-weight: 600;
-    font-size: 0.75em;
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.5;
   }
-  @media(max-width: 650px) {
-    width: 86%;
-  }
-  font-size: 1.125em;
+
+  font-size: 1rem;
   margin-top: -10px;
   margin-left: auto;
   margin-right: auto;
   input {
     width: 100%;
     padding: 10px 13px 7px 13px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
     display: block;
+    line-height: 1.5;
   }
   input::placeholder {
     color: $light-grey;
@@ -515,9 +529,10 @@ h1,h2,h3 {
   textarea {
     width: 100%;
     height: 196px;
-    // margin-bottom: 1.65rem;
-    padding: 10px 13px;
+    margin-bottom: 24px;
+    padding: 16px 12px;
     display: block;
+    line-height: 1.5;
   }
   textarea::placeholder {
     color: $light-grey;
@@ -526,7 +541,7 @@ h1,h2,h3 {
   button {
     display: block;
     width: 100%;
-    background-color: $cfa-red;
+    background-color: transparent;
     font-family: $font-family-alt;
     font-size: 0.875rem;
     font-weight: 600;
@@ -535,14 +550,9 @@ h1,h2,h3 {
     border-width: 1px;
     border-radius: 2px;
     color: $white;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 14px 16px;
     text-align: center;
     text-decoration: none;
-    border-radius: 2px;
-    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
