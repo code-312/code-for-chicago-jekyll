@@ -282,76 +282,126 @@ h1,h2,h3 {
 
 .meetups {
   background-color: $white;
-  padding-left: 1%;
-  padding-right: 1%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  @media(max-width: 768px) {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  @media(max-width: 360px) {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   h4 {
     color: $black;
+    padding-top: 0;
+    font-size: 0.875rem !important;
   }
-  h3 {
+  h2 {
+    padding-top: .25rem;
+    font-size: 2rem;
+    @media (max-width: 651px) {
+      font-size: 1.5rem;
+    }
     a {
       color: $black;
     }
   }
   h1 {
     color: $black;
+    font-size: 3rem;
+    @media (max-width: 651px) {
+      font-size: 2rem;
+    }
+    padding-top: 0;
+    margin-bottom: 1rem;
+  }
+  .fa-external-link-alt {
+    font-size: .675rem;
+  }
+  .event-description {
+    padding-right: 0;
+    padding-left: 0;
+    @media(min-width: 1059px){
+      max-width: 488px;
+      flex: 0 1 auto;
+      align-content: flex-start;
+    }
+
+    p {
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+      font-size: 1.25rem;
+      font-weight: 400;
+      @media (max-width: 651px) {
+        font-size: 1rem;
+      }
+      a {
+        color: $cfa-blue-dark;
+      }
+    }
+    .event-location-col{
+      padding: 0;
+    }
+    .event-location {
+      margin-top: 1.5rem;
+      margin-bottom: .5rem;
+      font-family: $font-family-alt;
+      font-weight: 600;
+      color: $darker-grey;
+      font-size: .875rem; 
+      line-height: 1.2rem;
+      i {
+        font-size: 1rem;
+      }
+    }
   }
 }
 
 .meetup {
   border-radius: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 0;
+  padding-right: 0;
   p.text-center {
-    margin-bottom: 48px;
+    line-height: 1;
+    margin-bottom: 3rem;
+    @media (max-width: 651px) {
+      margin-bottom: 2rem;
+    }
+  }
+  @media (max-width: 1058px) {
+    max-width: 671px;
+    margin: auto;
+  }
+  .row {
+    margin: 0;
   }
 }
 
 #meetupLink {
-  color: $cfa-blue;
+  font-family: $font-family-alt;
+  font-size: .875rem;
+  font-weight: 600;
+  color: $cfa-blue-dark;
 }
 
-.meetup-content {
-  margin-bottom: 1.5rem;
-  > * {
-  margin-bottom: 1rem;
-  }
-}
-
-
-
-.rsvp-stuff {
-  margin-top: 1rem;
-  p {
-    font-family: $font-family-alt;
-    font-weight: 500;
-    color: $darker-grey;
-    font-size: .875rem; 
-  }
-}
-
-.attendees {
-  border-bottom: 2rem solid transparent;
+.attend-button-container {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: right;
 }
 
 .attend-button {
   font-family: $font-family-alt;
   font-weight: 600;
-  color: white; 
   font-size: .875rem;
-  border-bottom: 1rem solid transparent;
-  padding-left: 5%;
-  @media (max-width: 768px) {
+  padding: 14px 16px;
+  @media (max-width: 1058px) {
     padding: 0 .9375rem; 
-    a {
-      display: inline-block; 
-      width: 100%; 
-    }
+    display: inline-block;
+    width: 100%;
   }
   
   a {
@@ -366,6 +416,21 @@ h1,h2,h3 {
 .fa-map-marker-alt {
   color: $cfa-red;
   margin-right: 0.5rem;
+}
+
+.event-photo-div {
+  padding-right: 0;
+  padding-left: 3rem;
+  @media(max-width: 1058px) {
+    margin-bottom: 1.5rem;
+    padding-left: 0;
+  }
+}
+
+.event-photo {
+  display: block;
+  width: 100%;
+  object-fit: contain;
 }
 
 .redbutton {
@@ -394,10 +459,10 @@ h1,h2,h3 {
   background-color: $cfa-red;
   border-radius: 2px;
   text-align: center;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: .75rem;
-  padding-right: .75rem;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   color: $white !important;
 }
 
@@ -484,15 +549,6 @@ h1,h2,h3 {
   button:hover {
     text-decoration: underline;
   }
-}
-
-.event-photo {
-  display: block;
-  margin: auto;
-}
-
-.event-description {
-  margin-top: 1rem;
 }
 
 
