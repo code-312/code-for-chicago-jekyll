@@ -907,3 +907,16 @@ p.cardText {
     color: white;
   }
 }
+
+// Portfolio stuff - own file?
+.portfolio-container {
+  padding: 80px 96px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100%;
+  column-gap: 32px;
+  row-gap: 80px;
+  grid-column-gap: 32px;
+  grid-row-gap: 80px;
+}
+
