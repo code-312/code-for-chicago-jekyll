@@ -965,4 +965,28 @@ p.cardText {
 
 .portfolio-card {
   width: 100%;
+  max-width: 395px;
+
+  h5 {
+    font-family: "Work Sans",sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.875rem !important;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding: 16px 0px;
+  }
+
+  h2 {
+    color: #333;
+    font-size: 2rem;
+    padding-bottom: 16px;
+    padding-top: 0px;
+  }
+
+  p {
+    font-size: 1.25rem;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
 }
