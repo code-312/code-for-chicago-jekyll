@@ -928,6 +928,8 @@ p.cardText {
 	grid-row-gap: 80px;
 
 	@media (max-width: 1058px) {
+    max-width: 768px;
+    padding: 80px 48px;
 		grid-template-columns: 1fr 1fr;
 		column-gap: 32px;
 		row-gap: 64px;
