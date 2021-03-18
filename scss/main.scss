@@ -946,8 +946,12 @@ p.cardText {
 	}
 
 	@media (max-width: 651px) {
-    
-	}
+    padding: 64px calc(100vw / 360 * 24);
+    row-gap: calc(100vw / 360 * 48);
+    column-gap: calc(100vw / 360 * 16);
+    grid-row-gap: calc(100vw / 360 * 48);
+    grid-column-gap: calc(100vw / 360 * 16);
+  }
 
 	@media (max-width: 360px) {
 		padding: 64px 24px;
