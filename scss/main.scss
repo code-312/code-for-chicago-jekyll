@@ -921,7 +921,7 @@ p.cardText {
 	padding: 80px 96px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 100%;
+	grid-template-rows: 1fr;
 	column-gap: 32px;
 	row-gap: 80px;
 	grid-column-gap: 32px;
@@ -929,7 +929,6 @@ p.cardText {
 
 	@media (max-width: 1058px) {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 100%;
 		column-gap: 32px;
 		row-gap: 64px;
 		grid-column-gap: 32px;
@@ -938,7 +937,6 @@ p.cardText {
 
 	@media (max-width: 768px) {
 		padding: 64px 48px;
-		grid-template-rows: 100%;
 		column-gap: 32px;
 		row-gap: 64px;
 		grid-column-gap: 32px;
