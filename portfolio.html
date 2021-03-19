@@ -8,9 +8,11 @@ home: false
     <div class="portfolio-container">
         {% for post in site.posts %}
             <div class="portfolio-card">
-                {% if post.img and post.alt %} <img src="{{post.img}}" alt="{{post.alt}}">
-                {% else %} <img src="/images/proxy-img.png" alt="A sample proxy image">
-                {% endif %}
+                <div class="portfolio-image-container">
+                    {% if post.img and post.alt %} <img src="{{post.img}}" alt="{{post.alt}}">
+                    {% else %} <img src="/images/proxy-img.png" alt="A sample proxy image">
+                    {% endif %}
+                </div>
                 <h5>{{ post.category }}</h5>
                 <h2>
                     <a href="{{ post.url }}">{{ post.title }}</a>
@@ -42,3 +44,40 @@ home: false
         </div>
     </div>
 </div>
+<script>
+
+    const customAspectRatio = 395 / 261;
+    const imagesDivs = document.querySelectorAll('.portfolio-image-container');
+    const maxHeight = 261;
+
+    function alignImages() {
+        // max height.
+        let smallestHeight = maxHeight;
+
+        // Find the smallest height
+        for(let div of imagesDivs){
+            if(div.clientHeight < smallestHeight){
+                smallestHeight = div.clientHeight;
+            }
+        }
+
+        // Assign the smallest height to all divs, aligning the images to the smallest one.
+        for(let div of imagesDivs){
+            div.style.height = `${smallestHeight}px`;
+        }
+
+    }
+
+    function resizeImages(){
+        // In here, change height to be either the smallest height OR the correct custom AR.
+        console.log('Running');
+        for(let div of imagesDivs){
+            const aspectRatioHeight = div.clientWidth / customAspectRatio;  
+            // const newHeight = (aspectRatioHeight < smallestHeight) ? aspectRatioHeight : smallestHeight; 
+            div.style.height = `${aspectRatioHeight}px`;
+        }
+    }
+
+    window.addEventListener('load', alignImages)
+    window.addEventListener('resize', resizeImages)
+</script>
