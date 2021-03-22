@@ -246,6 +246,25 @@ h1,h2,h3 {
   }
 }
 
+.portfolio-hero-background {
+  background: $cfa-red;
+  .portfolio-hero > * {
+    padding: 3rem 0 3rem 6rem;
+    p.portfolio-hero-title {
+      color: $white;
+      font-size: .875rem;
+      font-weight: 600;
+      text-transform: uppercase; 
+      margin: 0 0 1rem 0;
+    }
+    h1.portfolio-hero-learn {
+      color: $white;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  }
+}
+
 .about {
   background-color: $cfa-red;
   color: $white;
