@@ -253,7 +253,7 @@ h1,h2,h3 {
     p.portfolio-hero-title {
       color: $white;
       font-size: .875rem;
-      font-weight: 600;
+      font-weight: 500;
       text-transform: uppercase; 
       margin: 0 0 1rem 0;
     }
@@ -261,6 +261,14 @@ h1,h2,h3 {
       color: $white;
       font-size: 3rem;
       font-weight: 700;
+      padding: 0;
+    }
+    @media(max-width: 768px) {
+      padding: 3rem 3rem 3rem 3rem;
+      text-align: center;
+      img {
+        display: hidden;
+      }
     }
   }
 }
