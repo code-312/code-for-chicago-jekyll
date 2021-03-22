@@ -248,8 +248,12 @@ h1,h2,h3 {
 
 .portfolio-hero-background {
   background: $cfa-red;
-  .portfolio-hero > * {
+  .portfolio-hero {
+    display: inline-flex;
+    justify-content: space-between;
+  .portfolio-hero-text {
     padding: 3rem 0 3rem 6rem;
+    width: 40%;
     p.portfolio-hero-title {
       color: $white;
       font-size: .875rem;
@@ -263,15 +267,22 @@ h1,h2,h3 {
       font-weight: 700;
       padding: 0;
     }
+    
     @media(max-width: 768px) {
       padding: 3rem 3rem 3rem 3rem;
       text-align: center;
-      img {
-        display: hidden;
-      }
     }
   }
-}
+}}
+
+  img.small-white-logo {
+    width: 453px;
+    height: auto;
+    padding: 0;
+    @media(max-width: 768px) {
+      display: none;
+    }
+  }
 
 .about {
   background-color: $cfa-red;
