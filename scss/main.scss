@@ -261,12 +261,14 @@ h1,h2,h3 {
       font-weight: 400;
       text-transform: uppercase; 
       margin: 0 0 1rem 0;
+      padding: 0;
       max-width: 600px;
     }
     h1.portfolio-hero-learn {
       color: $white;
       font-size: 3rem;
       font-weight: 700;
+      margin-bottom: 0;
       padding: 0;
       max-width: 600px;
       min-width: 470px;
@@ -275,6 +277,19 @@ h1,h2,h3 {
     @media(max-width: 768px) {
       padding: 3rem 3rem 3rem 3rem;
       text-align: center;
+    }
+    @media(max-width: 651px) {
+      h1.portfolio-hero-learn {
+        font-size: 2rem;
+        min-width: 0;
+      }
+    }
+    @media(max-width: 360px) {
+      padding: 3rem 1.5rem 3rem 1.5rem;
+      min-width: 100px;
+      h4.portfolio-hero-title {
+        font-size: .875rem !important;
+      }
     }
   }
 }}
