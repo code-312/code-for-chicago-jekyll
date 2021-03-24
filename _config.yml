@@ -1,106 +1,91 @@
-# Site settings
-author: Kimfucious
-baseurl: ""
-brand: Sakura
-copyright: abts.io
-description: A clean Jekyll theme with baked in Bootstrap 4, responsive images, and more...
-email: leadership@openuptown.us 
-title: Code for Chicago 
-url: "https://codeforchicago.org"
-
-destination: ./_site
-source: .
-
-# Not using because Gulp is now processing SCSS
-sass:
-  sass_dir: ./scss
-  style: compressed
-
-# Algolia Search
-algolia:
-  application_id: 4P42FOBOZA # Use your (non-admin) search only api key here.
-  index_name: sakura #Use an index you created on Algolia.
-
-# Collections
+---
+title: Code for Chicago
+timezone: UTC
 collections:
   docs:
+    title: Docs
     output: true
     permalink: "/:collection/:path/"
   posts:
+    title: Posts
     output: true
-    permalink: "/:collection/:title/"
-
-# Defaults : these allow you to set default values for front matter
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: post 
-      type: post
-  - scope:
-      path: "pages"
-      type: pages
-    values:
-      layout: default 
-  - scope:
-      path: "_docs"
-      type: docs
-    values:
-      layout: post
-      type: doc
-
-# Exclude from Jekyll processing
-exclude: [
-  "Gemfile",
-  "Gemfile.lock",
-  "gulpfile.js",
-  "node_modules",
-  "package.json",
-  "publish.sh",
-  "yarn-error.log",
-  "yarn.lock"
-]
-
-# Pagination (using jekyll-paginate-v2)
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: post
+    type: post
+- scope:
+    path: pages
+    type: pages
+  values:
+    layout: default
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: post
+    type: doc
+author: Kimfucious
+baseurl: ''
+brand: Sakura
+copyright: abts.io
+description: A clean Jekyll theme with baked in Bootstrap 4, responsive images, and
+  more...
+email: leadership@openuptown.us
+url: https://codeforchicago.org
+destination: "./_site"
+source: "."
+sass:
+  sass_dir: "./scss"
+  style: compressed
+algolia:
+  application_id: 4P42FOBOZA
+  index_name: sakura
+exclude:
+- Gemfile
+- Gemfile.lock
+- gulpfile.js
+- node_modules
+- package.json
+- publish.sh
+- yarn-error.log
+- yarn.lock
 pagination:
   enabled: true
-  per_page: 4 
+  per_page: 4
   paginate_path: "/page:num"
   sort_reverse: true
   title: ":title"
   trail:
     before: 2
     after: 2
-
-# Plugins
-plugins: [jekyll-paginate-v2, jemoji, jekyll-sitemap, jekyll-seo-tag]
-
-# SEO
+plugins:
+- jekyll-paginate-v2
+- jemoji
+- jekyll-sitemap
+- jekyll-seo-tag
 social:
   name: Kimfucious
   links:
-    - https://github.com/open-uptown
+  - https://github.com/open-uptown
 webmaster_verifications:
   google: 
-
-
-# Social icons
 show_social_icons: true
 facebook_username: 
-github_username: open-uptown 
+github_username: open-uptown
 googleplus_username: 
 linkedin_username: 
 slack_username: 
 twitter_username: open_uptown
-
-# Syntax highlighting <= disables built-in highlighter so that we can use Prism
 markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
-
-# Getting meetup data
 jekyll_get:
-  - data: events
-    json: 'https://api.meetup.com/openuptown/events?&sign=true&photo-host=public&page=1&fields=featured_photo'
+- data: events
+  json: https://api.meetup.com/openuptown/events?&sign=true&photo-host=public&page=1&fields=featured_photo
