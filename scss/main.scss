@@ -253,6 +253,7 @@ h1,h2,h3 {
     display: inline-flex;
     justify-content: space-between;
   .portfolio-hero-text {
+    margin: 0 auto; 
     padding: 3rem 0 3rem 6rem;
     h4.portfolio-hero-title {
       color: $white;
@@ -268,6 +269,7 @@ h1,h2,h3 {
       font-weight: 700;
       padding: 0;
       max-width: 600px;
+      min-width: 470px;
     }
     
     @media(max-width: 768px) {
