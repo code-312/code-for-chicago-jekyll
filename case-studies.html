@@ -1,0 +1,49 @@
+---
+title: Code for Chicago | Case Studies
+description: We are technologists, researchers, community advocates, and social justice
+  advocates working together to improve Chicago.
+layout: portfolio
+home: false
+---
+
+<div class="main centered-div" role="main">
+    <div id="random-case-studies-wrapper">
+        {% for post in site.posts %}
+        <div class="portfolio-card invisible">
+            <div class="portfolio-image-container">
+                {% if post.img and post.alt %} <img src="{{post.img}}" alt="{{post.alt}}">
+                {% else %} <img src="/images/proxy-img.png" alt="A sample proxy image">
+                {% endif %}
+            </div>
+            <h5>{{ post.category }}</h5>
+            <h2>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </h2>
+            <p>
+            {{ post.description }}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+<script>
+    let wrapper = document.getElementById('random-case-studies-wrapper');
+    let cards = wrapper.children;
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }    
+
+    shuffleArray(cards);
+
+    // change classname on 3 random cards to not have "invisible"
+    for (let i = 0; i < 3; i++) {
+        cards[i].className = "portfolio-card";
+    }
+
+</script>
