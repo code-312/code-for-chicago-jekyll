@@ -276,20 +276,26 @@ h1,h2,h3 {
   }
 
   h4 {
-    @media (max-width: 1058px) {
-      font-size: 0.875rem !important;
-      line-height: 0.875rem;
+    @media (max-width: 768px) {
       padding-top: 0;
       margin: 0 0 1rem 0;
+    }
+
+    @media (max-width: 651px) {
+      font-size: 0.875rem !important;
+      line-height: 0.875rem;
     }
   }
 
   h1 {
-    @media (max-width: 1058px) {
-      font-size: 2rem;
-      line-height: 2.625rem;
+    @media (max-width: 768px) {
       padding-top: 0;
-      margin: 1rem 0 0 0;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 651px) {
+      font-size: 2rem !important;
+      line-height: 2.625rem;   
     }
   }
 
