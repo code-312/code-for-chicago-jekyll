@@ -309,6 +309,21 @@ h1,h2,h3 {
   }
 }
 
+.portfolio-hero-subheading {
+  &--mobile {
+    display: none;
+  }
+
+  @media (max-width: 360px) {
+    &--mobile {
+      display: block;
+    }
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
 .portfolio-hero-text {
   max-width: 27rem;
   margin-right: 2rem;
