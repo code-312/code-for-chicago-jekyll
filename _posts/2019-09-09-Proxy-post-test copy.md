@@ -1,10 +1,11 @@
 ---
-layout: post
 title: Lorem ipsum dolor sit amet, consectetur
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim enim lectus et commodo magna aenean sagittis.
-category: Front-end + Design
-published: true
-date: 2019-09-09 00:09:00-05:00
+date: 2019-09-09 05:09:00 Z
+categories:
+- Front-end + Design
+layout: post
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim
+  enim lectus et commodo magna aenean sagittis.
 ---
 
 # Lorem Ipsum
