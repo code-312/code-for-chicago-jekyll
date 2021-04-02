@@ -294,8 +294,13 @@ h1,h2,h3 {
     }
 
     @media (max-width: 651px) {
-      font-size: 2rem !important;
+      font-size: 2rem;
       line-height: 2.625rem;   
+    }
+
+    @media (max-width: 360px) {
+      font-size: 2rem !important;
+      line-height: 2.375rem;
     }
   }
 
