@@ -39,7 +39,7 @@ If you are not able to merge, then you'll need to merge the main branch into you
 ![Enter Username](images/how-to-guide/RequestUser.png)
 
 11. Once you receive approval on your PR, you'll now go into the design QA phase. This is necessary for any changes that were made to the UI, but can be skipped if no visible changes were made. Move the Trello ticket to the "Test/Review" column and add a link to Trello card of the deployed version of your branch. 
-![details link](images/how-to-gude/DetailsLink.png)
+![details link](images/how-to-guide/DetailsLink.png)
 You can get this link by looking at the bottom of your pull request and finding the bottom check which will be labeled something like "netlify/thirsty-davinci-2a9aa9/deploy-preview". The "details" link next to it is the link you want."
 
 12. If you pass design QA, then you are ready to merge your branch! Go ahead and merge to master. If you have any merge conflicts, you'll need to resolve those first. If you do not pass design QA and need to make some extensive changes, it's best to go through steps 4-12 once again. Move the Trello card back to "In Progress" if that's the case.
