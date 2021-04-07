@@ -1018,7 +1018,7 @@ p.cardText {
   justify-content: center;
 }
 
-.portfolio-layout {
+.portfolio-layout, .case-studies-layout {
   padding: 80px 96px;
 
   @media (max-width: 1058px) {
@@ -1037,6 +1037,10 @@ p.cardText {
   @media (max-width: 360px) {
 		padding: 64px 24px;
   }
+}
+
+.case-studies-layout h3 {
+  padding-bottom: 24px;
 }
 
 .portfolio-container {
