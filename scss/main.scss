@@ -1039,19 +1039,36 @@ p.cardText {
   }
 }
 
-.case-studies-layout .portfolio-card {
+.case-studies-layout {
+
   h3 {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;  
+    margin: 0px;
+    padding: 0px;
     padding-bottom: 24px;
+    color: $black;
   }
 
-  h2, p {
-    padding-top: 0px;
-    padding-bottom: 8px;
-    margin-bottom: 0px;
-  }
+  .portfolio-card {
+    p, h5, h2, a {
+      font-family: Source Sans Pro;
+      font-style: normal;
+      color: $black;
+    }
 
-  h5 {
-    padding: 8px 0px;
+    h2, p {
+      padding: 0px;
+      margin: 0px;
+      padding-bottom: 8px;
+    }
+
+    h5 {
+      padding: 8px 0px;
+    }
   }
 }
 
