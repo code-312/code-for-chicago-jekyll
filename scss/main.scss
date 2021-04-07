@@ -1039,8 +1039,20 @@ p.cardText {
   }
 }
 
-.case-studies-layout h3 {
-  padding-bottom: 24px;
+.case-studies-layout .portfolio-card {
+  h3 {
+    padding-bottom: 24px;
+  }
+
+  h2, p {
+    padding-top: 0px;
+    padding-bottom: 8px;
+    margin-bottom: 0px;
+  }
+
+  h5 {
+    padding: 8px 0px;
+  }
 }
 
 .portfolio-container {
