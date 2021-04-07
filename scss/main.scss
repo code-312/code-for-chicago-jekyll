@@ -1018,10 +1018,31 @@ p.cardText {
   justify-content: center;
 }
 
+.portfolio-layout {
+  padding: 80px 96px;
+
+  @media (max-width: 1058px) {
+    max-width: 768px;
+    padding: 80px 48px;
+  }
+
+  @media (max-width: 768px) {
+		padding: 64px 48px;
+  }
+
+  @media (max-width: 651px) {
+    padding: 64px calc(100vw / 360 * 24);
+  }
+
+  @media (max-width: 360px) {
+		padding: 64px 24px;
+  }
+}
+
 .portfolio-container {
-  width: 1440px;
+  width: 100%;
   max-width: 1440px;
-	padding: 80px 96px;
+	padding: 0px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
@@ -1029,10 +1050,9 @@ p.cardText {
 	row-gap: 80px;
 	grid-column-gap: 32px;
 	grid-row-gap: 80px;
+  justify-items: center;
 
 	@media (max-width: 1058px) {
-    max-width: 768px;
-    padding: 80px 48px;
 		grid-template-columns: 1fr 1fr;
 		column-gap: 32px;
 		row-gap: 64px;
@@ -1041,7 +1061,6 @@ p.cardText {
 	}
 
 	@media (max-width: 768px) {
-		padding: 64px 48px;
 		column-gap: 32px;
 		row-gap: 64px;
 		grid-column-gap: 32px;
@@ -1049,7 +1068,6 @@ p.cardText {
 	}
 
 	@media (max-width: 651px) {
-    padding: 64px calc(100vw / 360 * 24);
     row-gap: calc(100vw / 360 * 48);
     column-gap: calc(100vw / 360 * 16);
     grid-row-gap: calc(100vw / 360 * 48);
