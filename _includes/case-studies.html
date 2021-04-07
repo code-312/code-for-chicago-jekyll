@@ -2,7 +2,7 @@
 <div class="main centered-div" role="main">
     <div id="random-case-studies-wrapper">
         {% for post in site.posts %}
-        <div class="portfolio-card invisible">
+        <div class="portfolio-card display-none">
             <div class="portfolio-image-container">
                 {% if post.img and post.alt %} <img src="{{post.img}}" alt="{{post.alt}}">
                 {% else %} <img src="/images/proxy-img.png" alt="A sample proxy image">
