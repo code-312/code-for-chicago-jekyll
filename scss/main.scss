@@ -1088,9 +1088,9 @@ p.cardText {
 
     @media (max-width: 768px) {
       display: grid;
-      grid-template-columns: 1fr 375px;
+      grid-template-columns: auto 375px;
       grid-column-gap: 32px;
-      max-width: 100%;
+      max-width: calc(100vw - 96px);
 
       .portfolio-content-container {
         max-width: 375px;
@@ -1126,8 +1126,34 @@ p.cardText {
           font-family: Work Sans;
           font-style: normal;
           font-weight: 600;
-          font-size: 14px;
-          line-height: 17px;
+          font-size: 0.875rem;
+          line-height: calc(1rem + 1/16rem);
+        }
+      }
+    }
+
+    @media (max-width: 651px) {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-column-gap: 32px;
+      .portfolio-content-container{
+        max-width: calc(66vw - 96px);
+
+        a, p {
+          font-family: Source Sans Pro;
+          font-style: normal;
+        }
+
+        a {
+          font-weight: bold;
+          font-size: 1.5rem;
+          line-height: 1.75rem;
+        }
+
+        p {
+          font-weight: normal;
+          font-size: 1rem;
+          line-height: 1.5rem;
         }
       }
     }
@@ -1142,6 +1168,8 @@ p.cardText {
       max-width: calc(100vw - 48px);
 
       .portfolio-content-container {
+        max-width: 100%;
+        
         p {
           max-height: none;
           max-width: 100%;
