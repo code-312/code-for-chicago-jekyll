@@ -1,944 +1,940 @@
-@import "./custom/_variables";
-@import "./bootstrap/bootstrap";
-@import "./instantsearch/instantsearch";
-@import "./instantsearch/instantsearch-theme-algolia";
-@import "./custom/includes/buttons";
-@import "./custom/includes/card";
-@import "./custom/includes/copy_to_clipboard";
-@import "./custom/includes/navbar";
-@import "./custom/includes/images";
-@import "./custom/includes/jumbotron";
-@import "./custom/includes/pagination";
-@import "./custom/includes/social_links";
-@import "./custom/includes/syntax_highlighting";
-@import "./custom/includes/tables";
-@import "./custom/includes/type";
+@import './custom/_variables';
+@import './bootstrap/bootstrap';
+@import './instantsearch/instantsearch';
+@import './instantsearch/instantsearch-theme-algolia';
+@import './custom/includes/buttons';
+@import './custom/includes/card';
+@import './custom/includes/copy_to_clipboard';
+@import './custom/includes/navbar';
+@import './custom/includes/images';
+@import './custom/includes/jumbotron';
+@import './custom/includes/pagination';
+@import './custom/includes/social_links';
+@import './custom/includes/syntax_highlighting';
+@import './custom/includes/tables';
+@import './custom/includes/type';
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Work+Sans:wght@600&display=swap');
 
-
 body {
-  color: $black;
+	color: $black;
 }
 
-h4, h5 {
-    font-family: $font-family-alt;
-    font-size: 0.875rem;
-    font-weight: 600;
+h4,
+h5 {
+	font-family: $font-family-alt;
+	font-size: 0.875rem;
+	font-weight: 600;
 }
 
 h4 {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
-h1,h2,h3 {
-  font-family: 'Source Sans Pro';
-  font-weight: 700;
+h1,
+h2,
+h3 {
+	font-family: 'Source Sans Pro';
+	font-weight: 700;
 }
 
 .text-left {
-  text-align: left;
+	text-align: left;
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  width: 100%;
-  padding: 0 6rem;
-  margin: 1.5rem 0;
-  height: 47px;
-  @media (max-width: 768px) {
-    padding: 0 3rem;
-  }
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	width: 100%;
+	padding: 0 6rem;
+	margin: 1.5rem 0;
+	height: 47px;
+	@media (max-width: 768px) {
+		padding: 0 3rem;
+	}
 }
 
 .navbar a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .social-container {
-  display: block;
-  align-self: center;
-  margin-right: 24px; 
+	display: block;
+	align-self: center;
+	margin-right: 24px;
 }
 
 .logo-container {
-  display: inline;
-  overflow: hidden;
-  height: 100%;
-} 
+	display: inline;
+	overflow: hidden;
+	height: 100%;
+}
 
 .brigade-logo {
-  width: 120px;
-  height: auto;
+	width: 120px;
+	height: auto;
 }
 
 .social-logo {
-  display: inline;
-  margin-left: 1rem;
-  justify-self: center; 
+	display: inline;
+	margin-left: 1rem;
+	justify-self: center;
 }
 
 .social-img {
-  height: 1.5rem;
-  width: 1.5rem;
-  z-index: 1;
+	height: 1.5rem;
+	width: 1.5rem;
+	z-index: 1;
 }
 
 .donate-container {
-  align-self: center; 
-  vertical-align: center;
+	align-self: center;
+	vertical-align: center;
 }
 
 @media (max-width: 360px) {
-  .navbar {
-    padding: 0 24px; 
-  }
+	.navbar {
+		padding: 0 24px;
+	}
 }
 
 @media (max-width: 651px) {
-  .navbar {
-    margin: 16px 0;
-  }
-  .social-container {
-    display: none;
-  }
+	.navbar {
+		margin: 16px 0;
+	}
+	.social-container {
+		display: none;
+	}
 }
 
 .slack-logo {
-  bottom: 0;
-  display: inline-block;
-  margin: auto;
-  position: absolute;
-  top: 0;
+	bottom: 0;
+	display: inline-block;
+	margin: auto;
+	position: absolute;
+	top: 0;
 }
 
 @media (min-width: 750px) {
-  .navbar {
-    margin: 1.5rem 0;
-  }
-  .logo-container {
-    width: 120px;
-    min-height: 47px;
-  }
+	.navbar {
+		margin: 1.5rem 0;
+	}
+	.logo-container {
+		width: 120px;
+		min-height: 47px;
+	}
 }
 
 @media (min-width: 1440px) {
-  .navbar {
-    margin: 24px auto;
-    max-width: 1440px;
-  }
+	.navbar {
+		margin: 24px auto;
+		max-width: 1440px;
+	}
 }
 
 .header-line-container {
-  display: flex;
-  background-color: $cfa-red;
-  align-items: center;
-  padding-left: 6rem;
-  @media (max-width: 1058px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    padding-left: 0;
-  }
-  @media (min-width: 1440px) {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
+	display: flex;
+	background-color: $cfa-red;
+	align-items: center;
+	padding-left: 6rem;
+	@media (max-width: 1058px) {
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		padding-left: 0;
+	}
+	@media (min-width: 1440px) {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
 }
 
 .header-background-container {
-  background: $cfa-red;
+	background: $cfa-red;
 }
 
 .header-contents {
-  max-width: 1440px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	max-width: 1440px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-  h1, h4, p {
-    color: $white;
-  }
+	h1,
+	h4,
+	p {
+		color: $white;
+	}
 
-  h4 {
-    @media (max-width: 1058px) {
-      font-size: 0.875rem !important;
-      line-height: 0.875rem;
-      margin-top: 3rem;
-    }
-  }
+	h4 {
+		@media (max-width: 1058px) {
+			font-size: 0.875rem !important;
+			line-height: 0.875rem;
+			margin-top: 3rem;
+		}
+	}
 
-  h1 {
-    @media (max-width: 1058px) {
-      font-size: 2rem;
-      line-height: 2.625rem;
-    }
-  }
+	h1 {
+		@media (max-width: 1058px) {
+			font-size: 2rem;
+			line-height: 2.625rem;
+		}
+	}
 
-  p {
-    margin-top: 1rem;
-    font-size: 1.25rem;
-    line-height: 1.875rem;
+	p {
+		margin-top: 1rem;
+		font-size: 1.25rem;
+		line-height: 1.875rem;
 
-    @media (max-width: 1058px) {
-      font-size: 1rem;
-      line-height: 1.5rem;
-      margin-bottom: 0;
-    }
-  }
+		@media (max-width: 1058px) {
+			font-size: 1rem;
+			line-height: 1.5rem;
+			margin-bottom: 0;
+		}
+	}
 
-  @media (max-width: 1058px) {
-    display: flex;
-    justify-content: center;
-    height: auto;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
+	@media (max-width: 1058px) {
+		display: flex;
+		justify-content: center;
+		height: auto;
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+	}
 }
 
 .hero-header-heading {
-  &--mobile {
-    display: none;
-  }
+	&--mobile {
+		display: none;
+	}
 
-  @media (max-width: 1058px) {
-    &--mobile {
-      display: block;
-    }
-    &--desktop {
-      display: none;
-    }
-  }
+	@media (max-width: 1058px) {
+		&--mobile {
+			display: block;
+		}
+		&--desktop {
+			display: none;
+		}
+	}
 }
 
 .header-text {
-  max-width: 30.75rem;
-  margin-right: 3rem;
+	max-width: 30.75rem;
+	margin-right: 3rem;
 
-  @media (max-width: 1058px) {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    margin: auto;
-  }
+	@media (max-width: 1058px) {
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		margin: auto;
+	}
 }
 
 .hero-header-image {
-  display: flex;
-  background-image: url(/images/skyline.svg);
-  height: 504px;
-  width: 840px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: -2px;
-  margin-top: 3rem;
-  align-self: flex-end;
+	display: flex;
+	background-image: url(/images/skyline.svg);
+	height: 504px;
+	width: 840px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: -2px;
+	margin-top: 3rem;
+	align-self: flex-end;
 
-  @media (max-width: 1058px) {
-    max-width: 30.75rem;
-    max-height: 18.7rem;
-    margin-top: 3rem;
-    background-position: bottom center;
-    align-self: auto;
-  }
+	@media (max-width: 1058px) {
+		max-width: 30.75rem;
+		max-height: 18.7rem;
+		margin-top: 3rem;
+		background-position: bottom center;
+		align-self: auto;
+	}
 }
 
 .about {
-  background-color: $cfa-red;
-  color: $white;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
-  margin-bottom: 2rem;
-  h1,
-  h2,
-  h3 {
-    color: $white;
-  }
-  a {
-    color: $white;
-  }
-  p {
-    font-size: calc(1rem + 27.333%);
-  }
+	background-color: $cfa-red;
+	color: $white;
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+	margin-bottom: 2rem;
+	h1,
+	h2,
+	h3 {
+		color: $white;
+	}
+	a {
+		color: $white;
+	}
+	p {
+		font-size: calc(1rem + 27.333%);
+	}
 }
 
 .keep-in-touch {
-  display: block;
-  margin: auto;
-  margin-top: 1rem;
-  .fa-slack {
-    color: $white;
-  }
-  svg {
-    font-size: 400%;
-  }
-  .fa-github {
-    color: $white;
-  }
+	display: block;
+	margin: auto;
+	margin-top: 1rem;
+	.fa-slack {
+		color: $white;
+	}
+	svg {
+		font-size: 400%;
+	}
+	.fa-github {
+		color: $white;
+	}
 }
 
 .meetups {
-  background-color: $white;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+	background-color: $white;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 
-  @media(max-width: 768px) {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-  @media(max-width: 360px) {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
+	@media (max-width: 768px) {
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+	}
+	@media (max-width: 360px) {
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
 
-  h4 {
-    color: $black;
-    padding-top: 0;
-    font-size: 0.875rem !important;
-  }
-  h2 {
-    padding-top: .25rem;
-    font-size: 2rem;
-    @media (max-width: 651px) {
-      font-size: 1.5rem;
-    }
-    a {
-      color: $black;
-    }
-  }
-  h1 {
-    color: $black;
-    font-size: 3rem;
-    @media (max-width: 651px) {
-      font-size: 2rem;
-    }
-    padding-top: 0;
-    margin-bottom: 1rem;
-  }
-  .fa-external-link-alt {
-    font-size: .675rem;
-  }
-  .event-description {
-    padding-right: 0;
-    padding-left: 0;
-    @media(min-width: 1059px){
-      max-width: 488px;
-      flex: 0 1 auto;
-      align-content: flex-start;
-    }
+	h4 {
+		color: $black;
+		padding-top: 0;
+		font-size: 0.875rem !important;
+	}
+	h2 {
+		padding-top: 0.25rem;
+		font-size: 2rem;
+		@media (max-width: 651px) {
+			font-size: 1.5rem;
+		}
+		a {
+			color: $black;
+		}
+	}
+	h1 {
+		color: $black;
+		font-size: 3rem;
+		@media (max-width: 651px) {
+			font-size: 2rem;
+		}
+		padding-top: 0;
+		margin-bottom: 1rem;
+	}
+	.fa-external-link-alt {
+		font-size: 0.675rem;
+	}
+	.event-description {
+		padding-right: 0;
+		padding-left: 0;
+		@media (min-width: 1059px) {
+			max-width: 488px;
+			flex: 0 1 auto;
+			align-content: flex-start;
+		}
 
-    p {
-      margin-top: .5rem;
-      margin-bottom: .5rem;
-      font-size: 1.25rem;
-      font-weight: 400;
-      @media (max-width: 651px) {
-        font-size: 1rem;
-      }
-      a {
-        color: $cfa-blue-dark;
-      }
-    }
-    .event-location-col{
-      padding: 0;
-    }
-    .event-location {
-      margin-top: 1.5rem;
-      margin-bottom: .5rem;
-      font-family: $font-family-alt;
-      font-weight: 600;
-      color: $darker-grey;
-      font-size: .875rem; 
-      line-height: 1.2rem;
-      i {
-        font-size: 1rem;
-      }
-    }
-  }
+		p {
+			margin-top: 0.5rem;
+			margin-bottom: 0.5rem;
+			font-size: 1.25rem;
+			font-weight: 400;
+			@media (max-width: 651px) {
+				font-size: 1rem;
+			}
+			a {
+				color: $cfa-blue-dark;
+			}
+		}
+		.event-location-col {
+			padding: 0;
+		}
+		.event-location {
+			margin-top: 1.5rem;
+			margin-bottom: 0.5rem;
+			font-family: $font-family-alt;
+			font-weight: 600;
+			color: $darker-grey;
+			font-size: 0.875rem;
+			line-height: 1.2rem;
+			i {
+				font-size: 1rem;
+			}
+		}
+	}
 }
 
 .meetup {
-  border-radius: 1rem;
-  padding-left: 0;
-  padding-right: 0;
-  p.text-center {
-    line-height: 1;
-    margin-bottom: 3rem;
-    @media (max-width: 651px) {
-      margin-bottom: 2rem;
-    }
-  }
-  @media (max-width: 1058px) {
-    max-width: 671px;
-    margin: auto;
-  }
-  .row {
-    margin: 0;
-  }
+	border-radius: 1rem;
+	padding-left: 0;
+	padding-right: 0;
+	p.text-center {
+		line-height: 1;
+		margin-bottom: 3rem;
+		@media (max-width: 651px) {
+			margin-bottom: 2rem;
+		}
+	}
+	@media (max-width: 1058px) {
+		max-width: 671px;
+		margin: auto;
+	}
+	.row {
+		margin: 0;
+	}
 }
 
 #meetupLink {
-  font-family: $font-family-alt;
-  font-size: .875rem;
-  font-weight: 600;
-  color: $cfa-blue-dark;
+	font-family: $font-family-alt;
+	font-size: 0.875rem;
+	font-weight: 600;
+	color: $cfa-blue-dark;
 }
 
 .attend-button-container {
-  padding-top: 1rem;
-  display: flex;
-  justify-content: right;
+	padding-top: 1rem;
+	display: flex;
+	justify-content: right;
 }
 
 .attend-button {
-  font-family: $font-family-alt;
-  font-weight: 600;
-  font-size: .875rem;
-  padding: 14px 16px;
-  @media (max-width: 1058px) {
-    padding: 0 .9375rem; 
-    display: inline-block;
-    width: 100%;
-  }
-  
-  a {
-    color: $white;
-  }
+	font-family: $font-family-alt;
+	font-weight: 600;
+	font-size: 0.875rem;
+	padding: 14px 16px;
+	@media (max-width: 1058px) {
+		padding: 0 0.9375rem;
+		display: inline-block;
+		width: 100%;
+	}
 
-  i {
-    margin-left: .25rem;
-  }
+	a {
+		color: $white;
+	}
+
+	i {
+		margin-left: 0.25rem;
+	}
 }
 
 .fa-map-marker-alt {
-  color: $cfa-red;
-  margin-right: 0.5rem;
+	color: $cfa-red;
+	margin-right: 0.5rem;
 }
 
 .event-photo-div {
-  padding-right: 0;
-  padding-left: 3rem;
-  @media(max-width: 1058px) {
-    margin-bottom: 1.5rem;
-    padding-left: 0;
-  }
+	padding-right: 0;
+	padding-left: 3rem;
+	@media (max-width: 1058px) {
+		margin-bottom: 1.5rem;
+		padding-left: 0;
+	}
 }
 
 .event-photo {
-  display: block;
-  width: 100%;
-  object-fit: contain;
+	display: block;
+	width: 100%;
+	object-fit: contain;
 }
 
 .redbutton {
-  background-color: $cfa-red;
-  border: none;
-  color: white;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 1rem;
-  margin-top: 2rem !important;
-  a {
-    color: white;
-  }
+	background-color: $cfa-red;
+	border: none;
+	color: white;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 1rem;
+	margin-top: 2rem !important;
+	a {
+		color: white;
+	}
 }
 
 .redbutton:hover {
-  color: white;
-  text-decoration: underline;
+	color: white;
+	text-decoration: underline;
 }
 
 .whitebutton {
-  background-color: $cfa-red;
-  border-radius: 2px;
-  text-align: center;
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: $white !important;
+	background-color: $cfa-red;
+	border-radius: 2px;
+	text-align: center;
+	padding-top: 0.875rem;
+	padding-bottom: 0.875rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	color: $white !important;
 }
 
 .contact-form-container {
-  color: $white;
-  padding: 80px 96px;
-  background-color: $cfa-red;
+	color: $white;
+	padding: 80px 96px;
+	background-color: $cfa-red;
 
-  @media(max-width: 768px){
-    padding: 64px 48px;
-  }
+	@media (max-width: 768px) {
+		padding: 64px 48px;
+	}
 
-  @media(max-width: 360px){
-    padding: 48px 24px;
-  }
+	@media (max-width: 360px) {
+		padding: 48px 24px;
+	}
 
-  h1 {
-    color: $white;
-    font-weight: 700;
-    line-height: 1.2;
-    @media(max-width: 651px){
-      font-size: 2rem;
-    }
-  }
-  .text-center {
-    display: block;
-    margin: auto;
-  }
-  a {
-    color: $white;
-  }
+	h1 {
+		color: $white;
+		font-weight: 700;
+		line-height: 1.2;
+		@media (max-width: 651px) {
+			font-size: 2rem;
+		}
+	}
+	.text-center {
+		display: block;
+		margin: auto;
+	}
+	a {
+		color: $white;
+	}
 }
 
 #contactus {
-  margin-top: 0px;
-  margin-bottom: 24px;
-  padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 24px;
+	padding-top: 0px;
 }
 
 .contact-form {
-  width: 600px;
-  label {
-    font-family: $font-family-alt;
-    font-weight: 600;
-    font-size: 14px;
-    margin-bottom: 12px;
-    line-height: 1.5;
-  }
+	width: 600px;
+	label {
+		font-family: $font-family-alt;
+		font-weight: 600;
+		font-size: 14px;
+		margin-bottom: 12px;
+		line-height: 1.5;
+	}
 
-  font-size: 1rem;
-  margin-top: -10px;
-  margin-left: auto;
-  margin-right: auto;
-  input {
-    width: 100%;
-    padding: 10px 13px 7px 13px;
-    margin-bottom: 24px;
-    display: block;
-    line-height: 1.5;
-  }
-  input::placeholder {
-    color: $light-grey;
-  }
-  textarea {
-    width: 100%;
-    height: 196px;
-    margin-bottom: 24px;
-    padding: 16px 12px;
-    display: block;
-    line-height: 1.5;
-  }
-  textarea::placeholder {
-    color: $light-grey;
-  }
-  
-  button {
-    display: block;
-    width: 100%;
-    background-color: transparent;
-    font-family: $font-family-alt;
-    font-size: 0.875rem;
-    font-weight: 600;
-    border: $white;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 2px;
-    color: $white;
-    padding: 14px 16px;
-    text-align: center;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  button:hover {
-    text-decoration: underline;
-  }
+	font-size: 1rem;
+	margin-top: -10px;
+	margin-left: auto;
+	margin-right: auto;
+	input {
+		width: 100%;
+		padding: 10px 13px 7px 13px;
+		margin-bottom: 24px;
+		display: block;
+		line-height: 1.5;
+	}
+	input::placeholder {
+		color: $light-grey;
+	}
+	textarea {
+		width: 100%;
+		height: 196px;
+		margin-bottom: 24px;
+		padding: 16px 12px;
+		display: block;
+		line-height: 1.5;
+	}
+	textarea::placeholder {
+		color: $light-grey;
+	}
+
+	button {
+		display: block;
+		width: 100%;
+		background-color: transparent;
+		font-family: $font-family-alt;
+		font-size: 0.875rem;
+		font-weight: 600;
+		border: $white;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 2px;
+		color: $white;
+		padding: 14px 16px;
+		text-align: center;
+		text-decoration: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	button:hover {
+		text-decoration: underline;
+	}
 }
 
-
 .padded-content {
-  width: 100%;
-  max-width: 1440px;
-  display: block;
-  margin: auto;
-  padding-left: 6rem;
-  padding-right: 6rem;
-  
-  @media(max-width: 768px) {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
+	width: 100%;
+	max-width: 1440px;
+	display: block;
+	margin: auto;
+	padding-left: 6rem;
+	padding-right: 6rem;
 
-  @media(max-width: 360px) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
+	@media (max-width: 768px) {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
 
+	@media (max-width: 360px) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
 }
 
 .footer {
-    background-color: $white;
-    color: $black;
-    text-align: center;
-    a {
-        color: $cfa-blue-dark;
-        font-weight: 400;
-    }
-    p {
-    font-size: 1rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 400;
-    }
-    img{
-      width: 4.75rem;
-      height: auto;
-    }
+	background-color: $white;
+	color: $black;
+	text-align: center;
+	a {
+		color: $cfa-blue-dark;
+		font-weight: 400;
+	}
+	p {
+		font-size: 1rem;
+		margin-top: 0;
+		margin-bottom: 0;
+		font-weight: 400;
+	}
+	img {
+		width: 4.75rem;
+		height: auto;
+	}
 }
 
 @media (max-width: 768px) {
-    .footer-icon {
-      margin-bottom: 1rem;
-    }
+	.footer-icon {
+		margin-bottom: 1rem;
+	}
 }
 
 @media (min-width: 768px) {
-    .footer p {
-	text-align: right;
-    }
-    .footer {
-	text-align: left;
-    }
+	.footer p {
+		text-align: right;
+	}
+	.footer {
+		text-align: left;
+	}
 }
 
 .about-cfa {
-  padding-top: 2rem;
-  margin-bottom: 2rem;
+	padding-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 .workwithus {
-  padding: 0;
+	padding: 0;
 }
 
 .workwithusHeader {
-  color: $black;
-  margin: 80px auto 24px;
-  width: 600px;
+	color: $black;
+	margin: 80px auto 24px;
+	width: 600px;
 
-  h1 {
-    color: $black;
-    padding-top: 0;
-    margin-bottom: 1rem;
-  }
+	h1 {
+		color: $black;
+		padding-top: 0;
+		margin-bottom: 1rem;
+	}
 
-  p {
-    margin-bottom: 0;
-    @media (max-width: 767px) {
-      margin-top: 5rem;
-    }
-  }
+	p {
+		margin-bottom: 0;
+		@media (max-width: 767px) {
+			margin-top: 5rem;
+		}
+	}
 
-  @media (max-width: 767px) {
-    margin-top: 64px;
-  }
-  @media (max-width: 651px) {
-    width: 555px;
-    h1 {
-      font-size: 2rem;
-    }
-    p {
-      font-size: 1rem;
-    }
-
-  }
-  @media (max-width: 604px) {
-    width: 100%;
-    padding: 9px;
-  }
-  @media (max-width: 360px) {
-    margin-top: 48px;
-  }
+	@media (max-width: 767px) {
+		margin-top: 64px;
+	}
+	@media (max-width: 651px) {
+		width: 555px;
+		h1 {
+			font-size: 2rem;
+		}
+		p {
+			font-size: 1rem;
+		}
+	}
+	@media (max-width: 604px) {
+		width: 100%;
+		padding: 9px;
+	}
+	@media (max-width: 360px) {
+		margin-top: 48px;
+	}
 }
 .workwithusContent {
-  padding-bottom: 80px;
-  padding-top: 1.5rem;
-  
+	padding-bottom: 80px;
+	padding-top: 1.5rem;
 
-  h4 {
-    color: $black;
-  }
-  p {
-    font-size: calc(1rem + 27.333%);
-    color: $black;
-  }
-  @media (max-width: 768px) {
-    padding-top: 0;
-    padding-bottom: 64px;
-  }
-  @media (max-width: 651px) {
-    align-content: center;
-    width: 397px;
-    p {
-      font-size: 1rem;
-    }
-  }
-  @media (max-width: 445px) {
-    width: 100%;
-  }
-  @media (max-width: 360){
-    padding-bottom: 24px;
-  }
-
+	h4 {
+		color: $black;
+	}
+	p {
+		font-size: calc(1rem + 27.333%);
+		color: $black;
+	}
+	@media (max-width: 768px) {
+		padding-top: 0;
+		padding-bottom: 64px;
+	}
+	@media (max-width: 651px) {
+		align-content: center;
+		width: 397px;
+		p {
+			font-size: 1rem;
+		}
+	}
+	@media (max-width: 445px) {
+		width: 100%;
+	}
+	@media (max-width: 360) {
+		padding-bottom: 24px;
+	}
 }
 
-#workWithUsText{
-  margin: 0;
+#workWithUsText {
+	margin: 0;
 }
 
-// col-md-10
-.iconContainer, .iconTile {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+.iconContainer,
+.iconTile {
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
 .iconContainer {
-  -webkit-box-flex: 0;
-    -ms-flex: 0 0 83.33333%;
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 83.33333%;
+	flex: 0 0 83.33333%;
+	max-width: 83.33333%;
 }
 
 .workwithusIconsRow {
-  justify-content: space-between;
-  text-align: center;
-  font-weight: bold;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin: auto;
-  width: 100%;
+	justify-content: space-between;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	margin: auto;
+	width: 100%;
 
-  max-width: 1032px;
+	max-width: 1032px;
 
-  //replacing bootstrap class col-xxssm-6
-  @media (min-width: 361px) {
-    .iconTile-sm {
-      flex: 0 0 50%;
-      max-width: 50%
-    }
-  }
+	@media (min-width: 361px) {
+		.iconTile {
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+	}
 
-  //col-md-3
-  @media (min-width: 768px) {
-    .iconTile {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
-    }
-  }
+	@media (min-width: 768px) {
+		.iconTile {
+			-webkit-box-flex: 0;
+			-ms-flex: 0 0 25%;
+			flex: 0 0 25%;
+			max-width: 25%;
+		}
+	}
 
-  
-  p {
-    margin-bottom: 0;
-  }
+	p {
+		margin-bottom: 0;
+	}
 
-  @media (max-width: 767px) {
-    padding: 0;
-    .iconTile{
-      margin-top: 24px;
-      margin-bottom: 24px;
-    }
+	@media (max-width: 767px) {
+		padding: 0;
+		.iconTile {
+			margin-top: 24px;
+			margin-bottom: 24px;
+		}
 
-    @media (max-width: 767px) {    
-      margin-bottom: 0;
-      p {
-        padding-bottom: 24px;
-      }
-    }
-  }
+		@media (max-width: 767px) {
+			margin-bottom: 0;
+			p {
+				padding-bottom: 24px;
+			}
+		}
+	}
 }
 .workwithusIcon {
-  width: 42px;
-  height: 42px;
-  margin-bottom: 16px;
+	width: 42px;
+	height: 42px;
+	margin-bottom: 16px;
 
-  @media (max-width: 767px) {
-    margin-top: 24px;
-  }
+	@media (max-width: 767px) {
+		margin-top: 24px;
+	}
 }
 
 .cardTitle {
-  font-family: $font-family-alt;
-  color: $black;
-  text-transform: uppercase;
-  font-size: 0.875rem !important;
-  font-weight: 600;
-  margin-bottom: 0;
+	font-family: $font-family-alt;
+	color: $black;
+	text-transform: uppercase;
+	font-size: 0.875rem !important;
+	font-weight: 600;
+	margin-bottom: 0;
 }
 
 .volunteersRow {
-  margin-top: 80px;
-  flex-wrap: wrap-reverse;
-  @media(max-width: 1058px) {
-    flex-direction: column-reverse !important;
-  }
+	margin-top: 80px;
+	flex-wrap: wrap-reverse;
+	@media (max-width: 1058px) {
+		flex-direction: column-reverse !important;
+	}
 }
 
 .cardText {
-  font-size: 1.25rem;
-  max-width: 100%;
-  p {
-    margin-bottom: 24px;
-  }
-  @media (max-width: 651px) {
-    font-size: 1rem;
-  }
-} 
+	font-size: 1.25rem;
+	max-width: 100%;
+	p {
+		margin-bottom: 24px;
+	}
+	@media (max-width: 651px) {
+		font-size: 1rem;
+	}
+}
 
 p.cardText {
-  margin-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 .cardsContainer {
-  background-color:$off-white;
-  margin-left: -15px;
-  margin-right: -15px;
+	background-color: $off-white;
+	margin-left: -15px;
+	margin-right: -15px;
 
-  @media (max-width: 767px) {
-    padding-top: 0;
-  }
+	@media (max-width: 767px) {
+		padding-top: 0;
+	}
 
-  h2 {
-    color: $black;
-    font-size: 2rem;
-    padding-top: 16px;
-    padding-bottom: 7px;
-    @media (max-width: 651px) {
-      font-size: 1.5rem !important;
-    }
-  }
-  a {
-    font-family: $font-family-alt; 
-    font-weight: 600; 
-    font-size: 1rem; 
-    color: $cfa-blue-dark;
-  }
-  .row {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    @media(max-width: 1058px) {
-      display: flex;
-      flex-direction: column;
-      width: 671px;
-      margin: 0 auto;
-    }
-    @media(max-width: 768px) {
-      width: 100%;
-    }
-  }
+	h2 {
+		color: $black;
+		font-size: 2rem;
+		padding-top: 16px;
+		padding-bottom: 7px;
+		@media (max-width: 651px) {
+			font-size: 1.5rem !important;
+		}
+	}
+	a {
+		font-family: $font-family-alt;
+		font-weight: 600;
+		font-size: 1rem;
+		color: $cfa-blue-dark;
+	}
+	.row {
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		@media (max-width: 1058px) {
+			display: flex;
+			flex-direction: column;
+			width: 671px;
+			margin: 0 auto;
+		}
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
 
-  img {
-    max-width: none;
-    width: 600px;
-    margin-right: 0;
-    @media(max-width: 1058px) {
-      width: 100%;
-    }
-  }
+	img {
+		max-width: none;
+		width: 600px;
+		margin-right: 0;
+		@media (max-width: 1058px) {
+			width: 100%;
+		}
+	}
 }
 
 .cards {
-  padding: 80px 96px;
-  max-width: 1440px;
-  @media(max-width: 1058px) {
-    padding: 64px 48px;
-  }
-  @media(max-width: 360px) {
-    padding: 48px 24px;
-  }
+	padding: 80px 96px;
+	max-width: 1440px;
+	@media (max-width: 1058px) {
+		padding: 64px 48px;
+	}
+	@media (max-width: 360px) {
+		padding: 48px 24px;
+	}
 }
 
 .card-info {
-  width: 492px;
-  @media (max-width: 1340px) {
-    width: 100%;
-    margin-bottom: 14px;
-  }
-  @media (max-width: 1058px) {
-    margin-bottom: 0;
-  }
+	width: 492px;
+	@media (max-width: 1340px) {
+		width: 100%;
+		margin-bottom: 14px;
+	}
+	@media (max-width: 1058px) {
+		margin-bottom: 0;
+	}
 }
 
 .organizationsText {
-  display: flex;
-  flex-shrink: 4;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 0;
-  padding-right: 15px;
-  @media(max-width: 1058) {
-    padding: 0;
-  }
+	display: flex;
+	flex-shrink: 4;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 0;
+	padding-right: 15px;
+	@media (max-width: 1058) {
+		padding: 0;
+	}
 }
 
 .volunteersText {
-  display: flex;
-  flex-shrink: 4;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 15px;
-  padding-right: 0;
-  @media(max-width: 1058px) {
-    padding: 0;
-    margin-top: 64px;
-  }
-  @media(max-width: 360px) {
-    margin-top: 48px;
-  }
+	display: flex;
+	flex-shrink: 4;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 15px;
+	padding-right: 0;
+	@media (max-width: 1058px) {
+		padding: 0;
+		margin-top: 64px;
+	}
+	@media (max-width: 360px) {
+		margin-top: 48px;
+	}
 }
 
 .card-img-container {
-  flex-shrink: 1;
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0;
-  @media(max-width: 1058px) {
-    width: 100%;
-  }
+	flex-shrink: 1;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0;
+	@media (max-width: 1058px) {
+		width: 100%;
+	}
 }
 
 .donateButton {
-  background-color: $cfa-red;
-  font-weight: $font-weight-bold;
-  max-width: 85px;
-  border: none;
-  color: white;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 2px;
-  a {
-    color: white;
-  }
-  &:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  &:visited {
-    color: white;
-  }
+	background-color: $cfa-red;
+	font-weight: $font-weight-bold;
+	max-width: 85px;
+	border: none;
+	color: white;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 2px;
+	a {
+		color: white;
+	}
+	&:hover {
+		color: white;
+		text-decoration: underline;
+	}
+	&:visited {
+		color: white;
+	}
 }
