@@ -483,7 +483,7 @@ h3 {
 		max-width: 671px;
 		margin: auto;
 	}
-	.row {
+	.flexRow {
 		margin: 0;
 	}
 }
@@ -820,6 +820,13 @@ h3 {
 	max-width: 83.33333%;
 }
 
+.flexRow {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: ($grid-gutter-width / -2);
+	margin-left: ($grid-gutter-width / -2);
+}
+
 .workwithusIconsRow {
 	justify-content: space-between;
 	text-align: center;
@@ -932,7 +939,7 @@ p.cardText {
 		font-size: 1rem;
 		color: $cfa-blue-dark;
 	}
-	.row {
+	.flexRow {
 		flex-wrap: nowrap;
 		justify-content: space-between;
 		@media (max-width: 1058px) {
