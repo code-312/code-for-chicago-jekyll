@@ -1249,6 +1249,8 @@ p.cardText {
   width:100%;
   max-width: 395px;
   max-height: 261px;
+  display: flex;
+  align-items: center;
 }
 
 .display-none {
