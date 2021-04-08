@@ -5,7 +5,7 @@
     </div>
 </div>
 
-<script defer>
+<script>
     let wrapper = document.querySelector('.portfolio-card').parentNode;
     let cards = wrapper.children;
 
@@ -15,7 +15,7 @@
 
     // change classname on 3 random cards to not have "invisible"
     for (let i = wrapper.children.length - 1; i >= 3; i--) {
-        cards[i].className = "portfolio-card display-none";
+        cards[i].className = "portfolio-card hidden";
     }
 
 </script>
