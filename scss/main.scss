@@ -41,8 +41,12 @@ h1,h2,h3 {
 }
 
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   width: 100%;
   padding: 0 6rem;
@@ -59,7 +63,8 @@ h1,h2,h3 {
 
 .social-container {
   display: block;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   margin-right: 24px; 
 }
 
@@ -87,7 +92,8 @@ h1,h2,h3 {
 }
 
 .donate-container {
-  align-self: center; 
+  -ms-flex-item-align: center;
+      align-self: center; 
   vertical-align: center;
 }
 
@@ -132,14 +138,25 @@ h1,h2,h3 {
 }
 
 .header-line-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: $cfa-red;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 6rem;
   @media (max-width: 1058px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     padding-left: 0;
   }
   @media (min-width: 1440px) {
@@ -155,9 +172,15 @@ h1,h2,h3 {
 .header-contents {
   max-width: 1440px;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 
   h1, h4, p {
     color: $white;
@@ -191,8 +214,12 @@ h1,h2,h3 {
   }
 
   @media (max-width: 1058px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: auto;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -227,6 +254,8 @@ h1,h2,h3 {
 }
 
 .hero-header-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-image: url(/images/skyline.svg);
   height: 504px;
@@ -235,14 +264,16 @@ h1,h2,h3 {
   background-size: cover;
   margin-bottom: -2px;
   margin-top: 3rem;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 
   @media (max-width: 1058px) {
     max-width: 30.75rem;
     max-height: 18.7rem;
     margin-top: 3rem;
     background-position: bottom center;
-    align-self: auto;
+    -ms-flex-item-align: auto;
+        align-self: auto;
   }
 }
 
@@ -266,9 +297,15 @@ h1,h2,h3 {
 .portfolio-hero-contents {
   max-width: 1440px;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   h1,
   h4 {
@@ -305,7 +342,9 @@ h1,h2,h3 {
   }
 
   @media (max-width: 768px) {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0 3rem;
   }
 
@@ -343,7 +382,8 @@ h1,h2,h3 {
 
 .portfolio-hero-image {
   width: 453px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 
   @media (max-width: 768px) {
     display: none;
@@ -430,8 +470,11 @@ h1,h2,h3 {
     padding-left: 0;
     @media(min-width: 1059px){
       max-width: 488px;
-      flex: 0 1 auto;
-      align-content: flex-start;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 auto;
+              flex: 0 1 auto;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
     }
 
     p {
@@ -493,8 +536,12 @@ h1,h2,h3 {
 
 .attend-button-container {
   padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: right;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .attend-button {
@@ -534,7 +581,8 @@ h1,h2,h3 {
 .event-photo {
   display: block;
   width: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .redbutton {
@@ -627,6 +675,15 @@ h1,h2,h3 {
     display: block;
     line-height: 1.5;
   }
+  input::-webkit-input-placeholder {
+    color: $light-grey;
+  }
+  input::-moz-placeholder {
+    color: $light-grey;
+  }
+  input::-ms-input-placeholder {
+    color: $light-grey;
+  }
   input::placeholder {
     color: $light-grey;
   }
@@ -637,6 +694,15 @@ h1,h2,h3 {
     padding: 16px 12px;
     display: block;
     line-height: 1.5;
+  }
+  textarea::-webkit-input-placeholder {
+    color: $light-grey;
+  }
+  textarea::-moz-placeholder {
+    color: $light-grey;
+  }
+  textarea::-ms-input-placeholder {
+    color: $light-grey;
   }
   textarea::placeholder {
     color: $light-grey;
@@ -786,7 +852,8 @@ h1,h2,h3 {
     padding-bottom: 64px;
   }
   @media (max-width: 651px) {
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     width: 397px;
     p {
       font-size: 1rem;
@@ -806,7 +873,9 @@ h1,h2,h3 {
 }
 
 .workwithusIconsRow {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
   font-weight: bold;
   padding-top: 24px;
@@ -856,9 +925,13 @@ h1,h2,h3 {
 
 .volunteersRow {
   margin-top: 80px;
-  flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
   @media(max-width: 1058px) {
-    flex-direction: column-reverse !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
   }
 }
 
@@ -902,11 +975,19 @@ p.cardText {
     color: $cfa-blue-dark;
   }
   .row {
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     @media(max-width: 1058px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       width: 671px;
       margin: 0 auto;
     }
@@ -948,10 +1029,18 @@ p.cardText {
 }
 
 .organizationsText {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-shrink: 4;
-  flex-direction: column;
-  justify-content: center;
+  -ms-flex-negative: 4;
+      flex-shrink: 4;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: 0;
   padding-right: 15px;
   @media(max-width: 1058) {
@@ -960,10 +1049,18 @@ p.cardText {
 }
 
 .volunteersText {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-shrink: 4;
-  flex-direction: column;
-  justify-content: center;
+  -ms-flex-negative: 4;
+      flex-shrink: 4;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: 15px;
   padding-right: 0;
   @media(max-width: 1058px) {
@@ -976,11 +1073,19 @@ p.cardText {
 }
 
 .card-img-container {
-  flex-shrink: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0;
   @media(max-width: 1058px) {
     width: 100%;
@@ -1013,9 +1118,14 @@ p.cardText {
 }
 
 .centered-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: center;
-  justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 // Portfolio stuff - own file?
@@ -1026,7 +1136,9 @@ p.cardText {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
-	column-gap: 32px;
+	-webkit-column-gap: 32px;
+	   -moz-column-gap: 32px;
+	        column-gap: 32px;
 	row-gap: 80px;
 	grid-column-gap: 32px;
 	grid-row-gap: 80px;
@@ -1035,7 +1147,9 @@ p.cardText {
     max-width: 768px;
     padding: 80px 48px;
 		grid-template-columns: 1fr 1fr;
-		column-gap: 32px;
+		-webkit-column-gap: 32px;
+		   -moz-column-gap: 32px;
+		        column-gap: 32px;
 		row-gap: 64px;
 		grid-column-gap: 32px;
 		grid-row-gap: 64px;
@@ -1043,7 +1157,9 @@ p.cardText {
 
 	@media (max-width: 768px) {
 		padding: 64px 48px;
-		column-gap: 32px;
+		-webkit-column-gap: 32px;
+		   -moz-column-gap: 32px;
+		        column-gap: 32px;
 		row-gap: 64px;
 		grid-column-gap: 32px;
 		grid-row-gap: 64px;
@@ -1052,7 +1168,9 @@ p.cardText {
 	@media (max-width: 651px) {
     padding: 64px calc(100vw / 360 * 24);
     row-gap: calc(100vw / 360 * 48);
-    column-gap: calc(100vw / 360 * 16);
+    -webkit-column-gap: calc(100vw / 360 * 16);
+       -moz-column-gap: calc(100vw / 360 * 16);
+            column-gap: calc(100vw / 360 * 16);
     grid-row-gap: calc(100vw / 360 * 48);
     grid-column-gap: calc(100vw / 360 * 16);
   }
@@ -1060,7 +1178,9 @@ p.cardText {
 	@media (max-width: 360px) {
 		padding: 64px 24px;
 		grid-template-columns: 1fr;
-		column-gap: 32px;
+		-webkit-column-gap: 32px;
+		   -moz-column-gap: 32px;
+		        column-gap: 32px;
 		row-gap: 48px;
 		grid-column-gap: 32px;
 		grid-row-gap: 48px;
@@ -1076,7 +1196,8 @@ p.cardText {
     height: 100%;
     max-height: 261px;
     max-width: 395px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   h5 {
