@@ -46,4 +46,4 @@ To install bundler, use:
 
 Find us [on our slack #general channel](https://code-for-chicago-slack-invite.herokuapp.com/) if we can be of assistance getting you set up.
 
-All contributions are very welcome. Thank you!
+All contributions are very welcome. ([see this guide](from-trello-to-merge.md))Thank you!
