@@ -1,40 +1,21 @@
 <div class="centered-div">
     <div class="case-studies-layout">
         <h3>More Case Studies</h3>
-        <div id="random-case-studies-wrapper" class="portfolio-container">
-            {% for post in site.posts %}
-            <div class="portfolio-card display-none">
-                <div class="portfolio-image-container">
-                    {% if post.img and post.alt %} <img src="{{post.img}}" alt="{{post.alt}}">
-                    {% else %} <img src="/images/proxy-img.png" alt="A sample proxy image">
-                    {% endif %}
-                </div>
-                <div class="portfolio-content-container">
-                    <h5>{{ post.categories }}</h5>
-                    <h2>
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                    </h2>
-                    <p>
-                    {{ post.description }}
-                    </p>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
+        {% include portfolio-gallery.html %}
     </div>
 </div>
 
-<script>
-    let wrapper = document.getElementById('random-case-studies-wrapper');
-    let cards = wrapper.children;  
+<script defer>
+    let wrapper = document.querySelector('.portfolio-card').parentNode;
+    let cards = wrapper.children;
 
-    for (let i = wrapper.children.length; i >= 0; i--) {
+    for (let i = wrapper.children.length - 1; i >= 0; i--) {
         wrapper.appendChild(wrapper.children[Math.random() * i | 0]);
     }
 
     // change classname on 3 random cards to not have "invisible"
-    for (let i = 0; i < 3; i++) {
-        cards[i].className = "portfolio-card";
+    for (let i = wrapper.children.length - 1; i >= 3; i--) {
+        cards[i].className = "portfolio-card display-none";
     }
 
 </script>
