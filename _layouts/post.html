@@ -1,19 +1,23 @@
 {% include head.html %} 
 {% include search_modal.html %}
 {% include navbar.html %}
-  <section id="{{ page.type }}" class="container pt-3">
-  <div class="row">
-    <div class="col">
-    {%- if page.type == "post" -%}
-      <p class="lead text-black-50 text-right">
-        {{ page.date | date: "%b %-d, %Y" }}
-      </p>
-    {%- endif -%}
-      <article>
-        {{ content }}
-      </article>
+<section id="{{ page.type }}" class="post-content">
+  <article>
+    <div class="post-intro">
+      <h4>{{ page.areas | uppercase }}</h4>
+      <h1>{{ page.title }}</h1>
+      <p>{{ page.description }}</p>
+      {% include social-media-share-links.html %}
+        {% if page.img and page.alt %} <img src="{{page.img}}" alt="{{page.alt}}">
+        {% else %} <img src="/images/proxy-img.png" alt="A sample proxy image">
+        {% endif %}
+      <p class="image-caption">{{ page.imgtext}}</p>
     </div>
-  </div>
+    {{ content }}
+  </article>
 </section>
+<div class="share-wrapper">
+  {% include social-media-share-links.html %}
+</div>
 {% include case-studies.html %}
 {% include footer.html %}
