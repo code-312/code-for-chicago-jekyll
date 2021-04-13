@@ -12,6 +12,11 @@ $dark-grey: #606060;
 $darker-grey: #333333;
 $off-white: #F5F5F5;
 
+$gray-600: #6c757d;
+$gray-800: #343a40;
+$black: #333333;
+$white: #fff;
+
 $primary: $cfa-red;
 $highlight: lighten($primary, 0%);
 
@@ -44,10 +49,5 @@ $tooltip-opacity: 0.9;
 $font-family-base: 'Source Sans Pro', sans-serif;
 $font-family-alt: 'Work Sans', sans-serif;
 
-// Can be removed once Bootstrap is dropped
-$zindex-tooltip: 1070;
-$gray-600: #6c757d;
-$gray-800: #343a40;
-$black: #333333;
-$white: #fff;
 $font-weight-bold: 600;
+$zindex-tooltip: 1070;
