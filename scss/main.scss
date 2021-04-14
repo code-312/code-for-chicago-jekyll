@@ -495,22 +495,14 @@ h1,h2,h3 {
 .attend-button-container {
   padding-top: 1rem;
   display: flex;
-  justify-content: right;
+  justify-content: right; 
 }
 
 .attend-button {
-  font-family: $font-family-alt;
-  font-weight: 600;
-  font-size: .875rem;
-  padding: 14px 16px;
   @media (max-width: 1058px) {
     padding: 0 .9375rem; 
     display: inline-block;
     width: 100%;
-  }
-  
-  a {
-    color: $white;
   }
 
   i {
@@ -519,17 +511,42 @@ h1,h2,h3 {
 }
 
 .short-button {
+  font-family: $font-family-alt;
+  font-size: .875rem;
   padding: 14px 16px;
-  font-family: Work Sans;
   font-weight: 600;
+  text-align: center;
   background-color: $cfa-red;
-  color: white;
+  color: $white;
   border-radius: 2px;
 
   &:hover {
     background-color: $cfa-red-dark;
   }
   
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.long-button {
+  padding: 14px 16px;
+  font-size: 0.875rem;
+  font-family: $font-family-alt;
+  font-weight: 600;
+  color: $white;
+  background-color: $cfa-red;  
+  border: 1px solid $white;    
+  border-radius: 2px;
+
+  &:hover {
+    color: $cfa-red;
+    background-color: $white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   &:active {
     transform: translateY(1px);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -554,39 +571,6 @@ h1,h2,h3 {
   display: block;
   width: 100%;
   object-fit: contain;
-}
-
-.redbutton {
-  background-color: $cfa-red;
-  border: none;
-  color: white;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 1rem;
-  margin-top: 2rem !important;
-  a {
-    color: white;
-  }
-}
-
-.redbutton:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-.whitebutton {
-  background-color: $cfa-red;
-  border-radius: 2px;
-  text-align: center;
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: $white !important;
 }
 
 .contact-form-container {
@@ -662,25 +646,7 @@ h1,h2,h3 {
   }
   
   button {
-    display: block;
     width: 100%;
-    background-color: transparent;
-    font-family: $font-family-alt;
-    font-size: 0.875rem;
-    font-weight: 600;
-    border: $white;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 2px;
-    color: $white;
-    padding: 14px 16px;
-    text-align: center;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  button:hover {
-    text-decoration: underline;
   }
 }
 
@@ -1003,31 +969,6 @@ p.cardText {
   padding: 0;
   @media(max-width: 1058px) {
     width: 100%;
-  }
-}
-
-.donateButton {
-  background-color: $cfa-red;
-  font-weight: $font-weight-bold;
-  max-width: 85px;
-  border: none;
-  color: white;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 2px;
-  a {
-    color: white;
-  }
-  &:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  &:visited {
-    color: white;
   }
 }
 
