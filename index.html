@@ -16,39 +16,39 @@ home: true
       </p>
     </div>
     <div class="padded-content workwithusContent">
-      <div class="row workwithusIconsRow col-md-10">
-        <div class="col-md-3 col-xxssm-6">
+      <div class="flexRow workwithusIconsRow iconContainer">
+        <div class="iconTile">
           <img class="workwithusIcon" src="/images/developers.svg" alt="Code brackets">
           <p>Developers</p>
         </div>
-        <div class="col-md-3 col-xxssm-6">
+        <div class="iconTile">
           <img class="workwithusIcon" src="/images/designers.svg" alt="Pen and pencil"/>
           <p>Designers</p>
         </div>
-        <div class="col-md-3 col-xxssm-6">
+        <div class="iconTile">
           <img class="workwithusIcon" src="/images/data.svg" alt="Database"/>
           <p>Data Scientists</p>
         </div>
-        <div class="col-md-3 col-xxssm-6">
+        <div class="iconTile">
           <img class="workwithusIcon" src="/images/project-manager.svg" alt="Calendar"/>
           <p>Project Managers</p>
         </div>
       </div>
 
-      <div class="row workwithusIconsRow col-md-10">
-        <div class="col-md-3 col-xxssm-6">
+      <div class="flexRow workwithusIconsRow iconContainer">
+        <div class="iconTile">
           <img class="workwithusIcon" src="/images/product-manager.svg" alt="Light bulb"/>
           <p>Product Managers</p>
         </div>
-        <div class="col-md-3 col-xxssm-6">
+        <div class="iconTile">
           <img class="workwithusIcon" src="/images/community-organizer.svg" alt="Megaphone"/>
           <p>Community Organizers</p>
         </div>
-        <div class="col-md-3 col-xxssm-6">
+        <div class="iconTile">
           <img class="workwithusIcon" src="/images/social-worker.svg" alt="Hands"/>
           <p>Social Workers</p>
         </div>
-        <div class="col-md-3 col-xxssm-6">
+        <div class="iconTile">
           <img class="workwithusIcon" src="/images/person.svg" alt="Person"/>
           <p>Anyone!</p>
         </div>
@@ -58,7 +58,7 @@ home: true
   </div>
   <div class="cardsContainer">
     <div class="padded-content cards">
-      <div class="row">
+      <div class="flexRow">
         <div class="col-md-auto organizationsText">
           <div class="card-info">
             <h4 class="cardTitle">ORGANIZATIONS</h4>
@@ -71,7 +71,7 @@ home: true
           <img src="/images/organizations.jpg" alt="People at table for two organizations."/>
         </div>
       </div>
-      <div class="row volunteersRow">
+      <div class="flexRow volunteersRow">
         <div class="col-md-auto card-img-container">
           <img src="/images/volunteers.jpg" alt="Group photo of volunteers."/>
         </div>
@@ -88,7 +88,7 @@ home: true
   </div>
 </div>
   <div class="container-fluid">
-    <div class="row meetups">
+    <div class="flexRow meetups">
       <div class="padded-content">
 
       {%for event in site.data.events%}
@@ -96,7 +96,7 @@ home: true
       <div class="col-lg-12 meetup">
         <h1 class="text-center">Upcoming Events</h1>
         <p class="text-center"><a id="meetupLink" href="https://www.meetup.com/code-for-chicago" target="blank">See our events on Meetup <i class="fas fa-external-link-alt"></i></a></p>
-        <div class="row">
+        <div class="flexRow">
           <div class="col-lg order-lg-2 event-photo-div">
             <img class="event-photo" src="{{event.featured_photo.photo_link}}"/>
           </div>
@@ -109,7 +109,7 @@ home: true
             </h2>
             <p>{{event.description}}</p>
 
-            <div class="row">
+            <div class="flexRow">
               <div class="col-lg-6 event-location-col">
                 <p class="event-location">
                   <i class="fas fa-map-marker-alt"></i> 
@@ -136,12 +136,12 @@ home: true
     </div>
   </div>
   <div class="container-fluid">
-    <div class="row contact-form-container">
+    <div class="flexRow contact-form-container">
       <div class="padded-content">
         <div class="text-center">
           <h1 id="contactus">Contact Us</h1>
         </div>
-        <div class="row">
+        <div class="flexRow">
           <div class="contact-form">
             <form method="POST" action="https://formspree.io/leadership@openuptown.us">
               <label for="email">Email</label>
