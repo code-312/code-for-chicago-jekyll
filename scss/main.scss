@@ -1159,3 +1159,18 @@ p.cardText {
   max-width: 395px;
   max-height: 261px;
 }
+
+// ABOUT Section - What is CFA and Why join
+.infoContainer {
+  width: 600px;
+  margin: 0 auto;
+
+  h1 {
+    margin-bottom: 16px;
+  }
+  .text {
+    font-size: 26px;
+    line-height: 34px;
+    padding-bottom: 24px;
+  }
+}
