@@ -247,11 +247,11 @@ h1,h2,h3 {
   }
 }
 
-.portfolio-hero-background-container {
+.secondary-hero-background-container {
   background: $cfa-red;
 }
 
-.portfolio-hero-container {
+.secondary-hero-container {
   padding-left: 6rem;
 
   @media (max-width: 768px) {
@@ -264,7 +264,7 @@ h1,h2,h3 {
   }
 }
 
-.portfolio-hero-contents {
+.secondary-hero-contents {
   max-width: 1440px;
   height: 100%;
   display: flex;
@@ -315,7 +315,7 @@ h1,h2,h3 {
   }
 }
 
-.portfolio-hero-subheading {
+.secondary-hero-subheading {
   &--mobile {
     display: none;
   }
@@ -330,8 +330,8 @@ h1,h2,h3 {
   }
 }
 
-.portfolio-hero-text {
-  max-width: 27rem;
+.secondary-hero-text {
+  max-width: 29rem;
   margin-right: 2rem;
   padding: 3rem 0;
 
@@ -342,7 +342,7 @@ h1,h2,h3 {
   }
 }
 
-.portfolio-hero-image {
+.secondary-hero-image {
   width: 453px;
   flex-shrink: 0;
 
