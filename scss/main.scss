@@ -1118,3 +1118,40 @@ p.cardText {
   max-width: 395px;
   max-height: 261px;
 }
+
+.more-case-studies {
+  width: 1440px;
+  padding: 0 96px;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 24px;
+  }
+}
+
+#random-case-studies-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 0 80px 0;
+
+  .category-subheading {
+    font-family: $font-family-alt;
+    font-size: 0.875rem;
+    color: $darker-grey;
+    padding: 8px 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 0 8px 0;
+  }
+}
+
+.invisible-card {
+  display: none;
+}
