@@ -1122,7 +1122,7 @@ p.cardText {
 .more-case-studies {
   max-width: 1440px;
   padding: 0 96px;
-  margin: 0 auto;
+  margin: 0 auto 80px auto;
 
   h2 {
     font-size: 1.25rem;
@@ -1133,6 +1133,12 @@ p.cardText {
 
   @media(max-width: 768px) {
     padding: 0 48px;
+    margin: 0 auto 64px auto;
+  }
+
+  @media(max-width: 360px) {
+    padding: 0 24px;
+    margin: 0 auto 48px auto;
   }
 }
 
@@ -1140,7 +1146,6 @@ p.cardText {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin: 0 0 80px 0;
 
   .category-subheading {
     font-family: $font-family-alt;
@@ -1155,20 +1160,24 @@ p.cardText {
     padding: 0 0 8px 0;
   }
 
+  p {
+    margin-bottom: 0;
+  }
+
   @media(max-width: 768px) {
     flex-direction: column;
 
+    .portfolio-card:nth-child(3) {
+      padding-bottom: 0;
+    }
+
     h2 {
+      font-size: 1.5rem;
       padding-bottom: 0;
     }
 
     .preview-text {
       margin-bottom: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 2; /* number of lines to show */
-      -webkit-box-orient: vertical;
     }
 
     .case-study-info-container {
@@ -1180,8 +1189,7 @@ p.cardText {
     }
 
     .portfolio-image-container img{
-      max-width: 264px;
-      max-height: 174px;
+      object-fit: scale-down;
     }
 
     .portfolio-card {
@@ -1189,7 +1197,27 @@ p.cardText {
       flex-direction: row;
       max-width: 100%;
       padding-bottom: 48px;
+      align-items: start;
     }
+  }
+
+  @media(max-width: 651px) {
+    .portfolio-card {
+      padding-bottom: 32px;
+    }
+  }
+
+  @media(max-width: 361px) {
+    .portfolio-card {
+      flex-direction: column;
+    }
+    .case-study-info-container {
+      padding: 8px 0 0 0;
+    }
+    .category-subheading {
+      padding-bottom: 8px;
+    }
+
   }
 }
 
