@@ -69,6 +69,7 @@ plugins:
 - jemoji
 - jekyll-sitemap
 - jekyll-seo-tag
+- jekyll-autoprefixer
 social:
   name: Kimfucious
   links:
