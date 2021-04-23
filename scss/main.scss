@@ -1086,11 +1086,6 @@ p.cardText {
 
   padding: 80px 96px;
 
-  @media (max-width: 1058px) {
-    max-width: 768px;
-    padding: 80px 48px;
-  }
-
   @media (max-width: 768px) {
     padding: 48px;
     padding-bottom: 64px;
@@ -1314,6 +1309,14 @@ p.cardText {
     color: $black;
   }
 
+  @media (max-width: 1440px) {
+    padding: 80px 96px 48px;
+
+    article {
+      max-width: 768px;
+    }
+  }
+
   @media (max-width: 768px) {
     padding: 64px 48px 32px;
 
@@ -1406,8 +1409,56 @@ p.cardText {
 }
 
 .post-intro {
+
+  @media(max-width: 1440px){
+    margin-bottom: 48px;
+
+    h4 {
+      font-family: Work Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 0.825rem;
+      line-height: 1.0625rem;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 3rem;
+      line-height: 3.875rem;
+    }
+
+    p {
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: normal;
+      font-size:  1.625rem;
+      line-height: 2.125rem;
+    }
+
+    .share-content-links-container {
+      padding-bottom: 48px;
+    }
+
+    img {
+      width: 100vw;
+      margin-bottom: 16px;
+      max-width: calc(100vw - 192px);
+    }
+
+    .image-caption {
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      text-align: center;
+    }
+  }
+
   @media (max-width: 768px) {
-    margin-bottom: 3rem;
 
     h4 {
       font-family: Work Sans;
