@@ -6,25 +6,29 @@ layout: portfolio
 home: false
 ---
 
-<div class="main centered-div" role="main">
-    <div id="random-case-studies-wrapper">
-        {% for post in site.posts %}
-        <div class="portfolio-card invisible">
-            <div class="portfolio-image-container">
-                {% if post.img and post.alt %} <img src="{{post.img}}" alt="{{post.alt}}">
-                {% else %} <img src="/images/proxy-img.png" alt="A sample proxy image">
-                {% endif %}
-            </div>
-            <h5>{{ post.category }}</h5>
-            <h2>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-            </h2>
-            <p>
-            {{ post.description }}
-            </p>
+<div class="more-case-studies">
+  <h2>More Case Studies</h2>
+  <div id="random-case-studies-wrapper">
+    {% for post in site.posts %}
+    <div class="portfolio-card invisible-card">
+        <div class="portfolio-image-container">
+          {% if post.img and post.alt %} <img src="{{post.img}}" alt="{{post.alt}}">
+          {% else %} <img src="/images/proxy-img.png" alt="A sample proxy image">
+          {% endif %}
         </div>
-        {% endfor %}
+        <div class="case-study-info-container">
+          <div class="category-subheading">{{ post.category }}</div>
+          <h2>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </h2>
+          <p class="preview-text">
+          {{ post.description }}
+          </p>
+        </div>
     </div>
+    {% endfor %}
+  </div>
+</div>>
 
 </div>
 
