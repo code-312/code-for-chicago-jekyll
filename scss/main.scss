@@ -1256,7 +1256,7 @@ p.cardText {
 }
 
 .post-generated-content {
-  max-width: 768px;
+  max-width: min(768px, 100vw - 192px);
   margin: 0px auto 48px;
 
   h2 {
