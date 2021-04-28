@@ -1112,8 +1112,13 @@ p.cardText {
     grid-row-gap: 48px;
   }
 
-  @media (max-width: 360px) {
+  @media (max-width: 428px) {
     grid-template-columns: 1fr;
+    row-gap: 48px;
+    grid-row-gap: 48px;
+  }
+
+  @media (max-width: 360px){
     row-gap: 32px;
     grid-row-gap: 32px;
   }
@@ -1174,8 +1179,8 @@ p.cardText {
         font-family: Work Sans;
         font-style: normal;
         font-weight: 600;
-        font-size: 0.875rem;
-        line-height: calc(1rem + 1/16rem);
+        font-size: 0.875rem !important;
+        line-height: 1.0625rem;
       }
     }
   }
@@ -1206,7 +1211,7 @@ p.cardText {
     }
   }
 
-  @media (max-width: 360px) {
+  @media (max-width: 428px) {
     display: block;
     max-width: calc(100vw - 48px);
 
@@ -1220,7 +1225,6 @@ p.cardText {
         overflow: visible;
       }
     }
-
   }
 
   p, h5, h2, a {
@@ -1239,10 +1243,6 @@ p.cardText {
     padding: 8px 0px;
   }
 
-}
-
-.portfolio-image-container {
-  max-height: 100%;
 }
 
 .portfolio-card {
@@ -1312,13 +1312,13 @@ p.cardText {
 .post-intro-img-container {
 
   /* Default: Applied to any screen where max-width > 768px*/
-  // 1248px is 1440 - 96 (padding) * 2 (padding on both sides: left and right)
   width: 100vw;
   display: flex;
   align-items: center;
   flex-direction: column;
 
   img {
+    // 1248px is 1440 - 96 (padding) * 2 (padding on both sides: left and right)
     width: min(calc(100vw - 192px), 1248px);
     margin-bottom: 16px;
   }
@@ -1353,7 +1353,7 @@ p.cardText {
   /* Default: Applied to any screen where max-width > 768px*/
   margin: auto;
   max-width: 768px;
-
+  padding: 80px 96px 48px;
 
   h4 {
     font-family: Work Sans;
@@ -1382,11 +1382,9 @@ p.cardText {
     line-height: 2.125rem;
     margin-bottom: 1.5rem; 
   }
-  .share-content-links-container {
-    padding-bottom: 48px;
-  }
 
   @media (max-width: 768px) {
+    padding: 64px 48px 48px;
 
     h4 {
       line-height: 0.875rem;
@@ -1404,9 +1402,7 @@ p.cardText {
   }
   
   @media (max-width: 651px) {
-    .share-content-links-container {
-      padding-bottom: 32px;
-    }
+    padding: 64px 48px 32px;
   }
   
   @media (max-width: 360px) {
