@@ -1,7 +1,7 @@
 {% include head.html %} 
 {% include search_modal.html %}
 {% include navbar.html %}
-<section id="{{ page.type }}" class="post-content">
+<section id="{{ page.type }}" class="post">
   <div class="centered-div">
     <article>
       <div class="post-intro">
@@ -9,12 +9,17 @@
         <h1>{{ page.title }}</h1>
         <p>{{ page.description }}</p>
         {% include social-media-share-links.html %}
-        {% if page.img and page.alt %} <img src="{{page.img}}" alt="{{page.alt}}">
+      </div>
+      <div class="post-intro-img-container">
+        {% if page.img and page.alt %} 
+        <img src="{{page.img}}" alt="{{page.alt}}">
         {% else %} <img src="/images/proxy-img.png" alt="A sample proxy image">
         {% endif %}
         <p class="image-caption">{{ page.imgtext}}</p>
       </div>
-      {{ content }}
+      <div class="post-generated-content">      
+        {{ content }}
+      </div>
     </article>
   </div>
 </section>
