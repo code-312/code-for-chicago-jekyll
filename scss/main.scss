@@ -1300,25 +1300,133 @@ p.cardText {
   align-items: center;
 }
 
-.post-content {
+.post {
+  /* Resetting global styles */
+  h1, h2, h3, h4, h5, p {
+    margin: 0px;
+    padding: 0px;
+    color: $black;
+  }
+}
 
+.post-intro-img-container {
+
+  /* Default: Applied to any screen where max-width > 768px*/
+  // 1248px is 1440 - 96 (padding) * 2 (padding on both sides: left and right)
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    width: min(calc(100vw - 192px), 1248px);
+    margin-bottom: 16px;
+  }
+  
+  .image-caption {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    img {
+      width: 100%;
+    }
+
+    .image-caption {
+      font-size: 1rem;
+      line-height: 1.125rem;
+    }
+  }
+
+  @media (max-width: 651px) {
+    .image-caption {
+      font-size: 0.875rem;
+      line-height: 18px;
+    }
+  }
+}
+
+.post-intro {
+
+  /* Default: Applied to any screen where max-width > 768px*/
+  margin: auto;
+  max-width: 768px;
+
+
+  h4 {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    line-height: 1.0625rem;
+    margin-bottom: 1rem;  
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.875rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size:  1.625rem;
+    line-height: 2.125rem;
+    margin-bottom: 1.5rem; 
+  }
+  .share-content-links-container {
+    padding-bottom: 48px;
+  }
+
+  @media (max-width: 768px) {
+
+    h4 {
+      line-height: 0.875rem;
+    }
+
+    h1 {
+      font-size: 2rem !important;
+      line-height: 2.33rem;
+    }
+
+    p {
+      font-size: 1.125rem !important;
+      line-height: 1.40625rem;
+    }
+  }
+  
+  @media (max-width: 651px) {
+    .share-content-links-container {
+      padding-bottom: 32px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    padding: 48px 24px 32px;
+
+    h1 {
+      line-height: 2.125rem;
+    }
+  }
+}
+
+.post-generated-content {
   /* Resetting global styles */ 
   h1, h2, h3, h4, h5, p {
     margin: 0px;
     padding: 0px;
     color: $black;
   }
-
-  @media (max-width: 1440px) {
-    padding: 80px 96px 48px;
-
-    article {
-      max-width: 768px;
-    }
-  }
-
+  
   @media (max-width: 768px) {
-    padding: 64px 48px 32px;
 
     h2 {
       font-family: Source Sans Pro;
@@ -1346,7 +1454,6 @@ p.cardText {
   }
 
   @media (max-width: 651px) {
-    padding: 64px 48px 32px;
 
     h2 {
       //styleName: SM - H2;
@@ -1377,7 +1484,7 @@ p.cardText {
   }
 
   @media (max-width: 360px) {
-    padding: 48px 24px 32px;
+    padding: 32px 24px;
 
     h2 {
       //styleName: SM - H2;
@@ -1408,208 +1515,14 @@ p.cardText {
   }
 }
 
-.post-intro {
-
-  @media(max-width: 1440px){
-    margin-bottom: 48px;
-
-    h4 {
-      font-family: Work Sans;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 0.825rem;
-      line-height: 1.0625rem;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      font-family: Source Sans Pro;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 3rem;
-      line-height: 3.875rem;
-    }
-
-    p {
-      font-family: Source Sans Pro;
-      font-style: normal;
-      font-weight: normal;
-      font-size:  1.625rem;
-      line-height: 2.125rem;
-    }
-
-    .share-content-links-container {
-      padding-bottom: 48px;
-    }
-
-    img {
-      width: 100vw;
-      margin-bottom: 16px;
-      max-width: calc(100vw - 192px);
-    }
-
-    .image-caption {
-      font-family: Source Sans Pro;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      text-align: center;
-    }
-  }
-
-  @media (max-width: 768px) {
-
-    h4 {
-      font-family: Work Sans;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 0.875rem;
-      line-height: 0.875rem;
-      margin-bottom: 1rem;
-    }
-
-    h1 {
-      font-family: Source Sans Pro;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 2rem !important;
-      line-height: 2.33rem;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-family: Source Sans Pro;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 1.125rem !important;
-      line-height: 1.40625rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .share-content-links-container {
-      padding-bottom: 48px;
-    }
-
-    img {
-      width: 100vw;
-      margin: 0 -48px 16px -48px;
-      max-width: 100vw;
-    }
-
-    .image-caption {
-      font-family: Source Sans Pro;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 1rem;
-      line-height: 1.125rem;
-    }
-  }
-  
-  @media (max-width: 651px) {
-    margin-bottom: 2rem;
-
-    h4 {
-      font-family: Work Sans;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 0.875rem;
-      line-height: 0.875rem;
-      margin-bottom: 1rem;
-    }
-
-    h1 {
-      font-family: Source Sans Pro;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 2rem !important;
-      line-height: 2.33rem;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-family: Source Sans Pro;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 1.125rem !important;
-      line-height: 1.40625rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .share-content-links-container {
-      padding-bottom: 32px;
-    }
-
-    img {
-      width: 100vw;
-      margin: 0 -48px 16px -48px;
-      max-width: 100vw;
-    }
-
-    .image-caption {
-      font-family: Source Sans Pro;
-      font-style: normal;
-      font-weight: normal;
-      font-size: px;
-      line-height: 18px;
-    }
-  }
-  
-  @media (max-width: 360px) {
-    margin-bottom: 2rem;
-
-    h4 {
-      font-family: Work Sans;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 0.875rem !important;
-      line-height: 0.875rem;
-      margin-bottom: 1rem;
-    }
-
-    h1 {
-      font-family: Source Sans Pro;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 2rem !important;
-      line-height: 2.125rem;
-      margin-bottom: 16px;
-    }
-
-    p {
-      font-family: Source Sans Pro;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 1.125rem;
-    }
-
-    .share-content-links-container {
-      padding-bottom: 32px;
-    }
-
-    img {
-      width: 100vw;
-      margin: 0 -24px 16px -24px;
-      max-width: 100vw;
-    }
-
-    .image-caption {
-      font-family: Source Sans Pro;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 0.875rem;
-      line-height: 1.125rem;
-    }
-  }
-}
-
 .share-wrapper {
-  @media(max-width: 360px){
-    padding: 0px 24px 24px;
-  }
 
   @media(max-width: 651px){
     padding: 0px 48px 24px;    
+  }
+  
+  @media(max-width: 360px){
+    padding: 0px 24px 24px;
   }
 }
 
