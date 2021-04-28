@@ -1381,7 +1381,11 @@ p.cardText {
   }
 
   h2, h5 {
-    padding-bottom: 16px;
+    padding-bottom: 8px;
+  }
+
+  .portfolio-content-container {
+    margin-top: 8px;
   }
 
   @media (max-width: 768px) {
@@ -1389,6 +1393,10 @@ p.cardText {
     grid-template-columns: auto 375px;
     grid-column-gap: 32px;
     max-width: calc(100vw - 96px);
+
+    .portfolio-content-container {
+      margin-top: 0px;
+    }
 
     .portfolio-content-container {
       max-width: 375px;
@@ -1416,6 +1424,10 @@ p.cardText {
         font-weight: 600;
         font-size: 0.875rem !important;
         line-height: 1.0625rem;
+      }
+
+      h2, h5 {
+        padding-bottom: 16px;
       }
     }
   }
@@ -1451,6 +1463,7 @@ p.cardText {
     max-width: calc(100vw - 48px);
 
     .portfolio-content-container {
+      margin-top: 16px;
       max-width: 100%;
       
       p {
@@ -1459,10 +1472,6 @@ p.cardText {
         white-space: normal;
         overflow: visible;
       }
-    }
-
-    .portfolio-image-container {
-      margin-bottom: 16px;
     }
   }
 }
