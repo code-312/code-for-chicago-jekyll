@@ -1285,6 +1285,7 @@ p.cardText {
   }
 
   @media (max-width: 768px) {
+    max-width: 100vw;
     margin: 0px;
     padding: 0px 48px 48px;
   }
@@ -1468,7 +1469,6 @@ p.cardText {
 
 .share-wrapper {
   margin: auto;
-  max-width: 768px;
 
   @media(max-width: 768px){
     padding: 0px 48px 24px;    
