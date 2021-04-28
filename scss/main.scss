@@ -1149,9 +1149,8 @@ p.cardText {
 .post-intro {
 
   /* Default: Applied to any screen where max-width > 768px*/
-  margin: auto;
+  margin: 80px auto 48px;
   max-width: 768px;
-  padding: 80px 96px 48px;
 
   h4 {
     font-family: Work Sans;
@@ -1219,6 +1218,7 @@ p.cardText {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 48px;
 
   img {
     // 1248px is 1440 - 96 (padding) * 2 (padding on both sides: left and right)
@@ -1244,6 +1244,8 @@ p.cardText {
   }
 
   @media (max-width: 651px) {
+    margin-bottom: 32px;
+
     .image-caption {
       font-size: 0.875rem;
       line-height: 18px;
@@ -1252,7 +1254,8 @@ p.cardText {
 }
 
 .post-generated-content {
-  margin-bottom: 48px;
+  max-width: 768px;
+  margin: 0px auto 48px;
 
   h2 {
     font-family: Source Sans Pro;
@@ -1279,8 +1282,13 @@ p.cardText {
     margin-bottom: 0px;
   }
 
+  @media (max-width: 768px) {
+    padding: 0px 48px 48px;
+  }
+
   @media (max-width: 651px) {
-    margin-bottom: 32px;
+    margin: 0px;
+    padding: 0px 48px 32px;
 
     h2 {
       font-size: 1.5rem !important;
@@ -1464,6 +1472,8 @@ p.cardText {
 }
 
 .share-wrapper {
+  margin: auto;
+  max-width: 768px;
 
   @media(max-width: 651px){
     padding: 0px 48px 24px;    
