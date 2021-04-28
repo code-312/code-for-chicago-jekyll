@@ -1338,7 +1338,7 @@ p.cardText {
     font-style: normal;
     font-weight: bold;
     font-size: 1.25rem !important;
-    line-height: 30px;  
+    line-height: 1.875rem;  
     margin: 0px;
     padding: 0px;
     padding-bottom: 24px;
@@ -1355,6 +1355,10 @@ p.cardText {
 
   @media (max-width: 651px) {
     padding: 64px calc(100vw / 360 * 24);
+    h3 {
+      font-size: 1rem !important;
+      line-height: 1.3125rem;
+    }
   }
 
   @media (max-width: 360px) {
