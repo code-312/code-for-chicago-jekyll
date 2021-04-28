@@ -1150,7 +1150,7 @@ p.cardText {
 
   /* Default: Applied to any screen where max-width > 768px*/
   margin: 80px auto 48px;
-  max-width: 768px;
+  max-width: min(768px, 100vw - 192px);
 
   h4 {
     font-family: Work Sans;
@@ -1181,6 +1181,8 @@ p.cardText {
   }
 
   @media (max-width: 768px) {
+    max-width: 100vw;
+    margin: 0px;
     padding: 64px 48px 48px;
 
     h4 {
@@ -1221,8 +1223,8 @@ p.cardText {
   margin-bottom: 48px;
 
   img {
-    // 1248px is 1440 - 96 (padding) * 2 (padding on both sides: left and right)
-    width: min(calc(100vw - 192px), 1248px);
+    // Image will never be smaller than 768pxs, never larger than 1248pxs, and tries to be somewhere inbetween.
+    width: clamp(768px, 100%, 1248px);
     margin-bottom: 16px;
   }
   
@@ -1283,6 +1285,7 @@ p.cardText {
   }
 
   @media (max-width: 768px) {
+    margin: 0px;
     padding: 0px 48px 48px;
   }
 
@@ -1365,6 +1368,21 @@ p.cardText {
 
 .case-studies-padding .portfolio-card {
 
+  p, h5, h2, a {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    color: $black;
+  }
+
+  h2, h5, p {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  h2, h5 {
+    padding-bottom: 16px;
+  }
+
   @media (max-width: 768px) {
     display: grid;
     grid-template-columns: auto 375px;
@@ -1373,16 +1391,6 @@ p.cardText {
 
     .portfolio-content-container {
       max-width: 375px;
-      h2, h5 {
-        margin: 0px;
-        padding: 0px;
-        margin-bottom: 16px;
-      }
-
-      a, p {
-        font-family: Source Sans Pro;
-        font-style: normal;
-      }
 
       a {
         font-weight: bold;
@@ -1451,31 +1459,18 @@ p.cardText {
         overflow: visible;
       }
     }
-  }
 
-  p, h5, h2, a {
-    font-family: Source Sans Pro;
-    font-style: normal;
-    color: $black;
+    .portfolio-image-container {
+      margin-bottom: 16px;
+    }
   }
-
-  h2, p {
-    padding: 0px;
-    margin: 0px;
-    padding-bottom: 8px;
-  }
-
-  h5 {
-    padding: 8px 0px;
-  }
-
 }
 
 .share-wrapper {
   margin: auto;
   max-width: 768px;
 
-  @media(max-width: 651px){
+  @media(max-width: 768px){
     padding: 0px 48px 24px;    
   }
   
