@@ -32,3 +32,39 @@ home: false
         </div>
     </div>
 </div>
+<script>
+
+    const customAspectRatio = 395 / 261;
+    const imagesDivs = document.querySelectorAll('.portfolio-image-container');
+    const maxHeight = 261;
+
+    function alignImages() {
+        // max height.
+        let smallestHeight = maxHeight;
+
+        // Find the smallest height
+        for(let div of imagesDivs){
+            if(div.clientHeight < smallestHeight){
+                smallestHeight = div.clientHeight;
+            }
+        }
+
+        // Assign the smallest height to all divs, aligning the images to the smallest one.
+        for(let div of imagesDivs){
+            div.style.height = `${smallestHeight}px`;
+        }
+
+    }
+
+    function resizeImages(){
+        // Change heights to follow the aspect ratio of the maximum height.
+        for(let div of imagesDivs){
+            const aspectRatioHeight = div.clientWidth / customAspectRatio;  
+            div.style.height = `${aspectRatioHeight}px`;
+        }
+    }
+
+    // Attach previous functions to events. Load fires when page is loaded, resize fires when page is resized.
+    window.addEventListener('load', alignImages)
+    window.addEventListener('resize', resizeImages)
+</script>
