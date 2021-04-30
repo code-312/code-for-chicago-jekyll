@@ -1,7 +1,7 @@
 ---
 title: Cannabis Cases
 date: 2019-09-09 05:09:00 Z
-categories:
+areas:
 - Data Projects
 layout: post
 description: Building a heatmap of Cannabis Cases in Chicago
