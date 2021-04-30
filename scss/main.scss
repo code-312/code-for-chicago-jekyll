@@ -1138,7 +1138,7 @@ p.cardText {
     font-weight: bold;
     font-size: 48px;
     line-height: 62px;
-    color: #333333;
+    color: $darker-grey;
   }
   p {
     margin-bottom: 24px;
@@ -1151,7 +1151,7 @@ p.cardText {
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
-    color: #333333;
+    color: $darker-grey;
   }
   @media (max-width: 768px) {
     padding: 64px 48px;
