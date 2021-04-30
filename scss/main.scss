@@ -1126,63 +1126,74 @@ p.cardText {
   padding: 80px 96px;
   max-width: 1440px;
   height: max-content;
-  h1 {
-    padding: 16px 0px 16px 0px;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    height: auto;
-    font-family: $font-family-base;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 62px;
-    color: $darker-grey;
+  .content-header {
+    h2 {
+      padding: 16px 0px 16px 0px;
+      margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 600px;
+      height: auto;
+      font-family: $font-family-base;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 62px;
+      color: $darker-grey;
+    }
+    p {
+      margin-bottom: 24px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 600px;
+      height: auto;
+      font-family: $font-family-base;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+      color: $darker-grey;
+    }
   }
-  p {
-    margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    height: auto;
-    font-family: $font-family-base;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-    color: $darker-grey;
-  }
+  
   @media (max-width: 768px) {
     padding: 64px 48px;
-    h1 {
-      width: 672px;
-    }
-    p {
-      width: 672px;
+    .content-header {
+      h2 {
+        width: 672px;
+      }
+      p {
+        width: 672px;
+      }
     }
   }
+
   @media (max-width: 651px) {
-    h1 {
-      font-size: 32px;
-      width: 555px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 23px;
-      width: 555px;
+    .content-header{
+      h2 {
+        font-size: 32px;
+        width: 555px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 23px;
+        width: 555px;
+      }
     }
   }
+
   @media (max-width: 360px) {
     padding: 48px 24px;
-    h1 {
-      font-size: 32px;
-      width: 312px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 23px;
-      width: 312px;
+    .content-header {
+      h2 {
+        font-size: 32px;
+        width: 312px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 23px;
+        width: 312px;
+      }
     }
   }
  }
@@ -1194,38 +1205,48 @@ p.cardText {
     padding-top: 80px;
     padding-left: 107px;
     height: max-content;
+    transition: ease all .5s;
     @media (max-width: 1399px) {
+      transition: ease all .5s;
+      padding-left: 10vw;
+      padding-right: 0;
       max-width: 94%;
     }
     @media (max-width: 768px) {
+      transition: ease all .5s;
       max-width: 100%;
       padding-left: 0px;
     }
     @media (max-width: 360px) {
+      transition: ease all .5s;
       max-height: 437px;
       overflow: scroll;
     }
-  }
-  p1 {
-    position: relative;
-    font-family: $font-family-alt;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 52px;
-    bottom: 32px;
-    @media (max-width: 651px) {
-      font-size: 24px;
-      line-height: 31px;
+    .quote-paragraph {
+      transition: ease all .5s;
+      position: relative;
+      font-family: $font-family-alt;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 52px;
+      margin-bottom: 32px;
+      @media (max-width: 651px) {
+        transition: ease all .5s;
+        font-size: 24px;
+        line-height: 31px;
+      }
     }
-  }
-  p2 {
-    position: relative;
-    font-family: $font-family-alt;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    @media (max-width: 651px) {
-      font-size: 16px;
+    .quote-author {
+      transition: ease all .5s;
+      position: relative;
+      margin-bottom: 0px;
+      font-family: $font-family-alt;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      @media (max-width: 651px) {
+        font-size: 16px;
+      }
     }
   }
   .quote-icon {
