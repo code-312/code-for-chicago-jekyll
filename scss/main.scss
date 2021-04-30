@@ -884,7 +884,7 @@ h1,h2,h3 {
   margin-bottom: 0;
 }
 
-.volunteersRow {
+.image-right-card-row {
   margin-top: 80px;
   flex-wrap: wrap-reverse;
   @media(max-width: 1058px) {
@@ -892,8 +892,15 @@ h1,h2,h3 {
   }
 }
 
-.card3Row {
+.image-left-card-row{
   margin-top: 80px;
+  @media(max-width: 1058px) {
+    padding: 0;
+    margin-top: 64px !important;
+  }
+  @media(max-width: 360px) {
+    margin-top: 48px !important;
+  }
 }
 
 .cardText {
@@ -981,7 +988,7 @@ p.cardText {
   }
 }
 
-.organizationsText {
+.image-left-card-text {
   display: flex;
   flex-shrink: 4;
   flex-direction: column;
@@ -993,29 +1000,13 @@ p.cardText {
   }
 }
 
-.volunteersText {
+.image-right-card-text {
   display: flex;
   flex-shrink: 4;
   flex-direction: column;
   justify-content: center;
   padding-left: 15px;
   padding-right: 0;
-  @media(max-width: 1058px) {
-    padding: 0;
-    margin-top: 64px;
-  }
-  @media(max-width: 360px) {
-    margin-top: 48px;
-  }
-}
-
-.card3Text {
-  display: flex;
-  flex-shrink: 4;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 0;
-  padding-right: 15px;
   @media(max-width: 1058px) {
     padding: 0;
     margin-top: 64px;
