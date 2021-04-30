@@ -41,6 +41,12 @@ h1,h2,h3 {
   text-align: left;
 }
 
+.contentContainer {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
