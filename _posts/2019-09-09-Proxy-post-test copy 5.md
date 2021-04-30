@@ -1,7 +1,7 @@
 ---
 title: Lorem ipsum dolor sit amet, consectetur
 date: 2019-09-09 05:09:00 Z
-categories:
+areas:
 - Front-end + Design
 layout: post
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim
