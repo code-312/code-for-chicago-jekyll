@@ -1154,11 +1154,12 @@ p.cardText {
           color: black;
         }
         .text {
-          font-size: 26px;
+          font-size: 1.25rem;
           line-height: 34px;
           padding-bottom: 24px;
+          margin-bottom: 0;
           @media (max-width: 651px) {
-            font-size: 18px;
+            font-size: 1rem;
             line-height: 23px;
           }
         }
@@ -1168,10 +1169,10 @@ p.cardText {
             margin-bottom: 32px;
           }
           a {
-            font-family: "Work Sans",sans-serif;
+            font-family: $font-family-alt;
             font-weight: 600;
             font-size: 1rem;
-            color: #0D77AC;
+            color: $cfa-blue-dark;
             text-decoration: none;
             background-color: transparent;
           }
