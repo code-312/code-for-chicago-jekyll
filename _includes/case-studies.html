@@ -1,0 +1,21 @@
+<div class="centered-div">
+    <div class="case-studies-padding">
+        <h3>More Case Studies</h3>
+        {% include portfolio-gallery.html %}
+    </div>
+</div>
+
+<script>
+    let wrapper = document.querySelector('.portfolio-card').parentNode;
+    let cards = wrapper.children;
+
+    for (let i = wrapper.children.length - 1; i >= 0; i--) {
+        wrapper.appendChild(wrapper.children[Math.random() * i | 0]);
+    }
+
+    // change classname on 3 random cards to not have "invisible"
+    for (let i = wrapper.children.length - 1; i >= 3; i--) {
+        cards[i].className = "portfolio-card hidden";
+    }
+
+</script>
