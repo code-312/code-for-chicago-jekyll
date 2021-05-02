@@ -594,7 +594,7 @@ h1,h2,h3 {
     padding: 48px 24px;
   }
 
-  h1 {
+  h1, h2 {
     color: $white;
     font-weight: 700;
     line-height: 1.2;
@@ -606,7 +606,7 @@ h1,h2,h3 {
     display: block;
     margin: auto;
   }
-  a, h2 {
+  a {
     color: $white;
   }
 }
