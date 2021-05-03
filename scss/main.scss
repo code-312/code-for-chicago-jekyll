@@ -1536,3 +1536,11 @@ p.cardText {
 .hidden {
   visibility: hidden;
 }
+
+.starting-projects-section {
+  height: min-content;
+  width: 100vw;
+  background-color: gray;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
