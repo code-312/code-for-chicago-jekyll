@@ -13,3 +13,59 @@
     color: $link-color !important;
   }
 }
+
+@media (min-width: 740px){
+	
+	.hamburger-links{width: calc(100% - 120px - 127px - 86px - 60px); display: flex; text-align: left;}
+}
+
+@media (min-width: 996px){
+
+	.show-hide-menu-container{width: auto; display: none;}
+	.nav-table{width: 100%; display: flex;}
+	.nav-row{width: 100%; display: flex;}
+	.show-menu-logo, .hide-menu-logo, .overlay{display: none;}
+	.donateButton {vertical-align: middle; background: #CF2045; color: white; font-weight: bold; border-radius: 2px; padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1rem; padding-right: 1rem;}
+	.donateButton:hover{color: white; font-weight: bold; text-decoration: underline;}
+}
+
+@media (min-width: 652px) and (max-width: 995px){
+
+	.nav-table{width: 100%; display: table;}
+	.nav-row{width: 100%; display: table-row;}
+	.show-hide-menu-container{width:28px; display: table-cell; vertical-align: middle; height: 100%;}
+	.show-menu-logo{vertical-align: middle; width:28px;}
+	.hide-menu-logo{vertical-align: middle;}
+	.show-menu-logo, .hide-menu-logo, .hamburger-links, .hamburger-links .nav-link{display: none;}
+	.brigade-logo{margin-left: calc(((100% - 28px - 88px) / 2) + 28px); vertical-align: middle;}
+	.logo-container{width: calc(100% - 28px - 88px); height: 100%; text-align: center; display: table-cell; vertical-align: middle;}
+	.social-container{width: 0px; display: none;}
+	.social-container .social-logo{display: none;}
+	.donate-container{text-align: center; display: table-cell; vertical-align: middle; width: 88px; height: 100%;}
+	.donateButton {vertical-align: middle; background: #CF2045; color: white; font-weight: bold; border-radius: 2px; padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1rem; padding-right: 1rem;}
+	.donateButton:hover{color: white; font-weight: bold; text-decoration: underline;}
+	.overlay{text-align: center; height: calc(100% - 95px); overflow: auto; position: fixed; width: 100%; margin-top: 48px; bottom: 0; left: 0; right: 0; background: white; font-weight: bold; border-top: 1px solid #BABABA; display: none;}
+	.overlay .portfolio-link-container, .overlay .join-link-container, .overlay .about-link-container{margin-top: 32px;}
+	.overlay .projects-link-container{margin-top: 48px;}
+	.overlay .overlay-social-container{margin-top: 48px; margin-bottom: 48px;}
+}
+
+@media (max-width: 651px){
+
+	.nav-table{width: 100%; display: table;}
+	.nav-row{width: 100%; display: table-row;}
+	.show-hide-menu-container{width:28px; display: table-cell; vertical-align: middle; height: 100%;}
+	.show-menu-logo{vertical-align: middle; width:28px;}
+	.hide-menu-logo{vertical-align: middle;}
+	.show-menu-logo, .hide-menu-logo, .hamburger-links, .hamburger-links .nav-link{display: none;}
+	.brigade-logo{margin-left: calc(((100% - 28px - 88px) / 2) + 28px); vertical-align: middle;}
+	.logo-container{width: calc(100% - 28px - 88px); height: 100%; text-align: center; display: table-cell; vertical-align: middle;}
+	.donate-container{text-align: center; display: table-cell; vertical-align: middle; width: 88px; height: 100%; color: black;}
+	.donateButton{vertical-align: middle; background: transparent; color: black; font-weight: normal;}
+	.donateButton:hover{color: black; font-weight: normal; text-decoration: underline;}
+	.overlay{text-align: left; height: calc(100% - 79px); overflow: auto; position: fixed; width: 100%; margin-top: 48px; bottom: 0; left: 0; right: 0; padding-left: 28px; background: white; font-weight: bold; border-top: 1px solid #BABABA; display: none;}
+	.overlay .projects-link-container, .overlay .portfolio-link-container, .overlay .join-link-container, .overlay .about-link-container{margin-top: 32px;} .overlay .overlay-social-container{margin-top: 48px; margin-bottom: 32px;}
+}
+	
+.show-hide-menu-container:hover{cursor: pointer;}
+.overlay .projects-link-container .nav-link, .overlay .portfolio-link-container .nav-link, .overlay .join-link-container .nav-link, .overlay .about-link-container .nav-link, .hamburger-links .nav-link{color: black;}
