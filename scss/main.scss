@@ -1537,10 +1537,199 @@ p.cardText {
   visibility: hidden;
 }
 
-.starting-projects-section {
+.starting-projects-container {
+  transition: all ease .2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: min-content;
-  width: 100vw;
-  background-color: gray;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  max-width: 1400px;
+  padding: 80px 96px;
+  margin-right: auto;
+  margin-left: auto;
+  .starting-projects-info {
+    transition: all ease .2s;
+    position: relative;
+    text-align: center;
+    max-width: 600px;
+    height: max-content;
+    h2 {
+      transition: all ease .2s;
+      color: $darker-grey;
+      height: min-content;
+      padding-top: 0px;
+      margin-bottom: 16px;
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+    }
+    p {
+      transition: all ease .2s;
+      margin-bottom: 24px;
+      color: $darker-grey;
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+    }
+  }
+  .starting-projects-grid {
+    transition: all ease .2s;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 24px;
+    width: 100%;
+    height: min-content;
+    // background-color: yellow;
+  }
+  .starting-projects-group {
+    transition: all ease .2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: min-content;
+    width: 31.45%;
+    // background-color: red;
+    .starting-projects-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: min-content;
+      max-height: 100%;
+      width: 100%;
+      text-align: left;
+    }
+    h2 {
+      width: 100%;
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 38px;
+      color: $darker-grey;
+      margin: 0;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+    p {
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+      color: $darker-grey;
+      overflow-y: visible;
+    }
+  }
+  .image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    min-height: 65%;
+    width: 100%;
+  }
+  .starting-projects-image {
+    position: relative;
+    object-fit: cover;
+    object-position: 100% 0;
+    min-width: 100%;
+    min-height: 100%;
+
+  }
+  @media (min-width: 1400px) {
+    .starting-projects-grid {
+      transition: all ease .2s;
+    }
+    .starting-projects-group {
+      transition: all ease .2s;
+      width: 30.5%;
+    }
+  }
+  @media (max-width: 1400px) {
+    .starting-projects-grid {
+      transition: all ease .2s;
+    }
+    .starting-projects-group {
+      transition: all ease .2s;
+      width: 30.5%;
+    }
+  }
+  @media (max-width: 768px) {
+    transition: all ease-in-out .2s;
+    padding: 64px 48px;
+    .starting-projects-grid {
+      transition: all ease .2s;
+      height: min-content;
+      flex-direction: column;
+      // margin-top: 64px;
+      gap: 48px;
+    }
+    .starting-projects-group {
+      transition: all ease .2s;
+      flex-direction: row;
+      width: 100%;
+      height: 177px;
+    }
+    .image-container {
+      height: 100%;
+      padding-right: 32px;
+    }
+  }
+  @media (min-width: 768px) {
+    .starting-projects-grid {
+      gap: 48px;
+    }
+  }
+  @media (max-width: 651px) {
+    .starting-projects-info {
+      max-width: 555px;
+      h2 {
+        font-size: 24px !important;
+        line-height: 28.4px !important;        ;
+      }
+      p {
+        font-size:  16px !important;
+        line-height: 24px !important;
+      }
+    }
+  }
+  @media (max-width: 360px) {
+    transition: all ease-in-out .2s;
+    padding: 48px 24px;
+    .starting-projects-grid {
+      gap: 32px;
+      // margin-top: 48px;
+    }
+    .starting-projects-group {
+      transition: all ease .2s;
+      flex-direction: column;
+      height: min-content;
+    }
+    .image-container {
+      width: 100%;
+      height: auto;
+      padding-right: 0;
+    }
+  }
+  @media (min-width: 768px) {
+    .starting-projects-grid {
+      gap: 48px;
+    }
+  }
+  @media (min-width: 651px) {
+    .starting-projects-grid {
+      gap: 48px;
+    }
+  }
+  @media (max-width: 650px) {
+    .starting-projects-grid {
+      gap: 32px;
+    }
+  }
 }
