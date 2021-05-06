@@ -1021,7 +1021,7 @@ p.cardText {
   justify-content: center;
 }
 
-.portfolio-padding {
+.gallery-padding {
   padding: 80px 96px;
 
   @media (max-width: 1058px) {
@@ -1042,7 +1042,7 @@ p.cardText {
   }
 }
 
-.portfolio-container {
+.gallery-container {
   width: 100%;
   max-width: 1440px;
 	padding: 0px;
@@ -1086,7 +1086,7 @@ p.cardText {
 	}
 }
 
-.portfolio-card {
+.gallery-card {
   width: 100%;
   max-width: 395px;
 
@@ -1133,7 +1133,7 @@ p.cardText {
   }
 }
 
-.portfolio-image-container {
+.gallery-image-container {
   width:100%;
   max-width: 395px;
   max-height: 261px;
@@ -1373,7 +1373,7 @@ p.cardText {
   }
 }
 
-.case-studies-padding .portfolio-container {
+.case-studies-padding .gallery-container {
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -1393,7 +1393,7 @@ p.cardText {
   }
 }
 
-.case-studies-padding .portfolio-card {
+.case-studies-padding .gallery-card {
 
   p, h5, h2, a {
     font-family: Source Sans Pro;
@@ -1410,7 +1410,7 @@ p.cardText {
     padding-bottom: 8px;
   }
 
-  .portfolio-content-container {
+  .gallery-content-container {
     margin-top: 8px;
   }
 
@@ -1420,11 +1420,11 @@ p.cardText {
     grid-column-gap: 32px;
     max-width: calc(100vw - 96px);
 
-    .portfolio-content-container {
+    .gallery-content-container {
       margin-top: 0px;
     }
 
-    .portfolio-content-container {
+    .gallery-content-container {
       max-width: 375px;
 
       a {
@@ -1462,7 +1462,7 @@ p.cardText {
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 32px;
-    .portfolio-content-container{
+    .gallery-content-container{
       max-width: calc(66vw - 96px);
 
       a, p {
@@ -1488,7 +1488,7 @@ p.cardText {
     display: block;
     max-width: calc(100vw - 48px);
 
-    .portfolio-content-container {
+    .gallery-content-container {
       margin-top: 16px;
       max-width: 100%;
       
