@@ -1086,12 +1086,6 @@ p.cardText {
 	}
 }
 
-.gallery-2x4-grid {
-  @media (min-width: 1058px) {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .gallery-card {
   width: 100%;
   max-width: 395px;
@@ -1135,6 +1129,19 @@ p.cardText {
     
     p {
       font-size: 1rem;
+    }
+  }
+}
+
+.gallery-2x4-grid {
+  @media (min-width: 1058px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h2 {
+    padding-top: 16px;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
