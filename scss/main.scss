@@ -1017,8 +1017,14 @@ p.cardText {
 
 .centered-div {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   align-content: center;
   justify-content: center;
+
+  h2 {
+    color: $black;
+  }
 }
 
 .gallery-padding {
