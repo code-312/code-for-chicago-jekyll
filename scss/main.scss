@@ -502,7 +502,7 @@ h1,h2,h3 {
   color: $cfa-blue-dark;
 }
 
-.attend-button-container {
+.attend-button-container, .join-us-button-container {
   padding-top: 1rem;
   display: flex;
   justify-content: right; 
@@ -583,7 +583,15 @@ h1,h2,h3 {
   object-fit: contain;
 }
 
-.contact-form-container {
+.join-us-container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact-form-container, .join-us-container {
   color: $white;
   padding: 80px 96px;
   background-color: $cfa-red;
@@ -596,7 +604,7 @@ h1,h2,h3 {
     padding: 48px 24px;
   }
 
-  h1 {
+  h1, h2 {
     color: $white;
     font-weight: 700;
     line-height: 1.2;
