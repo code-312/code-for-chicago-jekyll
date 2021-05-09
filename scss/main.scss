@@ -41,6 +41,12 @@ h1,h2,h3 {
   text-align: left;
 }
 
+.contentContainer {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .text-center {
   text-align: center;
 }
@@ -496,7 +502,7 @@ h1,h2,h3 {
   color: $cfa-blue-dark;
 }
 
-.attend-button-container {
+.attend-button-container, .join-us-button-container {
   padding-top: 1rem;
   display: flex;
   justify-content: right; 
@@ -577,7 +583,15 @@ h1,h2,h3 {
   object-fit: contain;
 }
 
-.contact-form-container {
+.join-us-container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact-form-container, .join-us-container {
   color: $white;
   padding: 80px 96px;
   background-color: $cfa-red;
@@ -590,7 +604,7 @@ h1,h2,h3 {
     padding: 48px 24px;
   }
 
-  h1 {
+  h1, h2 {
     color: $white;
     font-weight: 700;
     line-height: 1.2;
@@ -882,11 +896,22 @@ h1,h2,h3 {
   margin-bottom: 0;
 }
 
-.volunteersRow {
-  margin-top: 80px;
+.image-left-card-row {
   flex-wrap: wrap-reverse;
   @media(max-width: 1058px) {
     flex-direction: column-reverse !important;
+  }
+}
+
+.image-right-card-row, 
+.image-left-card-row {
+  margin-top: 80px;
+  @media(max-width: 1058px) {
+    padding: 0;
+    margin-top: 64px;
+  }
+  @media(max-width: 360px) {
+    margin-top: 48px;
   }
 }
 
@@ -936,7 +961,8 @@ p.cardText {
       display: flex;
       flex-direction: column;
       width: 671px;
-      margin: 0 auto;
+      margin-left: auto;
+      margin-right: auto;
     }
     @media(max-width: 768px) {
       width: 100%;
@@ -975,19 +1001,19 @@ p.cardText {
   }
 }
 
-.organizationsText {
+.image-right-card-text {
   display: flex;
   flex-shrink: 4;
   flex-direction: column;
   justify-content: center;
   padding-left: 0;
   padding-right: 15px;
-  @media(max-width: 1058) {
-    padding: 0;
+  @media(max-width: 1058px) {
+    padding-right: 0;
   }
 }
 
-.volunteersText {
+.image-left-card-text {
   display: flex;
   flex-shrink: 4;
   flex-direction: column;
@@ -995,11 +1021,7 @@ p.cardText {
   padding-left: 15px;
   padding-right: 0;
   @media(max-width: 1058px) {
-    padding: 0;
-    margin-top: 64px;
-  }
-  @media(max-width: 360px) {
-    margin-top: 48px;
+    padding-left: 0;
   }
 }
 
