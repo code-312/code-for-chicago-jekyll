@@ -1162,7 +1162,7 @@ p.cardText {
   }
 }
 
-.gallery-2x4-grid {
+.gallery-col-2-max {
   @media (min-width: 1058px) {
     grid-template-columns: 1fr 1fr;
   }
