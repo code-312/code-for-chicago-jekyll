@@ -1558,3 +1558,12 @@ p.cardText {
 .hidden {
   visibility: hidden;
 }
+
+.volunteer-expectations {
+  h2 {
+    color: $black;
+    margin: 80px auto 24px;
+    width: 600px;
+    text-align: center;
+  }
+}
