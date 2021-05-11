@@ -4,7 +4,6 @@ _site
 .sass-cache
 *.gem
 assets
-Gemfile.lock
 node_modules
 yarn-error.log
 .jekyll-metadata
