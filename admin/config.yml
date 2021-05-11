@@ -19,7 +19,7 @@ collections:
       - {label: "Featured Image Alt", name: "alt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 collections:
-  - name: "case-stuides"
+  - name: "case-studies"
     label: "Case Studies"
     folder: "_posts/case-studies"
     create: true
