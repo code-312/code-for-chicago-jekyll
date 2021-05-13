@@ -13,15 +13,21 @@ To run locally, you will need `npm`, `gem` amd ruby's `bundle` installed and ava
 
 ## Prerequisites
 
-### npm
+### node & npm
+**Note:** This project is not currently compatible with node v15.0.0 and above. 
+
+To verify you have node installed:
+
+```
+> node -v
+v10.15.2
+```
+
 To verify you have npm installed:
 
 ```
 > npm -v
 6.10.0
-
-> node -v
-v10.15.2
 ```
 
 If they or not installed, or your version looks much older than this, proceed to [instructions for installing npm](https://www.npmjs.com/get-npm)
