@@ -1536,23 +1536,3 @@ p.cardText {
 .hidden {
   visibility: hidden;
 }
-
-/* Styles for Leadership Team Section of the About Page */
-#our-team {
-  background-color: #f5f5f6;
-  padding: 30px;
-
-  header {
-    text-align: center;
-  }
-
-  h2, h3, p {
-    color: #333;
-  }
-}
-
-.leader-cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}

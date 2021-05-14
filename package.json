@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.1",
-    "jquery": "^3.5.0",
-    "sass": "^1.32.13"
+    "jquery": "^3.5.0"
   }
 }
