@@ -1568,6 +1568,9 @@ p.cardText {
     width: 100%;
     max-width: 600px;
     text-align: center;
+    @media (max-width: 651px) {
+      font-size: 2rem;
+    }
   }
   .iconsRow {
     text-align: left;
