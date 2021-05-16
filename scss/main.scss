@@ -772,7 +772,7 @@ h1,h2,h3 {
     margin-top: 48px;
   }
 }
-.workwithusContent {
+.sectionContent {
   padding-bottom: 80px;
   padding-top: 1.5rem;
   
@@ -831,7 +831,7 @@ h1,h2,h3 {
 	margin-left: ($grid-gutter-width / -2);
 }
 
-.workwithusIconsRow {
+.iconsRow {
   justify-content: space-between;
   text-align: center;
   font-weight: bold;
@@ -877,7 +877,7 @@ h1,h2,h3 {
     }
   }
 }
-.workwithusIcon {
+.icon {
   width: 42px;
   height: 42px;
   margin-bottom: 16px;
@@ -1560,10 +1560,21 @@ p.cardText {
 }
 
 .volunteer-expectations {
-  h2 {
+  .volunteer-title {
+    font-size: 2.75rem;
+    line-height: 1.2;
     color: $black;
     margin: 80px auto 24px;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     text-align: center;
   }
+  .iconsRow {
+    text-align: left;
+    max-width: none;
+    .description {
+      font-weight: 500;
+    }
+  }
+
 }
