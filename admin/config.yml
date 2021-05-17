@@ -18,7 +18,6 @@ collections:
       - {label: "Featured Image Text", name: "imgtext", widget: "string"}
       - {label: "Featured Image Alt", name: "alt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-collections:
   - name: "case-studies"
     label: "Case Studies"
     folder: "_posts/case-studies"
