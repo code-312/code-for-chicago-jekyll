@@ -1184,7 +1184,7 @@ p.cardText {
         width: 672px;
       }
       p {
-        width: 672px;
+        width: 87.5vw;
       }
     }
   }
@@ -1196,15 +1196,17 @@ p.cardText {
         width: 555px;
       }
       p {
-        font-size: 1.125;
+        font-size: 1.125rem;
         line-height: 23px;
-        width: 555px;
+        width: 85.2vw;
       }
     }
   }
 
   @media (max-width: 360px) {
-    padding: 48px 24px;
+    padding: 48px 0px;
+    margin-left: 24px;
+    margin-right: 24px;
     .content-header {
       h2 {
         font-size: 2rem;
@@ -1226,25 +1228,20 @@ p.cardText {
     padding-top: 80px;
     padding-left: 107px;
     height: max-content;
-    transition: ease all .5s;
     @media (max-width: 1399px) {
-      transition: ease all .5s;
       padding-left: 10vw;
       padding-right: 0;
       max-width: 94%;
     }
     @media (max-width: 768px) {
-      transition: ease all .5s;
       max-width: 100%;
       padding-left: 0px;
     }
     @media (max-width: 360px) {
-      transition: ease all .5s;
       max-height: 437px;
       overflow: scroll;
     }
     .quote-paragraph {
-      transition: ease all .5s;
       position: relative;
       font-family: $font-family-alt;
       font-size: 2.5rem;
@@ -1252,13 +1249,11 @@ p.cardText {
       line-height: 52px;
       margin-bottom: 32px;
       @media (max-width: 651px) {
-        transition: ease all .5s;
         font-size: 1.5rem;
         line-height: 31px;
       }
     }
     .quote-author {
-      transition: ease all .5s;
       position: relative;
       margin-bottom: 0px;
       font-family: $font-family-alt;
