@@ -1538,7 +1538,6 @@ p.cardText {
 }
 
 .starting-projects-container {
-  transition: all ease .2s;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1548,46 +1547,38 @@ p.cardText {
   padding: 80px 96px;
   margin-right: auto;
   margin-left: auto;
-  .starting-projects-info {
-    transition: all ease .2s;
+  .starting-projects-content {
     position: relative;
     text-align: center;
     max-width: 600px;
     height: max-content;
     h2 {
-      transition: all ease .2s;
       color: $darker-grey;
       height: min-content;
       padding-top: 0px;
       margin-bottom: 16px;
-      font-family: $font-family-base;
       font-style: normal;
       font-weight: bold;
       font-size: 3rem;
     }
     p {
-      transition: all ease .2s;
       margin-bottom: 24px;
-      color: $darker-grey;
-      font-family: $font-family-base;
       font-style: normal;
       font-weight: normal;
       font-size: 1.25rem;
     }
   }
   .starting-projects-grid {
-    transition: all ease .2s;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 32px;
     margin-top: 24px;
     width: 100%;
     height: min-content;
   }
-  .starting-projects-group {
-    transition: all ease .2s;
+
+  .starting-projects-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1605,7 +1596,6 @@ p.cardText {
     }
     h2 {
       width: 100%;
-      font-family: Source Sans Pro;
       font-style: normal;
       font-weight: bold;
       font-size: 2rem;
@@ -1616,12 +1606,10 @@ p.cardText {
       padding-bottom: 8px;
     }
     p {
-      font-family: Source Sans Pro;
       font-style: normal;
       font-weight: normal;
       font-size: 1.25rem;
       line-height: 30px;
-      color: $darker-grey;
       overflow-y: visible;
     }
   }
@@ -1641,16 +1629,18 @@ p.cardText {
     min-height: 100%;
 
   }
+  @media (min-width: 1060px) {
+    .item-1, .item-2 {
+      margin-right: 32px;
+    }
+  }
   @media (max-width: 1059px) {
-    transition: all ease-in-out .2s;
     padding: 64px 48px;
     .starting-projects-grid {
-      transition: all ease .2s;
       height: min-content;
       flex-direction: column;
     }
-    .starting-projects-group {
-      transition: all ease .2s;
+    .starting-projects-item {
       flex-direction: row;
       width: 100%;
       height: 177px;
@@ -1659,26 +1649,26 @@ p.cardText {
       height: 100%;
       padding-right: 32px;
     }
-  }
-  @media (max-width: 768px) {
-    .starting-projects-grid {
-      gap: 48px;
+    .item-1, .item-2 {
+      margin-right: 0px;
+      margin-bottom: 48px;
     }
   }
   @media (max-width: 651px) {
-    .starting-projects-info {
+    .starting-projects-content, 
+    .starting-projects-item {
       max-width: 555px;
       h2 {
-        font-size: 1.5rem !important;
-        line-height: 28.4px !important;        ;
+        font-size: 1.5rem;
+        line-height: 28.4px;        ;
       }
       p {
-        font-size:  1rem !important;
-        line-height: 24px !important;
+        font-size:  1rem;
+        line-height: 24px;
       }
     }
-    .starting-projects-grid {
-      gap: 32px;
+    .item-1, .item-2 {
+      margin-bottom: 32px;
     }
     .image-container {
       min-width: 41%;
@@ -1686,15 +1676,15 @@ p.cardText {
     }
   }
   @media (max-width: 360px) {
-    transition: all ease-in-out .2s;
-    padding: 48px 24px;
-    .starting-projects-group {
-      transition: all ease .2s;
+    padding: 48px 0px;
+    margin-left: 24px;
+    margin-right: 24px;
+    .starting-projects-item {
       flex-direction: column;
       height: min-content;
     }
-    .starting-projects-grid {
-      gap: 48px;
+    .item-1, .item-2 {
+      margin-bottom: 48px;
     }
     .image-container {
       width: 100%;
