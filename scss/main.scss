@@ -541,6 +541,7 @@ h1,h2,h3 {
   &:focus {
     box-shadow: 0 0 0 2px $white, 0 0 0 5px $cfa-blue;
     text-decoration: underline;
+    outline: none;
   }
 }
 
