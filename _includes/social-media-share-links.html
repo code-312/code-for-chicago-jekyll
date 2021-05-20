@@ -14,11 +14,22 @@
 </div>
 
 <script>
-document.getElementById('fb-share').onclick = function() {
-  FB.ui({
-    display: 'popup',
-    method: 'share',
-    href: '{{site.url}}/{{page.url}}',
-  }, function(response){});
-}
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : 'your-app-id',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v10.0'
+    });
+  };
+  
+  document.getElementById('fb-share').onclick = function() {
+    FB.ui({
+      display: 'popup',
+      method: 'share',
+      href: '{{site.url}}/{{page.url}}',
+    }, function(response){});
+  }
 </script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+   
