@@ -1550,23 +1550,24 @@ p.cardText {
 .hidden {
   visibility: hidden;
 }
-
-.volunteer-title {
-  font-size: 2.75rem;
-  line-height: 1.2;
-  color: $black;
-  margin: 80px auto 24px;
-  width: 100%;
-  max-width: 600px;
-  text-align: center;
-  @media (max-width: 651px) {
-    font-size: 2rem;
+.volunteerContent {
+  .volunteer-title {
+    font-size: 2.75rem;
+    line-height: 1.2;
+    color: $black;
+    margin: 80px auto 24px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    @media (max-width: 651px) {
+      font-size: 2rem;
+    }
   }
-}
-.iconsRow {
-  text-align: left;
-  max-width: none;
-  .description {
-    font-weight: 500;
+  .iconsRow {
+    text-align: left;
+    max-width: none;
+    .description {
+      font-weight: 500;
+    }
   }
 }
