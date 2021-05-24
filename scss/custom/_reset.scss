@@ -318,10 +318,12 @@ input[type="month"] {
   // and https://github.com/twbs/bootstrap/issues/11266
   -webkit-appearance: listbox;
 }
-input[type="email"] {
-  -moz-appearance: none;
-}
 
+@-moz-document url-prefix() { 
+  input[type="email"] {
+    border: 0;
+  }
+}
 
 textarea {
   overflow: auto; // Remove the default vertical scrollbar in IE.
