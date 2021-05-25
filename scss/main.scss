@@ -15,7 +15,7 @@
 @import "./custom/includes/tables";
 @import "./custom/includes/type";
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Work+Sans:wght@400;600&display=swap');
 
 
 body {
@@ -1035,11 +1035,18 @@ p.cardText {
 
 .centered-div {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   align-content: center;
   justify-content: center;
+
+  h2 {
+    color: $black;
+    margin-bottom: 0;
+  }
 }
 
-.portfolio-padding {
+.gallery-padding {
   padding: 80px 96px;
 
   @media (max-width: 1058px) {
@@ -1060,7 +1067,7 @@ p.cardText {
   }
 }
 
-.portfolio-container {
+.gallery-container {
   width: 100%;
   max-width: 1440px;
 	padding: 0px;
@@ -1104,7 +1111,7 @@ p.cardText {
 	}
 }
 
-.portfolio-card {
+.gallery-card {
   width: 100%;
   max-width: 395px;
 
@@ -1136,7 +1143,7 @@ p.cardText {
   p {
     font-size: 1.25rem;
     max-width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 0;
   }
 
   @media (max-width: 651px) {
@@ -1151,13 +1158,166 @@ p.cardText {
   }
 }
 
-.portfolio-image-container {
+.gallery-col-2-max {
+  @media (min-width: 1058px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h2 {
+    padding-top: 16px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.gallery-image-container {
   width:100%;
   max-width: 395px;
   max-height: 261px;
   display: flex;
   align-items: center;
 }
+
+.content-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 96px;
+  max-width: 1440px;
+  height: max-content;
+  .content-header {
+    h2 {
+      padding: 16px 0px 16px 0px;
+      margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 600px;
+      height: auto;
+      font-family: $font-family-base;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 3rem;
+      line-height: 62px;
+      color: $darker-grey;
+    }
+    p {
+      margin-bottom: 24px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 600px;
+      height: auto;
+      font-family: $font-family-base;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.25rem;
+      line-height: 30px;
+      color: $darker-grey;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    padding: 64px 48px;
+    .content-header {
+      h2 {
+        width: 672px;
+      }
+      p {
+        width: 87.5vw;
+      }
+    }
+  }
+
+  @media (max-width: 651px) {
+    .content-header{
+      h2 {
+        font-size: 2rem;
+        width: 555px;
+      }
+      p {
+        font-size: 1.125rem;
+        line-height: 23px;
+        width: 85.2vw;
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    padding: 48px 0px;
+    margin-left: 24px;
+    margin-right: 24px;
+    .content-header {
+      h2 {
+        font-size: 2rem;
+        width: 312px;
+      }
+      p {
+        font-size: 1.125rem;
+        line-height: 23px;
+        width: 312px;
+      }
+    }
+  }
+ }
+  
+ .quote-content {
+  position: relative;
+  max-width: 1440px;
+  .quote-paragraph-container {
+    padding-top: 80px;
+    padding-left: 107px;
+    height: max-content;
+    @media (max-width: 1399px) {
+      padding-left: 10vw;
+      padding-right: 0;
+      max-width: 94%;
+    }
+    @media (max-width: 768px) {
+      max-width: 100%;
+      padding-left: 0px;
+    }
+    @media (max-width: 360px) {
+      max-height: 437px;
+      overflow: scroll;
+    }
+    .quote-paragraph {
+      position: relative;
+      font-family: $font-family-alt;
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: 52px;
+      margin-bottom: 32px;
+      @media (max-width: 651px) {
+        font-size: 1.5rem;
+        line-height: 31px;
+      }
+    }
+    .quote-author {
+      position: relative;
+      margin-bottom: 0px;
+      font-family: $font-family-alt;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.5rem;
+      @media (max-width: 651px) {
+        font-size: 1rem;
+      }
+    }
+  }
+  .quote-icon {
+    position: absolute;
+    width: 224px;
+    height: 160px;
+    left: 0%;
+    right: 4.48%;
+    top: 0%;
+    bottom: 0.2%;
+    @media (max-width: 360px) {
+      position: absolute;
+      width: 152px;
+      height: 108px;
+    }
+  }
+ }
 
 .post {
   /* Resetting global styles */
@@ -1391,7 +1551,7 @@ p.cardText {
   }
 }
 
-.case-studies-padding .portfolio-container {
+.case-studies-padding .gallery-container {
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -1411,7 +1571,7 @@ p.cardText {
   }
 }
 
-.case-studies-padding .portfolio-card {
+.case-studies-padding .gallery-card {
 
   p, h5, h2, a {
     font-family: Source Sans Pro;
@@ -1428,7 +1588,7 @@ p.cardText {
     padding-bottom: 8px;
   }
 
-  .portfolio-content-container {
+  .gallery-content-container {
     margin-top: 8px;
   }
 
@@ -1438,11 +1598,11 @@ p.cardText {
     grid-column-gap: 32px;
     max-width: calc(100vw - 96px);
 
-    .portfolio-content-container {
+    .gallery-content-container {
       margin-top: 0px;
     }
 
-    .portfolio-content-container {
+    .gallery-content-container {
       max-width: 375px;
 
       a {
@@ -1480,7 +1640,7 @@ p.cardText {
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 32px;
-    .portfolio-content-container{
+    .gallery-content-container{
       max-width: calc(66vw - 96px);
 
       a, p {
@@ -1506,7 +1666,7 @@ p.cardText {
     display: block;
     max-width: calc(100vw - 48px);
 
-    .portfolio-content-container {
+    .gallery-content-container {
       margin-top: 16px;
       max-width: 100%;
       
@@ -1554,3 +1714,5 @@ p.cardText {
 .hidden {
   visibility: hidden;
 }
+
+
