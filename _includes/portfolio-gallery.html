@@ -1,12 +1,12 @@
-<div class="portfolio-container">
+<div class="gallery-container">
     {% for post in site.posts %}
-        <div class="portfolio-card">
-            <div class="portfolio-image-container">
+        <div class="gallery-card">
+            <div class="gallery-image-container">
                 {% if post.img and post.alt %} <img src="{{post.img}}" alt="{{post.alt}}">
                 {% else %} <img src="/images/proxy-img.png" alt="A sample proxy image">
                 {% endif %}
             </div>
-            <div class="portfolio-content-container">
+            <div class="gallery-content-container">
                 <h5>{{ post.areas }}</h5>
                 <h2>
                     <a href="{{ post.url }}">{{ post.title }}</a>
@@ -23,7 +23,7 @@
     const customAspectRatio = 395 / 261;
     const imageDivs = 
         Array
-            .from(document.querySelectorAll('.portfolio-image-container'));
+            .from(document.querySelectorAll('.gallery-image-container'));
     const images = imageDivs.map(div => div.children[0]); 
     const maxHeight = 261;
 
