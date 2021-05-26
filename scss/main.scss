@@ -1696,8 +1696,14 @@ p.cardText {
 
 .share-content-links-container {
   display: inline-flex;
-  align-items: flex-start;
+  height: 24px;
+  align-items: flex-end;
   margin: 0 -1rem 0 0;
+}
+
+.built-in-share {
+  height: 24px;
+  margin: 0 1rem 0 0;
 }
 
 .share-logo-container {
