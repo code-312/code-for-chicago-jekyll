@@ -2,10 +2,10 @@ backend:
   name: git-gateway
   branch: master
 publish_mode: editorial_workflow  
-media_folder: "images/uploads"
+media_folder: "/images/uploads"
 collections:
   - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
-    label: "Portfolio" # Used in the UI
+    label: "Portfolio Pages" # Used in the UI
     folder: "_posts/portfolio" # Used in the UI" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -19,7 +19,7 @@ collections:
       - {label: "Featured Image Alt", name: "alt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "case-studies"
-    label: "Case Studies"
+    label: "Case Study Pages"
     folder: "_posts/case-studies"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
