@@ -2,7 +2,7 @@
 
 # How to write a post for Code For Chicago
 
-This guide will teach you everything you need to know about how to write a blog post for Code For Chicago, and have it appear on the portfolio page on the website. All posts are written using Markdown. If you're not familiar with Markdown, you can find a very simple look-up guide  [here](https://daringfireball.net/projects/markdown/). You will not need any extensive knowledge of Markdown to write a post, just follow these steps down below.
+This guide will teach you everything you need to know about how to write a blog post for Code For Chicago, and have it appear on the portfolio page on the website. All posts are written using Markdown. If you're not familiar with Markdown, you can find a very simple look-up guide  [here](https://daringfireball.net/projects/markdown/syntax). You will not need any extensive knowledge of Markdown to write a post, just follow these steps down below.
 
 1. Create your post.
 
