@@ -53,12 +53,20 @@ h1,h2,h3 {
 
 hr {
   background-color:$light-grey;
-  margin: 0 6rem;
-  @media (max-width: 768px) {
-    margin: 0 3rem;
-  }
-  @media (max-width: 360px) {
-    margin: 0 1.5rem;
+  margin: 0;
+
+  &.inner {
+    display: none;
+    @media (max-width: 1440px) {
+      display: block;
+      margin: 0 6rem;
+    }
+    @media (max-width: 768px) {
+      margin: 0 3rem;
+    }
+    @media (max-width: 360px) {
+      margin: 0 1.5rem;
+    }
   }
 }
 
