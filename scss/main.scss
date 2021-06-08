@@ -1694,22 +1694,22 @@ p.cardText {
   }
 }
 
-.share-content-links-container {
+.socialmedia-links-container {
+  height: 20px;
   display: inline-flex;
-  height: 24px;
-  align-items: flex-end;
+  align-items: center;
   margin: 0 -1rem 0 0;
 }
 
-.built-in-share {
-  height: 24px;
+.socialmedia-link {
   margin: 0 1rem 0 0;
-}
-
-.share-logo-container {
-  height: 1.5rem;
-  margin: 0 1rem 0 0;
+  line-height: 0;
+  font-size: 1rem;
+  height: 20px;
   cursor: pointer;
+  img {
+    height: 20px;
+  }
 }
 
 .display-none {

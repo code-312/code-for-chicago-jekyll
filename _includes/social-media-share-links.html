@@ -1,27 +1,13 @@
-<div class="share-content-links-container">
-    <a href="https://twitter.com/intent/tweet?url={{site.url}}/{{page.url}}%2F" class="share-logo-container">
-        <img src="{{site.baseurl}}/images/twitter.svg" alt="share on Twitter">
+<div class="socialmedia-links-container">
+    <a href="https://twitter.com/intent/tweet?url={{site.url}}/{{page.url}}%2F" class="socialmedia-link">
+        <img src="{{site.baseurl}}/images/twitter.png" alt="share on Twitter">
     </a>
-    <a class="share-logo-container" id="fb-share">
-        <img src="{{site.baseurl}}/images/facebook.svg" alt="share on facebook">
-    </a>
-    <a class="share-logo-container"
     
-    href="http://www.linkedin.com/shareArticle?mini=true&url=https://codeforchicago.org{{page.url}}">
-        <img src="{{site.baseurl}}/images/linkedin.svg" alt="share on LinkedIn">
+    <div class="fb-share-button socialmedia-link" data-href="https://codeforchicago.org{{page.url}}" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+    <a class="socialmedia-link" href="http://www.linkedin.com/shareArticle?mini=true&url=https://codeforchicago.org{{page.url}}">
+      <img src="{{site.baseurl}}/images/linkedin.png" alt="share on LinkedIn">
     </a>
-
-    <div class="built-in-share">
-      <a class="twitter-share-button"
-        href="https://twitter.com/intent/tweet">
-        Tweet
-      </a>
-    </div>
-
-    <div class="fb-share-button built-in-share" data-href="https://codeforchicago.org{{page.url}}" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-
-    <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-    <script type="IN/Share" data-url="https://codeforchicago.org{{page.url}}"></script>
 </div>
 
 <script>
@@ -43,20 +29,3 @@
   }
 </script>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-   
-<script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
-
-  return t;
-}(document, "script", "twitter-wjs"));</script>
