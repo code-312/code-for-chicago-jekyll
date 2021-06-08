@@ -108,14 +108,23 @@ h1,h2,h3 {
     color: $darker-grey;
   }
 
+  // menu goes mobile
   @media (max-width: 996px) {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
     display: none;
     position: fixed;
     background: white;
     margin-top: 47px;
+    padding: 48px 0 48px 0;
     left: 0;
     width: 100%;
     height: 100%;
+
+    li {
+      margin-bottom: 2rem;
+    }
   }
 }
 
