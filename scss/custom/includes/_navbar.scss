@@ -1,7 +1,7 @@
 .navbar {
   width: 75%;
   margin:auto;
-  display: flex;
+  flex-wrap: nowrap; // overwrite bootstrap
   .nav-item {
     font-size: 1rem;
   }
@@ -13,21 +13,4 @@
   &:hover {
     color: $link-color !important;
   }
-}
-
-.internal-links {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  li {
-    margin-right: 2rem;
-  }
-  a {
-    color: $darker-grey;
-  }
-}
-
-.external-links {
-  display: flex;
 }

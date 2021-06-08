@@ -68,6 +68,26 @@ h1,h2,h3 {
   text-decoration: none;
 }
 
+
+.internal-links {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  li {
+    margin-right: 2rem;
+  }
+  a {
+    color: $darker-grey;
+  }
+}
+
+.external-links {
+  display: flex;
+  margin-bottom: 0;
+}
+
 .social-container {
   display: block;
   align-self: center;
