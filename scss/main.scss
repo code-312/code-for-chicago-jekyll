@@ -146,6 +146,11 @@ h1,h2,h3 {
   li:last-child {
     margin-bottom: 0;
   }
+  @media (max-width: 360px) {
+    list-style-type: none;
+    margin-left: 24px;
+    text-align: left;
+  }
 }
 
 .external-links {
@@ -166,6 +171,10 @@ h1,h2,h3 {
 
   .social-logo:first-child {
     margin-left: 0;
+  }
+  @media (max-width: 360px) {
+    margin-left: 24px;
+    justify-content: left;
   }
 }
 
