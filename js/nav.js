@@ -8,8 +8,8 @@ let menuOpen = false;
 
 // on page load, fill mobile nav with regular nav
 const initMobileNav = ()=> {
-  mobileNav.appendChild(intNav).classList.add('mobile')
-  mobileNav.appendChild(extNav).classList.add('mobile')
+  mobileNav.appendChild(intNav).className = 'internal-links-mobile'
+  mobileNav.appendChild(extNav).className = 'external-links-mobile'
 }
 
 initMobileNav();

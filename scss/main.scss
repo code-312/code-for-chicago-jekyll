@@ -80,6 +80,9 @@ h1,h2,h3 {
 
 .mobile-nav {
   display: none;
+  background: white;
+  width: 100vw;
+  height: 100vh;
 }
 
 .menu-icon {
@@ -120,28 +123,35 @@ h1,h2,h3 {
 
   // menu goes mobile
   @media (max-width: 996px) {
-    font-size: 2em;
-    font-weight: 700;
-    text-align: center;
-    // display: none;
-    position: fixed;
-    background: white;
-    margin-top: 47px;
-    padding: 3rem 0 3rem 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    display: none;
+  }
+}
 
-    li {
-      margin-right: 0;
-      margin-bottom: 2rem;
-    }
+.internal-links-mobile {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  padding: 3rem 0 3rem 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  li {
+    margin-right: 0;
+    margin-bottom: 2rem;
   }
 }
 
 .external-links {
   display: flex;
   margin-bottom: 0;
+  display: block;
+  align-self: center;
+  margin-right: 24px; 
+  
+  @media (max-width: 996px) {
+    display: none;
+  }
 }
 
 #logo-container {
@@ -166,15 +176,7 @@ h1,h2,h3 {
   margin-right: 24px; 
   
   @media (max-width: 996px) {
-    // display: none;
-    position: fixed;
-    height: 28px;
-    width: 128px;
-    top: 470px;
-    top: 60%;
-    left: 50%;
-    margin-top: -14px; /* Negative half of height. */
-    margin-left: -64px; /* Negative half of width. */
+    display: none;
   }
 }
 
