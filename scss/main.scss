@@ -79,10 +79,13 @@ h1,h2,h3 {
 }
 
 .mobile-nav {
+  list-style-type: none;
+  padding: 0;
+  border-top: 1px solid $light-grey;
   display: none;
   background: white;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .menu-icon {
@@ -120,14 +123,20 @@ h1,h2,h3 {
   a {
     color: $darker-grey;
   }
+}
 
+.navbar [aria-current] {
+  border-bottom: 2px solid $cfa-red;
+}
+
+.hideable-int-link {
   // menu goes mobile
   @media (max-width: 996px) {
     display: none;
   }
 }
 
-.internal-links-mobile {
+.mobile-nav {
   font-size: 2em;
   font-weight: 700;
   text-align: center;
@@ -139,6 +148,11 @@ h1,h2,h3 {
     color: $darker-grey;
   }
 
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
   li {
     margin-right: 0;
     margin-bottom: 2rem;
@@ -146,7 +160,7 @@ h1,h2,h3 {
   li:last-child {
     margin-bottom: 0;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 651px) {
     list-style-type: none;
     margin-left: 24px;
     text-align: left;
@@ -155,6 +169,8 @@ h1,h2,h3 {
 
 .external-links {
   display: flex;
+  list-style-type: none;
+  padding: 0;
   margin-bottom: 0;
   display: block;
   align-self: center;
@@ -176,10 +192,6 @@ h1,h2,h3 {
     margin-left: 24px;
     justify-content: left;
   }
-}
-
-.logo-and-navs {
-  display: flex;
 }
 
 .donate-and-socials {

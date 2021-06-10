@@ -2,24 +2,35 @@ const menuIcon = document.querySelector('.menu-icon').firstChild;
 const body = document.querySelector('body'); 
 const siteNav = document.querySelector('.internal-links');
 const extNav = document.querySelector('.external-links');
-const intNav = document.querySelector('.internal-links');
+const intNav = document.querySelectorAll('.hideable-int-link');
 const mobileNav = document.querySelector('.mobile-nav');
 let menuOpen = false;
 
 // on page load, fill mobile nav with regular nav
 const initMobileNav = ()=> {
-  mobileNav.appendChild(intNav.cloneNode(true)).className = 'internal-links-mobile'
-  mobileNav.appendChild(extNav.cloneNode(true)).className = 'external-links-mobile'
+  intNav.forEach(nav => {
+    mobileNav.firstChild.appendChild(nav.cloneNode(true)).className = 'internal-links-mobile'
+  })
+  mobileNav.firstChild.appendChild(extNav.cloneNode(true)).className = 'external-links-mobile'
 }
-
 initMobileNav();
 
-const toggleMenu = (e)=> {
+const toggleMenu = ()=> {
   // toggle menu icon
+  menuIcon.parentNode.ariaLabel = 
+    (menuOpen)
+    ? 'open'
+    : 'close'
+  
   menuIcon.src = 
     (menuOpen) 
     ? '/images/hamburger-open-menu.svg'
-    :'/images/hamburger-close-menu.svg';
+    : '/images/hamburger-close-menu.svg';
+  
+  menuIcon.alt = 
+    (menuOpen) 
+    ? 'open menu'
+    : 'close menu';
   
   // if menu is closed, display menu
   if(!menuOpen)  {
@@ -30,6 +41,7 @@ const toggleMenu = (e)=> {
   }
   
   // toggle state of menu
-  body.classList.toggle('prevent-scrolling');
+  // body.classList.toggle('prevent-scrolling');
+  mobileNav.ariaExpanded = !menuOpen;
   menuOpen = !menuOpen;
 }

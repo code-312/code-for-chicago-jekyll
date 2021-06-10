@@ -1,46 +1,52 @@
 <!-- NAV -->
 
-<nav class="navbar">
-	<button onClick="toggleMenu()" class="menu-icon"><img src="/images/hamburger-open-menu.svg" alt="open menu"></button>
-	<div class="logo-and-navs">
-		<div id="logo-container">
+<nav class="navbar" aria-label="main">
+	<button aria-label="open" onClick="toggleMenu()" class="menu-icon"><img src="/images/hamburger-open-menu.svg" alt="open menu" aria-hidden="true"></button>
+	<ul class="internal-links">
+		<li id="logo-container">
 			<a href="{{ site.baseurl }}/">
 			<img class="brigade-logo" src="/images/cfc_logo_2021.svg" alt="Code For Chicago Logo"/>
 			</a>
-		</div>
-		<ul class="internal-links">
-			<li><a href="/projects">Projects</a></li>
-			<li><a href="/portfolio">Portfolio</a></li>
-			<li><a href="/join">Join Us</a></li>
-			<li><a href="/about">About</a></li>
-		</ul>
-	</div>
+		</li>
+		<li {% if page.url == "/projects" %} aria-current="page"{% endif %} class="hideable-int-link">
+			<a href="/projects">Projects</a>
+		</li>
+		<li {% if page.url == "/portfolio" %} aria-current="page"{% endif %} class="hideable-int-link">
+			<a href="/portfolio">Portfolio</a>
+		</li>
+		<li {% if page.url == "/join" %} aria-current="page"{% endif %} class="hideable-int-link">
+			<a href="/join">Join Us</a>
+		</li>
+		<li {% if page.url == "/about" %} aria-current="page"{% endif %} class="hideable-int-link">
+			<a href="/about">About</a>
+		</li>
+	</ul>
 	<div class="donate-and-socials">
-		<div class="external-links">
-			<div class="social-logo">
+		<ul class="external-links">
+			<li class="social-logo">
 				<a href="https://www.meetup.com/code-for-chicago" target="_blank">
 						<img
 						class="social-img"
 						src="/images/meetup.svg" alt="Meetup"
 						/>
 				</a>
-			</div>
-			<div class="social-logo">
+			</li>
+			<li class="social-logo">
 				<a href="https://code-for-chicago-slack-invite.herokuapp.com/" target="_blank">
 						<img
 						class="social-img"
 						src="/images/slack.svg" alt="Slack"
 						/>
 				</a>
-			</div>
-			<div class="social-logo">
+			</li>
+			<li class="social-logo">
 				<a href="https://github.com/Code-For-Chicago/" target="_blank">
 						<img class="social-img" src="/images/github.svg" alt="GitHub"/>
 				</a>
-			</div>
-		</div>
+			</li>
+		</ul>
 		<a href="https://www.codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20Chicago&utm_source=Brigade%20site" target="blank" class="donate-link">Donate</a>
 		<a href="https://www.codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20Chicago&utm_source=Brigade%20site" target="blank" class="short-button donate-button">Donate</a>
 	</div>
 </nav>
-<nav class="mobile-nav"></nav>
+<nav aria-label="mobile" aria-expanded="false"  class="mobile-nav"><ul></ul></nav>
