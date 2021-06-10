@@ -41,7 +41,6 @@ const toggleMenu = ()=> {
   }
   
   // toggle state of menu
-  // body.classList.toggle('prevent-scrolling');
   mobileNav.ariaExpanded = !menuOpen;
   menuOpen = !menuOpen;
 }
