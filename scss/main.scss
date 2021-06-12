@@ -1187,21 +1187,21 @@ p.cardText {
 }
 
 // ABOUT Section - What is CFA and Why join
+.whoIsCFA {
+    background-color: #F5F5F6;
+  }
 .aboutPage {
-  margin: 80px 96px;
-  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 96px;
   @media(max-width: 768px) {
-    margin: 64px 48px;
+    padding: 64px 48px;
   }
   @media(max-width: 360px) {
-    margin: 48px 24px;
+    padding: 48px 24px;
   }
-
+  
   .section {
-    padding-bottom: 48px;
-    @media (max-width: 651px) {
-      padding-bottom: 32px;
-    }
       .infoContainer {
         width: 100%;
         max-width: 600px;
