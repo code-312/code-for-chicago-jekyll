@@ -1205,6 +1205,66 @@ p.cardText {
   align-items: center;
 }
 
+// ABOUT Section - What is CFA and Why join
+.whoIsCFA {
+    background-color: #F5F5F6;
+  }
+.aboutPage {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 96px;
+  @media(max-width: 768px) {
+    padding: 64px 48px;
+  }
+  @media(max-width: 360px) {
+    padding: 48px 24px;
+  }
+  
+  .section {
+      .infoContainer {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        @media (max-width: 768px) {
+          max-width: 672px;
+        }
+        @media (max-width: 651px) {
+          max-width: 555px;
+        }
+        @media (max-width: 360px) {
+          max-width: 312px;
+        }
+        
+        h2 {
+          margin-bottom: 16px;
+          color: black;
+        }
+        .text {
+          font-size: 1.25rem;
+          line-height: 34px;
+          padding-bottom: 24px;
+          margin-bottom: 0;
+          @media (max-width: 651px) {
+            font-size: 1rem;
+            line-height: 23px;
+          }
+        }
+        .learnMore {
+          a {
+            font-family: $font-family-alt;
+            font-weight: 600;
+            font-size: 1rem;
+            color: $cfa-blue-dark;
+            text-decoration: none;
+            background-color: transparent;
+          }
+        }
+        .cardImage {
+          width: 100%;
+        }
+      }
+  }
+}
 .content-container {
   margin-left: auto;
   margin-right: auto;
@@ -1741,5 +1801,3 @@ p.cardText {
 .hidden {
   visibility: hidden;
 }
-
-
