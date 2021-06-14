@@ -19,8 +19,8 @@ const toggleMenu = ()=> {
   // toggle menu icon
   menuIcon.parentNode.ariaLabel = 
     (menuOpen)
-    ? 'open'
-    : 'close'
+    ? 'open menu'
+    : 'close menu'
   
   menuIcon.src = 
     (menuOpen) 
