@@ -1548,6 +1548,13 @@ p.cardText {
     text-align: left;
   }
 
+  p + h2 {
+    padding-top: 2rem;
+    @media (max-width: 651px) {
+      padding-top: 1rem;
+    }
+  }
+
   p:last-of-type{
     margin-bottom: 0px;
   }
