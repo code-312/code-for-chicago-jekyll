@@ -1,11 +1,26 @@
 <!-- NAV -->
 
-<nav class="navbar">
-	<div id="logo-container">
-		<a href="{{ site.baseurl }}/">
-		<img class="brigade-logo" src="/images/cfc_logo_2021.svg" alt="Code For Chicago Logo"/>
-		</a>
-	</div>
+<nav class="navbar" aria-label="main">
+	<button aria-label="open" onClick="toggleMenu()" class="menu-icon"><img src="/images/hamburger-open-menu.svg" alt="open menu" aria-hidden="true"></button>
+	<ul class="internal-links">
+		<li id="logo-container">
+			<a href="{{ site.baseurl }}/">
+			<img class="brigade-logo" src="/images/cfc_logo_2021.svg" alt="Code For Chicago Logo"/>
+			</a>
+		</li>
+		<li {% if page.url == "/projects" %} aria-current="page"{% endif %} class="hideable-int-link">
+			<a href="/projects">Projects</a>
+		</li>
+		<li {% if page.url == "/portfolio" %} aria-current="page"{% endif %} class="hideable-int-link">
+			<a href="/portfolio">Portfolio</a>
+		</li>
+		<li {% if page.url == "/join" %} aria-current="page"{% endif %} class="hideable-int-link">
+			<a href="/join">Join Us</a>
+		</li>
+		<li {% if page.url == "/about" %} aria-current="page"{% endif %} class="hideable-int-link">
+			<a href="/about">About</a>
+		</li>
+	</ul>
 	<div class="donate-and-socials">
 		<ul class="external-links">
 			<li class="social-logo">
@@ -34,3 +49,4 @@
 		<a href="https://www.codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20Chicago&utm_source=Brigade%20site" target="blank" class="short-button donate-button">Donate</a>
 	</div>
 </nav>
+<nav aria-label="site" aria-expanded="false"  class="mobile-nav"><ul></ul></nav>
