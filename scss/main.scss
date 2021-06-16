@@ -78,30 +78,164 @@ hr {
   padding: 0 6rem;
   margin: 1.5rem 0;
   height: 47px;
+  
+  a {
+    text-decoration: none;
+  }  
+
+  @media (max-width: 996px) {
+    justify-content: center;
+  }
+
   @media (max-width: 768px) {
     padding: 0 3rem;
   }
 }
 
-.navbar a {
-  text-decoration: none;
+.mobile-nav {
+  list-style-type: none;
+  padding: 0;
+  border-top: 1px solid $light-grey;
+  display: none;
+  background: white;
+  width: 100vw;
+  height: 100%;
+}
+
+.menu-icon {
+  display: none;
+  padding: 0;
+  border: none;
+  background: none;
+  width: 28px;
+
+  @media (max-width: 996px) {
+    position: absolute;
+    left: 96px;
+    display: inline;
+  }
+
+  @media (max-width: 768px) {
+    left: 48px;
+  }
+  
+  @media (max-width: 360px) {
+    left: 24px;
+  }
+}
+
+.internal-links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  li {
+    margin-right: 2rem;
+  }
+  a {
+    color: $darker-grey;
+  }
+}
+
+.navbar [aria-current] {
+  border-bottom: 2px solid $cfa-red;
+}
+
+.hideable-int-link {
+  // menu goes mobile
+  @media (max-width: 996px) {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  padding: 3rem 0 3rem 0;
+  margin: 0;
+  left: 0;
+
+  a {
+    color: $darker-grey;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  li:last-child {
+    margin-bottom: 0;
+  }
+  @media (max-width: 651px) {
+    list-style-type: none;
+    margin-left: 24px;
+    text-align: left;
+  }
+}
+
+.external-links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+  display: block;
+  align-self: center;
+  margin-right: 24px; 
+  
+  @media (max-width: 996px) {
+    display: none;
+  }
+}
+
+.external-links-mobile {
+  display: flex;
+  justify-content: center;
+
+  .social-logo:first-child {
+    margin-left: 0;
+  }
+  @media (max-width: 360px) {
+    margin-left: 24px;
+    justify-content: left;
+  }
+}
+
+.donate-and-socials {
+  display: flex;
+}
+
+#logo-container {
+  display: inline;
+  overflow: hidden;
+  height: 100%;
+  margin-right: 48px;
+
+  @media(max-width: 996px) {
+    margin: 0 auto;
+  }
+} 
+
+.brigade-logo {
+  width: 120px;
+  height: auto;
 }
 
 .social-container {
   display: block;
   align-self: center;
   margin-right: 24px; 
-}
-
-.logo-container {
-  display: inline;
-  overflow: hidden;
-  height: 100%;
-} 
-
-.brigade-logo {
-  width: 120px;
-  height: auto;
+  
+  @media (max-width: 996px) {
+    display: none;
+  }
 }
 
 .social-logo {
@@ -116,9 +250,34 @@ hr {
   z-index: 1;
 }
 
-.donate-container {
-  align-self: center; 
-  vertical-align: center;
+.donate-link {
+  display: none;
+  color: $darker-grey;
+  @media(max-width: 651px) {
+    position: absolute;
+    top: 12px;
+    right: 48px;
+    display: inline;
+  }
+  @media(max-width: 360px) {
+    right: 24px;
+  }
+}
+
+.donate-button {
+  @media (max-width: 996px) {
+    position: absolute;
+    top: 0;
+    right: 96px;
+  }
+
+  @media (max-width: 768px) {
+    right: 48px;
+  }
+
+  @media(max-width: 651px) {
+    display: none;
+  }
 }
 
 @media (max-width: 360px) {
@@ -130,9 +289,6 @@ hr {
 @media (max-width: 651px) {
   .navbar {
     margin: 16px 0;
-  }
-  .social-container {
-    display: none;
   }
 }
 
