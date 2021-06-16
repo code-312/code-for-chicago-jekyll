@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: Code-For-Chicago/code-for-chicago-jekyll
   branch: master
 publish_mode: editorial_workflow  
 media_folder: "images/uploads"
