@@ -1553,7 +1553,7 @@ p.cardText {
 
 /* Styles for Leadership Team Section of the About Page */
 #our-team {
-  background-color: #f5f5f6;
+  background-color: $off-white;
   padding: 30px;
 
   header {
@@ -1561,7 +1561,7 @@ p.cardText {
   }
 
   h2, h3, p {
-    color: #333;
+    color: $black;
   }
 }
 
