@@ -1972,6 +1972,19 @@ p.cardText {
 
   header {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 600px;
+    margin: 80px auto 24px auto;
+
+    h2 {
+      margin-bottom: 16px;
+    }
+
+    p {
+      margin-bottom: 24px;
+    }
   }
 
   h2, h3, p {
@@ -1984,7 +1997,7 @@ p.cardText {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-=======
+
 .volunteerContent {
   .volunteer-title {
     font-size: 2.75rem;
