@@ -1,5 +1,3 @@
--- VSCode is a good mark down editor, but any text editor will do
-
 # How to write a post for Code For Chicago
 
 This guide will teach you everything you need to know about how to write a blog post for Code For Chicago, and have it appear on the portfolio page on the website. All posts are written using Markdown. If you're not familiar with Markdown, you can find a very simple look-up guide  [here](https://daringfireball.net/projects/markdown/syntax). You will not need any extensive knowledge of Markdown to write a post, just follow these steps down below.
@@ -47,7 +45,7 @@ Writing a sub-headline in the blog post is easy. You create a h2 title using "##
 
 ![subheader example](images/how-to-post/subheader.png)
 
-If you want to add more images, or links, use the Markdown syntax for adding such things. Check the Markdown guide above.
+If you want to add more images, or links, use the Markdown syntax for adding such things. Check the Markdown guide above. For any natural line break, you can simply use natural line breaks to break up the text.
 
 5. You're all set!
 
