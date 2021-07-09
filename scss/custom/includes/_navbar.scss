@@ -1,6 +1,7 @@
 .navbar {
   width: 75%;
   margin:auto;
+  flex-wrap: nowrap; // overwrite bootstrap
   .nav-item {
     font-size: 1rem;
   }

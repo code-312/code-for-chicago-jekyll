@@ -1,6 +1,7 @@
 {% include head.html %} 
 {% include search_modal.html %}
 {% include navbar.html %}
+<hr>
 <section id="{{ page.type }}" class="post">
   <div class="centered-div">
     <article>
@@ -15,7 +16,7 @@
         <img src="{{page.img}}" alt="{{page.alt}}">
         {% else %} <img src="/images/proxy-img.png" alt="A sample proxy image">
         {% endif %}
-        <p class="image-caption">{{ page.imgtext}}</p>
+        <p class="image-caption">{{ page.imgtext }}</p>
       </div>
       <div class="post-generated-content">      
         {{ content }}
@@ -26,5 +27,7 @@
 <div class="share-wrapper">
   {% include social-media-share-links.html %}
 </div>
+<hr class="inner">
 {% include case-studies.html %}
+<hr>
 {% include footer.html %}
