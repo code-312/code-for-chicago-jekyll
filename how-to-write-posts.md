@@ -43,11 +43,11 @@ Now, we're ready to actually write our content.
 
 4. Add content to your post.
 
-Writing a sub-headline in the blog post is easy. You create a h2 title using "##" and then writing your title.
+Writing a sub-headline in the blog post is easy. You create a h2 title using "##" and then writing your title. Don't use any other level of subheading (for example, don't use "###" or "####").
 
 ![subheader example](images/how-to-post/subheader.png)
 
-If you want to add more images, or links, use the Markdown syntax for adding such things. Check the guide above.
+If you want to add more images, or links, use the Markdown syntax for adding such things. Check the Markdown guide above.
 
 5. You're all set!
 
