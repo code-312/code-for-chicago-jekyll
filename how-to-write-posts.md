@@ -51,6 +51,6 @@ If you want to add more images, or links, use the Markdown syntax for adding suc
 
 Commit the file into the repository and launch your blog post! All your finished additions will be mapped just like in this example.
 
-![post example](images/how-to-post/subheader.png)
+![post example](images/how-to-post/withtext.png)
 
 The "alt" text does not show up in the post - it is only used by the browser. For example, if the image does not load correctly, the alt text will be displayed instead. Make sure it is descriptive!
