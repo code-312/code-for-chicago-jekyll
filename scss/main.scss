@@ -1990,13 +1990,23 @@ p.cardText {
   h2, h3, p {
     color: $black;
   }
+
+  * {
+    box-sizing: border-box;
+  }
 }
 
 .leader-cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin: auto;
+  max-width: 1440px; 
 }
+
+.leader-card {
+  margin: 10px;
+} 
 
 .volunteerContent {
   .volunteer-title {

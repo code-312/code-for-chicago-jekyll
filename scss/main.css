@@ -10807,11 +10807,18 @@ p.cardText {
       margin-bottom: 24px; }
   #our-team h2, #our-team h3, #our-team p {
     color: #333333; }
+  #our-team * {
+    box-sizing: border-box; }
 
 .leader-cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly; }
+  justify-content: center;
+  margin: auto;
+  max-width: 1440px; }
+
+.leader-card {
+  margin: 10px; }
 
 .volunteerContent .volunteer-title {
   font-size: 2.75rem;
