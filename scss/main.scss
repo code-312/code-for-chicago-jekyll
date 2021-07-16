@@ -1944,17 +1944,22 @@ p.cardText {
   }
 }
 
-.share-content-links-container {
+.socialmedia-links-container {
+  height: 20px;
   display: inline-flex;
-  align-items: flex-start;
+  align-items: center;
   margin: 0 -1rem 0 0;
 }
 
-.share-logo-container {
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: blue;
+.socialmedia-link {
   margin: 0 1rem 0 0;
+  line-height: 0;
+  font-size: 1rem;
+  height: 20px;
+  cursor: pointer;
+  img {
+    height: 20px;
+  }
 }
 
 .display-none {
