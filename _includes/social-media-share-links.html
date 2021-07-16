@@ -1,9 +1,11 @@
 <div class="socialmedia-links-container">
     <a href="https://twitter.com/intent/tweet?url={{site.url}}/{{page.url}}%2F" class="socialmedia-link">
-        <img src="{{site.baseurl}}/images/twitter.png" alt="share on Twitter">
+      <img src="{{site.baseurl}}/images/twitter.png" alt="share on Twitter">
     </a>
-    
-    <div class="fb-share-button socialmedia-link" data-href="https://codeforchicago.org{{page.url}}" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+    <a class="socialmedia-link" onclick="createDialogWindow('https://www.facebook.com/sharer/sharer.php?u=https://codeforchicago.org{{page.url}}', 'GeeksforGeeks Website', 400, 600)" href="#">
+      <img src="{{site.baseurl}}/images/facebook.png" alt="share on facebook">
+    </a>
 
     <a class="socialmedia-link" href="http://www.linkedin.com/shareArticle?mini=true&url=https://codeforchicago.org{{page.url}}">
       <img src="{{site.baseurl}}/images/linkedin.png" alt="share on LinkedIn">
@@ -11,21 +13,14 @@
 </div>
 
 <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : 'your-app-id',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v10.0'
-    });
-  };
-  
-  document.getElementById('fb-share').onclick = function() {
-    FB.ui({
-      display: 'popup',
-      method: 'share',
-      href: '{{site.url}}/{{page.url}}',
-    }, function(response){});
+
+  function createDialogWindow(pageURL, pageTitle, popupWinWidth, popupWinHeight) {
+
+    const left = (screen.width - popupWinWidth) / 2;
+    const top = (screen.height - popupWinHeight) / 4;
+      
+    const myWindow = window.open(pageURL, pageTitle, 
+      `resizable=yes, width=${popupWinWidth}, height=${popupWinHeight} , top=${top} , left= ${left}`);
   }
+
 </script>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
