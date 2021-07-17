@@ -1977,22 +1977,6 @@ p.cardText {
     align-content: center;
     max-width: 600px;
     margin: 80px auto 24px auto;
-
-    h2 {
-      margin-bottom: 16px;
-    }
-
-    p {
-      margin-bottom: 24px;
-    }
-  }
-
-  h2, h3, p {
-    color: $black;
-  }
-
-  * {
-    box-sizing: border-box;
   }
 }
 
@@ -2005,7 +1989,7 @@ p.cardText {
 }
 
 .leader-card {
-  margin: 10px;
+  margin: 25px;
 } 
 
 .volunteerContent {

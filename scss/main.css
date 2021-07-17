@@ -10801,14 +10801,6 @@ p.cardText {
     align-content: center;
     max-width: 600px;
     margin: 80px auto 24px auto; }
-    #our-team header h2 {
-      margin-bottom: 16px; }
-    #our-team header p {
-      margin-bottom: 24px; }
-  #our-team h2, #our-team h3, #our-team p {
-    color: #333333; }
-  #our-team * {
-    box-sizing: border-box; }
 
 .leader-cards-container {
   display: flex;
@@ -10818,7 +10810,7 @@ p.cardText {
   max-width: 1440px; }
 
 .leader-card {
-  margin: 10px; }
+  margin: 25px; }
 
 .volunteerContent .volunteer-title {
   font-size: 2.75rem;
