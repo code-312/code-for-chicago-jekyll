@@ -1,11 +1,26 @@
-<div class="share-content-links-container">
-    <div class="share-logo-container">
+<div class="socialmedia-links-container">
+    <a href="https://twitter.com/intent/tweet?url={{site.url}}/{{page.url}}%2F" class="socialmedia-link">
+      <img src="{{site.baseurl}}/images/twitter.png" alt="share on Twitter">
+    </a>
 
-    </div>
-    <div class="share-logo-container">
-    
-    </div>
-    <div class="share-logo-container">
-    
-    </div>
+    <a class="socialmedia-link" onclick="createDialogWindow('https://www.facebook.com/sharer/sharer.php?u=https://codeforchicago.org{{page.url}}', 'GeeksforGeeks Website', 400, 600)" href="#">
+      <img src="{{site.baseurl}}/images/facebook.png" alt="share on facebook">
+    </a>
+
+    <a class="socialmedia-link" href="http://www.linkedin.com/shareArticle?mini=true&url=https://codeforchicago.org{{page.url}}">
+      <img src="{{site.baseurl}}/images/linkedin.png" alt="share on LinkedIn">
+    </a>
 </div>
+
+<script>
+
+  function createDialogWindow(pageURL, pageTitle, popupWinWidth, popupWinHeight) {
+
+    const left = (screen.width - popupWinWidth) / 2;
+    const top = (screen.height - popupWinHeight) / 4;
+      
+    const myWindow = window.open(pageURL, pageTitle, 
+      `resizable=yes, width=${popupWinWidth}, height=${popupWinHeight} , top=${top} , left= ${left}`);
+  }
+
+</script>
