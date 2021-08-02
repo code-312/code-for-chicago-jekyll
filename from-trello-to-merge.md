@@ -34,12 +34,15 @@ If you are not able to merge, then you'll need to merge the main branch into you
 
 9. Move the Trello card from "In Progress" to "Code Review".
 
-10. In the GitHub pull request, you can add reviewers by clicking the gearbox next to the "Reviewers" section on the right. You can request reviewers to look at your changes. Reviewers will review your PR and either give feedback or approve it. Repeat steps 4-9 if changes are requested. 
-![Request Reviewers](images/how-to-guide/RequestGear.png)
-![Enter Username](images/how-to-guide/RequestUser.png)
+10. You will need to post in the 'meta-development' slack channel informing the rest of the team you've made a pull request. Something like "PR ready for review: \<link to github pull request\>".
 
-11. Once you receive approval on your PR, you'll now go into the design QA phase. This is necessary for any changes that were made to the UI, but can be skipped if no visible changes were made. Move the Trello ticket to the "Test/Review" column and add a link to Trello card of the deployed version of your branch. 
+Additionally in the GitHub pull request, you can add reviewers by clicking the gearbox next to the "Reviewers" section on the right.
+![Request Reviewers](images/how-to-guide/RequestGear.png)
+
+11. Sometimes a reviewer will see changes that need to be made. Repeat steps 4-10 if changes are requested.
+
+12. Once you receive approval on your PR, you'll now go into the design QA phase. This is necessary for any changes that were made to the UI, but can be skipped if no visible changes were made. Move the Trello ticket to the "Test/Review" column and add a link to Trello card of the deployed version of your branch. 
 ![details link](images/how-to-guide/DetailsLink.png)
 You can get this link by looking at the bottom of your pull request and finding the bottom check which will be labeled something like "netlify/thirsty-davinci-2a9aa9/deploy-preview". The "details" link next to it is the link you want."
 
-12. If you pass design QA, then you are ready to merge your branch! Go ahead and merge to master. If you have any merge conflicts, you'll need to resolve those first. If you do not pass design QA and need to make some extensive changes, it's best to go through steps 4-12 once again. Move the Trello card back to "In Progress" if that's the case.
+13. If you pass design QA, then you are ready to merge your branch! Go ahead and merge to master. If you have any merge conflicts, you'll need to resolve those first. If you do not pass design QA and need to make some extensive changes, it's best to go through steps 4-12 once again. Move the Trello card back to "In Progress" if that's the case.
