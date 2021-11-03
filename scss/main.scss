@@ -1,4 +1,5 @@
 @import "./custom/_variables";
+@import "./custom/mixins";
 @import "./bootstrap/bootstrap";
 @import "./custom/_reset";
 @import "./instantsearch/instantsearch";
@@ -22,19 +23,24 @@ body {
   color: $black;
 }
 
-h4, h5 {
-    font-family: $font-family-alt;
-    font-size: 0.875rem;
-    font-weight: 600;
+h1 {
+  @include heading1();
+}
+
+h2 {
+  @include heading2();
+}
+
+h3 {
+  @include heading3();
 }
 
 h4 {
-    text-transform: uppercase;
+  @include heading4();
 }
 
-h1,h2,h3 {
-  font-family: 'Source Sans Pro';
-  font-weight: 700;
+h5 {
+  @include heading5();
 }
 
 .text-left {
