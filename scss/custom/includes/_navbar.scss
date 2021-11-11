@@ -1,16 +1,8 @@
 .navbar {
   width: 75%;
-  margin:auto;
+  margin: auto;
   flex-wrap: nowrap; // overwrite bootstrap
   .nav-item {
     font-size: 1rem;
-  }
-}
-
-.nav-link {
-  color: $gray-600;
-
-  &:hover {
-    color: $link-color !important;
   }
 }
