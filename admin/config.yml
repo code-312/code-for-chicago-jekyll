@@ -7,7 +7,7 @@ media_folder: "images/uploads"
 collections:
   - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
     label: "Portfolio Page" # Used in the UI
-    folder: "_posts/portfolio" # Used in the UI" # The path to the folder where the documents are stored
+    folder: "_posts/portfolio" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -21,7 +21,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "projects" # Used in routes, e.g., /admin/collections/blog
     label: "Projects Page" # Used in the UI
-    folder: "_posts/projects" # Used in the UI" # The path to the folder where the documents are stored
+    folder: "_posts/projects" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
