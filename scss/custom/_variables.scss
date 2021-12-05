@@ -19,16 +19,11 @@ $white: #fff;
 $primary: $cfa-red;
 $highlight: lighten($primary, 0%);
 
-// Grid
-$grid-breakpoints: (
-  xs: 0,
-  /* custom: breakpoint for workwithus icons */ xxssm: 361px,
-  /* custom: between xs and sm used in footer */ xssm: 425px,
-  sm: 576px,
-  md: 768px,
-  lg: 1058px,
-  xl: 1200px,
-);
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
 
 // Links
 // Todo: update these to be blue and create a style mixin

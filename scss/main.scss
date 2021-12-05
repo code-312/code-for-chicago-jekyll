@@ -15,6 +15,7 @@
 @import "./custom/includes/syntax_highlighting";
 @import "./custom/includes/tables";
 @import "./custom/includes/type";
+@import "./custom/includes/project";
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Work+Sans:wght@400;600&display=swap");
 
@@ -88,7 +89,7 @@ hr {
     text-decoration: none;
   }
 
-  @media (max-width: 996px) {
+  @media (max-width: $breakpoint-lg) {
     justify-content: center;
   }
 
@@ -114,7 +115,7 @@ hr {
   background: none;
   width: 28px;
 
-  @media (max-width: 996px) {
+  @media (max-width: $breakpoint-lg) {
     position: absolute;
     left: 96px;
     display: inline;
@@ -150,7 +151,7 @@ hr {
 
 .hideable-int-link {
   // menu goes mobile
-  @media (max-width: 996px) {
+  @media (max-width: $breakpoint-lg) {
     display: none;
   }
 }
@@ -195,7 +196,7 @@ hr {
   align-self: center;
   margin-right: 24px;
 
-  @media (max-width: 996px) {
+  @media (max-width: $breakpoint-lg) {
     display: none;
   }
 }
@@ -223,7 +224,7 @@ hr {
   height: 100%;
   margin-right: 48px;
 
-  @media (max-width: 996px) {
+  @media (max-width: $breakpoint-lg) {
     margin: 0 auto;
   }
 }
@@ -238,7 +239,7 @@ hr {
   align-self: center;
   margin-right: 24px;
 
-  @media (max-width: 996px) {
+  @media (max-width: $breakpoint-lg) {
     display: none;
   }
 }
@@ -270,7 +271,7 @@ hr {
 }
 
 .donate-button {
-  @media (max-width: 996px) {
+  @media (max-width: $breakpoint-lg) {
     position: absolute;
     top: 0;
     right: 96px;
