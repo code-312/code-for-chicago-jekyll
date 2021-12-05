@@ -1,17 +1,17 @@
 ---
-title: Use this for testing
+img:
+  - /images/volunteers.jpg
+layout: post
+title: tested portfolio page
 date: 2019-09-09 05:09:00 Z
 areas:
   - Front-end + Design
-img:
-  - /images/volunteers.jpg
+thumbnail: /images/uploads/cowboyhatlady.jpg
+imgtext: The Code for Chicago meetup, definetely pre COVID-19.
 alt:
   - Volunteers meetup
-imgtext: The Code for Chicago meetup, definetely pre COVID-19.
-layout: portfolio
-description:
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim
-  enim lectus et commodo magna aenean sagittis.
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+  dignissim enim lectus et commodo magna aenean sagittis.
 ---
 
 ## Lorem Ipsum
