@@ -1,6 +1,7 @@
 <div class="gallery-container">
-    {% assign filtered_posts = site.posts | where: 'layout', 'portfolio' %} 
-    {% for post in filtered_posts %}
+    {% assign filtered_posts = site.posts | where: 'layout', 'project' %} 
+    {% for post in
+        filtered_posts %}
         <div class="gallery-card">
             <div class="gallery-image-container">
                 {% if post.img and post.alt %} <img src="{{post.img}}" alt="{{post.alt}}">

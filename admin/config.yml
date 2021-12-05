@@ -5,17 +5,18 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "images/uploads"
 collections:
-  - name: "projects" # Used in routes, e.g., /admin/collections/blog
-    label: "Project Page" # Used in the UI
-    folder: "_posts/projects" # Used in the UI" # The path to the folder where the documents are stored
+  - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
+    label: "Portfolio Page" # Used in the UI
+    folder: "_posts/portfolio" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+
     fields: # The fields for each document, usually in front matter
       - {
           label: "Layout",
           name: "layout",
           widget: "hidden",
-          default: "project",
+          default: "portfolio",
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
@@ -24,17 +25,18 @@ collections:
       - { label: "Featured Image Text", name: "imgtext", widget: "string" }
       - { label: "Featured Image Alt", name: "alt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "case-studies"
-    label: "Case Study Page"
-    folder: "_posts/case-studies"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
+  - name: "projects" # Used in routes, e.g., /admin/collections/blog
+    label: "Projects Page" # Used in the UI
+    folder: "_posts/projects" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    filter: { field: "layout", value: "projects-page" }
+    fields: # The fields for each document, usually in front matter
       - {
           label: "Layout",
           name: "layout",
           widget: "hidden",
-          default: "case-studies-page",
+          default: "project",
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
