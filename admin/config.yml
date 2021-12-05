@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   repo: Code-For-Chicago/code-for-chicago-jekyll
   branch: main
-publish_mode: editorial_workflow  
+publish_mode: editorial_workflow
 media_folder: "images/uploads"
 collections:
   - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
@@ -10,40 +10,38 @@ collections:
     folder: "_posts/portfolio" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "portfolio-page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Tag", name: "areas", widget: "string"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Featured Image Text", name: "imgtext", widget: "string"}
-      - {label: "Featured Image Alt", name: "alt", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "portfolio",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tag", name: "areas", widget: "string" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Featured Image Text", name: "imgtext", widget: "string" }
+      - { label: "Featured Image Alt", name: "alt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "projects" # Used in routes, e.g., /admin/collections/blog
     label: "Projects Page" # Used in the UI
     folder: "_posts/projects" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    filter: { field: "layout", value: "projects-page" }
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "projects-page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Tag", name: "areas", widget: "string"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Featured Image Text", name: "imgtext", widget: "string"}
-      - {label: "Featured Image Alt", name: "alt", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "case-studies"
-    label: "Case Study Page"
-    folder: "_posts/case-studies"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "case-studies-page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Tag", name: "areas", widget: "string"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Featured Image Text", name: "imgtext", widget: "string"}
-      - {label: "Featured Image Alt", name: "alt", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "project",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tag", name: "areas", widget: "string" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Featured Image Text", name: "imgtext", widget: "string" }
+      - { label: "Featured Image Alt", name: "alt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
