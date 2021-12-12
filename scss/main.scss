@@ -2040,6 +2040,9 @@ p.cardText {
       max-height: 100%;
       width: 100%;
       text-align: left;
+      p {
+        margin-bottom: 0;
+      }
     }
     h2 {
       width: 100%;
@@ -2078,9 +2081,26 @@ p.cardText {
     min-height: 100%;
   }
 
+  #onboarding-night {
+    img {
+      height: 250px;
+      object-fit: contain;
+      object-position: unset;
+    }
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    .image-container {
+      padding-right: 32px;
+    }
+  }
+
   @media (min-width: 1060px) {
     .starting-projects-grid > * + * {
       margin-left: 32px;
+    }
+    .image-container {
+      padding-right: 0;
     }
   }
 
@@ -2100,13 +2120,17 @@ p.cardText {
     }
     .image-container {
       height: 100%;
-      padding-right: 32px;
+      img {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 
   @media (max-width: 651px) {
     .starting-projects-content,
     .starting-projects-item {
+      flex-direction: column;
+      height: 100%;
       max-width: 555px;
       h2 {
         font-size: 1.5rem;
@@ -2143,6 +2167,10 @@ p.cardText {
       padding-right: 0;
     }
   }
+}
+
+.how-to-join-container {
+  background-color: $off-white;
 }
 
 .volunteerContent {
