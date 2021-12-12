@@ -1021,8 +1021,15 @@ hr {
 
   @media (min-width: 361px) {
     .iconTile {
-      flex: 0 0 50%;
-      max-width: 50%;
+      margin: 0;
+      .icon {
+        margin: 1rem auto;
+        width: 100%;
+      }
+
+      p {
+        text-align: center;
+      }
     }
   }
 
@@ -1032,6 +1039,15 @@ hr {
       -ms-flex: 0 0 25%;
       flex: 0 0 25%;
       max-width: 25%;
+
+      p {
+        text-align: left;
+      }
+
+      .icon {
+        margin: 1rem 0;
+        width: unset;
+      }
     }
   }
 
