@@ -9,7 +9,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  -ms-overflow-style: scrollbar; 
+  -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(#000, 0);
 }
 
@@ -21,7 +21,16 @@ html {
 }
 
 // Shim for "new" HTML5 structural elements to display correctly (IE10, older browsers)
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
   display: block;
 }
 
@@ -35,7 +44,6 @@ body {
   text-align: left;
   background-color: white;
   overflow-x: hidden;
-  ;
 }
 
 // Suppress the focus outline on elements that cannot be accessed via keyboard.
@@ -59,7 +67,12 @@ hr {
 }
 
 // Remove margins from headings
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 1rem / 2;
 }
@@ -103,7 +116,7 @@ dt {
 }
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   margin-left: 0; // Undo browser default
 }
 
@@ -139,8 +152,12 @@ sup {
   vertical-align: baseline;
 }
 
-sub { bottom: -.25em; }
-sup { top: -.5em; }
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
 
 //
 // Links
@@ -175,7 +192,8 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
   font-size: 1em; // Correct the odd `em` font sizing in all browsers.
 }
 
@@ -222,7 +240,7 @@ table {
 }
 
 caption {
-  padding-top: .75rem;
+  padding-top: 0.75rem;
   padding-bottom: 75rem;
   color: $light-grey;
   text-align: left;
@@ -242,7 +260,7 @@ th {
 label {
   // Allow labels to use `margin` for spacing.
   display: inline-block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 // Remove the default `border-radius` that macOS Chrome adds.
@@ -307,7 +325,6 @@ input[type="checkbox"] {
   padding: 0; // 2. Remove the padding in IE 10-
 }
 
-
 input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
@@ -320,7 +337,7 @@ input[type="month"] {
   -webkit-appearance: listbox;
 }
 
-@-moz-document url-prefix() { 
+@-moz-document url-prefix() {
   input[type="email"] {
     border: 0;
   }
@@ -352,7 +369,7 @@ legend {
   width: 100%;
   max-width: 100%; // 1
   padding: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-size: 1.5rem;
   line-height: inherit;
   color: inherit; // 2
