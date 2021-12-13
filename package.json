@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.1",
-    "jquery": "^3.5.0"
+    "jquery": "^3.5.0",
+    "netlify-cms-app": "^2.15.58"
   }
 }
