@@ -1423,6 +1423,31 @@ p.cardText {
     }
   }
 }
+
+.leadershipName { 
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.leadershipPosition {
+  font-size: 1.25rem;
+}
+
+.leadershipHeader {
+  text-align: center;
+}
+
+.leadershipGrid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 33.333333%;
+}
+
+.leadershipPerson {
+  
+}
+
 .content-container {
   margin-left: auto;
   margin-right: auto;
