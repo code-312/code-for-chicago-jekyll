@@ -1441,12 +1441,12 @@ p.cardText {
 .leadershipGrid {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 33.333333%;
+  flex: 33.33%;
 }
 
-.leadershipPerson {
-  
-}
+// .leadershipPerson {
+
+// }
 
 .content-container {
   margin-left: auto;
