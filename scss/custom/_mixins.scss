@@ -1,0 +1,69 @@
+@mixin heading1() {
+  font-family: $font-family-base;
+  font-size: $fontsize-xl;
+  font-weight: $font-weight-bold;
+  line-height: 1.3;
+  color: $black;
+}
+
+@mixin heading2() {
+  font-family: $font-family-base;
+  font-size: $fontsize-lg;
+  font-weight: $font-weight-bold;
+  line-height: 1.3;
+  color: $black;
+}
+
+@mixin heading3() {
+  font-family: $font-family-base;
+  font-size: $fontsize-md;
+  font-weight: $font-weight-bold;
+  line-height: 1.3;
+  color: $black;
+}
+
+@mixin heading4() {
+  font-family: $font-family-alt;
+  font-size: $fontsize-sm;
+  font-weight: $font-weight-semibold;
+  line-height: 1.3;
+  color: $black;
+  text-transform: uppercase;
+}
+
+@mixin heading5() {
+  font-family: $font-family-alt;
+  font-size: $fontsize-xs;
+  font-weight: $font-weight-semibold;
+  line-height: 1.3;
+  color: $black;
+}
+
+@mixin paragraph1() {
+  font-family: $font-family-base;
+  font-size: $font-size-md;
+  font-weight: $font-weight-regular;
+  line-height: 1.5;
+  color: $black;
+}
+
+@mixin paragraph2() {
+  font-family: $font-family-base;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-regular;
+  line-height: 1.5;
+  color: $black;
+}
+
+@mixin strong() {
+  font-family: $font-family-base;
+  font-size: $font-size-md;
+  font-weight: $font-weight-bold;
+  line-height: 1.5;
+  color: $black;
+}
+
+@mixin link-text() {
+  color: $cfa-blue-dark;
+  font-weight: $font-weight-semibold;
+}
