@@ -22,22 +22,22 @@ In the past, PDOP used a geofencing solution to quantify the number of people th
 Currently, they have no methods for collecting data and their decision-making is based on assumptions.
 
 **Our approach**
-
 Based on the array of people counting technologies in the marketplace. The team used a variety of methods and tools to narrow down viable solutions. 
 Many of these could be grouped into categories based on either the technology used, like thermal counters, or based on the approach, like using social media. Therefore, the team started with a “divide and conquer” style to reduce masses of possible avenues to practical and effective chunks.
 
 **Solution categories include:**
-Electronic Boards
-Bluetooth & Wifi
-Camera
-Light
-LiDAR
-Passive infrared
-Active infrared
-Radar
-Thermal
+- Electronic Boards
+- Bluetooth & Wifi
+- Camera
+- Light
+- LiDAR
+- Passive infrared
+- Active infrared
+- Radar
+- Thermal
 
 **Methodology**
+
 In order to gather valuable information, each solution should identify clear pricing figures, installation guidelines, data collection details, and its strengths and pain points. In addition, a major factor in the analysis was installation and adapting it to each park within Oak park.
 Constraints such as size, layout, telecommunication infrastructure and device mobility were identified.
 
