@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   margin: 1.5rem;
 
   .portfolio-upper {
@@ -23,7 +22,7 @@
     }
   }
 
-  p {
+  p, li {
     font-size: $fontsize-sm;
   }
 
@@ -49,7 +48,7 @@
 
   @media (min-width: $breakpoint-xl) {
     .portfolio-description {
-      p {
+      p, li {
         font-size: $fontsize-md;
       }
     }
