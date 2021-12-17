@@ -22,6 +22,7 @@ In the past, PDOP used a geofencing solution to quantify the number of people th
 Currently, they have no methods for collecting data and their decision-making is based on assumptions.
 
 **Our approach**
+
 Based on the array of people counting technologies in the marketplace. The team used a variety of methods and tools to narrow down viable solutions. 
 Many of these could be grouped into categories based on either the technology used, like thermal counters, or based on the approach, like using social media. Therefore, the team started with a “divide and conquer” style to reduce masses of possible avenues to practical and effective chunks.
 
@@ -46,9 +47,12 @@ First was a decision tree then a detailed table determining power/wifi connectiv
 Once all the data was collected - scalability and pricing was last compared.
 
 **Outcome**
+
 By completing this project for PDOP, Code for Chicago was able to confidently recommended the ready-made product of a geofencing solution to quantify the number of people that came to the park. This product was recommended because it was:
-Built for the outdoors
-Listed at a fixed price rate
-Relatively accurate at 80-90%
-Not dependent on an internet connection to work
-Utilized by other large park and recreation departments
+- Built for the outdoors
+- Listed at a fixed price rate
+- Relatively accurate at 80-90%
+- Not dependent on an internet connection to work
+- Utilized by other large park and recreation departments
+
+[link](http://example.com)
