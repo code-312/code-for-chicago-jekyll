@@ -8,3 +8,7 @@ imgtext: proxy image
 alt: proxy image alt
 ---
 here is the body of a test portfolio
+
+
+
+![](/images/uploads/cowboyhatlady.jpg)
