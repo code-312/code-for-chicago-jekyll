@@ -5,14 +5,51 @@
   margin: 1.5rem;
 
   .portfolio-upper {
+    width: 100%;
+
+    .portfolio-tags {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: $font-weight-semibold;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+
+      @media (min-width: $breakpoint-md) {
+        font-size: 12px;
+        margin-bottom: 0.5rem;
+      }
+    }
+
     h1 {
       padding-top: 0;
       margin-bottom: 1rem;
       font-size: $fontsize-lg;
     }
+
+    .portfolio-description {
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      width: 600px;
+    }
   }
 
-  .portfolio-description {
+  .portfolio-header-image {
+    max-width: calc(1440px - 12rem); /* don't grow larger than nav max width */
+    margin: 0 auto 1rem auto;
+    width: 100%;
+  }
+
+  .portfolio-caption {
+    font-size: $fontsize-xs;
+    margin: 0 auto 2rem auto;
+    max-width: 600px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .portfolio-content {
     a {
       font-weight: $font-weight-bold;
       color: $cfa-blue;
@@ -22,7 +59,8 @@
     }
   }
 
-  p, li {
+  p,
+  li {
     font-size: $fontsize-sm;
   }
 
@@ -37,7 +75,7 @@
 
   @media (min-width: $breakpoint-md) {
     margin: 5rem 6rem;
-    .portfolio-description {
+    .portfolio-content {
       width: 600px;
     }
   }
@@ -47,8 +85,9 @@
   }
 
   @media (min-width: $breakpoint-xl) {
-    .portfolio-description {
-      p, li {
+    .portfolio-content {
+      p,
+      li {
         font-size: $fontsize-md;
       }
     }
