@@ -9,6 +9,6 @@ alt: proxy image alt
 ---
 here is the body of a test portfolio
 
-
-
 ![](/images/uploads/cowboyhatlady.jpg)
+
+here's the rest of my portfolio
