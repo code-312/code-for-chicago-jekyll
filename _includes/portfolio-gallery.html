@@ -1,9 +1,9 @@
-<div class="gallery-container">
+<div class="gallery-container portfolio-gallery-container">
     {% assign filtered_posts = site.posts | where: 'layout', 'portfolio' %} 
     {% for post in filtered_posts %}
         <div class="gallery-card">
             <div class="gallery-image-container">
-                {% if post.img and post.alt %} <img src="{{post.img}}" alt="{{post.alt}}">
+                {% if post.thumbnail and post.alt %} <img src="{{post.thumbnail}}" alt="{{post.alt}}">
                 {% else %} <img src="/images/proxy-img.png" alt="A sample proxy image">
                 {% endif %}
             </div>

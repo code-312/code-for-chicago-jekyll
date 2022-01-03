@@ -17,6 +17,7 @@
 @import "./custom/includes/type";
 @import "./custom/includes/project";
 @import "./custom/includes/portfolio";
+@import "./custom/includes/portfolio_gallery";
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Work+Sans:wght@400;600&display=swap");
 
@@ -1040,10 +1041,6 @@ hr {
       -ms-flex: 0 0 25%;
       flex: 0 0 25%;
       max-width: 25%;
-
-      p {
-        text-align: left;
-      }
 
       .icon {
         margin: 1rem 0;
@@ -2208,6 +2205,9 @@ p.cardText {
     max-width: none;
     .description {
       font-weight: 500;
+    }
+    .iconTile p {
+      text-align: left;
     }
   }
 }
