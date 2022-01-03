@@ -2095,14 +2095,6 @@ p.cardText {
     min-height: 100%;
   }
 
-  #onboarding-night {
-    img {
-      height: 250px;
-      object-fit: contain;
-      object-position: unset;
-    }
-  }
-
   @media (min-width: $breakpoint-sm) {
     .image-container {
       padding-right: 32px;
@@ -2165,12 +2157,11 @@ p.cardText {
   }
 
   @media (max-width: 360px) {
-    padding: 48px 0px;
-    margin-left: 24px;
-    margin-right: 24px;
+    padding: 48px 24px;
     .starting-projects-item {
       flex-direction: column;
       height: min-content;
+      margin-bottom: 1rem;
     }
     .starting-projects-grid > * + * {
       margin-top: 48px;
@@ -2179,6 +2170,7 @@ p.cardText {
       width: 100%;
       height: auto;
       padding-right: 0;
+      margin-bottom: 1rem;
     }
   }
 }
