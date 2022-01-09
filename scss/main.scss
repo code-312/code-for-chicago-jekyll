@@ -17,6 +17,7 @@
 @import "./custom/includes/type";
 @import "./custom/includes/project";
 @import "./custom/includes/portfolio";
+@import "./custom/includes/portfolio_gallery";
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Work+Sans:wght@400;600&display=swap");
 
@@ -1040,10 +1041,6 @@ hr {
       -ms-flex: 0 0 25%;
       flex: 0 0 25%;
       max-width: 25%;
-
-      p {
-        text-align: left;
-      }
 
       .icon {
         margin: 1rem 0;
@@ -2098,14 +2095,6 @@ p.cardText {
     min-height: 100%;
   }
 
-  #onboarding-night {
-    img {
-      height: 250px;
-      object-fit: contain;
-      object-position: unset;
-    }
-  }
-
   @media (min-width: $breakpoint-sm) {
     .image-container {
       padding-right: 32px;
@@ -2168,12 +2157,11 @@ p.cardText {
   }
 
   @media (max-width: 360px) {
-    padding: 48px 0px;
-    margin-left: 24px;
-    margin-right: 24px;
+    padding: 48px 24px;
     .starting-projects-item {
       flex-direction: column;
       height: min-content;
+      margin-bottom: 1rem;
     }
     .starting-projects-grid > * + * {
       margin-top: 48px;
@@ -2182,6 +2170,7 @@ p.cardText {
       width: 100%;
       height: auto;
       padding-right: 0;
+      margin-bottom: 1rem;
     }
   }
 }
@@ -2208,6 +2197,9 @@ p.cardText {
     max-width: none;
     .description {
       font-weight: 500;
+    }
+    .iconTile p {
+      text-align: left;
     }
   }
 }
