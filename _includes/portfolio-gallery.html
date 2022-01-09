@@ -7,6 +7,15 @@
                 {% else %} <img src="/images/proxy-img.png" alt="A sample proxy image">
                 {% endif %}
             </div>
+            {% if post.is_preview %}
+            <div class="gallery-content-container">
+                <h5>{{ post.areas }}</h5>
+                <h2>{{ post.title }}</h2>
+                <p>
+                Full details coming soon
+                </p>
+            </div>
+            {% else %}
             <div class="gallery-content-container">
                 <h5>{{ post.areas }}</h5>
                 <h2>
@@ -16,6 +25,7 @@
                 {{ post.description }}
                 </p>
             </div>
+            {% endif %}
         </div>
     {% endfor %}
 </div>
