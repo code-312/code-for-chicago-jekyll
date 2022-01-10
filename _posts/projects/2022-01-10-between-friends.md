@@ -25,7 +25,7 @@ Additionally, Joe suspects that their primary users, donors and DM clients, are 
 
 On the design side, beginners are welcome. Especially those who are interested in learning more about accessibility.
 
-**Weekly Meetings:** Tuesdays at 6-6:30pm CT
+**Meeting Cadence:** Tuesdays at 6-6:30pm CT
 
 **More Info:**
 - [Project Brief](https://docs.google.com/document/d/1znX2GKDgdMQQ35WibHgmteLWd5dlqQkrETAuH7hdk78/edit?usp=sharing)
