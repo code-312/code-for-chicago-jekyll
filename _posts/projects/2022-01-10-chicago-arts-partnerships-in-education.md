@@ -21,7 +21,7 @@ Additionally, the team doesn’t feel like the current CAPE (the organization) b
 
 **This would be a good fit for:** Folks interested in visual design. We will not be doing any UI for this project.
 
-**Weekly Meetings:** Bi-monthly meetings on Thursdays at 5:30-6pm CT. Optional bi-monthly meettings with the stakeholder at 4:15-4:45pm CT.
+**Meeting Cadence:** Bi-monthly meetings on Thursdays at 5:30-6pm CT. Optional bi-monthly meettings with the stakeholder at 4:15-4:45pm CT.
 
 **More Info:**
 - [Onboarding Doc](https://docs.google.com/document/d/1JzbdiLz8Eg0GCjZNTX4jRW59dMcf-u7710dQOWLClPg/edit?usp=sharing)
