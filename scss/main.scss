@@ -113,7 +113,11 @@ hr {
   }
 
   @media (min-width: $breakpoint-xl) {
-    max-width: 1440px;
+    padding: 1.5rem 6rem;
+  }
+
+  @media (min-width: 1592px) {
+    padding: 0 calc((100% - 1400px) / 2);
   }
 }
 
@@ -288,6 +292,10 @@ hr {
   @media (min-width: $breakpoint-md) {
     top: 1.5rem;
     right: 6rem;
+  }
+
+  @media (min-width: 1592px) {
+    right: calc((100% - 1400px) / 2);
   }
 }
 

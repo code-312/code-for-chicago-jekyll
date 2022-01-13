@@ -1,76 +1,80 @@
 <div class="gallery-container portfolio-gallery-container">
-    {% assign filtered_posts = site.posts | where: 'layout', 'portfolio' %} 
-    {% for post in filtered_posts %}
-        <div class="gallery-card">
-            <div class="gallery-image-container">
-                {% if post.thumbnail and post.alt %} <img src="{{post.thumbnail}}" alt="{{post.alt}}">
-                {% else %} <img src="/images/proxy-img.png" alt="A sample proxy image">
-                {% endif %}
-            </div>
-            {% if post.is_preview %}
-            <div class="gallery-content-container">
-                <h5>{{ post.areas }}</h5>
-                <h2>{{ post.title }}</h2>
-                <p>
-                Full details coming soon
-                </p>
-            </div>
-            {% else %}
-            <div class="gallery-content-container">
-                <h5>{{ post.areas }}</h5>
-                <h2>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                </h2>
-                <p>
-                {{ post.description }}
-                </p>
-            </div>
-            {% endif %}
-        </div>
-    {% endfor %}
+  {% assign filtered_posts = site.posts | where: 'layout', 'portfolio' %} {% for
+  post in filtered_posts %}
+  <div class="gallery-card">
+    {% if post.is_preview %}
+    <div class="gallery-image-container">
+      {% if post.thumbnail and post.alt %}
+      <img src="{{post.thumbnail}}" alt="{{post.alt}}" /> {% else %}
+      <img src="/images/proxy-img.png" alt="A sample proxy image" />
+      {% endif %}
+    </div>
+    <div class="gallery-content-container">
+      <h5>{{ post.areas }}</h5>
+      <h2>{{ post.title }}</h2>
+      <p>Full details coming soon</p>
+    </div>
+    {% else %}
+    <a href="{{ post.url }}">
+      <div class="gallery-image-container">
+        {% if post.thumbnail and post.alt %}
+        <img src="{{post.thumbnail}}" alt="{{post.alt}}" /> {% else %}
+        <img src="/images/proxy-img.png" alt="A sample proxy image" />
+        {% endif %}
+      </div>
+    </a>
+    <div class="gallery-content-container">
+      <h5>{{ post.areas }}</h5>
+      <h2>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h2>
+      <p>{{ post.description }}</p>
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
 </div>
 <script>
+  const customAspectRatio = 395 / 261;
+  const imageDivs = Array.from(
+    document.querySelectorAll(".gallery-image-container")
+  );
+  const images = imageDivs.map((div) => div.children[0]);
+  const maxHeight = 261;
 
-    const customAspectRatio = 395 / 261;
-    const imageDivs = 
-        Array
-            .from(document.querySelectorAll('.gallery-image-container'));
-    const images = imageDivs.map(div => div.children[0]); 
-    const maxHeight = 261;
+  function alignImages() {
+    // max height.
+    let smallestHeight = maxHeight;
 
-    function alignImages() {
-        // max height.
-        let smallestHeight = maxHeight;
-
-        // Find the smallest height
-        for(let img of images){
-            if(img.clientHeight < smallestHeight){
-                smallestHeight = img.clientHeight;
-            }
-        }
-
-        // Assign the smallest height to all divs, aligning the images to the smallest one.
-        for(let img of images){
-            img.style.height = `${smallestHeight}px`;
-        }
-
-        imageDivs.forEach(div => {
-            if(div.parentNode.classList.contains('hidden')){
-                div.parentNode.classList.replace('hidden', 'display-none')
-            }
-        })
-        resizeImages();
+    // Find the smallest height
+    for (let img of images) {
+      if (img.clientHeight < smallestHeight) {
+        smallestHeight = img.clientHeight;
+      }
     }
 
-    function resizeImages(){
-        // Change heights to follow the aspect ratio of the maximum height.
-        for(let img of images){
-            const aspectRatioHeight = img.clientWidth / customAspectRatio;  
-            img.style.height = `${aspectRatioHeight}px`;
-        }
+    // Assign the smallest height to all divs, aligning the images to the smallest one.
+    for (let img of images) {
+      img.style.height = `${smallestHeight}px`;
     }
 
-    // Attach previous functions to events. Load fires when page is loaded, resize fires when page is resized.
-    window.addEventListener('load', alignImages)
-    window.addEventListener('resize', resizeImages)
+    imageDivs.forEach((div) => {
+      if (div.parentNode.classList.contains("hidden")) {
+        div.parentNode.classList.replace("hidden", "display-none");
+      }
+    });
+    resizeImages();
+  }
+
+  function resizeImages() {
+    // Change heights to follow the aspect ratio of the maximum height.
+    for (let img of images) {
+      const aspectRatioHeight = img.clientWidth / customAspectRatio;
+      img.style.height = `${aspectRatioHeight}px`;
+    }
+  }
+
+  // Attach previous functions to events. Load fires when page is loaded, resize fires when page is resized.
+  window.addEventListener("load", alignImages);
+  window.addEventListener("resize", resizeImages);
 </script>

@@ -45,7 +45,8 @@
 
   @media (min-width: $breakpoint-xl) {
     flex-direction: row;
-    max-width: 1248px;
+    max-width: 1400px;
+    margin: 1.5rem auto;
 
     img {
       width: calc(60% - 3rem);
