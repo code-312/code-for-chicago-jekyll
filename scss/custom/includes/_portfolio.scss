@@ -1,0 +1,95 @@
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem;
+
+  .portfolio-upper {
+    width: 100%;
+
+    .portfolio-tags {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: $font-weight-semibold;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+
+      @media (min-width: $breakpoint-md) {
+        font-size: 12px;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    h1 {
+      padding-top: 0;
+      margin-bottom: 1rem;
+      font-size: $fontsize-lg;
+    }
+
+    .portfolio-description {
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      width: 600px;
+    }
+  }
+
+  .portfolio-header-image {
+    max-width: calc(1440px - 12rem); /* don't grow larger than nav max width */
+    margin: 0 auto 1rem auto;
+    width: 100%;
+  }
+
+  .portfolio-caption {
+    font-size: $fontsize-xs;
+    margin: 0 auto 2rem auto;
+    max-width: 600px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .portfolio-content {
+    a {
+      font-weight: $font-weight-bold;
+      color: $cfa-blue;
+      &:hover {
+        color: $cfa-blue-dark;
+      }
+    }
+  }
+
+  p,
+  li {
+    font-size: $fontsize-sm;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    margin: 3rem;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    margin: 5rem 6rem;
+    .portfolio-content {
+      width: 600px;
+    }
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    margin: 3rem 6rem;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    .portfolio-content {
+      p,
+      li {
+        font-size: $fontsize-md;
+      }
+    }
+  }
+}

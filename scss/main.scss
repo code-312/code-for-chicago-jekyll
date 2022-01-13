@@ -16,6 +16,8 @@
 @import "./custom/includes/tables";
 @import "./custom/includes/type";
 @import "./custom/includes/project";
+@import "./custom/includes/portfolio";
+@import "./custom/includes/portfolio_gallery";
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Work+Sans:wght@400;600&display=swap");
 
@@ -77,24 +79,41 @@ hr {
 }
 
 .navbar {
+  border-bottom: 1px solid rgba($light-grey, 0.5);
   display: flex;
-  justify-content: space-between;
+  height: 4rem;
+  justify-content: center;
+  padding: 0 1.5rem;
   position: relative;
   width: 100%;
-  padding: 0 6rem;
-  margin: 1.5rem 0;
-  height: 47px;
 
   a {
     text-decoration: none;
   }
 
-  @media (max-width: $breakpoint-lg) {
-    justify-content: center;
+  & [aria-current] {
+    border-bottom: 2px solid $cfa-red;
   }
 
-  @media (max-width: 768px) {
-    padding: 0 3rem;
+  @media (min-width: 360px) {
+    padding: 1rem 1.5rem;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 1rem 3rem;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    height: 6rem;
+    padding: 1.5rem 6rem;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    max-width: 1440px;
   }
 }
 
@@ -143,10 +162,10 @@ hr {
   a {
     color: $black;
   }
-}
 
-.navbar [aria-current] {
-  border-bottom: 2px solid $cfa-red;
+  @media (max-width: $breakpoint-lg) {
+    margin-left: 3rem; // account for donate button in logo centering
+  }
 }
 
 .hideable-int-link {
@@ -216,6 +235,7 @@ hr {
 
 .donate-and-socials {
   display: flex;
+  margin-right: 5rem;
 }
 
 #logo-container {
@@ -256,45 +276,18 @@ hr {
   z-index: 1;
 }
 
-.donate-link {
-  display: none;
-  color: $black;
-  @media (max-width: 651px) {
-    position: absolute;
-    top: 12px;
-    right: 48px;
-    display: inline;
-  }
-  @media (max-width: 360px) {
-    right: 24px;
-  }
-}
-
 .donate-button {
-  @media (max-width: $breakpoint-lg) {
-    position: absolute;
-    top: 0;
-    right: 96px;
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+
+  @media (min-width: $breakpoint-sm) {
+    right: 4rem;
   }
 
-  @media (max-width: 768px) {
-    right: 48px;
-  }
-
-  @media (max-width: 651px) {
-    display: none;
-  }
-}
-
-@media (max-width: 360px) {
-  .navbar {
-    padding: 0 24px;
-  }
-}
-
-@media (max-width: 651px) {
-  .navbar {
-    margin: 16px 0;
+  @media (min-width: $breakpoint-md) {
+    top: 1.5rem;
+    right: 6rem;
   }
 }
 
@@ -307,19 +300,9 @@ hr {
 }
 
 @media (min-width: 750px) {
-  .navbar {
-    margin: 1.5rem 0;
-  }
   .logo-container {
     width: 120px;
     min-height: 47px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .navbar {
-    margin: 24px auto;
-    max-width: 1440px;
   }
 }
 
@@ -871,6 +854,7 @@ hr {
 
 .footer {
   background-color: $white;
+  border-top: 1px solid rgba($light-grey, 0.5);
   color: $black;
   text-align: center;
   a {
@@ -1021,8 +1005,15 @@ hr {
 
   @media (min-width: 361px) {
     .iconTile {
-      flex: 0 0 50%;
-      max-width: 50%;
+      margin: 0;
+      .icon {
+        margin: 1rem auto;
+        width: 100%;
+      }
+
+      p {
+        text-align: center;
+      }
     }
   }
 
@@ -1032,6 +1023,11 @@ hr {
       -ms-flex: 0 0 25%;
       flex: 0 0 25%;
       max-width: 25%;
+
+      .icon {
+        margin: 1rem 0;
+        width: unset;
+      }
     }
   }
 
@@ -2061,6 +2057,9 @@ p.cardText {
       max-height: 100%;
       width: 100%;
       text-align: left;
+      p {
+        margin-bottom: 0;
+      }
     }
     h2 {
       width: 100%;
@@ -2099,9 +2098,18 @@ p.cardText {
     min-height: 100%;
   }
 
+  @media (min-width: $breakpoint-sm) {
+    .image-container {
+      padding-right: 32px;
+    }
+  }
+
   @media (min-width: 1060px) {
     .starting-projects-grid > * + * {
       margin-left: 32px;
+    }
+    .image-container {
+      padding-right: 0;
     }
   }
 
@@ -2121,13 +2129,17 @@ p.cardText {
     }
     .image-container {
       height: 100%;
-      padding-right: 32px;
+      img {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 
   @media (max-width: 651px) {
     .starting-projects-content,
     .starting-projects-item {
+      flex-direction: column;
+      height: 100%;
       max-width: 555px;
       h2 {
         font-size: 1.5rem;
@@ -2148,12 +2160,11 @@ p.cardText {
   }
 
   @media (max-width: 360px) {
-    padding: 48px 0px;
-    margin-left: 24px;
-    margin-right: 24px;
+    padding: 48px 24px;
     .starting-projects-item {
       flex-direction: column;
       height: min-content;
+      margin-bottom: 1rem;
     }
     .starting-projects-grid > * + * {
       margin-top: 48px;
@@ -2162,8 +2173,13 @@ p.cardText {
       width: 100%;
       height: auto;
       padding-right: 0;
+      margin-bottom: 1rem;
     }
   }
+}
+
+.how-to-join-container {
+  background-color: $off-white;
 }
 
 .volunteerContent {
@@ -2184,6 +2200,9 @@ p.cardText {
     max-width: none;
     .description {
       font-weight: 500;
+    }
+    .iconTile p {
+      text-align: left;
     }
   }
 }
