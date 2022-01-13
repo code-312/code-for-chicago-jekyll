@@ -79,24 +79,41 @@ hr {
 }
 
 .navbar {
+  border-bottom: 1px solid rgba($light-grey, 0.5);
   display: flex;
-  justify-content: space-between;
+  height: 4rem;
+  justify-content: center;
+  padding: 0 1.5rem;
   position: relative;
   width: 100%;
-  padding: 0 6rem;
-  margin: 1.5rem 0;
-  height: 47px;
 
   a {
     text-decoration: none;
   }
 
-  @media (max-width: $breakpoint-lg) {
-    justify-content: center;
+  & [aria-current] {
+    border-bottom: 2px solid $cfa-red;
   }
 
-  @media (max-width: 768px) {
-    padding: 0 3rem;
+  @media (min-width: 360px) {
+    padding: 1rem 1.5rem;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 1rem 3rem;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    height: 6rem;
+    padding: 1.5rem 6rem;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    max-width: 1440px;
   }
 }
 
@@ -145,10 +162,10 @@ hr {
   a {
     color: $black;
   }
-}
 
-.navbar [aria-current] {
-  border-bottom: 2px solid $cfa-red;
+  @media (max-width: $breakpoint-lg) {
+    margin-left: 3rem; // account for donate button in logo centering
+  }
 }
 
 .hideable-int-link {
@@ -218,6 +235,7 @@ hr {
 
 .donate-and-socials {
   display: flex;
+  margin-right: 5rem;
 }
 
 #logo-container {
@@ -258,45 +276,18 @@ hr {
   z-index: 1;
 }
 
-.donate-link {
-  display: none;
-  color: $black;
-  @media (max-width: 651px) {
-    position: absolute;
-    top: 12px;
-    right: 48px;
-    display: inline;
-  }
-  @media (max-width: 360px) {
-    right: 24px;
-  }
-}
-
 .donate-button {
-  @media (max-width: $breakpoint-lg) {
-    position: absolute;
-    top: 0;
-    right: 96px;
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+
+  @media (min-width: $breakpoint-sm) {
+    right: 4rem;
   }
 
-  @media (max-width: 768px) {
-    right: 48px;
-  }
-
-  @media (max-width: 651px) {
-    display: none;
-  }
-}
-
-@media (max-width: 360px) {
-  .navbar {
-    padding: 0 24px;
-  }
-}
-
-@media (max-width: 651px) {
-  .navbar {
-    margin: 16px 0;
+  @media (min-width: $breakpoint-md) {
+    top: 1.5rem;
+    right: 6rem;
   }
 }
 
@@ -309,19 +300,9 @@ hr {
 }
 
 @media (min-width: 750px) {
-  .navbar {
-    margin: 1.5rem 0;
-  }
   .logo-container {
     width: 120px;
     min-height: 47px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .navbar {
-    margin: 24px auto;
-    max-width: 1440px;
   }
 }
 
@@ -873,6 +854,7 @@ hr {
 
 .footer {
   background-color: $white;
+  border-top: 1px solid rgba($light-grey, 0.5);
   color: $black;
   text-align: center;
   a {
