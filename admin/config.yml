@@ -21,10 +21,12 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Tag", name: "areas", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Featured Image Text", name: "imgtext", widget: "string" }
       - { label: "Featured Image Alt", name: "alt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Coming Soon", name: "is_preview", widget: "boolean" }
   - name: "projects" # Used in routes, e.g., /admin/collections/blog
     label: "Projects Page" # Used in the UI
     folder: "_posts/projects" # The path to the folder where the documents are stored
