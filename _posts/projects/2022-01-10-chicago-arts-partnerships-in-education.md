@@ -3,7 +3,7 @@ layout: project
 title: Chicago Arts Partnerships in Education
 date: 2022-01-10T11:50:42.687Z
 areas: Visual Design
-thumbnail: /images/uploads/proxy.png
+thumbnail: /images/uploads/Site_Map-CAPE.png
 imgtext: "Solving the age-old question: how to get teens to participate in club
   activities?"
 alt: "null"

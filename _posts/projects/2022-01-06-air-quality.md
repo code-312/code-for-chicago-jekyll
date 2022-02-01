@@ -3,7 +3,7 @@ layout: project
 title: Air Quality
 date: 2022-01-06T11:37:07.756Z
 areas: Data
-thumbnail: /images/uploads/proxy.png
+thumbnail: /images/uploads/Site_Map-Air_Quality.png
 imgtext: Using publicly available datasets to examine the air quality measures
   throughout Chicago.
 alt: "null"

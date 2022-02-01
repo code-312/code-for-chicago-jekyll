@@ -3,7 +3,7 @@ layout: project
 title: Code for Chicago Website
 date: 2022-01-06T12:10:21.276Z
 areas: Front-End, UX/UI Design
-thumbnail: /images/uploads/proxy.png
+thumbnail: /images/uploads/Site_Map-CfC_Website.png
 imgtext: Work on our website! This is a great project for folks new to web development.
 alt: "null"
 ---

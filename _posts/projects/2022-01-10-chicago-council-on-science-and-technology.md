@@ -3,7 +3,7 @@ layout: project
 title: Chicago Council on Science and Technology
 date: 2022-01-10T12:23:37.832Z
 areas: Front-End, UX/UI Design, UX Research
-thumbnail: /images/uploads/proxy.png
+thumbnail: /images/uploads/Site_Map-Chicago_Council.png
 imgtext: Modernizing a website to increase volunteer and event participation
 alt: "null"
 ---
