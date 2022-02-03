@@ -252,6 +252,10 @@ hr {
 .brigade-logo {
   width: 120px;
   height: auto;
+
+  @media (max-width: $breakpoint-sm) {
+    width: 85px;
+  }
 }
 
 .social-container {
