@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: project
 title: Code for Chicago Website
 date: 2022-01-06T12:10:21.276Z
@@ -25,4 +25,4 @@ alt: "null"
 - [Project Workflow](https://docs.google.com/document/d/1q-2HmpPKxeqxQdWINiEbK9b4i8kE8ifO9LHnO83Hg7Y/edit?usp=sharing)
 - [Progress Diary](https://docs.google.com/document/d/1eGvgAqwk8oVD-tcIrGmu9jbn4ygGd4OPHGeLiOK8TcM/edit?usp=sharing)
 - [Github](https://github.com/Code-For-Chicago/code-for-chicago-jekyll)
-- [Figma](https://www.figma.com/file/VQUJeqPPTpdxtls8VwPoxA/Code-for-Chicago?node-id=3076%3A2)
+- [Figma](https://www.figma.com/file/VQUJeqPPTpdxtls8VwPoxA/Code-for-Chicago?node-id=3076%3A2) -->
