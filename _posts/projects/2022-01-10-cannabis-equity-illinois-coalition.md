@@ -3,7 +3,7 @@ layout: project
 title: Cannabis Equity Illinois Coalition
 date: 2022-01-10T12:02:19.061Z
 areas: Front/back-end, UX/UI Design
-thumbnail: /images/uploads/proxy.png
+thumbnail: /images/uploads/Site_Map-CEIC.png
 imgtext: Improving UX/UI to align with org goals and built to scale.
 alt: "null"
 ---

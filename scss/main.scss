@@ -256,6 +256,10 @@ hr {
 .brigade-logo {
   width: 120px;
   height: auto;
+
+  @media (max-width: $breakpoint-sm) {
+    width: 85px;
+  }
 }
 
 .social-container {
@@ -2187,7 +2191,7 @@ p.cardText {
 }
 
 .how-to-join-container {
-  background-color: $off-white;
+  background-color: $white;
 }
 
 .volunteerContent {

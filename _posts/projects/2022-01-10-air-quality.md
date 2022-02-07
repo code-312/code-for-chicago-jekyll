@@ -3,7 +3,7 @@ layout: project
 title: Air Quality
 date: 2022-01-10T12:33:16.155Z
 areas: Data
-thumbnail: /images/uploads/proxy.png
+thumbnail: /images/uploads/Site_Map-Air_Quality.png
 imgtext: A data exploration project to identify potential projects with
   environmental partners
 alt: "null"

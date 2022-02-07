@@ -3,7 +3,7 @@ layout: project
 title: Chicago Defender Charities
 date: 2022-01-10T12:14:38.475Z
 areas: Front-end, UX/UI/Visual Design
-thumbnail: /images/uploads/proxy.png
+thumbnail: /images/uploads/Site_Map-Chicago_Defender_Charities.png
 imgtext: Building a new website for a historic organization
 alt: "null"
 ---
