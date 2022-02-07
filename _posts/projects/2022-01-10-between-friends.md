@@ -3,7 +3,7 @@ layout: project
 title: Between Friends
 date: 2022-01-10T11:27:27.634Z
 areas: Front-end, Wordpress, UX Research, UX/UI Design
-thumbnail: /images/uploads/proxy-img.png
+thumbnail: /images/uploads/Site_Map-Between_Friends.png
 imgtext: Reducing client obstacles to updating the website to reach out to more users.
 alt: "null"
 ---
