@@ -75,7 +75,7 @@
 
   @media (min-width: $breakpoint-md) {
     margin: 5rem 6rem;
-    .portfolio-content {
+    .portfolio-content, .portfolio-header-image {
       width: 600px;
     }
   }
