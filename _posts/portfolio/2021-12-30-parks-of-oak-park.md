@@ -3,11 +3,12 @@ layout: portfolio
 title: Parks of Oak Park
 date: 2021-12-29T23:49:32.109Z
 areas: ux research
-description: " "
+description: " Recommend a better geofencing solution that best fits a number of
+  PDOP’s use cases."
 thumbnail: /images/uploads/pdop_hero.png
 imgtext: Targeted parks for the data gathering products
 alt: Park of Oak Park parks that were targeted for this competitive analysis
-is_preview: true
+is_preview: false
 ---
 ## Overview: PDOP
 
