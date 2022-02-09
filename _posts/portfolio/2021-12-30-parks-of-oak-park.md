@@ -4,7 +4,7 @@ title: Parks of Oak Park
 date: 2021-12-29T23:49:32.109Z
 areas: ux research
 description: " "
-thumbnail: /images/uploads/cfc_pdop_hero.png
+thumbnail: /images/uploads/pdop_hero.png
 imgtext: Targeted parks for the data gathering products
 alt: Park of Oak Park parks that were targeted for this competitive analysis
 is_preview: true
@@ -14,6 +14,8 @@ is_preview: true
 ### Client
 
 The Park District of Oak Park (PDOP), created in 1912, serves the recreational needs of the 52,000 residents of Oak Park, providing nearly 3,000 recreation programs and special events annually. Overseen by a Board of five elected officials, the District owns an Administrative Center, two outdoor pools, an indoor year-round ice rink, the Oak Park Conservatory, Cheney Mansion, Pleasant Home, a gymnastics & recreation center, seven recreation centers plus 18 parks totaling 84 acres of parkland. Through the programs and facilities the Park District of Oak Park provides, they significantly contribute to the quality of life in Oak Park.
+
+![Parks of Oak Park logo](/images/uploads/pdop-logo.png "Parks of Oak Park logo")
 
 ### The Challenge
 
@@ -26,8 +28,6 @@ Code for Chicago (CfC) facilitated a competitive analysis to identify a solution
 ### Project Month/Year
 
 May 2021
-
-![Parks of Oak Park logo](/images/uploads/pdop-logo.png "Parks of Oak Park logo")
 
 <br>
 
