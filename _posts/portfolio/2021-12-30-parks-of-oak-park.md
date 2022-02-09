@@ -3,9 +3,11 @@ layout: portfolio
 title: Parks of Oak Park
 date: 2021-12-29T23:49:32.109Z
 areas: ux research
-thumbnail: /images/uploads/copy-of-park-topography.png
+description: " "
+thumbnail: /images/uploads/cfc_pdop_hero.png
 imgtext: Targeted parks for the data gathering products
 alt: Park of Oak Park parks that were targeted for this competitive analysis
+is_preview: true
 ---
 ## Overview: PDOP
 
