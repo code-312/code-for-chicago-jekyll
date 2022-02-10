@@ -5,8 +5,8 @@ date: 2022-02-07T11:57:01.965Z
 areas: Backend
 description: Recommend an eComm platform solution that integrated with CFT’s current website
 thumbnail: /images/uploads/chicagofairtrade_hero.png
-imgtext: The Chicago Fair Trade logo
-alt: "null"
+imgtext: Chicago Fair Trade Promo for Shop Online
+alt: Chicago Fair Trade Promo for Shop Online
 is_preview: false
 ---
 ## Overview: Chicago Fair Trade
@@ -29,15 +29,13 @@ Code for Chicago (CfC) facilitated a competitive analysis to identify the best s
 
 October 2020
 
-<br>
-
 ## Problem Statement
 
 Chicago Fair Trade hosts a pop-up storefront during the Holiday Season. Previously, CFT would have a brick & mortar location, but now wants to expand online due to COVID. Their current website is hosted on Wix, which serves as both their informational website and their storefront. They wish to keep their current informational website, and are only looking to replace their online storefront. 
 
-<br>
-
 ## Methodology
+
+### Competitive Analysis
 
 In order to gather the best solution for CFT, a competitive analysis was conducted to identify which eComm platform would meet the following requirements: 
 
@@ -46,8 +44,6 @@ In order to gather the best solution for CFT, a competitive analysis was conduct
 * Customizable
 * CMS Capabilities to incorporate 30-40 different vendors with each vendor having 10 products to sell within the marketplace
 * Long-term costs
-
-<br>
 
 ## Outcome
 
