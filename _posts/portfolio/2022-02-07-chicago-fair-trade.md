@@ -2,7 +2,7 @@
 layout: portfolio
 title: Chicago Fair Trade
 date: 2022-02-07T11:57:01.965Z
-areas: Web Development
+areas: Backend
 description: Recommend an eComm platform solution that integrated with CFT’s current website
 thumbnail: /images/uploads/chicagofairtrade_hero.png
 imgtext: The Chicago Fair Trade logo
