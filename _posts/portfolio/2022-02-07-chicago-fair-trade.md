@@ -9,7 +9,7 @@ imgtext: Chicago Fair Trade Promo for Shop Online
 alt: Chicago Fair Trade Promo for Shop Online
 is_preview: false
 ---
-## Overview: Chicago Fair Trade
+## Overview:
 
 ### Client
 
