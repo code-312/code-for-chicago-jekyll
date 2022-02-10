@@ -11,21 +11,21 @@ is_preview: false
 ---
 ## Overview: Chicago Milkweed Project
 
-### Client
+#### Client
 
 The Chicago Milkweed Project - A campaign empowering kids to restore the environment in their own neighborhoods by planting milkweed to Chicago’s natural landscape to support Monarch butterflies and our natural environment.
 
 ![Chicago Milkweed Project logo](/images/uploads/final-final-logo.svg "Custom logo designed for the Chicago Milkweed Project")
 
-### The Challenge
+#### The Challenge
 
 Develop an engaging scientific educational project of distributing milkweeds for elementary-aged kids that promotes the value of caring about nature, and improves the overall ecological system in Chicago.
 
-### Approach
+#### Approach
 
 Discovery, Brand Identity and Website - full cycle project from the ground up executing the client’s vision.
 
-### Project Month/Year
+#### Project Month/Year
 
 Winter 2019 to Summer 2020
 
@@ -73,7 +73,7 @@ Since the target audience was for children, the brand identify focused on friend
 
 ![Ideation workshop to help define the brand look and feel](/images/uploads/screenshot-2022-01-27-at-20-08-20-chicago-milkweed-project.png "Ideation workshop to help define the brand look and feel")
 
-### Designing the website
+#### Designing the website
 
 Working in an agile method, while the brand identity was being formulated, CfC started ideating on the website design that was a simple one pager that provided awareness, established a feel for the organization (partnerships) and directions to the hand outs for the kids, the mission, resources and a contact form.
 
@@ -81,7 +81,7 @@ Working in an agile method, while the brand identity was being formulated, CfC s
 
 ## Outcome
 
-Website was launched in April 2021! Since that time - Chicago Milkweed Project has handed out 200 plants to a number of communities in: 
+Website was launched in April 2021. Since that time - Chicago Milkweed Project has handed out 200 plants to a number of communities in: 
 
 * Berwyn
 * Pilsen
