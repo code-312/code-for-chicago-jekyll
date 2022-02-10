@@ -5,27 +5,27 @@ date: 2022-02-07T11:57:01.965Z
 areas: Backend
 description: Recommend an eComm platform solution that integrated with CFT’s current website
 thumbnail: /images/uploads/chicagofairtrade_hero.png
-imgtext: The Chicago Fair Trade logo
-alt: "null"
+imgtext: Chicago Fair Trade Promo for Shop Online
+alt: Chicago Fair Trade Promo for Shop Online
 is_preview: false
 ---
 ## Overview: Chicago Fair Trade
 
-#### Client
+### Client
 
 Chicago Fair Trade (CFT) is a non-profit started in 2006 that educates people about fair trade but showing them how they can use their purchasing power for good in organizations, individually, etc. They are the biggest organization of its kind. Their business membership has taken off and contains a mix of 60 nonprofits and for-profits shops.
 
 ![Chicago Fair Trade Logo](/images/uploads/wide-logo-green.svg "Chicago Fair Trade Logo")
 
-#### The Challenge
+### The Challenge
 
 Recommend an eComm platform solution that integrated with CFT’s current website.
 
-#### Approach
+### Approach
 
 Code for Chicago (CfC) facilitated a competitive analysis to identify the best solution for their shop front site, by doing this they provided long-term visibility for CFT on their decision to switch to a website builder that best suited their company/business needs moving forward. In doing so, CfC assisted them in developing their shop front site, integrating the eComm platform and provided documentation for their vendors.
 
-#### Project Month/Year
+### Project Month/Year
 
 October 2020
 
@@ -35,7 +35,7 @@ Chicago Fair Trade hosts a pop-up storefront during the Holiday Season. Previous
 
 ## Methodology
 
-#### Competitive Analysis
+### Competitive Analysis
 
 In order to gather the best solution for CFT, a competitive analysis was conducted to identify which eComm platform would meet the following requirements: 
 
