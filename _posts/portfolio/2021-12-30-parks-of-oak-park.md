@@ -30,7 +30,7 @@ Code for Chicago (CfC) facilitated a competitive analysis to identify a solution
 
 May 2021
 
-<br>
+
 
 ## Problem Statement
 
@@ -40,7 +40,7 @@ Currently, they have no methods for collecting data and their decision-making wa
 
 ![The pro's and con's for each product per category](/images/uploads/copy-of-product-spectrum-comparison.png "The pro's and con's for each product per category")
 
-<br>
+
 
 ## Our Approach
 
@@ -58,10 +58,9 @@ Based on this the team created a number of artifacts to evaluate which people-co
 
 Once all the data was collected - scalability and pricing was last compared.
 
-
 ![Screenshot of the spreadsheet used to catalog different products per category](/images/uploads/spreadsheet.png "Screenshot of the spreadsheet used to catalog different products per category")
 
-<br>
+
 
 ## Outcome
 
