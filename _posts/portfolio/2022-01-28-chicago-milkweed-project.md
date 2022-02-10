@@ -9,7 +9,7 @@ imgtext: Chicago Milkweed Project Landing Page
 alt: Chicago Milkweed Project Landing Page
 is_preview: false
 ---
-## Overview: Chicago Milkweed Project
+## Overview
 
 ### Client
 
