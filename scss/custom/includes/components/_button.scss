@@ -1,0 +1,63 @@
+//Base button style, use this class for each button. Then add additional custom classes as necessary:
+.button {
+  font-family: $font-family-alt;
+  font-size: 0.875rem;
+  padding: 14px 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  background-color: $cfa-red;
+  color: $white;
+  border-radius: 2px;
+  cursor: pointer;
+  transition-duration: .5s;
+  &:hover {
+    background-color: $cfa-red-dark;
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px $white, 0 0 0 5px $cfa-blue;
+    text-decoration: underline;
+    outline: none;
+  }
+}
+
+.button-long {
+  color: $white;
+  background-color: $cfa-red;
+  border: 1px solid $white;
+
+  &:hover {
+    color: $cfa-red;
+    background-color: $white;
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
+
+//Re-usable class for new buttons with different colors,
+//copy + paste, replace class name with new name + variables with desired colors
+.button-custom {
+  color: $white;
+  background-color: $cfa-red;
+  border: 1px solid $white;
+
+  &:hover {
+    color: $cfa-red;
+    background-color: $white;
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}
