@@ -30,7 +30,10 @@
 				</a>
 			</li>
 		</ul>
-		<a href="https://www.codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20Chicago&utm_source=Brigade%20site" target="_blank" class="donate-link">Donate</a>
-		<a href="https://www.codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20Chicago&utm_source=Brigade%20site" target="_blank" class="button donate-button">Donate</a>
+		{% include components/button.html
+			class = "donate-button"
+			url = "https://www.codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20Chicago&utm_source=Brigade%20site"
+			content ="Donate"
+		%}
 	</div>
 </nav>
