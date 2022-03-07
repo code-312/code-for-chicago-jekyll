@@ -1,6 +1,6 @@
 <div class="gallery-container">
   {% assign filtered_posts = site.posts | where: 'layout', 'project' %} {% for
-  post in filtered_posts %}
+  post in filtered_posts %}{% unless post.archived == true %}
   <div class="gallery-card">
     <a href="{{ post.url }}">
       <div class="gallery-image-container">
@@ -18,7 +18,7 @@
       <p>{{ post.imgtext }}</p>
     </div>
   </div>
-  {% endfor %}
+  {% endunless %} {% endfor %}
 </div>
 <script>
   const customAspectRatio = 395 / 261;
