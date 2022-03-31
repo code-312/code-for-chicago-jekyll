@@ -1,0 +1,9 @@
+{% assign class = "button " | append: include.class %}
+{% assign url = include.url | default: "example.com" %}
+{% assign content = include.content %}
+
+{% if content %}
+  <a class="{{ class }}" href="{{ url }}" target="_blank">{{ content }}</a>
+{% endif %}
+
+
