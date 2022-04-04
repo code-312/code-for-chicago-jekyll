@@ -2,23 +2,6 @@
   {% assign filtered_posts = site.posts | where: 'layout', 'project' %} {% for
   post in filtered_posts %}
   {% include card.html thumbnail=post.thumbnail description=post.description url=post.url alt=post.alt areas=post.areas title=post.title imgtext=post.imgtext %}
-  <!-- <div class="gallery-card">
-    <a href="{{ include.url }}">
-      <div class="gallery-image-container">
-        {% if include.thumbnail and include.alt %}
-        <img src="{{include.thumbnail}}" alt="{{include.alt}}" /> {% else %}
-        <img src="/images/proxy-img.png" alt="A sample proxy image" />
-        {% endif %}
-      </div>
-    </a>
-    <div class="gallery-content-container">
-      <h5>{{ include.areas }}</h5>
-      <h2>
-        <a href="{{ include.url }}">{{ include.title }}</a>
-      </h2>
-      <p>{{ include.imgtext }}</p>
-    </div>
-  </div> -->
   {% endfor %}
 </div>
 <script>
