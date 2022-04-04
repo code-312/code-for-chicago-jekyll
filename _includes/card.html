@@ -1,0 +1,33 @@
+<div class="gallery-card">
+    {% if include.is_preview %}
+    <div class="gallery-image-container">
+      {% if include.thumbnail and include.alt %}
+      <img src="{{include.thumbnail}}" alt="{{include.alt}}" /> {% else %}
+      <img src="/images/proxy-img.png" alt="A sample proxy image" />
+      {% endif %}
+    </div>
+    <div class="gallery-content-container">
+      <h5>{{ include.areas }}</h5>
+      <h2>{{ include.title }}</h2>
+      <p>Full details coming soon</p>
+    </div>
+    {% else %}
+    <a href="{{ include.url }}">
+      <div class="gallery-image-container">
+        {% if post.thumbnail and post.alt %}
+        <img src="{{include.thumbnail}}" alt="{{include.alt}}" /> {% else %}
+        <img src="/images/proxy-img.png" alt="A sample proxy image" />
+        {% endif %}
+      </div>
+    </a>
+    <div class="gallery-content-container">
+      <h5>{{ include.areas }}</h5>
+      <h2>
+        <a href="{{ include.url }}">{{ include.title }}</a>
+      </h2>
+      <p>{{ include.description }}</p>
+      <p>{{ include.imgtext }}</p> 
+
+    </div>
+    {% endif %}
+</div>
