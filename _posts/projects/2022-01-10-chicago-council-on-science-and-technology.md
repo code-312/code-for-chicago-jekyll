@@ -21,7 +21,7 @@ alt: "null"
 
 For designers -- the designs are already built so it's great if you're interested in improving it for accessibiility. There will be some need to design a couple wireframes here and there.
 
-**Meeting Cadence:** TBD
+**Meeting Cadence:** Tuesdays at 5:30-6pm
 
 **More Info:**
 - [Project Brief](https://docs.google.com/document/d/1INlaxG-2HY9RJ6T3x7_yHJIQYEAwlDfUJTyrC_dDkFY/edit?usp=sharing)
