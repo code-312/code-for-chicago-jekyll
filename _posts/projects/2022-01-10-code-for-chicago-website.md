@@ -21,7 +21,7 @@ Additionally, we want to ensure our website is sustainable for future volunteers
 
 **This would be a good fit for:** This is a great beginner project for folks interesting in building code and designing components.
 
-**Meeting Cadence:** Every other Monday at 5:30-6pm CT
+**Meeting Cadence:** Every other Monday at 7-7:30pm CT
 
 **More Info:**
 - [Onboarding Doc](https://docs.google.com/document/d/1q-2HmpPKxeqxQdWINiEbK9b4i8kE8ifO9LHnO83Hg7Y/edit?usp=sharing)
