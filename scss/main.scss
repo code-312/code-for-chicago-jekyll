@@ -127,7 +127,6 @@ hr {
   border-top: 1px solid $light-grey;
   display: none;
   background: white;
-  width: 100vw;
   height: 100%;
 }
 
@@ -226,7 +225,7 @@ hr {
 
 .external-links-mobile {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 
   .social-logo:first-child {
     margin-left: 0;
@@ -427,7 +426,7 @@ hr {
   align-self: flex-end;
 
   @media (max-width: 1058px) {
-    max-width: 30.75rem;
+    max-width: 22.75rem;
     max-height: 18.7rem;
     margin-top: 3rem;
     background-position: bottom center;
