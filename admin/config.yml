@@ -32,6 +32,12 @@ collections:
           widget: "boolean",
           default: false,
         }
+      - {
+          label: "Archived",
+          name: "is_archived",
+          widget: "boolean",
+          default: false,
+        }
   - name: "projects" # Used in routes, e.g., /admin/collections/blog
     label: "Projects Page" # Used in the UI
     folder: "_posts/projects" # The path to the folder where the documents are stored

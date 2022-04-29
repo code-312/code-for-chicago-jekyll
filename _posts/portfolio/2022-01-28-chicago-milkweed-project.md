@@ -8,6 +8,7 @@ thumbnail: /images/uploads/chicagomilkweed_hero.png
 imgtext: Chicago Milkweed Project Landing Page
 alt: Chicago Milkweed Project Landing Page
 is_preview: false
+is_archived: false
 ---
 ## Overview
 

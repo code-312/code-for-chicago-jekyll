@@ -9,6 +9,7 @@ thumbnail: /images/uploads/pdop_hero.png
 imgtext: Targeted parks for the data gathering products
 alt: Park of Oak Park parks that were targeted for this competitive analysis
 is_preview: false
+is_archived: false
 ---
 ## Overview
 
