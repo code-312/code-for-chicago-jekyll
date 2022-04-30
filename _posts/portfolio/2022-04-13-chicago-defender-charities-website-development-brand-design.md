@@ -9,7 +9,7 @@ thumbnail: /images/uploads/home.png
 imgtext: Wireframes for the home page of the new Chicago Defender Charities website
 alt: Wireframes for the home page of the new Chicago Defender Charities website
 is_preview: false
-is_archived: false
+is_archived: true
 ---
 ## Overview
 
