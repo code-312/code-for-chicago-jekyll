@@ -1,4 +1,5 @@
 @import "./custom/_variables";
+@import "./custom/mixins";
 @import "./bootstrap/bootstrap";
 @import "./custom/_reset";
 @import "./instantsearch/instantsearch";
@@ -14,6 +15,9 @@
 @import "./custom/includes/syntax_highlighting";
 @import "./custom/includes/tables";
 @import "./custom/includes/type";
+@import "./custom/includes/project";
+@import "./custom/includes/portfolio";
+@import "./custom/includes/portfolio_gallery";
 
 // COMPONENTS //
 @import "./custom/includes/components/_button.scss";
@@ -24,22 +28,24 @@ body {
   color: $black;
 }
 
-h4,
-h5 {
-  font-family: $font-family-alt;
-  font-size: 0.875rem;
-  font-weight: 600;
+h1 {
+  @include heading1();
+}
+
+h2 {
+  @include heading2();
+}
+
+h3 {
+  @include heading3();
 }
 
 h4 {
-  text-transform: uppercase;
+  @include heading4();
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Source Sans Pro";
-  font-weight: 700;
+h5 {
+  @include heading5();
 }
 
 .text-left {
@@ -76,24 +82,45 @@ hr {
 }
 
 .navbar {
+  border-bottom: 1px solid rgba($light-grey, 0.5);
   display: flex;
-  justify-content: space-between;
+  height: 4rem;
+  justify-content: center;
+  padding: 0 1.5rem;
   position: relative;
   width: 100%;
-  padding: 0 6rem;
-  margin: 1.5rem 0;
-  height: 47px;
 
   a {
     text-decoration: none;
   }
 
-  @media (max-width: 996px) {
-    justify-content: center;
+  & [aria-current] {
+    border-bottom: 2px solid $cfa-red;
   }
 
-  @media (max-width: 768px) {
-    padding: 0 3rem;
+  @media (min-width: 360px) {
+    padding: 1rem 1.5rem;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 1rem 3rem;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    height: 6rem;
+    padding: 1.5rem 6rem;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    padding: 1.5rem 6rem;
+  }
+
+  @media (min-width: 1592px) {
+    padding: 0 calc((100% - 1400px) / 2);
   }
 }
 
@@ -103,7 +130,6 @@ hr {
   border-top: 1px solid $light-grey;
   display: none;
   background: white;
-  width: 100vw;
   height: 100%;
 }
 
@@ -114,7 +140,7 @@ hr {
   background: none;
   width: 28px;
 
-  @media (max-width: 996px) {
+  @media (max-width: $breakpoint-lg) {
     position: absolute;
     left: 96px;
     display: inline;
@@ -142,15 +168,15 @@ hr {
   a {
     color: $black;
   }
-}
 
-.navbar [aria-current] {
-  border-bottom: 2px solid $cfa-red;
+  @media (max-width: $breakpoint-lg) {
+    margin-left: 3rem; // account for donate button in logo centering
+  }
 }
 
 .hideable-int-link {
   // menu goes mobile
-  @media (max-width: 996px) {
+  @media (max-width: $breakpoint-lg) {
     display: none;
   }
 }
@@ -195,14 +221,14 @@ hr {
   align-self: center;
   margin-right: 24px;
 
-  @media (max-width: 996px) {
+  @media (max-width: $breakpoint-lg) {
     display: none;
   }
 }
 
 .external-links-mobile {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 
   .social-logo:first-child {
     margin-left: 0;
@@ -215,6 +241,7 @@ hr {
 
 .donate-and-socials {
   display: flex;
+  margin-right: 5rem;
 }
 
 #logo-container {
@@ -223,7 +250,7 @@ hr {
   height: 100%;
   margin-right: 48px;
 
-  @media (max-width: 996px) {
+  @media (max-width: $breakpoint-lg) {
     margin: 0 auto;
   }
 }
@@ -231,6 +258,10 @@ hr {
 .brigade-logo {
   width: 120px;
   height: auto;
+
+  @media (max-width: $breakpoint-sm) {
+    width: 85px;
+  }
 }
 
 .social-container {
@@ -238,7 +269,7 @@ hr {
   align-self: center;
   margin-right: 24px;
 
-  @media (max-width: 996px) {
+  @media (max-width: $breakpoint-lg) {
     display: none;
   }
 }
@@ -255,45 +286,22 @@ hr {
   z-index: 1;
 }
 
-.donate-link {
-  display: none;
-  color: $black;
-  @media (max-width: 651px) {
-    position: absolute;
-    top: 12px;
-    right: 48px;
-    display: inline;
-  }
-  @media (max-width: 360px) {
-    right: 24px;
-  }
-}
-
 .donate-button {
-  @media (max-width: 996px) {
-    position: absolute;
-    top: 0;
-    right: 96px;
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+
+  @media (min-width: $breakpoint-sm) {
+    right: 4rem;
   }
 
-  @media (max-width: 768px) {
-    right: 48px;
+  @media (min-width: $breakpoint-md) {
+    top: 1.5rem;
+    right: 6rem;
   }
 
-  @media (max-width: 651px) {
-    display: none;
-  }
-}
-
-@media (max-width: 360px) {
-  .navbar {
-    padding: 0 24px;
-  }
-}
-
-@media (max-width: 651px) {
-  .navbar {
-    margin: 16px 0;
+  @media (min-width: 1592px) {
+    right: calc((100% - 1400px) / 2);
   }
 }
 
@@ -306,19 +314,9 @@ hr {
 }
 
 @media (min-width: 750px) {
-  .navbar {
-    margin: 1.5rem 0;
-  }
   .logo-container {
     width: 120px;
     min-height: 47px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .navbar {
-    margin: 24px auto;
-    max-width: 1440px;
   }
 }
 
@@ -431,7 +429,7 @@ hr {
   align-self: flex-end;
 
   @media (max-width: 1058px) {
-    max-width: 30.75rem;
+    max-width: 22.75rem;
     max-height: 18.7rem;
     margin-top: 3rem;
     background-position: bottom center;
@@ -823,6 +821,7 @@ hr {
 
 .footer {
   background-color: $white;
+  border-top: 1px solid rgba($light-grey, 0.5);
   color: $black;
   text-align: center;
   a {
@@ -973,8 +972,15 @@ hr {
 
   @media (min-width: 361px) {
     .iconTile {
-      flex: 0 0 50%;
-      max-width: 50%;
+      margin: 0;
+      .icon {
+        margin: 1rem auto;
+        width: 100%;
+      }
+
+      p {
+        text-align: center;
+      }
     }
   }
 
@@ -984,6 +990,11 @@ hr {
       -ms-flex: 0 0 25%;
       flex: 0 0 25%;
       max-width: 25%;
+
+      .icon {
+        margin: 1rem 0;
+        width: unset;
+      }
     }
   }
 
@@ -994,6 +1005,7 @@ hr {
   @media (max-width: 767px) {
     padding: 0;
     .iconTile {
+      width: 50%;
       margin-top: 24px;
       margin-bottom: 24px;
     }
@@ -1244,60 +1256,6 @@ p.cardText {
   }
 }
 
-.gallery-card {
-  width: 100%;
-  max-width: 395px;
-
-  img {
-    width: 100%;
-    height: 100%;
-    max-height: 261px;
-    max-width: 395px;
-    object-fit: cover;
-  }
-
-  h5 {
-    font-family: "Work Sans", sans-serif;
-    color: #333;
-    text-transform: uppercase;
-    font-size: 0.875rem;
-    font-weight: 600;
-    margin-bottom: 0;
-    padding: 16px 0px;
-  }
-
-  h2 {
-    font-size: 2rem;
-    padding-bottom: 16px;
-    padding-top: 0px;
-    margin-bottom: 0px;
-
-    a {
-      color: $black;
-      &:hover,
-      &:focus {
-        text-decoration: underline;
-      }
-    }
-  }
-
-  p {
-    font-size: 1.25rem;
-    max-width: 100%;
-    margin-bottom: 0;
-  }
-
-  @media (max-width: 651px) {
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    p {
-      font-size: 1rem;
-    }
-  }
-}
-
 .gallery-col-2-max {
   @media (min-width: 1058px) {
     grid-template-columns: 1fr 1fr;
@@ -1379,6 +1337,27 @@ p.cardText {
     }
   }
 }
+
+.leadershipName {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.leadershipPosition {
+  font-size: 1.25rem;
+}
+
+.leadershipHeader {
+  text-align: center;
+}
+
+.leadershipGrid {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 33.33%;
+}
+
 .content-container {
   margin-left: auto;
   margin-right: auto;
@@ -1992,6 +1971,9 @@ p.cardText {
       max-height: 100%;
       width: 100%;
       text-align: left;
+      p {
+        margin-bottom: 0;
+      }
     }
     h2 {
       width: 100%;
@@ -2030,9 +2012,18 @@ p.cardText {
     min-height: 100%;
   }
 
+  @media (min-width: $breakpoint-sm) {
+    .image-container {
+      padding-right: 32px;
+    }
+  }
+
   @media (min-width: 1060px) {
     .starting-projects-grid > * + * {
       margin-left: 32px;
+    }
+    .image-container {
+      padding-right: 0;
     }
   }
 
@@ -2052,13 +2043,17 @@ p.cardText {
     }
     .image-container {
       height: 100%;
-      padding-right: 32px;
+      img {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 
   @media (max-width: 651px) {
     .starting-projects-content,
     .starting-projects-item {
+      flex-direction: column;
+      height: 100%;
       max-width: 555px;
       h2 {
         font-size: 1.5rem;
@@ -2079,12 +2074,11 @@ p.cardText {
   }
 
   @media (max-width: 360px) {
-    padding: 48px 0px;
-    margin-left: 24px;
-    margin-right: 24px;
+    padding: 48px 24px;
     .starting-projects-item {
       flex-direction: column;
       height: min-content;
+      margin-bottom: 1rem;
     }
     .starting-projects-grid > * + * {
       margin-top: 48px;
@@ -2093,8 +2087,13 @@ p.cardText {
       width: 100%;
       height: auto;
       padding-right: 0;
+      margin-bottom: 1rem;
     }
   }
+}
+
+.how-to-join-container {
+  background-color: $white;
 }
 
 .volunteerContent {
@@ -2115,6 +2114,9 @@ p.cardText {
     max-width: none;
     .description {
       font-weight: 500;
+    }
+    .iconTile p {
+      text-align: left;
     }
   }
 }

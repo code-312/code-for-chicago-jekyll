@@ -1,0 +1,50 @@
+<div class="gallery-container">
+  {% assign filtered_posts = site.posts | where: 'layout', 'project' %} {% for
+  post in filtered_posts %}
+  {% include card.html thumbnail=post.thumbnail description=post.description url=post.url alt=post.alt areas=post.areas title=post.title imgtext=post.imgtext %}
+  {% endfor %}
+</div>
+<script>
+  const customAspectRatio = 395 / 261;
+  const imageDivs = Array.from(
+    document.querySelectorAll(".gallery-image-container")
+  );
+  const images = imageDivs.map((div) => div.children[0]);
+  const maxHeight = 261;
+
+  function alignImages() {
+    // max height.
+    let smallestHeight = maxHeight;
+
+    // Find the smallest height
+    for (let img of images) {
+      if (img.clientHeight < smallestHeight) {
+        smallestHeight = img.clientHeight;
+      }
+    }
+
+    // Assign the smallest height to all divs, aligning the images to the smallest one.
+    for (let img of images) {
+      img.style.height = `${smallestHeight}px`;
+    }
+
+    imageDivs.forEach((div) => {
+      if (div.parentNode.classList.contains("hidden")) {
+        div.parentNode.classList.replace("hidden", "display-none");
+      }
+    });
+    resizeImages();
+  }
+
+  function resizeImages() {
+    // Change heights to follow the aspect ratio of the maximum height.
+    for (let img of images) {
+      const aspectRatioHeight = img.clientWidth / customAspectRatio;
+      img.style.height = `${aspectRatioHeight}px`;
+    }
+  }
+
+  // Attach previous functions to events. Load fires when page is loaded, resize fires when page is resized.
+  window.addEventListener("load", alignImages);
+  window.addEventListener("resize", resizeImages);
+</script>
