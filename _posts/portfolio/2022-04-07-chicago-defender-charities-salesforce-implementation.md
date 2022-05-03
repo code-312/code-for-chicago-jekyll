@@ -9,6 +9,7 @@ imgtext: How the team identified and implemented a long-term technical solution
 alt: Code for Chicago designed logo for Chicago Defender Charites and the
   Salesforce logo
 is_preview: false
+is_archived: false
 ---
 ## Overview
 
