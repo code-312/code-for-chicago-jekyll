@@ -81,7 +81,7 @@ home: true
             <h4 class="cardTitle">VOLUNTEERS</h4>
             <h2 class="cardText">Looking to use your skills for the greater good and build your resume?</h2>
             <p class="cardText">Maybe you're looking to pick up a new tech skill. You too, have come to the right place. Sign up for our meetups or join us on Slack.</p>
-            <p><a href="https://code-for-chicago-slack-invite.herokuapp.com/" target="blank">Join us on Slack <i class="fas fa-long-arrow-alt-right"></i></a></p>
+            <p><a href="https://code-for-chicago-slack-invite.herokuapp.com/" target="_blank">Join us on Slack <i class="fas fa-long-arrow-alt-right"></i></a></p>
           </div>
         </div>
       </div>
@@ -96,7 +96,7 @@ home: true
 
       <div class="col-lg-12 meetup">
         <h1 class="text-center">Upcoming Events</h1>
-        <p class="text-center"><a id="meetupLink" href="https://www.meetup.com/code-for-chicago" target="blank">See our events on Meetup <i class="fas fa-external-link-alt"></i></a></p>
+        <p class="text-center"><a id="meetupLink" href="https://www.meetup.com/code-for-chicago" target="_blank">See our events on Meetup <i class="fas fa-external-link-alt"></i></a></p>
         <div class="flexRow">
           <div class="col-lg order-lg-2 event-photo-div">
             <img class="event-photo" src="{{event.featured_photo.photo_link}}"/>
@@ -106,7 +106,7 @@ home: true
                 {% assign time = event.local_time | date: "%l:%M %p" %}
                 {{date}} at {{time}}</h4>
             <h2 class="text-left">
-                <a href='{{event.link}}' target="blank">{{event.name}}</a>
+                <a href='{{event.link}}' target="_blank">{{event.name}}</a>
             </h2>
             <p>{{event.description}}</p>
 
@@ -119,7 +119,7 @@ home: true
               </div>
               <div class="col-lg-6 event-location-col">
                 <div class="attend-button-container">
-                  <a href="{{event.link}}" target="blank" class="short-button attend-button">
+                  <a href="{{event.link}}" target="_blank" class=" attend-button">
                     Attend
                     <i class="fas fa-external-link-alt"></i>
                   </a>

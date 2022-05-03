@@ -1,0 +1,39 @@
+//Custom mixin for setting various button colors + hovers:
+@mixin button-colors($font-color, $bg-color, $border-color) {
+  color: $font-color;
+  background: $bg-color;
+  border: 1px solid $border-color;
+  &:hover {
+    background:$cfa-red-dark;
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg-color,25%);
+  } 
+}
+
+//Base button style, use this class for each button. Then add custom class with mixins:
+.button {
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: $font-family-alt;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+
+  &:focus {
+    box-shadow: 0 0 0 2px $white, 0 0 0 5px $cfa-blue;
+    outline: none;
+    text-decoration: underline;
+  }
+}
+
+.donate-button {
+  @include button-colors($white, $cfa-red, $cfa-red);
+}
+
+.button-long {
+  @include button-colors($white, $cfa-red, $white);
+}
