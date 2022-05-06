@@ -8,6 +8,7 @@ thumbnail: /images/uploads/chicagofairtrade_hero.png
 imgtext: Chicago Fair Trade Promo for Shop Online
 alt: Chicago Fair Trade Promo for Shop Online
 is_preview: false
+is_archived: false
 ---
 ## Overview
 

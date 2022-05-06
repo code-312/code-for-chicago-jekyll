@@ -8,6 +8,7 @@ thumbnail: /images/uploads/sticker-deliverable.png
 imgtext: Final output for the logo and sticker concepts
 alt: Final output for the logo and sticker concepts
 is_preview: false
+is_archived: true
 ---
 ## Overview
 

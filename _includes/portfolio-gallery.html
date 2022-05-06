@@ -1,5 +1,5 @@
 <div class="gallery-container portfolio-gallery-container">
-  {% assign filtered_posts = site.posts | where: 'layout', 'portfolio' %} {% for
+  {% assign filtered_posts = site.posts | where: 'layout', 'portfolio' | where: 'is_archived', 'false' %} {% for
   post in filtered_posts %}
   {% include card.html thumbnail=post.thumbnail description=post.description url=post.url alt=post.alt areas=post.areas title=post.title %}
   {% endfor %}
