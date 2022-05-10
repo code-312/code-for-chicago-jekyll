@@ -1,8 +1,6 @@
 <div class="gallery-container">
-  {% assign filtered_posts = site.posts | where: 'layout', 'project' %} {% for
-  post in filtered_posts %}
-  {% include card.html thumbnail=post.thumbnail description=post.description url=post.url alt=post.alt areas=post.areas title=post.title imgtext=post.imgtext %}
-  {% endfor %}
+  {% assign filtered_posts = site.posts | where: 'layout', 'project' %}
+  {% include card-group.html cards = filtered_posts %}
 </div>
 <script>
   const customAspectRatio = 395 / 261;

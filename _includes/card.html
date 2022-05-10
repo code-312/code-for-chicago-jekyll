@@ -14,7 +14,7 @@
     {% else %}
     <a href="{{ include.url }}">
       <div class="gallery-image-container">
-        {% if post.thumbnail and post.alt %}
+        {% if card.thumbnail and card.alt %}
         <img src="{{include.thumbnail}}" alt="{{include.alt}}" /> {% else %}
         <img src="/images/proxy-img.png" alt="A sample proxy image" />
         {% endif %}
@@ -26,8 +26,6 @@
         <a href="{{ include.url }}">{{ include.title }}</a>
       </h2>
       <p>{{ include.description }}</p>
-      <p>{{ include.imgtext }}</p> 
-
     </div>
     {% endif %}
 </div>
