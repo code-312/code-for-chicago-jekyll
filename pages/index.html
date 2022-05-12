@@ -91,8 +91,8 @@ home: true
   <div class="contentContainer">
     <div class="flexRow meetups">
       <div class="padded-content">
-
-      {%for event in site.data.events%}
+      {% if site.data.events.size > 0 %}
+        {%for event in site.data.events%}
 
       <div class="col-lg-12 meetup">
         <h1 class="text-center">Upcoming Events</h1>
@@ -131,7 +131,11 @@ home: true
         </div>
       </div> 
 
-      {%endfor%}
+      {% endfor %}
+      {% else %}
+      <h2 class="text-center">No Upcoming Events</h2>
+      <p class="text-center"> Join our <a href="https://www.meetup.com/code-for-chicago" target="_blank">Meetup group</a> to stay up to date on what's coming up.</p>
+      {% endif %}
       </div>
     </div>
     </div>
