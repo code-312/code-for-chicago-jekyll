@@ -4,6 +4,8 @@ permalink: "/join"
 layout: join
 home: false
 ---
+{% assign class = "alternating" | append: include.class %}
+{% include card-group.html cards = filtered_posts %}
 
 <div class="contentContainer volunteerContent">
   <h2 class="volunteer-title">What are volunteer expectations?</h2>

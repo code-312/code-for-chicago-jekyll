@@ -7,6 +7,8 @@ layout: default
 home: true
 ---
 
+{% assign class = "alternating" | append: include.class %}
+
 <div class="main" role="main">
 <div class="contentContainer">
   <div class="workwithus">
@@ -57,12 +59,22 @@ home: true
 
     </div>
   </div>
+  <h1>this works </h1>
+  {% assign class = "alternating" %}
+
+  {{ site.data.index_content }}
+  {% for card in site.data.index_content %}
+    <p>{{ card }}</p>
+  {% endfor %}
+
   <div class="cardsContainer">
     <div class="padded-content cards">
+      {% include card-group.html cards=site.data.index_content class="alternating" %}
+
       <div class="flexRow">
         <div class="col-md-auto image-right-card-text">
           <div class="card-info">
-            <h4 class="cardTitle">ORGANIZATIONS</h4>
+            <h4 class="cardTitle">{{card.areas}}</h4>
             <h2 class="cardText">Are you a Chicagoland nonprofit that needs some tech help?</h2>
             <p class="cardText">Have an idea how to make your community better? You've come to the right place. Either contact us or come to one of our meetups to get the conversation started.</p>
             <p><a href="/#contactus">Let's get the conversation started <i class="fas fa-long-arrow-alt-right"></i></a></p>
