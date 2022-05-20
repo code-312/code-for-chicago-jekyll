@@ -560,6 +560,23 @@ hr {
   }
 }
 
+.about-sponsors {
+  display: flex;
+  flex-direction: row;
+  img {
+    height: auto;
+  }
+  max-width: 1440px;
+}
+
+.our-sponsors-title {
+  text-align: center;
+}
+
+.sponsor {
+  width: 33%;
+}
+
 .keep-in-touch {
   display: block;
   margin: auto;

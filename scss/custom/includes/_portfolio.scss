@@ -23,7 +23,7 @@
     h1 {
       padding-top: 0;
       margin-bottom: 1rem;
-      font-size: $fontsize-lg;
+      @include heading1;
     }
 
     .portfolio-description {
