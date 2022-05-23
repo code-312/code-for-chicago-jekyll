@@ -4,6 +4,9 @@
         <h4 class="cardTitle">{{ include.areas }}</h4>
         <h2 class="cardText">{{ include.title }}</h2>
         <p class="cardText">{{ include.description }}</p>
+        {% if include.url %}
+            <p><a href="{{include.url}}">{{include.urlText}}<i class="fas fa-long-arrow-alt-right"></i></a></p>
+        {% endif %}
       </div>
     </div>
     <div class="col-md-auto card-img-container">

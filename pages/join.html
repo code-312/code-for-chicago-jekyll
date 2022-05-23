@@ -54,10 +54,20 @@ home: false
     </div>
   </div>
 </div>
+
+{% assign class = "alternating" %}
+
+{{ site.data.join_content }}
+{% for card in site.data.join_content %}
+  <p>{{ card }}</p>
+{% endfor %}
+
 <div class="contentContainer">
   <div class="cardsContainer">
     <div class="padded-content cards">
-      <div class="flexRow">
+      {% include card-group.html cards=site.data.join_content class="alternating" %}
+
+      <!-- <div class="flexRow">
         <div class="col-md-auto image-right-card-text">
           <div class="card-info">
             <h4 class="cardTitle">Project Management</h4>
@@ -112,7 +122,7 @@ home: false
             alt="A snail moves slowly on a rock"
           />
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
