@@ -12,7 +12,7 @@
         <p class="cardText">
           {{ include.description }}
         </p>
-        {% if include.url %}
+        {% if include.url and include.urlText %}
             <h1>{{include.urlText}}</h1>
             <p><a href="{{include.url}}" target="_blank">{{ include.urlText }}<i class="fas fa-long-arrow-alt-right"></i></a></p>
         {% endif %}

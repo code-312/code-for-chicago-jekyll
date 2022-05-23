@@ -4,7 +4,7 @@
         <h4 class="cardTitle">{{ include.areas }}</h4>
         <h2 class="cardText">{{ include.title }}</h2>
         <p class="cardText">{{ include.description }}</p>
-        {% if include.url %}
+        {% if include.url and include.urlText %}
             <p><a href="{{include.url}}">{{include.urlText}}<i class="fas fa-long-arrow-alt-right"></i></a></p>
         {% endif %}
       </div>
