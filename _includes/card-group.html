@@ -1,23 +1,11 @@
 {% if include.class=="alternating" %}
-  {% assign i = 0 %}
   {% for card in include.cards %}
-    {% assign i = i | plus: 1 %}
-    {% assign value = i | modulo: 2 %}
-    {% if value == 0 %}
-      {% include alternating_card_left.html title=card.title thumbnail=card.thumbnail description=card.description url=card.url alt=card.alt areas=card.areas body=card.body imgtext=card.imgtext %}
-    {% else %}
-      {% include alternating_card_right.html title=card.title thumbnail=card.thumbnail description=card.description url=card.url alt=card.alt areas=card.areas body=card.body imgtext=card.imgtext %}
-
-  {% endif %} 
+      {% include alternating_card.html title=card.title thumbnail=card.thumbnail description=card.description url=card.url urlText=card.urlText alt=card.alt areas=card.areas body=card.body imgtext=card.imgtext %}
   {% endfor %}
-
 {% else if include.class=="non-alternating" %}
-
   {% for card in include.cards %}
-
-  {% include card.html title=card.title thumbnail=card.thumbnail description=card.description url=card.url alt=card.alt areas=card.areas body=card.body imgtext=card.imgtext %}
+    {% include card.html title=card.title thumbnail=card.thumbnail description=card.description url=card.url alt=card.alt areas=card.areas body=card.body imgtext=card.imgtext %}
   {% endfor %}
-
 {% endif %} 
 
 

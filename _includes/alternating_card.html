@@ -1,4 +1,4 @@
-<div class="flexRow image-left-card-row">
+<div class="flexRow image-card-row">
     <div class="col-md-auto card-img-container">
       <img
         src="{{include.thumbnail}}"
@@ -12,6 +12,9 @@
         <p class="cardText">
           {{ include.description }}
         </p>
+        {% if include.url and include.urlText %}
+            <p><a href="{{include.url}}" target="_blank">{{ include.urlText }} <i class="fas fa-long-arrow-alt-right"></i></a></p>
+        {% endif %}
       </div>
     </div>
 </div>
