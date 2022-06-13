@@ -1,19 +1,19 @@
 <div class="flexRow image-card-row">
     <div class="col-md-auto card-img-container">
       <img
-        src="{{include.thumbnail}}"
-        alt="{{include.alt}}"
+        src="{{include.card.thumbnail}}"
+        alt="{{include.card.alt}}"
       />
     </div>
     <div class="col-md-auto image-left-card-text">
       <div class="card-info">
-        <h5 class="cardTitle">{{ include.areas }}</h5>
-        <h2 class="cardText">{{ include.title }}</h2>
+        <h5 class="cardTitle">{{ include.card.areas }}</h5>
+        <h2 class="cardText">{{ include.card.title }}</h2>
         <p class="cardText">
-          {{ include.description }}
+          {{ include.card.description }}
         </p>
-        {% if include.url and include.urlText %}
-            <p><a href="{{include.url}}" target="_blank">{{ include.urlText }} <i class="fas fa-long-arrow-alt-right"></i></a></p>
+        {% if include.card.url and include.card.urlText %}
+            <p><a href="{{include.card.url}}" target="_blank">{{ include.card.urlText }} <i class="fas fa-long-arrow-alt-right"></i></a></p>
         {% endif %}
       </div>
     </div>

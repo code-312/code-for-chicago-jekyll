@@ -1,7 +1,6 @@
 <div class="gallery-container portfolio-gallery-container">
   {% assign filtered_posts = site.posts | where: 'layout', 'portfolio' | where: 'is_archived', 'false' %} 
-  {% assign class="non-alternating" | append: include.class %}
-  {% include card-group.html cards=filtered_posts class=class %}
+  {% include card-group.html cards=filtered_posts class="non-alternating" %}
 </div>
 <script>
   const customAspectRatio = 395 / 261;

@@ -1,9 +1,9 @@
 {% if include.class=="alternating" %}
   {% for card in include.cards %}
-      {% include alternating_card.html title=card.title thumbnail=card.thumbnail description=card.description url=card.url urlText=card.urlText alt=card.alt areas=card.areas body=card.body imgtext=card.imgtext %}
+      {% include alternating_card.html card=card %}
   {% endfor %}
 {% else if include.class=="non-alternating" %}
   {% for card in include.cards %}
-    {% include card.html title=card.title thumbnail=card.thumbnail description=card.description url=card.url alt=card.alt areas=card.areas body=card.body imgtext=card.imgtext %}
+    {% include card.html card=card %}
   {% endfor %}
 {% endif %}
