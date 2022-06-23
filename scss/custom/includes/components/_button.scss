@@ -22,6 +22,7 @@
   padding: 14px 16px;
   text-align: center;
   text-decoration: none;
+  @include button-colors($white, $cfa-red, $white);
 
   &:focus {
     box-shadow: 0 0 0 2px $white, 0 0 0 5px $cfa-blue;
