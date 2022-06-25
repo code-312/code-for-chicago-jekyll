@@ -1054,15 +1054,7 @@ hr {
   margin-bottom: 0;
 }
 
-.image-left-card-row {
-  flex-wrap: wrap-reverse;
-  @media (max-width: 1058px) {
-    flex-direction: column-reverse !important;
-  }
-}
-
-.image-right-card-row,
-.image-left-card-row {
+.image-card-row {
   margin-top: 80px;
   @media (max-width: 1058px) {
     padding: 0;
@@ -1070,6 +1062,12 @@ hr {
   }
   @media (max-width: 360px) {
     margin-top: 48px;
+  }
+  &:nth-of-type(odd){
+    flex-wrap: wrap-reverse;
+    @media (max-width: 1058px) {
+    }
+    flex-direction: row-reverse;
   }
 }
 

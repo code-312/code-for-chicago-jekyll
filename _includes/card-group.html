@@ -1,0 +1,9 @@
+{% if include.class=="alternating" %}
+  {% for card in include.cards %}
+      {% include alternating_card.html card=card %}
+  {% endfor %}
+{% else if include.class=="non-alternating" %}
+  {% for card in include.cards %}
+    {% include card.html card=card %}
+  {% endfor %}
+{% endif %}
