@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: "Chicago Defender Charities: Salesforce Implementation"
+title: Chicago Defender Charities
 date: 2022-04-07T22:56:09.316Z
 areas: Salesforce Development
 description: Optimizing a digital workflow and ensuring a sustainable solution that scales.
