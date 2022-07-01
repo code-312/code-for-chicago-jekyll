@@ -4,7 +4,7 @@ title: Code for Carolinas Partnership
 date: 2022-07-01T18:16:51.265Z
 areas: UX Design, UX Research
 thumbnail: /images/uploads/codeforchicago_codeforcarolinas.png
-imgtext: Partnership Logo
+imgtext: Partnership on Educational Toolkit
 description: " "
 alt: "null"
 ---
