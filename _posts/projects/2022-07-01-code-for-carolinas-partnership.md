@@ -5,7 +5,7 @@ date: 2022-07-01T18:16:51.265Z
 areas: UX Design, UX Research
 thumbnail: /images/uploads/codeforchicago_codeforcarolinas.png
 imgtext: Partnership Logo
-description: Educational Toolkit
+description: " "
 alt: "null"
 ---
 **Recruitment Status:** Actively recruiting
@@ -15,7 +15,7 @@ Code for Chicago is partnering with Code for the Carolinas in developing an open
 
 The toolkit will provide materials to support people as they learn to conduct an environmental scan related to public meetings, evaluate the openness of local meetings in an online and in-person context, and use a template to publicize and seek support for recommendations. 
 
-**Deliverable:** Web-based Toolkit/TBD depending on research
+**Deliverable:** Web-based Educational Toolkit/TBD depending on research
 
 **Current Needs:** UX Research, UX Design
 
