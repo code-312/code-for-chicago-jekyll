@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Code for Carolinas Partnership
+title: Code for the Carolinas Partnership
 date: 2022-07-01T18:16:51.265Z
 areas: UX Design, UX Research
 thumbnail: /images/uploads/codeforchicago_codeforcarolinas_finalfinal.png
