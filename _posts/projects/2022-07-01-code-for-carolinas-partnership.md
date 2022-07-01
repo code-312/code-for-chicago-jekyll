@@ -11,7 +11,7 @@ alt: "null"
 **Recruitment Status:** Actively recruiting
 
 **Problem Statement:** 
-Code for Chicago is partnering with Code for the Carolinas in developing an openly-licensed educational toolkit that will empower local residents to replicate Code for Asheville project [Open Meetings Policy](https://openmeetingspolicy.com/)in their local community.
+Code for Chicago is partnering with Code for the Carolinas in developing an openly-licensed educational toolkit that will empower local residents to replicate Code for Asheville project [Open Meetings Policy](https://openmeetingspolicy.com/) in their local community.
 
 The toolkit will provide materials to support people as they learn to conduct an environmental scan related to public meetings, evaluate the openness of local meetings in an online and in-person context, and use a template to publicize and seek support for recommendations. 
 
