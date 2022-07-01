@@ -8,7 +8,7 @@ imgtext: Partnership on Educational Toolkit
 description: " "
 alt: "null"
 ---
-**Recruitment Status:** Actively recruiting
+**Recruitment Status:** Actively recruiting UX design/research
 
 **Problem Statement:** 
 Code for Chicago is partnering with Code for the Carolinas in developing an openly-licensed educational toolkit that will empower local residents to replicate Code for Asheville project [Open Meetings Policy](https://openmeetingspolicy.com/) in their local community.
@@ -26,4 +26,5 @@ The toolkit will provide materials to support people as they learn to conduct an
 **Meeting Cadence:** Wednesdays 6-7pm CST/7pm to 8pm EST
 
 **More Info:**
-- [Project Brief](https://docs.google.com/document/d/1A9-IJndrVk_xhmFwQ1ctKOLU_N6u4b5OHwF2Ekm46Gk/edit?usp=sharing)
+
+* [Project Brief](https://docs.google.com/document/d/1A9-IJndrVk_xhmFwQ1ctKOLU_N6u4b5OHwF2Ekm46Gk/edit?usp=sharing)
