@@ -54,6 +54,7 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Tag", name: "areas", widget: "string" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Thumbnail Description", name: "imgtext", widget: "string" }
+      - { label: "Featured Image Text", name: "imgtext", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
       - { label: "Featured Image Alt", name: "alt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }

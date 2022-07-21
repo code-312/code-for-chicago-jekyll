@@ -1,5 +1,5 @@
 .portfolio-gallery-container {
   @media (min-width: $breakpoint-sm) {
-    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
   }
 }
