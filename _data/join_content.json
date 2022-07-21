@@ -1,0 +1,23 @@
+[
+    {
+        "areas": "PROJECT MANAGEMENT",
+        "alt": "Two women pointing at a whiteboard having a conversation.",
+        "thumbnail": "/images/pm-leads.png",
+        "title": "Our PMs and Leads steer the ship",
+        "description": "Project Managers and Practice Leads define the roadmap and create tickets in our kanban board. They lead our meetings and make sure everyone is on the same page."
+    },
+    {
+        "areas": "TIME COMMITMENT",
+        "alt": "Three men gather around a computer, looking excitedly at something on the screen.",
+        "thumbnail": "/images/volunteer-time.png",
+        "title": "We're happy with any support",
+        "description": "Have an idea how to make your community better? You've come to the right place. Either contact us or come to one of our meetups to get the conversation started."
+    },
+    {
+        "areas": "PROJECT LENGTH",
+        "alt": "A snail moves slowly on a rock.",
+        "thumbnail": "/images/slow-project.png",
+        "title": "Projects are for the long haul",
+        "description": "With small input, we take a little longer than a paid gig. Our teams work iteratively to ensure we are thinking through the problem space rather than devising a solution."
+    }
+]
