@@ -175,6 +175,15 @@ hr {
   }
 }
 
+.internal-links-mobile {
+  text-align: center;
+
+  @media (max-width: 360px) {
+    text-align: left;
+    margin-left: 1rem;
+  }
+}
+
 .hideable-int-link {
   // menu goes mobile
   @media (max-width: $breakpoint-lg) {
@@ -229,7 +238,7 @@ hr {
 
 .external-links-mobile {
   display: flex;
-  justify-content: left;
+  justify-content: center;
 
   .social-logo:first-child {
     margin-left: 0;
