@@ -1,23 +1,29 @@
 [
     {
-        "areas": "PROJECT MANAGEMENT",
-        "alt": "Two women pointing at a whiteboard having a conversation.",
-        "thumbnail": "/images/pm-leads.png",
-        "title": "Our PMs and Leads steer the ship",
-        "description": "Project Managers and Practice Leads define the roadmap and create tickets in our kanban board. They lead our meetings and make sure everyone is on the same page."
+        "areas": "PART 1: START ONBOARDING REGISTRATION",
+        "alt": "Screenshot of first part of volunteer registration form",
+        "thumbnail": "/images/join-us/join-us-part1.png",
+        "title": "To start onboarding, complete our onboarding form",
+        "description": "The form gathers basic info like which project you want to join and your availability. Someone will review your response within 7 actual days and follow-up in Slack.",
+        "url": "https://docs.google.com/presentation/d/1_7zd36CeHqi15DTqL3Wmh3dLCiN8EVbfW2iy1j-gs0M/edit#slide=id.g113339d9e72_0_56",
+        "urlText": "Start the onboarding process"
     },
     {
-        "areas": "TIME COMMITMENT",
-        "alt": "Three men gather around a computer, looking excitedly at something on the screen.",
-        "thumbnail": "/images/volunteer-time.png",
-        "title": "We're happy with any support",
-        "description": "Have an idea how to make your community better? You've come to the right place. Either contact us or come to one of our meetups to get the conversation started."
+        "areas": "PART 2: VOLUNTEER SKILLS",
+        "alt": "Screenshot of second part of volunteer registration form asking about skills",
+        "thumbnail": "/images/join-us/join-us-part2.png",
+        "title": "Next, we'll learn more about your specific skills",
+        "description": "Someone will reach out in Slack to assign you a new task of completing another form. This will give us a better idea of which project to place you.",
+        "url": "https://code-for-chicago-slack-invite.herokuapp.com/",
+        "urlText": "Join our Slack workspace"
     },
     {
-        "areas": "PROJECT LENGTH",
-        "alt": "A snail moves slowly on a rock.",
-        "thumbnail": "/images/slow-project.png",
-        "title": "Projects are for the long haul",
-        "description": "With small input, we take a little longer than a paid gig. Our teams work iteratively to ensure we are thinking through the problem space rather than devising a solution."
+        "areas": "PART 3: PROJECT FIT",
+        "alt": "Screenshot of Trello card about project fit",
+        "thumbnail": "/images/join-us/join-us-part3.png",
+        "title": "Finally, you'll be assigned a project that is a best fit for you",
+        "description": "In this process you'll learn more about the project, shadow a meeting, and meet the people you'll collaborate with.",
+        "url": "https://codeforchicago.org/projects",
+        "urlText": "Learn more about our current active projects"
     }
 ]
