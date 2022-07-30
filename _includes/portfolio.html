@@ -22,21 +22,21 @@
 <script>
 const container = document.querySelector('.portfolio-container');
 let modalImage = document.querySelector('.modal-image');
-let modal = document.querySelector(".modal")
-let closeBtn = document.querySelector(".close-btn")
+let modal = document.querySelector('.modal');
+let closeBtn = document.querySelector('.close-btn');
 
-function verifyTargetImage(e) {
-  let returnedValue = e.target;
+function setModalImage(e) {
+  let eventTarget = e.target;
 
-  if (returnedValue.nodeName === 'IMG') {
-    modalImage.src = returnedValue.src;
-    modalImage.alt = returnedValue.alt;
-    modalImage.title = returnedValue.title;
+  if (eventTarget.nodeName === 'IMG') {
+    modalImage.src = eventTarget.src;
+    modalImage.alt = eventTarget.alt;
+    modalImage.title = eventTarget.title;
+    modal.style.display = "block"
   } 
-  modal.style.display = "block"
 };
 
-container.addEventListener('click', verifyTargetImage);
+container.addEventListener('click', setModalImage);
 closeBtn.onclick = () => modal.style.display = "none";
 window.onclick = function(e) {
   if (e.target === modal) {
