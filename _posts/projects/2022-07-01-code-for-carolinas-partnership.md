@@ -2,13 +2,13 @@
 layout: project
 title: Code for the Carolinas Partnership
 date: 2022-07-01T18:16:51.265Z
-areas: UX Design, UX Research
+areas: Not Actively Recruiting
 thumbnail: /images/uploads/codeforchicago_codeforcarolinas_finalfinal.png
 imgtext: Partnership on Educational Toolkit
 description: " "
 alt: "null"
 ---
-**Recruitment Status:** Actively recruiting
+**Recruitment Status:**  Not actively recruiting
 
 **Problem Statement:** 
 Code for Chicago is partnering with Code for the Carolinas in developing an openly-licensed educational toolkit that will empower local residents to replicate Code for Asheville project [Open Meetings Policy](https://openmeetingspolicy.com/) in their local community.
