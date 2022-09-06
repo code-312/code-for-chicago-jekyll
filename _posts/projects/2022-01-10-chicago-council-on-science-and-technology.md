@@ -5,7 +5,7 @@ date: 2022-01-10T12:23:37.832Z
 areas: Not actively recruiting
 thumbnail: /images/uploads/Site_Map-Chicago_Council.png
 imgtext: Modernizing a website to increase volunteer and event participation
-description: "null"
+description: "     "
 alt: "null"
 ---
 **Recruitment Status:** Not actively recruiting
