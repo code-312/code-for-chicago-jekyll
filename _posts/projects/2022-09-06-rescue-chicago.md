@@ -27,3 +27,4 @@ To learn more about the journeys of these rescued pups, we pulled data from the 
 **More Info:**
 
 * [Petfinder Dashboard](https://codeforchicago-rescuechi.herokuapp.com/)
+*﻿ [Github] (https://github.com/Code-For-Chicago/Code-for-Chicago-Data-Workgroup/tree/main/projects/rescuechi)
