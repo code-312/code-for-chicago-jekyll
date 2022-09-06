@@ -4,7 +4,7 @@ title: Rescue Chicago
 date: 2022-09-06T15:14:21.946Z
 areas: Backend, Data Analysts
 thumbnail: /images/uploads/screen-shot-2022-09-06-at-10.27.23-am.png
-imgtext: "null"
+imgtext: Petfinder Dashboard
 description: "null"
 alt: "null"
 ---
