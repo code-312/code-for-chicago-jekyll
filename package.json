@@ -7,7 +7,7 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^8.4.1",
-    "browser-sync": "^2.26.14",
+    "browser-sync": "^2.27.10",
     "clipboard": "^2.0.1",
     "critical": "^2.0.1",
     "instantsearch.js": "^2.7.4",
