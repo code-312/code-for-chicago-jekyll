@@ -15,7 +15,7 @@ is_archived: false
 
 ### Client
 
-[Between Friends](https://betweenfriendschicago.org/) is dedicated to preventing domestic violence and ending the cycle of abuse by equipping our communities with the tools necessary for everyone to feel safe and equal in their relationships..
+[Between Friends](https://betweenfriendschicago.org/) is dedicated to preventing domestic violence and ending the cycle of abuse by equipping our communities with the tools necessary for everyone to feel safe and equal in their relationships.
 
 ### The Challenge
 
