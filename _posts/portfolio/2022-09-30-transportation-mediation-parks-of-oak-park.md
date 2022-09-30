@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: Transportation Mediation - Parks of Oak Park
+title: Transportation Mediation - Oak Park
 date: 2022-09-30T11:25:45.178Z
 areas: Discovery
 description: Mediating discussion for the Parks of Oak Park residents
