@@ -38,3 +38,15 @@
 .button-long {
   @include button-colors($white, $cfa-red, $white);
 }
+
+.join-button {
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: $font-family-alt;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 7px 22px 7px 22px;
+  text-align: center;
+  text-decoration: none;
+  @include button-colors($cfa-red, $white, $white);
+}
