@@ -787,6 +787,35 @@ hr {
   }
 }
 
+.joinChecklist {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.joinChecklist a {
+  color: $black;
+}
+
+.joinChecklistContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinCheckmark {
+  height: 1.5rem;
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.joinHeader {
+  font-size: 32px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
 #contactus {
   margin-top: 0px;
   margin-bottom: 24px;
