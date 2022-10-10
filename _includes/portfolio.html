@@ -10,6 +10,37 @@
   <div class="portfolio-content">
     {{ content }}
   </div>
+</div> 
+<!-- Modal -->
+<div class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <img class="modal-image">
+  </div>
 </div>
- 
 {% include case-studies.html %}
+<script>
+const container = document.querySelector('.portfolio-container');
+let modalImage = document.querySelector('.modal-image');
+let modal = document.querySelector('.modal');
+let closeBtn = document.querySelector('.close-btn');
+
+function setModalImage(e) {
+  let eventTarget = e.target;
+
+  if (eventTarget.nodeName === 'IMG') {
+    modalImage.src = eventTarget.src;
+    modalImage.alt = eventTarget.alt;
+    modalImage.title = eventTarget.title;
+    modal.style.display = "block"
+  } 
+};
+
+container.addEventListener('click', setModalImage);
+closeBtn.onclick = () => modal.style.display = "none";
+window.onclick = function(e) {
+  if (e.target === modal) {
+    modal.style.display = "none"
+  }
+};
+</script>

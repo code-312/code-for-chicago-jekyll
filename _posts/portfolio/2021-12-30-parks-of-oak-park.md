@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: Parks of Oak Park
+title: Data Gathering - Parks of Oak Park
 date: 2021-12-29T23:49:32.109Z
 areas: ux research
 description: " Recommend a better geofencing solution that best fits a number of
