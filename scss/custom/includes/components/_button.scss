@@ -3,10 +3,10 @@
   color: $font-color;
   background: $bg-color;
   border: 1px solid $border-color;
-  &:hover {
-    background:$cfa-red-dark;
-    transition: all 0.3s ease;
-  }
+  // &:hover {
+  //   background:$cfa-red-dark;
+  //   transition: all 0.3s ease;
+  // }
   &:active {
     background:darken($bg-color,25%);
   } 
@@ -40,13 +40,14 @@
 }
 
 .join-button {
+  @include button-colors($cfa-red, $white, $white);
   border-radius: 2px;
   cursor: pointer;
   font-family: $font-family-alt;
   font-size: 0.875rem;
   font-weight: 600;
-  padding: 7px 27px 7px 27px;
+  border: 7px 17px 7px 17px;
+  padding: 13px 15px 13px 15px;
   text-align: center;
   text-decoration: none;
-  @include button-colors($cfa-red, $white, $white);
 }
