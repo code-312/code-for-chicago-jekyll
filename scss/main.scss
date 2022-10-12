@@ -492,7 +492,6 @@ hr {
   h1 {
     @media (max-width: 768px) {
       padding-top: 0;
-      margin-bottom: 0;
     }
 
     @media (max-width: 651px) {
@@ -513,6 +512,20 @@ hr {
 
   @media (max-width: 360px) {
     padding: 0 1.5rem;
+  }
+}
+
+.secondary-hero-heading h1 {
+  margin-bottom: 4rem;
+
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
+  @media (max-width: 651px) {
+    margin-bottom: 4rem;
+  }
+  @media (max-width: 360px) {
+    margin-bottom: 4rem;
   }
 }
 
