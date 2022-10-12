@@ -515,17 +515,17 @@ hr {
   }
 }
 
-.secondary-hero-heading h1 {
+.secondary-hero-heading {
   margin-bottom: 4rem;
 
   @media (max-width: 768px) {
     margin-bottom: 2rem;
   }
   @media (max-width: 651px) {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
   @media (max-width: 360px) {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 }
 
