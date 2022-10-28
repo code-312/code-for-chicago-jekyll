@@ -2,7 +2,7 @@
 layout: project
 title: Chicago Council on Science and Technology
 date: 2022-01-10T12:23:37.832Z
-areas: Actively Recruiting
+areas: Front-End
 thumbnail: /images/uploads/Site_Map-Chicago_Council.png
 imgtext: Modernizing a website to increase volunteer and event participation
 description: "     "
