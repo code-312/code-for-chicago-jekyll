@@ -2,7 +2,7 @@
 layout: project
 title: Chicago Council on Science and Technology
 date: 2022-01-10T12:23:37.832Z
-areas: Not actively recruiting
+areas: Actively Recruiting
 thumbnail: /images/uploads/Site_Map-Chicago_Council.png
 imgtext: Modernizing a website to increase volunteer and event participation
 description: "     "
@@ -14,7 +14,7 @@ alt: "null"
 
 **Deliverable:** [Website](https://www.c2st.org/)
 
-**Current Needs:** Front-end, UX Research, UX/UI Design
+**Current Needs:** Front-end
 
 **Tech:** Wix, Figma
 
