@@ -8,7 +8,7 @@ imgtext: Modernizing a website to increase volunteer and event participation
 description: "     "
 alt: "null"
 ---
-**Recruitment Status:** Not actively recruiting
+**Recruitment Status:** Actively recruiting
 
 **Problem Statement:** Currently, C2ST’s website doesn’t capture their goal of “modernizing” their organization on the surface. Additionally, their staff seem to have a difficult time managing their web assets. Solving this problem ensures that their brand fits with their mission, and optimizes their staff operations.
 
