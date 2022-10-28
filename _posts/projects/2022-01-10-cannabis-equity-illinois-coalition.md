@@ -8,7 +8,7 @@ imgtext: Improving UX/UI to align with org goals and built to scale.
 description: " "
 alt: "null"
 ---
-**Recruitment Status:** Actively recruiting developers only
+**Recruitment Status:** Not actively recruiting
 
 **Problem Statement:** CEIC doesn’t have a defined brand identity or a technical infrastructure to support it as they scale their services and scope. As they onboard volunteers and other staff, they are making new decisions on content and assets. As a result, there may be a misalignment of messages and increased burden of decision making they have to make every single time.
 
