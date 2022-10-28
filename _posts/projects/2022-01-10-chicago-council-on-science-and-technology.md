@@ -20,8 +20,6 @@ alt: "null"
 
 **This would be a good fit for:** For Developers -- there will likely not be a lot of custom code built since this is primarily a Wix project. Hence, it's great if you're interested in web development and getting experience working in a cross-functional team.
 
-For designers -- the designs are already built so it's great if you're interested in improving it for accessibility. There will be some need to design a couple wireframes here and there.
-
 **Meeting Cadence:** Tuesdays at 5:30-6pm
 
 **More Info:**
