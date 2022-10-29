@@ -3,10 +3,7 @@
   color: $font-color;
   background: $bg-color;
   border: 1px solid $border-color;
-  // &:hover {
-  //   background:$cfa-red-dark;
-  //   transition: all 0.3s ease;
-  // }
+  
   &:active {
     background:darken($bg-color,25%);
   } 
@@ -46,8 +43,7 @@
   font-family: $font-family-alt;
   font-size: 0.875rem;
   font-weight: 600;
-  border: 7px 17px 7px 17px;
-  padding: 13px 15px 13px 15px;
+  padding: 0.55em 2em;
   text-align: center;
   text-decoration: none;
 }
