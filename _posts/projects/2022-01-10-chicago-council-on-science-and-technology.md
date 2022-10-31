@@ -16,9 +16,11 @@ alt: "null"
 
 **Current Needs:** Front-end
 
-**Tech:** Wix, Figma
+**Tech:** WordPress, Figma
 
-**This would be a good fit for:** There will likely not be a lot of custom code built since this is primarily a Wix/Wordpress project. Hence, it's great if you're interested in web development and getting experience working in a cross-functional team. 
+**This would be a good fit for:** T﻿here will likely not be a lot of custom code since this is primarily a WordPress project using a Elementor plugin. Hence, it's great if you're interested in web development and getting experience working in a cross-functional team. 
+
+ 
 
 **Meeting Cadence:** Tuesdays at 5:30-6pm
 
