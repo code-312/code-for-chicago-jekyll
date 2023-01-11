@@ -3,10 +3,7 @@
   color: $font-color;
   background: $bg-color;
   border: 1px solid $border-color;
-  &:hover {
-    background:$cfa-red-dark;
-    transition: all 0.3s ease;
-  }
+  
   &:active {
     background:darken($bg-color,25%);
   } 
@@ -37,4 +34,16 @@
 
 .button-long {
   @include button-colors($white, $cfa-red, $white);
+}
+
+.join-button {
+  @include button-colors($cfa-red, $white, $white);
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: $font-family-alt;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.55em 2em;
+  text-align: center;
+  text-decoration: none;
 }
