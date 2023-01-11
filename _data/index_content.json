@@ -1,20 +1,20 @@
 [
-    {
-        "areas": "ORGANIZATIONS",
-        "alt": "People at table for two organizations.",
-        "thumbnail": "/images/organizations.jpg",
-        "title": "Are you a Chicagoland nonprofit that needs some tech help?",
-        "description": "Have an idea how to make your community better? You've come to the right place. Either contact us or come to one of our meetups to get the conversation started.",
-        "url": "/#contactus",
-        "urlText": "Let's get the conversation started"
-    },
-    {
-        "areas": "VOLUNTEERS",
-        "alt": "Group photo of volunteers.",
-        "thumbnail": "/images/volunteers.jpg",
-        "title": "Looking to use your skills for the greater good and build your resume?",
-        "description": "Maybe you're looking to pick up a new tech skill. You too, have come to the right place. Sign up for our meetups or join us on Slack.",
-        "url": "https://code-for-chicago-slack-invite.herokuapp.com/",
-        "urlText": "Join us on Slack"
-    }
+  {
+    "areas": "ORGANIZATIONS",
+    "alt": "People at table for two organizations.",
+    "thumbnail": "/images/organizations.jpg",
+    "title": "Are you a Chicagoland nonprofit that needs some tech help?",
+    "description": "Have an idea how to make your community better? You've come to the right place. Either contact us or come to one of our meetups to get the conversation started.",
+    "url": "/#contactus",
+    "urlText": "Let's get the conversation started"
+  },
+  {
+    "areas": "VOLUNTEERS",
+    "alt": "Group photo of volunteers.",
+    "thumbnail": "/images/volunteers.jpg",
+    "title": "Looking to use your skills for the greater good and build your resume?",
+    "description": "Maybe you're looking to pick up a new tech skill. You too, have come to the right place. Sign up for our meetups or join us on Slack.",
+    "url": "https://join.slack.com/t/c4chi/shared_invite/zt-1mvwfme5d-0FtxC_4ZcGW9StKgfBvToQ",
+    "urlText": "Join us on Slack"
+  }
 ]
