@@ -22,9 +22,9 @@ To learn more about the journeys of these rescued pups, we pulled data from the 
 
 **This would be a good fit for:** Data Scientists, Data Analysts, Python Developers, Data Engineers, and pet lovers!
 
-**Meeting Cadence:** Every Wednesday at 7-7:30pm CST
+**Meeting Cadence:** Every other Wednesday at 7-7:30pm CST
 
 **More Info:**
 
 * [Petfinder Dashboard](https://codeforchicago-rescuechi.herokuapp.com/)﻿
-* [Github](https://github.com/Code-For-Chicago/Code-for-Chicago-Data-Workgroup/tree/main/projects/rescuechi)
+* [Github](https://github.com/Code-For-Chicago/rescue-chicago)
