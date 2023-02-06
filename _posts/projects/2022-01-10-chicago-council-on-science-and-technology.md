@@ -20,9 +20,7 @@ alt: "null"
 
 **This would be a good fit for:** T﻿here will likely not be a lot of custom code since this is primarily a WordPress project using a Elementor plugin. Hence, it's great if you're interested in web development and getting experience working in a cross-functional team. 
 
- 
-
-**Meeting Cadence:** Tuesdays at 5:30-6pm
+**Meeting Cadence:** Bi-weekly Mondays at 4pm
 
 **More Info:**
 
