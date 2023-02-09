@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: Code for Chicago Website Redesign
+title: Code for Chicago Website Redesign (Usability Test)
 date: 2023-02-09T17:06:18.618Z
 areas: UX Research
 description: Identifying frequent pain points in the Code for Chicago website
