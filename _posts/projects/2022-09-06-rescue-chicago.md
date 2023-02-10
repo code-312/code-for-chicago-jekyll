@@ -8,7 +8,7 @@ imgtext: Petfinder Dashboard
 description: "   "
 alt: "null"
 ---
-**Recruitment Status:** Actively recruiting
+**Recruitment Status:** Not actively recruiting
 
 **Problem Statement:** In 2021 alone, Chicago Animal Care and Control, the city’s only publicly funded shelter, took in 4,122 stray, surrendered, or confiscated dogs. While some of the dogs who end up in the municipal shelter will be returned to their owner or adopted out directly, more than half of these animals are transferred to another animal rescue organization through the shelter’s Homeward Bound partnerships. 
 
