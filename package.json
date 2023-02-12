@@ -9,7 +9,7 @@
     "autoprefixer": "^8.4.1",
     "browser-sync": "^2.26.14",
     "clipboard": "^2.0.1",
-    "critical": "^2.0.1",
+    "critical": "^5.0.4",
     "instantsearch.js": "^2.7.4",
     "pump": "^3.0.0"
   },
