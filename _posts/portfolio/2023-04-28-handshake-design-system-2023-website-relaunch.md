@@ -11,8 +11,6 @@ alt: Screencap out of the design system in Figma
 is_preview: false
 is_archived: false
 ---
-# Handshake: Code for Chicago’s Design System
-
 ## Overview
 
 ### Code for Chicago
@@ -33,8 +31,6 @@ The Code for Chicago team took a concurrent approach of maintaining the existing
 ### Project Timeline
 
 January 2022 - April 2023 or whenever we launch
-
-
 
 ## Problem Statement
 
