@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: Code for Chicago + Cannabis Equity Illinois Coalition
+title: Cannabis Equity Illinois Coalition
 date: 2023-06-28T16:24:10.277Z
 areas: UX RESEARCH, UX/UI DESIGN, FRONT-END
 description: TBD
