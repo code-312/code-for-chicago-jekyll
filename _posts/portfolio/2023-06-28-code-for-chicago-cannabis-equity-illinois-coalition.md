@@ -10,8 +10,6 @@ alt: Original Cannabis Equity Website
 is_preview: false
 is_archived: false
 ---
-![Original Cannabis Equity Website]( "Original Cannabis Equity Website")
-
 # Overview
 
 ## Code for Chicago
