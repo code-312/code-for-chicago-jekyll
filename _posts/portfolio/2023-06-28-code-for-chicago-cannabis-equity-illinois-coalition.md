@@ -5,7 +5,7 @@ date: 2023-06-28T16:24:10.277Z
 areas: UX RESEARCH, UX/UI DESIGN, FRONT-END
 description: TBD
 thumbnail: /images/uploads/landing.jpg
-imgtext: Original Cannabis Equity Website
+imgtext: " "
 alt: Original Cannabis Equity Website
 is_preview: false
 is_archived: false
