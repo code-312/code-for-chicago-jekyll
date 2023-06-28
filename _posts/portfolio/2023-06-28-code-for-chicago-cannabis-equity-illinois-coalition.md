@@ -3,10 +3,11 @@ layout: portfolio
 title: Cannabis Equity Illinois Coalition
 date: 2023-06-28T16:24:10.277Z
 areas: UX RESEARCH, UX/UI DESIGN, FRONT-END
-description: TBD
+description: Rebuilding the Coalition's website to ensure easier access to
+  cannabis equity resources
 thumbnail: /images/uploads/landing.jpg
 imgtext: " "
-alt: Original Cannabis Equity Website
+alt: Cannabis Equity Website
 is_preview: false
 is_archived: false
 ---
@@ -82,7 +83,7 @@ The new Coalition website was built with not only its future users in mind, but 
 
 # **Outcome**
 
-![Final Product](/images/uploads/final.jpg "Final Product")
+![Updated Website](/images/uploads/final.jpg "Updated Website")
 
 As one of the longest partnerships in Code for Chicago history, the continued support of the Cannabis Equity Illinois Coalition spans many years and many team members. The new website is a testament to the hard work and persistence of the team over two years, and Code for Chicago is honored to collaborate with and support the incredible work of the Coalition for years to come. 
 
