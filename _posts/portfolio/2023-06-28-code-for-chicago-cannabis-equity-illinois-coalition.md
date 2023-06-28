@@ -90,7 +90,7 @@ As one of the longest partnerships in Code for Chicago history, the continued su
 
 Thank you to our Code for Chicago website team members throughout the years. This project wouldn’t have been a success without each and every one of your contributions.
 
-<table border="0" cellpadding="1" cellspacing="1" style="width:50%;background-color:#fffff;border-collapse:collapse;border:1px solid #fffff">
+<table border="0" cellpadding="1" cellspacing="1" style="width:75%;background-color:#fffff;border-collapse:collapse;border:1px solid #fffff">
 	<tbody>
 		<tr>
 			<td>Peter Contos - Coalition Product Owner</td>
