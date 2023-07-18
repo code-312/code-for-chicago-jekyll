@@ -8,7 +8,7 @@ imgtext: Modernizing a website to increase volunteer and event participation
 description: "     "
 alt: "null"
 ---
-**Recruitment Status:** Actively recruiting
+**Recruitment Status:** Actively recruiting developers
 
 **Problem Statement:** Currently, C2ST’s website doesn’t capture their goal of “modernizing” their organization on the surface. Additionally, their staff seem to have a difficult time managing their web assets. Solving this problem ensures that their brand fits with their mission, and optimizes their staff operations.
 
@@ -20,7 +20,7 @@ alt: "null"
 
 **This would be a good fit for:** T﻿here will likely not be a lot of custom code since this is primarily a WordPress project using a Elementor plugin. Hence, it's great if you're interested in web development and getting experience working in a cross-functional team. 
 
-**Meeting Cadence:** Bi-weekly Mondays at 4pm
+**Meeting Cadence:** TBD
 
 **More Info:**
 
